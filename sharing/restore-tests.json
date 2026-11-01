@@ -1,0 +1,136 @@
+{
+  "restored_samples": {
+    "verification_20261101/outputs/ficus_fresh_30000/chkpnt30000.pth": {
+      "sha256": "00915de6454b1e0fbffb7b226767a3be98153230d15068ae12e32be9d3a60118",
+      "parts": 2,
+      "bytes": 212406856
+    },
+    "verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00000.png": {
+      "sha256": "7957b1a3222235fb93346cd4abc5ba73b22464225e325125bf0ea7e139568672",
+      "parts": 1,
+      "bytes": 184572
+    },
+    "02_PAT/outputs/modalsound_basis/evaluate_basis": {
+      "sha256": "7b1bf9ed123077d9d466a40aec91acb4e5cade175324cf88e1b825b92306344f",
+      "parts": 1,
+      "bytes": 21912
+    },
+    "02_PAT/outputs/modalsound_fem/fixed_modes.npz": {
+      "sha256": "149e1629ffc4e63c55d077f55fbbe55c685435e65daf5ef10a7824889ecb36f3",
+      "parts": 1,
+      "bytes": 22898
+    }
+  },
+  "same_file_skipped": true,
+  "different_file_refused": true,
+  "manifest_chunk_index_valid": true,
+  "files": 5063,
+  "chunks": 3877,
+  "archive_count": 31,
+  "raw_bytes": 28977736250,
+  "archive_bytes": 17725411334,
+  "runs": [
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "verification_20261101/outputs/ficus_fresh_30000/chkpnt30000.pth",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-smoke"
+      ],
+      "exit": 0,
+      "stdout": "1 files; 1 archives; 0.66 GiB downloads before cache\nRestored verification_20261101/outputs/ficus_fresh_30000/chkpnt30000.pth\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00000.png",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-smoke"
+      ],
+      "exit": 0,
+      "stdout": "1 files; 1 archives; 0.13 GiB downloads before cache\nRestored verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00000.png\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "02_PAT/outputs/modalsound_basis/evaluate_basis",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-smoke"
+      ],
+      "exit": 0,
+      "stdout": "1 files; 1 archives; 0.67 GiB downloads before cache\nRestored 02_PAT/outputs/modalsound_basis/evaluate_basis\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "verification_20261101/outputs/ficus_fresh_30000/chkpnt30000.pth",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-smoke"
+      ],
+      "exit": 0,
+      "stdout": "0 files; 0 archives; 0.00 GiB downloads before cache\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "02_PAT/outputs/modalsound_basis/evaluate_basis",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-refusal-smoke"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py\", line 49, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py\", line 21, in main\n    if digest(p)!=f['sha256']:raise RuntimeError(f'Refusing to overwrite differing file: {p}')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Refusing to overwrite differing file: F:\\System\\Desktop\\3DGS\\复现\\_publication\\restore-refusal-smoke\\02_PAT\\outputs\\modalsound_basis\\evaluate_basis\n"
+    },
+    {
+      "argv": [
+        "python",
+        "-X",
+        "utf8",
+        "_publication\\github\\tools\\restore_artifacts.py",
+        "--prefix",
+        "02_PAT/outputs/modalsound_fem/fixed_modes.npz",
+        "--cache",
+        "_publication\\release",
+        "--destination",
+        "_publication\\restore-smoke"
+      ],
+      "exit": 0,
+      "stdout": "1 files; 1 archives; 0.67 GiB downloads before cache\nRestored 02_PAT/outputs/modalsound_fem/fixed_modes.npz\n",
+      "stderr": ""
+    }
+  ]
+}

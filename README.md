@@ -1,5 +1,7 @@
 # 3DGS 物理与声音复现实验
 
+最快查看：下载 [viewing-demo.zip](https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/verified-2026-11-01/viewing-demo.zip)，解压后双击 `查看效果.html`。该轻量包包含全部页面媒体；完整代码请下载仓库。
+
 PhysGaussian / Precomputed Acoustic Transfer (PAT) / NeuralSound 的本地实验、运行记录与独立验证。面向队友分享，按三篇论文分目录。
 
 **当前结论：局部模块和本地流程可复现；不能称为三篇论文完整复现成功。** 2026-11-01 独立验证共 32 项：21 通过、5 失败、6 未验证。历史报告中的“完成”不替代独立验收。

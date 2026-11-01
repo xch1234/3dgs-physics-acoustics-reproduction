@@ -1,0 +1,50 @@
+{
+  "upstream_fetch_smoke": {
+    "exit": 0,
+    "stdout": "Ready 03_NeuralSound/code/NeuralSound\n",
+    "stderr": ""
+  },
+  "anonymous_repository": {
+    "html_url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction",
+    "private": false,
+    "visibility": "public",
+    "default_branch": "main"
+  },
+  "gallery": {
+    "method": "ChatGPT in-app browser over loopback HTTP",
+    "title": "复现效果 · 团队查看",
+    "video": {
+      "path": "verification_20261101/physics/outputs/ficus_fresh_full/output.mp4",
+      "duration": 5,
+      "currentTime": 5,
+      "width": 800,
+      "height": 800,
+      "readyState": 4,
+      "error": null
+    },
+    "file_url_automation": "not tested: browser tool does not allow file scheme",
+    "local_media_references_missing": []
+  },
+  "demo_zip": {
+    "testzip_bad_member": null,
+    "members": 48,
+    "uncompressed_bytes": 24799934
+  },
+  "notes": "Publishing checks only; these do not add scientific validation passes. Browser HTTP video playback checked; file:// direct automation unavailable.",
+  "viewer_help": {
+    "url": "https://superspl.at/editor",
+    "version": "3.7.0",
+    "menus_checked": [
+      "文件 → 导入…",
+      "帮助 → 键盘快捷键"
+    ],
+    "keys_checked": [
+      "F",
+      "Shift+F",
+      "V",
+      "W/A/S/D",
+      "Q/E"
+    ],
+    "model_import_tested": false
+  }
+}

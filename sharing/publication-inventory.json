@@ -36212,20 +36212,20 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/.hgeol",
     "size": 180,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/.hgignore",
     "size": 244,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/.hgtags",
     "size": 1844,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/CMakeLists.txt",
@@ -36236,38 +36236,38 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.BSD",
     "size": 1516,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.GPL",
     "size": 35147,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.LGPL",
     "size": 26530,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.MINPACK",
     "size": 2246,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.MPL2",
     "size": 16726,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/COPYING.README",
     "size": 779,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/CTestConfig.cmake",
@@ -36290,8 +36290,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/INSTALL",
     "size": 1145,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/README.md",
@@ -36302,8 +36302,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/signature_of_eigen3_matrix_library",
     "size": 216,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/analyze-blocking-sizes.cpp",
@@ -36314,8 +36314,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/basicbench.cxxlist",
     "size": 1421,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/basicbenchmark.cpp",
@@ -36392,8 +36392,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/benchmark_suite",
     "size": 1209,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/BenchSparseUtil.h",
@@ -36452,8 +36452,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/bench_unrolling",
     "size": 651,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/check_cache_queries.cpp",
@@ -36572,140 +36572,140 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/COPYING",
     "size": 18109,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/README",
     "size": 6447,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_aat_product.hh",
     "size": 3374,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_ata_product.hh",
     "size": 3354,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_atv_product.hh",
     "size": 3670,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_axpby.hh",
     "size": 3371,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_axpy.hh",
     "size": 3340,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_cholesky.hh",
     "size": 3202,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_ger.hh",
     "size": 3460,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_hessenberg.hh",
     "size": 5598,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_lu_decomp.hh",
     "size": 3151,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_lu_solve.hh",
     "size": 3598,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_matrix_matrix_product.hh",
     "size": 3886,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_matrix_matrix_product_bis.hh",
     "size": 3982,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_matrix_vector_product.hh",
     "size": 3989,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_partial_lu.hh",
     "size": 3188,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_rot.hh",
     "size": 3019,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_symv.hh",
     "size": 3691,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_syr2.hh",
     "size": 3664,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_trisolve.hh",
     "size": 3425,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_trisolve_matrix.hh",
     "size": 4061,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/action_trmm.hh",
     "size": 3907,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/actions/basic_actions.hh",
     "size": 467,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/cmake/FindACML.cmake",
@@ -36794,20 +36794,20 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/gnuplot_common_settings.hh",
     "size": 2224,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/go_mean",
     "size": 2065,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/mean.cxx",
     "size": 5306,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/mk_gnuplot_script.sh",
@@ -36836,14 +36836,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/regularize.cxx",
     "size": 3425,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/smooth.cxx",
     "size": 5112,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/data/smooth_all.sh",
@@ -36854,116 +36854,116 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/bench.hh",
     "size": 4827,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/bench_parameter.hh",
     "size": 1916,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/btl.hh",
     "size": 6748,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/init/init_function.hh",
     "size": 1478,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/init/init_matrix.hh",
     "size": 2295,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/init/init_vector.hh",
     "size": 1416,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/static/bench_static.hh",
     "size": 2278,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/static/intel_bench_fixed_size.hh",
     "size": 1948,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/static/static_size_generator.hh",
     "size": 2222,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/mixed_perf_analyzer.hh",
     "size": 1994,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/portable_perf_analyzer.hh",
     "size": 2938,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/portable_perf_analyzer_old.hh",
     "size": 3534,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/portable_timer.hh",
     "size": 3534,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/STL_perf_analyzer.hh",
     "size": 2305,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/STL_timer.hh",
     "size": 2522,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/x86_perf_analyzer.hh",
     "size": 2927,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/timers/x86_timer.hh",
     "size": 5294,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/utils/size_lin_log.hh",
     "size": 1658,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/utils/size_log.hh",
     "size": 1645,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/utils/utilities.h",
@@ -36974,8 +36974,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/generic_bench/utils/xy_file.hh",
     "size": 2213,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/BLAS/blas.h",
@@ -36986,14 +36986,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/BLAS/blas_interface.hh",
     "size": 2891,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/BLAS/blas_interface_impl.hh",
     "size": 4811,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/BLAS/CMakeLists.txt",
@@ -37016,8 +37016,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blaze/blaze_interface.hh",
     "size": 4012,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blaze/CMakeLists.txt",
@@ -37034,14 +37034,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blitz/blitz_interface.hh",
     "size": 4129,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blitz/blitz_LU_solve_interface.hh",
     "size": 5364,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blitz/btl_blitz.cpp",
@@ -37064,8 +37064,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/blitz/tiny_blitz_interface.hh",
     "size": 3100,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/eigen2/btl_tiny_eigen2.cpp",
@@ -37082,8 +37082,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/eigen2/eigen2_interface.hh",
     "size": 5151,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/eigen2/main_adv.cpp",
@@ -37124,8 +37124,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/eigen3/eigen3_interface.hh",
     "size": 8077,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/eigen3/main_adv.cpp",
@@ -37160,14 +37160,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/gmm/gmm_interface.hh",
     "size": 4174,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/gmm/gmm_LU_solve_interface.hh",
     "size": 5364,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/gmm/main.cpp",
@@ -37178,8 +37178,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/mtl4/.kdbgrc.main",
     "size": 153,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/mtl4/CMakeLists.txt",
@@ -37196,14 +37196,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/mtl4/mtl4_interface.hh",
     "size": 4210,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/mtl4/mtl4_LU_solve_interface.hh",
     "size": 5364,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/STL/CMakeLists.txt",
@@ -37220,8 +37220,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/STL/STL_interface.hh",
     "size": 5838,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/tensors/CMakeLists.txt",
@@ -37250,8 +37250,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/tensors/tensor_interface.hh",
     "size": 3190,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/tvmet/CMakeLists.txt",
@@ -37268,8 +37268,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/tvmet/tvmet_interface.hh",
     "size": 3017,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/ublas/CMakeLists.txt",
@@ -37286,8 +37286,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/btl/libs/ublas/ublas_interface.hh",
     "size": 4342,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/perf_monitoring/gemm/changesets.txt",
@@ -37340,8 +37340,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/spbench/spbench.dtd",
     "size": 1856,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/spbench/spbenchsolver.cpp",
@@ -37382,20 +37382,20 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/benchmark_main.cc",
     "size": 6834,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/contraction_benchmarks_cpu.cc",
     "size": 1389,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/README",
     "size": 2220,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/tensor_benchmarks.h",
@@ -37406,8 +37406,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/tensor_benchmarks_cpu.cc",
     "size": 6264,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/tensor_benchmarks_fp16_gpu.cu",
@@ -37424,8 +37424,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/bench/tensors/tensor_benchmarks_sycl.cc",
     "size": 1153,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/BandTriangularSolver.h",
@@ -37556,26 +37556,26 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/chbmv.c",
     "size": 15108,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/chpmv.c",
     "size": 13026,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/complexdots.c",
     "size": 2310,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/ctbmv.c",
     "size": 18944,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/datatypes.h",
@@ -37586,134 +37586,134 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/drotm.c",
     "size": 4968,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/drotmg.c",
     "size": 6193,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/dsbmv.c",
     "size": 10188,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/dspmv.c",
     "size": 8075,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/dtbmv.c",
     "size": 11656,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/d_cnjg.c",
     "size": 117,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/lsame.c",
     "size": 2976,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/r_cnjg.c",
     "size": 105,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/srotm.c",
     "size": 4902,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/srotmg.c",
     "size": 6056,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/ssbmv.c",
     "size": 10210,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/sspmv.c",
     "size": 8051,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/stbmv.c",
     "size": 11642,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/zhbmv.c",
     "size": 15144,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/zhpmv.c",
     "size": 13060,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/f2c/ztbmv.c",
     "size": 18972,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/fortran/complexdots.f",
     "size": 979,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/cblat1.f",
     "size": 32109,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/cblat2.dat",
     "size": 1546,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/cblat2.f",
     "size": 116657,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/cblat3.dat",
     "size": 1046,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/cblat3.f",
     "size": 131550,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/CMakeLists.txt",
@@ -37724,32 +37724,32 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/dblat1.f",
     "size": 44819,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/dblat2.dat",
     "size": 1466,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/dblat2.f",
     "size": 112335,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/dblat3.dat",
     "size": 882,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/dblat3.f",
     "size": 104262,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/runblastest.sh",
@@ -37760,62 +37760,62 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/sblat1.f",
     "size": 43388,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/sblat2.dat",
     "size": 1466,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/sblat2.f",
     "size": 112251,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/sblat3.dat",
     "size": 882,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/sblat3.f",
     "size": 104172,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/zblat1.f",
     "size": 32114,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/zblat2.dat",
     "size": 1546,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/zblat2.f",
     "size": 117003,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/zblat3.dat",
     "size": 1046,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/blas/testing/zblat3.f",
     "size": 131995,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/cmake/Eigen3Config.cmake.in",
@@ -38030,14 +38030,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/debug/msvc/eigen.natvis",
     "size": 11661,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/debug/msvc/eigen_autoexp_part.dat",
     "size": 7566,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/CMakeLists.txt",
@@ -38066,8 +38066,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/mandelbrot/README",
     "size": 336,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/mix_eigen_and_c/binary_library.cpp",
@@ -38084,14 +38084,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/mix_eigen_and_c/example.c",
     "size": 1616,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/mix_eigen_and_c/README",
     "size": 261,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/opengl/camera.cpp",
@@ -38150,8 +38150,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/opengl/README",
     "size": 403,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/demos/opengl/trackball.cpp",
@@ -38168,8 +38168,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/A05_PortingFrom2To3.dox",
     "size": 12377,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/AsciiQuickReference.txt",
@@ -38180,14 +38180,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/B01_Experimental.dox",
     "size": 2425,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/ClassHierarchy.dox",
     "size": 6332,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CMakeLists.txt",
@@ -38198,38 +38198,38 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CoeffwiseMathFunctionsTable.dox",
     "size": 16511,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CustomizingEigen_CustomScalar.dox",
     "size": 4424,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CustomizingEigen_InheritingMatrix.dox",
     "size": 1337,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CustomizingEigen_NullaryExpr.dox",
     "size": 3658,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/CustomizingEigen_Plugins.dox",
     "size": 3658,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/DenseDecompositionBenchmark.dox",
     "size": 5022,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/Doxyfile.in",
@@ -38240,8 +38240,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/eigendoxy.css",
     "size": 4409,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/eigendoxy_footer.html.in",
@@ -38264,14 +38264,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/eigendoxy_tabs.css",
     "size": 1095,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/eigen_navtree_hacks.js",
     "size": 7960,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/Eigen_Silly_Professor_64x64.png",
@@ -38282,8 +38282,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/FixedSizeVectorizable.dox",
     "size": 1718,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/ftv2node.png",
@@ -38300,182 +38300,182 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/FunctionsTakingEigenTypes.dox",
     "size": 13452,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/HiPerformance.dox",
     "size": 5429,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/InplaceDecomposition.dox",
     "size": 3797,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/InsideEigenExample.dox",
     "size": 30239,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/LeastSquares.dox",
     "size": 2791,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/Manual.dox",
     "size": 6551,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/MatrixfreeSolverExample.dox",
     "size": 758,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/NewExpressionType.dox",
     "size": 5610,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/Overview.dox",
     "size": 2058,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/PassingByValue.dox",
     "size": 1153,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/Pitfalls.dox",
     "size": 1984,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/PreprocessorDirectives.dox",
     "size": 13440,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/QuickReference.dox",
     "size": 29069,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/QuickStartGuide.dox",
     "size": 6577,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/SparseLinearSystems.dox",
     "size": 19614,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/SparseQuickReference.dox",
     "size": 8312,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/StlContainers.dox",
     "size": 3424,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/StorageOrders.dox",
     "size": 4119,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/StructHavingEigenMembers.dox",
     "size": 6212,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TemplateKeyword.dox",
     "size": 6156,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicAliasing.dox",
     "size": 10269,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicAssertions.dox",
     "size": 5285,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicCMakeGuide.dox",
     "size": 1642,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicEigenExpressionTemplates.dox",
     "size": 173,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicLazyEvaluation.dox",
     "size": 5453,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicLinearAlgebraDecompositions.dox",
     "size": 8806,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicMultithreading.dox",
     "size": 2532,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicResizing.dox",
     "size": 137,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicScalarTypes.dox",
     "size": 145,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TopicVectorization.dox",
     "size": 97,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/tutorial.cpp",
@@ -38486,110 +38486,110 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialAdvancedInitialization.dox",
     "size": 6900,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialArrayClass.dox",
     "size": 8523,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialBlockOperations.dox",
     "size": 7823,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialGeometry.dox",
     "size": 9726,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialLinearAlgebra.dox",
     "size": 11202,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialMapClass.dox",
     "size": 3986,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialMatrixArithmetic.dox",
     "size": 9865,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialMatrixClass.dox",
     "size": 12421,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialReductionsVisitorsBroadcasting.dox",
     "size": 12006,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialReshapeSlicing.dox",
     "size": 1910,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialSparse.dox",
     "size": 20478,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/TutorialSparse_example_details.dox",
     "size": 89,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/UnalignedArrayAssert.dox",
     "size": 6888,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/UsingBlasLapackBackends.dox",
     "size": 6633,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/UsingIntelMKL.dox",
     "size": 6020,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/UsingNVCC.dox",
     "size": 1437,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/WrongStackAlignment.dox",
     "size": 2924,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/.krazy",
     "size": 34,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/class_Block.cpp",
@@ -38708,38 +38708,38 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.entry",
     "size": 145,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.evaluator",
     "size": 948,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.expression",
     "size": 591,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.main",
     "size": 146,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.preamble",
     "size": 85,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant.cpp.traits",
     "size": 605,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/examples/make_circulant2.cpp",
@@ -39044,8 +39044,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/snippets/.krazy",
     "size": 34,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/doc/snippets/AngleAxis_mimic_euler.cpp",
@@ -40718,14 +40718,14 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Cholesky",
     "size": 1206,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/CholmodSupport",
     "size": 1900,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/CMakeLists.txt",
@@ -40736,164 +40736,164 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Core",
     "size": 17961,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Dense",
     "size": 122,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Eigen",
     "size": 35,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Eigenvalues",
     "size": 1822,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Geometry",
     "size": 2050,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Householder",
     "size": 874,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/IterativeLinearSolvers",
     "size": 2083,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Jacobi",
     "size": 939,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/LU",
     "size": 1433,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/MetisSupport",
     "size": 991,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/OrderingMethods",
     "size": 2483,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/PardisoSupport",
     "size": 1116,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/PaStiXSupport",
     "size": 1676,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/QR",
     "size": 1317,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/QtAlignedMalloc",
     "size": 945,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/Sparse",
     "size": 919,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SparseCholesky",
     "size": 1371,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SparseCore",
     "size": 2240,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SparseLU",
     "size": 1713,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SparseQR",
     "size": 1222,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SPQRSupport",
     "size": 1162,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/StdDeque",
     "size": 797,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/StdList",
     "size": 726,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/StdVector",
     "size": 803,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SuperLUSupport",
     "size": 2243,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/SVD",
     "size": 1629,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/UmfPackSupport",
     "size": 1382,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/Eigen/src/Cholesky/LDLT.h",
@@ -42860,38 +42860,38 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/clacgv.f",
     "size": 2831,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/cladiv.f",
     "size": 2340,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/clarf.f",
     "size": 6295,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/clarfb.f",
     "size": 23424,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/clarfg.f",
     "size": 5344,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/clarft.f",
     "size": 10450,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/CMakeLists.txt",
@@ -42914,50 +42914,50 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dladiv.f",
     "size": 2969,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlamch.f",
     "size": 5259,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlapy2.f",
     "size": 2514,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlapy3.f",
     "size": 2737,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlarf.f",
     "size": 6167,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlarfb.f",
     "size": 22749,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlarfg.f",
     "size": 4946,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dlarft.f",
     "size": 10222,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/double.cpp",
@@ -42968,8 +42968,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/dsecnd_NONE.f",
     "size": 1282,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/eigenvalues.cpp",
@@ -42980,50 +42980,50 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilaclc.f",
     "size": 2957,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilaclr.f",
     "size": 2997,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/iladlc.f",
     "size": 2952,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/iladlr.f",
     "size": 3000,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilaslc.f",
     "size": 2941,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilaslr.f",
     "size": 2988,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilazlc.f",
     "size": 2962,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/ilazlr.f",
     "size": 3010,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/lapack_common.h",
@@ -43040,8 +43040,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/second_NONE.f",
     "size": 1258,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/single.cpp",
@@ -43052,50 +43052,50 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/sladiv.f",
     "size": 2897,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slamch.f",
     "size": 5261,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slapy2.f",
     "size": 2490,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slapy3.f",
     "size": 2701,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slarf.f",
     "size": 6117,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slarfb.f",
     "size": 22727,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slarfg.f",
     "size": 4908,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/slarft.f",
     "size": 10183,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/svd.cpp",
@@ -43106,38 +43106,38 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zlacgv.f",
     "size": 2839,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zladiv.f",
     "size": 2364,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zlarf.f",
     "size": 6278,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zlarfb.f",
     "size": 23498,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zlarfg.f",
     "size": 5359,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/lapack/zlarft.f",
     "size": 10453,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/scripts/buildtests.in",
@@ -43178,8 +43178,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/scripts/eigen_gen_docs",
     "size": 738,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/scripts/release.in",
@@ -44102,8 +44102,8 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/doc/Overview.dox",
     "size": 830,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/doc/examples/BVH_Example.cpp",
@@ -44198,32 +44198,32 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/AdolcForward",
     "size": 4241,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/AlignedVector3",
     "size": 6095,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/ArpackSupport",
     "size": 905,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/AutoDiff",
     "size": 1054,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/BVH",
     "size": 5505,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CMakeLists.txt",
@@ -44234,98 +44234,98 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/EulerAngles",
     "size": 1102,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/FFT",
     "size": 13979,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/IterativeSolvers",
     "size": 1295,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/KroneckerProduct",
     "size": 944,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/LevenbergMarquardt",
     "size": 1102,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/MatrixFunctions",
     "size": 17776,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/MoreVectorization",
     "size": 586,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/MPRealSupport",
     "size": 7413,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/NonLinearOptimization",
     "size": 5776,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/NumericalDiff",
     "size": 1773,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/OpenGLSupport",
     "size": 19066,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/Polynomials",
     "size": 4770,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/Skyline",
     "size": 912,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/SparseExtra",
     "size": 1324,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/SpecialFunctions",
     "size": 1574,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/Splines",
     "size": 871,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CXX11/CMakeLists.txt",
@@ -44336,20 +44336,20 @@
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CXX11/Tensor",
     "size": 4313,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CXX11/TensorSymmetry",
     "size": 1273,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CXX11/ThreadPool",
     "size": 1743,
-    "storage": "release",
-    "reason": ""
+    "storage": "git",
+    "reason": "Eigen dependency source and license; may also occur in release block inventory"
   },
   {
     "path": "02_PAT/code/dependencies/eigen-git-mirror-3.3.7/unsupported/Eigen/CXX11/src/Tensor/README.md",
