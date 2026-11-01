@@ -1,0 +1,14 @@
+{
+  "name": "final-document-validation",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\check_final_documents.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:49:19.867231+08:00",
+  "log": "logs\\final-document-validation.log",
+  "exit_code": 1,
+  "finished": "2026-11-02T06:49:20.233325+08:00",
+  "elapsed_s": 0.375
+}

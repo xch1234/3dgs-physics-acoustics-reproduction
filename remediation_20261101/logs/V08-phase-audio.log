@@ -1,0 +1,200 @@
+Analytic pulsating-sphere validation: [{'triangles': 80, 'relative_complex_pressure_error': 0.0010507669423286017, 'linear_residual': 3.773333542102575e-16}, {'triangles': 320, 'relative_complex_pressure_error': 0.021110748930930224, 'linear_residual': 7.556545047975278e-16}, {'triangles': 1280, 'relative_complex_pressure_error': 0.01599923324287479, 'linear_residual': 1.3038613187950258e-15}]
+mode 1 sources 5 held-out relative error 0.004452120220023878
+mode 2 sources 6 held-out relative error 0.002063110463197031
+mode 3 sources 12 held-out relative error 0.0028046404304079746
+mode 4 sources 7 held-out relative error 0.007511935702907734
+mode 5 sources 7 held-out relative error 0.01026861429933792
+mode 6 sources 5 held-out relative error 0.012247968592022747
+{
+  "scope": "local PAT core pipeline, sections 3 and 4.1-4.3.1; not full paper results",
+  "all_checks_passed": true,
+  "convention": "exp(+i omega t), outgoing h_l^(2); rho=1.225 kg/m3, c=343 m/s",
+  "bem": "indirect single-layer constant flat triangles, exterior Neumann collocation, 3-point quadrature",
+  "panels": 448,
+  "sphere_validation": [
+    {
+      "triangles": 80,
+      "relative_complex_pressure_error": 0.0010507669423286017,
+      "linear_residual": 3.773333542102575e-16
+    },
+    {
+      "triangles": 320,
+      "relative_complex_pressure_error": 0.021110748930930224,
+      "linear_residual": 7.556545047975278e-16
+    },
+    {
+      "triangles": 1280,
+      "relative_complex_pressure_error": 0.01599923324287479,
+      "linear_residual": 1.3038613187950258e-15
+    }
+  ],
+  "first_mode_coarse_fine_relative_difference": 0.05497751644558382,
+  "mode_results": [
+    {
+      "mode": 1,
+      "frequency_Hz": 529.322546223367,
+      "bem_residual": 1.1568627122358031e-15,
+      "validation_relative_complex_L2": 0.004452120220023878,
+      "relative_fit_history": [
+        1.0,
+        0.13379321213539785,
+        0.09531430279760154,
+        0.03893249986370194,
+        0.030685174820340243,
+        0.019444987557661924
+      ],
+      "sources": 5,
+      "complex_coefficients": 20,
+      "svd_rank": 20,
+      "fit_relative_L2": 0.019444987557661924,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 2,
+      "frequency_Hz": 529.3225462233955,
+      "bem_residual": 1.2362769539257943e-15,
+      "validation_relative_complex_L2": 0.002063110463197031,
+      "relative_fit_history": [
+        1.0,
+        0.1215851716191806,
+        0.0883523585340342,
+        0.048205232154331,
+        0.02810028917875659,
+        0.02013287858965878,
+        0.009984003800406037
+      ],
+      "sources": 6,
+      "complex_coefficients": 24,
+      "svd_rank": 24,
+      "fit_relative_L2": 0.009984003800406037,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 3,
+      "frequency_Hz": 1454.4156256407332,
+      "bem_residual": 1.033108277559032e-15,
+      "validation_relative_complex_L2": 0.0028046404304079746,
+      "relative_fit_history": [
+        1.0,
+        0.1449628354682588,
+        0.10185141917777758,
+        0.08923598326035284,
+        0.08609884873834847,
+        0.07800252363348653,
+        0.07526217628871854,
+        0.06895791571300533,
+        0.05614399799300226,
+        0.047996896674205036,
+        0.03592438688563674,
+        0.027040403152350893,
+        0.016776857743891524
+      ],
+      "sources": 12,
+      "complex_coefficients": 48,
+      "svd_rank": 48,
+      "fit_relative_L2": 0.016776857743891524,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 4,
+      "frequency_Hz": 2455.2353968577963,
+      "bem_residual": 1.2091090150853688e-15,
+      "validation_relative_complex_L2": 0.007511935702907734,
+      "relative_fit_history": [
+        1.0,
+        0.1902010792033732,
+        0.1100958712399266,
+        0.06577329668943359,
+        0.039235332676920934,
+        0.024464247070699826,
+        0.022002471283774586,
+        0.010829734667437247
+      ],
+      "sources": 7,
+      "complex_coefficients": 28,
+      "svd_rank": 28,
+      "fit_relative_L2": 0.010829734667437247,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 5,
+      "frequency_Hz": 2455.2353968578,
+      "bem_residual": 1.209605597483047e-15,
+      "validation_relative_complex_L2": 0.01026861429933792,
+      "relative_fit_history": [
+        1.0,
+        0.20676995184655486,
+        0.11533753150590825,
+        0.06827705112832097,
+        0.043749375912278184,
+        0.039052834741298954,
+        0.026028797152723087,
+        0.014498703348698084
+      ],
+      "sources": 7,
+      "complex_coefficients": 28,
+      "svd_rank": 28,
+      "fit_relative_L2": 0.014498703348698084,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 6,
+      "frequency_Hz": 2457.9068609233323,
+      "bem_residual": 8.804517067345127e-16,
+      "validation_relative_complex_L2": 0.012247968592022747,
+      "relative_fit_history": [
+        1.0,
+        0.2210951534331684,
+        0.06663129823237988,
+        0.032314321944350355,
+        0.025724999471221546,
+        0.016124753054649804
+      ],
+      "sources": 5,
+      "complex_coefficients": 20,
+      "svd_rank": 20,
+      "fit_relative_L2": 0.016124753054649804,
+      "svd_relative_cutoff": 1e-06
+    }
+  ],
+  "offset_radius_m": 0.11,
+  "validation_radii_m": [
+    0.17,
+    0.3
+  ],
+  "listeners_m": [
+    [
+      0.3,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.3,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.3
+    ]
+  ],
+  "impulse_vertex": 62,
+  "impulse_direction": "y",
+  "impulse_N_s": 0.001,
+  "audio_relative_L2": 0.017186150962481158,
+  "common_playback_gain": 10.319594138684476,
+  "limitation": "six coarse FEM modes; no multilevel placement, thin-shell benchmark, high-frequency treatment or speedup claim; audio ignores transfer phase per paper",
+  "elapsed_s": 8.678973800037056
+}
+{
+  "passed": true,
+  "basis_invariance_relative_errors": {
+    "sign_flip": 0.0,
+    "degenerate_pair_rotation": 1.6916029048654684e-16,
+    "independent_FEM_eigensolver_bases": 1.3532024122685792e-12
+  },
+  "PAT_vs_BEM_audio_relative_L2": 0.004404955451783973,
+  "scope": "Local phase-preserving extension; original magnitude-only path retained as historical paper-style baseline; not full transient acoustics or proof of paper correctness",
+  "method": "real(H @ hilbert(q)), exp(+i omega t), transfer sampled at modal frequencies; finite-window Hilbert edge effects, no propagation-delay/contact solver"
+}

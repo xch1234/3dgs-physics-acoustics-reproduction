@@ -1,0 +1,21 @@
+{
+  "name": "V28-reconstructed-scene",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/ficus_reconstruction",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/ficus_config.json",
+    "--tag",
+    "ficus_reconstructed_rerun"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T04:17:32.302725+08:00",
+  "log": "logs/V28-reconstructed-scene.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T04:25:41.032795+08:00",
+  "elapsed_s": 488.72987750299944
+}

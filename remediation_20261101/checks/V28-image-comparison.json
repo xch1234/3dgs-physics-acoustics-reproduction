@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "all_200_reference_images_byte_identical": true,
+  "views_selected_in_advance": [
+    0,
+    50,
+    100,
+    150
+  ],
+  "records": [
+    {
+      "view": "00000.png",
+      "column": 0,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/gt/00000.png",
+      "mean_absolute_RGB_error": 0.0
+    },
+    {
+      "view": "00000.png",
+      "column": 1,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00000.png",
+      "mean_absolute_RGB_error": 0.0031658762254901975
+    },
+    {
+      "view": "00000.png",
+      "column": 2,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy/test/ours_30000/renders/00000.png",
+      "mean_absolute_RGB_error": 0.003381429738562092
+    },
+    {
+      "view": "00050.png",
+      "column": 0,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/gt/00050.png",
+      "mean_absolute_RGB_error": 0.0
+    },
+    {
+      "view": "00050.png",
+      "column": 1,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00050.png",
+      "mean_absolute_RGB_error": 0.004992064950980388
+    },
+    {
+      "view": "00050.png",
+      "column": 2,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy/test/ours_30000/renders/00050.png",
+      "mean_absolute_RGB_error": 0.005196848447712423
+    },
+    {
+      "view": "00100.png",
+      "column": 0,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/gt/00100.png",
+      "mean_absolute_RGB_error": 0.0
+    },
+    {
+      "view": "00100.png",
+      "column": 1,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00100.png",
+      "mean_absolute_RGB_error": 0.003513737745098037
+    },
+    {
+      "view": "00100.png",
+      "column": 2,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy/test/ours_30000/renders/00100.png",
+      "mean_absolute_RGB_error": 0.0036554942810457527
+    },
+    {
+      "view": "00150.png",
+      "column": 0,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/gt/00150.png",
+      "mean_absolute_RGB_error": 0.0
+    },
+    {
+      "view": "00150.png",
+      "column": 1,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000/test/ours_30000/renders/00150.png",
+      "mean_absolute_RGB_error": 0.004820077614379088
+    },
+    {
+      "view": "00150.png",
+      "column": 2,
+      "path": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy/test/ours_30000/renders/00150.png",
+      "mean_absolute_RGB_error": 0.005018237336601305
+    }
+  ],
+  "scope": "Visual comparison of fixed held-out views, not deformation truth. Aggregate metrics remain in separate evaluator outputs."
+}

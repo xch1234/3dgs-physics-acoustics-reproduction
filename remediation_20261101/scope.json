@@ -1,0 +1,68 @@
+[
+  {
+    "id": "V03",
+    "previous_status": "失败",
+    "title": "Windows 环境导出文件的路径记录",
+    "new_status": "通过"
+  },
+  {
+    "id": "V08",
+    "previous_status": "失败",
+    "title": "声学输出对等价 FEM 模态基的不变性",
+    "new_status": "通过"
+  },
+  {
+    "id": "V09",
+    "previous_status": "未验证",
+    "title": "PAT 网格收敛、完整原论文场景与性能",
+    "new_status": "未验证"
+  },
+  {
+    "id": "V12",
+    "previous_status": "未验证",
+    "title": "未修改作者 metrics.py 全视图入口",
+    "new_status": "通过"
+  },
+  {
+    "id": "V17",
+    "previous_status": "失败",
+    "title": "发布代码的非单位预旋转 SH 坐标不变性",
+    "new_status": "通过"
+  },
+  {
+    "id": "V19",
+    "previous_status": "失败",
+    "title": "snow 材料的实际本构支持",
+    "new_status": "通过"
+  },
+  {
+    "id": "V26",
+    "previous_status": "失败",
+    "title": "当前本地辐射网络作为高精度 FFAT 近似",
+    "new_status": "失败"
+  },
+  {
+    "id": "V28",
+    "previous_status": "未验证",
+    "title": "未重复的训练与全部扩展场景",
+    "new_status": "通过"
+  },
+  {
+    "id": "V29",
+    "previous_status": "未验证",
+    "title": "三篇论文原始数据、架构与完整指标/性能复现",
+    "new_status": "未验证"
+  },
+  {
+    "id": "V30",
+    "previous_status": "未验证",
+    "title": "全新机器环境恢复与远端资源真实性",
+    "new_status": "未验证"
+  },
+  {
+    "id": "V31",
+    "previous_status": "未验证",
+    "title": "统一的同一 3DGS 物体受力—振动—声辐射系统",
+    "new_status": "未验证"
+  }
+]

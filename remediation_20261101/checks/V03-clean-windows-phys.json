@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "prefix": "F:/3dgs-remediation/envs/physgaussian-windows-clean",
+  "scope": "Fresh Windows CPU-Torch/Warp YAML installation, pip check, relevant imports, CPU SH invariance; full CUDA 3DGS uses separately rebuilt Linux prefix.",
+  "repair": "CPU wheel index added for torch==2.0.0+cpu; portable name and no corrupt prefix.",
+  "diagnostic_correction": "Removed unnecessary SciPy import from diagnostic. SciPy was not declared or required by this Windows SH/Warp environment; original failure retained."
+}

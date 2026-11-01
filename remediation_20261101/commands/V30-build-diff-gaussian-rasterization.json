@@ -1,0 +1,18 @@
+{
+  "name": "V30-build-diff-gaussian-rasterization",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "/opt/3dgs-remediation/build/diff-gaussian-rasterization"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:26:08.300784+08:00",
+  "log": "logs/V30-build-diff-gaussian-rasterization.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:29:25.282539+08:00",
+  "elapsed_s": 196.98150674299995
+}

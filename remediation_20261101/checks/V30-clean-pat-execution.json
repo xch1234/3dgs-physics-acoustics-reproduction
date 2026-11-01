@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "prefix": "/opt/3dgs-remediation/envs/pat-tools-clean",
+  "commands": [
+    {
+      "name": "V30-pat-clean-conda",
+      "command": [
+        "/opt/3dgs-runtime/miniconda3/bin/conda",
+        "create",
+        "--yes",
+        "--prefix",
+        "/opt/3dgs-remediation/envs/pat-tools-clean",
+        "--file",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/docs/conda-explicit-linux64.txt"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:20:01.036439+08:00",
+      "log": "logs/V30-pat-clean-conda.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:20:17.311815+08:00",
+      "elapsed_s": 16.250596801997744
+    },
+    {
+      "name": "V30-pat-clean-build-fem",
+      "command": [
+        "g++",
+        "-O2",
+        "-std=c++14",
+        "-I/opt/3dgs-remediation/envs/pat-tools-clean/include",
+        "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_fem.cpp",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/deformable/stvk.cpp",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+        "-o",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/pat_clean/outputs/modalsound_fem/assemble_fem"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:20:17.405345+08:00",
+      "log": "logs/V30-pat-clean-build-fem.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:20:30.563374+08:00",
+      "elapsed_s": 13.157906393993471
+    },
+    {
+      "name": "V30-pat-clean-test-fem",
+      "command": [
+        "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_pat_task.py",
+        "fem"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:20:30.606666+08:00",
+      "log": "logs/V30-pat-clean-test-fem.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:20:33.252522+08:00",
+      "elapsed_s": 2.6457673979966785
+    },
+    {
+      "name": "V30-pat-clean-build-transfer",
+      "command": [
+        "g++",
+        "-O2",
+        "-std=c++14",
+        "-I/opt/3dgs-remediation/envs/pat-tools-clean/include",
+        "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/dependencies/eigen-git-mirror-3.3.7",
+        "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_transfer.cpp",
+        "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+        "-L/opt/3dgs-remediation/envs/pat-tools-clean/lib",
+        "-Wl,-rpath,/opt/3dgs-remediation/envs/pat-tools-clean/lib",
+        "-lgsl",
+        "-lgslcblas",
+        "-o",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/pat_clean/outputs/modalsound_transfer/evaluate_transfer"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:20:33.304064+08:00",
+      "log": "logs/V30-pat-clean-build-transfer.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:20:47.950975+08:00",
+      "elapsed_s": 14.646828616001585
+    },
+    {
+      "name": "V30-pat-clean-test-transfer",
+      "command": [
+        "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_pat_task.py",
+        "transfer"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:20:47.971795+08:00",
+      "log": "logs/V30-pat-clean-test-transfer.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:20:59.722112+08:00",
+      "elapsed_s": 11.750142169003084
+    }
+  ],
+  "scope": "Fresh Conda GSL/Boost + rebuilt original C++ FEM/transfer components, independent numerical reference in fresh PhysGaussian Python. System GCC and same machine; not original PAT full GUI/FastBEM."
+}

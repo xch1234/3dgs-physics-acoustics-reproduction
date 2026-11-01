@@ -1,0 +1,39 @@
+{'triangles': 80, 'relative_complex_error': 0.0027754198094447763, 'linear_residual': 3.5219909651891824e-16, 'near_pairs': 1440, 'seconds': 0.13574767112731934}
+{'triangles': 320, 'relative_complex_error': 0.022318519969011883, 'linear_residual': 6.855513371923892e-16, 'near_pairs': 6000, 'seconds': 0.38297343254089355}
+{'triangles': 1280, 'relative_complex_error': 0.01661965186818031, 'linear_residual': 1.2815748127371789e-15, 'near_pairs': 23820, 'seconds': 4.201080799102783}
+{'triangles': 5120, 'relative_complex_error': 0.009673472418810478, 'linear_residual': 2.616813297447054e-15, 'near_pairs': 94380, 'seconds': 81.1202175617218}
+{
+  "scope": "local pulsating-sphere discretization experiment only; not all PAT paper scenes/high-frequency/7000x benchmark",
+  "rows": [
+    {
+      "triangles": 80,
+      "relative_complex_error": 0.0027754198094447763,
+      "linear_residual": 3.5219909651891824e-16,
+      "near_pairs": 1440,
+      "seconds": 0.13574767112731934
+    },
+    {
+      "triangles": 320,
+      "relative_complex_error": 0.022318519969011883,
+      "linear_residual": 6.855513371923892e-16,
+      "near_pairs": 6000,
+      "seconds": 0.38297343254089355
+    },
+    {
+      "triangles": 1280,
+      "relative_complex_error": 0.01661965186818031,
+      "linear_residual": 1.2815748127371789e-15,
+      "near_pairs": 23820,
+      "seconds": 4.201080799102783
+    },
+    {
+      "triangles": 5120,
+      "relative_complex_error": 0.009673472418810478,
+      "linear_residual": 2.616813297447054e-15,
+      "near_pairs": 94380,
+      "seconds": 81.1202175617218
+    }
+  ],
+  "monotonic": false,
+  "finest_below_half_percent": false
+}

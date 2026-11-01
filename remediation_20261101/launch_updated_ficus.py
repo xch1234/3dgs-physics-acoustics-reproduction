@@ -1,0 +1,2 @@
+from common import ROOT,AUDIT,run,runtime_env
+run('V30-canonical-ficus-live-archive',['F:/3dgs-remediation/envs/physgaussian-windows-clean/python.exe','-u',AUDIT/'check_original_ficus.py','--file-id','1OsiBs2udl32-1CqTXCitmov4NQCYdA9g','--tag=-updated-folder','--source-label','Current nerf_synthetic.zip entry in the canonical NeRF dataset folder 1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4; live listing saved in V30-canonical-access.json'],env=runtime_env(),timeout=3600)

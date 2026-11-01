@@ -1,4 +1,4 @@
-"""Sequential original scene runs; each subprocess releases all GPU memory."""
+"""Sequential scenes with default SH correction; subprocesses release GPU memory."""
 import sys,subprocess,time,json,argparse
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,7 +16,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('scenes',nargs='*',default=list(SCENES));args=p.parse_args()
     summary=[]
     for scene in args.scenes:
-        config,model=SCENES[scene];tag=f'{scene}_official_full'
+        config,model=SCENES[scene];tag=f'{scene}_frame_corrected_full'
         metrics=ROOT/'outputs'/tag/'metrics.json'
         if metrics.exists() and json.loads(metrics.read_text()).get('all_checks_passed'):
             summary.append(dict(scene=scene,status='already verified'));continue

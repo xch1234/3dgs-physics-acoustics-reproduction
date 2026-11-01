@@ -1,0 +1,14 @@
+Processing /opt/3dgs-remediation/build/simple-knn
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: simple_knn
+  DEPRECATION: Building 'simple_knn' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'simple_knn'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for simple_knn (setup.py): started
+  Building wheel for simple_knn (setup.py): still running...
+  Building wheel for simple_knn (setup.py): finished with status 'done'
+  Created wheel for simple_knn: filename=simple_knn-0.0.0-cp39-cp39-linux_x86_64.whl size=384482 sha256=f5faa7121ada64b2972f0162d5a41c6c5dad2ad564757a6ee03873824d44033d
+  Stored in directory: /opt/3dgs-runtime/pip-cache/wheels/d9/e7/69/1c1875e765ed73af4813dfd6dfd348c526d654fb5b0a188625
+Successfully built simple_knn
+Installing collected packages: simple_knn
+Successfully installed simple_knn-0.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

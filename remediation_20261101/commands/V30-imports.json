@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-c",
+    "import numpy,scipy,numba,matplotlib,mcubes; print(numpy.__version__,scipy.__version__,numba.__version__)"
+  ],
+  "exit": 0,
+  "seconds": 7.38258957862854
+}

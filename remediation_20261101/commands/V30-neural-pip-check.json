@@ -1,0 +1,15 @@
+{
+  "name": "V30-neural-pip-check",
+  "command": [
+    "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:11:20.249182+08:00",
+  "log": "logs/V30-neural-pip-check.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:11:21.452008+08:00",
+  "elapsed_s": 1.2020502029999989
+}

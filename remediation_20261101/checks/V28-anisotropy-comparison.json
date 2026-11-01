@@ -1,0 +1,29 @@
+{
+  "models": [
+    {
+      "model": "fresh_anisotropy",
+      "sha256": "eda2d548c6c52f9d92e9c8029ea9cd673144557f301c2bfdb1c98eb2a01af85f",
+      "gaussians": 307714,
+      "mean_axis_ratio": 4.479243744922045,
+      "median_axis_ratio": 4.585155632621099,
+      "maximum_axis_ratio": 5.1567558208119575,
+      "fraction_above_5": 0.006093320420910326
+    },
+    {
+      "model": "independent_baseline",
+      "sha256": "d2bebb659fff7fc6a5f80c5e6b1b1a8eec33ef73b0f7094c887eaaeb97636003",
+      "gaussians": 294998,
+      "mean_axis_ratio": 13241.31707490262,
+      "median_axis_ratio": 4390.969215434266,
+      "maximum_axis_ratio": 1024946.8442760607,
+      "fraction_above_5": 0.990718581142923
+    }
+  ],
+  "mean_ratio_reduced": true,
+  "evaluation": {
+    "PSNR": 34.285610087591905,
+    "SSIM": 0.9859026643633843,
+    "LPIPS": 0.012805256645660847
+  },
+  "scope": "Repeated local r=5/lambda=.01 control; not original Fig.8 settings."
+}

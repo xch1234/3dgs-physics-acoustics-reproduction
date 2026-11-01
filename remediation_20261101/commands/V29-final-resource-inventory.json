@@ -1,0 +1,14 @@
+{
+  "name": "V29-final-resource-inventory",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\resource_inventory.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T05:01:13.286646+08:00",
+  "log": "logs\\V29-final-resource-inventory.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:01:20.269874+08:00",
+  "elapsed_s": 6.983999999938533
+}

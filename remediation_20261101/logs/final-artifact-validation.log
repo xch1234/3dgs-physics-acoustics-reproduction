@@ -1,0 +1,19 @@
+MEDIA ficus_rerun 125
+MEDIA bread_rerun 300
+MEDIA pillow2sofa_rerun 300
+MEDIA plane_rerun 400
+MEDIA vasedeck_rerun 75
+MEDIA wolf_rerun 50
+MEDIA bread_corrected_rerun 300
+MEDIA plane_corrected_rerun 400
+MEDIA vasedeck_corrected_rerun 75
+MEDIA ficus_reconstructed_rerun 125
+MEDIA ficus_anisotropy_rerun 125
+MEDIA snow_ficus_local 25
+MEDIA snow_ficus_clean_env 25
+ARTIFACT ERRORS [
+  {
+    "item": "vasedeck_corrected_rerun",
+    "error": "AssertionError()"
+  }
+]

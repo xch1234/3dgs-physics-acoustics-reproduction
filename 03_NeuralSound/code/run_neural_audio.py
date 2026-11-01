@@ -3,6 +3,8 @@
 Predetermined held-out box_21. A uniform 0.01 stiffness scaling of the Ceramic
 FEM keeps all six acoustic frequencies in the local radiation training range.
 This is an explicitly synthetic material, not identified real ceramic.
+Exports the exact vertices, modal coordinates and impulse for same-object
+rendering experiments; this does not change the magnitude-only audio method.
 """
 import os
 for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMBA_NUM_THREADS'):os.environ[key]='2'
@@ -93,7 +95,9 @@ def main():
     for name,waves in [('bem',ref),('neural',pred)]:
         for j,wave in enumerate(waves):wavfile.write(out/f'{name}_listener_{j+1}.wav',fs,np.rint(wave*gain*fade*32767).astype(np.int16))
     np.savez_compressed(out/'raw.npz',time_s=t,bem_pressure_Pa=ref,neural_pressure_Pa=pred,common_gain=gain,
-        frequencies_Hz=frequencies,modes_mass_normalized=U,bem_ffat=far,neural_ffat=predictions)
+        frequencies_Hz=frequencies,modes_mass_normalized=U,bem_ffat=far,neural_ffat=predictions,
+        vertices_m=model.vertices,voxel=d['voxel'],modal_q=q,modal_impulse=impulse,
+        rayleigh_alpha=alpha,rayleigh_beta=beta,hit_vertex=hit,impulse_direction=np.array([0.,.8,.6]),impulse_Ns=1e-4)
     metrics=dict(scope='trained official hybrid modal output -> trained official AcousticNet -> local modal pressure audio',
         execution_completed=True,reference_checks_passed=True,sample=sample,held_out_geometry=True,
         material=dict(density=2700,young_modulus_Pa=7.2e8,poisson_ratio=.19,rayleigh_alpha=alpha,rayleigh_beta=beta),

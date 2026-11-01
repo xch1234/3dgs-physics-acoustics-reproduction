@@ -1,0 +1,50 @@
+{
+  "failed": [
+    "final-artifact-validation"
+  ],
+  "commands": [
+    {
+      "name": "final-artifact-validation",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/validate_deliverables.py"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:21:06.522003+08:00",
+      "log": "logs/final-artifact-validation.log",
+      "exit_code": 1,
+      "finished": "2026-11-02T06:43:16.654793+08:00",
+      "elapsed_s": 1330.1033933590006
+    },
+    {
+      "name": "V28-fixed-image-comparison",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/compare_reconstruction_images.py"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:43:16.741740+08:00",
+      "log": "logs/V28-fixed-image-comparison.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:43:29.349793+08:00",
+      "elapsed_s": 12.607764826003404
+    },
+    {
+      "name": "final-source-audit",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/audit_changes.py"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:43:29.439968+08:00",
+      "log": "logs/final-source-audit.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:43:38.973869+08:00",
+      "elapsed_s": 9.533781176003686
+    }
+  ],
+  "scope": "Generated artifacts require subsequent visual review before final reporting."
+}

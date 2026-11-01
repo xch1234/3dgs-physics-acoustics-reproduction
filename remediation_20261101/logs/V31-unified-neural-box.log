@@ -1,0 +1,245 @@
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/frames/%04d.png':
+  Duration: 00:00:03.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1280x400, 30 fps, 30 tbr, 30 tbn
+[aist#1:0/pcm_s16le @ 0x5cb26a0dab80] Guessed Channel Layout: mono
+Input #1, wav, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/bem.wav':
+  Duration: 00:00:03.00, bitrate: 768 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5cb26a106ac0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5cb26a106ac0] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x5cb26a106ac0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/bem_synchronized.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1280x400, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+[out#0/mp4 @ 0x5cb26a097c00] video:18KiB audio:7KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 18.588606%
+frame=   90 fps=0.0 q=-1.0 Lsize=      29KiB time=00:00:03.00 bitrate=  80.2kbits/s speed=8.18x elapsed=0:00:00.36    
+[libx264 @ 0x5cb26a106ac0] frame I:1     Avg QP:12.86  size: 10494
+[libx264 @ 0x5cb26a106ac0] frame P:23    Avg QP:19.37  size:   119
+[libx264 @ 0x5cb26a106ac0] frame B:66    Avg QP:27.48  size:    62
+[libx264 @ 0x5cb26a106ac0] consecutive B-frames:  2.2%  0.0%  0.0% 97.8%
+[libx264 @ 0x5cb26a106ac0] mb I  I16..4:  0.3% 93.6%  6.1%
+[libx264 @ 0x5cb26a106ac0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.3%  0.0%  0.0%  0.0%  0.0%    skip:99.7%
+[libx264 @ 0x5cb26a106ac0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.1%  0.0%  direct: 0.0%  skip:99.8%  L0:49.3% L1:47.7% BI: 3.0%
+[libx264 @ 0x5cb26a106ac0] 8x8 transform intra:92.6% inter:14.5%
+[libx264 @ 0x5cb26a106ac0] coded y,uvDC,uvAC intra: 8.0% 6.9% 6.8% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0x5cb26a106ac0] i16 v,h,dc,p: 86%  0%  0% 14%
+[libx264 @ 0x5cb26a106ac0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 82% 12%  2%  0%  1%  0%  1%  0%  2%
+[libx264 @ 0x5cb26a106ac0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 20% 24%  2%  4%  3%  5%  1%  4%
+[libx264 @ 0x5cb26a106ac0] i8c dc,h,v,p: 95%  1%  2%  2%
+[libx264 @ 0x5cb26a106ac0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5cb26a106ac0] ref P L0: 43.3%  0.5% 51.2%  4.9%
+[libx264 @ 0x5cb26a106ac0] ref B L0: 41.7% 34.2% 24.1%
+[libx264 @ 0x5cb26a106ac0] ref B L1: 74.5% 25.5%
+[libx264 @ 0x5cb26a106ac0] kb/s:46.19
+[aac @ 0x5cb26a139280] Qavg: 48946.168
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/frames/%04d.png':
+  Duration: 00:00:03.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1280x400, 30 fps, 30 tbr, 30 tbn
+[aist#1:0/pcm_s16le @ 0x654f519a1b80] Guessed Channel Layout: mono
+Input #1, wav, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/neural.wav':
+  Duration: 00:00:03.00, bitrate: 768 kb/s
+  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s16, 768 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+  Stream #1:0 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x654f519cdac0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x654f519cdac0] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x654f519cdac0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/neural_synchronized.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1280x400, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s
+    Metadata:
+      encoder         : Lavc63.1.102 aac
+[out#0/mp4 @ 0x654f5195ec00] video:18KiB audio:8KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 18.018190%
+frame=   90 fps=0.0 q=-1.0 Lsize=      30KiB time=00:00:03.00 bitrate=  82.4kbits/s speed=8.02x elapsed=0:00:00.37    
+[libx264 @ 0x654f519cdac0] frame I:1     Avg QP:12.86  size: 10494
+[libx264 @ 0x654f519cdac0] frame P:23    Avg QP:19.37  size:   119
+[libx264 @ 0x654f519cdac0] frame B:66    Avg QP:27.48  size:    62
+[libx264 @ 0x654f519cdac0] consecutive B-frames:  2.2%  0.0%  0.0% 97.8%
+[libx264 @ 0x654f519cdac0] mb I  I16..4:  0.3% 93.6%  6.1%
+[libx264 @ 0x654f519cdac0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.3%  0.0%  0.0%  0.0%  0.0%    skip:99.7%
+[libx264 @ 0x654f519cdac0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.2%  0.1%  0.0%  direct: 0.0%  skip:99.8%  L0:49.3% L1:47.7% BI: 3.0%
+[libx264 @ 0x654f519cdac0] 8x8 transform intra:92.6% inter:14.5%
+[libx264 @ 0x654f519cdac0] coded y,uvDC,uvAC intra: 8.0% 6.9% 6.8% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0x654f519cdac0] i16 v,h,dc,p: 86%  0%  0% 14%
+[libx264 @ 0x654f519cdac0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 82% 12%  2%  0%  1%  0%  1%  0%  2%
+[libx264 @ 0x654f519cdac0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 20% 24%  2%  4%  3%  5%  1%  4%
+[libx264 @ 0x654f519cdac0] i8c dc,h,v,p: 95%  1%  2%  2%
+[libx264 @ 0x654f519cdac0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x654f519cdac0] ref P L0: 43.3%  0.5% 51.2%  4.9%
+[libx264 @ 0x654f519cdac0] ref B L0: 41.7% 34.2% 24.1%
+[libx264 @ 0x654f519cdac0] ref B L1: 74.5% 25.5%
+[libx264 @ 0x654f519cdac0] kb/s:46.19
+[aac @ 0x654f51a00280] Qavg: 46642.383
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/slow_frames/%04d.png':
+  Duration: 00:00:04.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 640x360, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5d2cd8c5d4c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5d2cd8c5d4c0] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x5d2cd8c5d4c0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=11 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/slow_motion_silent.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 640x360, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x5d2cd8c5b100] video:16KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 14.220098%
+frame=  120 fps=0.0 q=-1.0 Lsize=      18KiB time=00:00:03.93 bitrate=  37.4kbits/s speed=12.9x elapsed=0:00:00.30    
+[libx264 @ 0x5d2cd8c5d4c0] frame I:1     Avg QP:11.45  size:  5871
+[libx264 @ 0x5d2cd8c5d4c0] frame P:30    Avg QP:20.30  size:   144
+[libx264 @ 0x5d2cd8c5d4c0] frame B:89    Avg QP:25.52  size:    59
+[libx264 @ 0x5d2cd8c5d4c0] consecutive B-frames:  0.8%  0.0%  2.5% 96.7%
+[libx264 @ 0x5d2cd8c5d4c0] mb I  I16..4:  0.4% 94.6%  5.0%
+[libx264 @ 0x5d2cd8c5d4c0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  1.4%  0.6%  0.2%  0.0%  0.0%    skip:97.8%
+[libx264 @ 0x5d2cd8c5d4c0] mb B  I16..4:  0.1%  0.2%  0.0%  B16..8:  0.7%  0.0%  0.0%  direct: 0.0%  skip:99.0%  L0:45.6% L1:53.1% BI: 1.3%
+[libx264 @ 0x5d2cd8c5d4c0] 8x8 transform intra:90.9% inter:47.4%
+[libx264 @ 0x5d2cd8c5d4c0] coded y,uvDC,uvAC intra: 6.8% 6.3% 5.6% inter: 0.1% 0.1% 0.0%
+[libx264 @ 0x5d2cd8c5d4c0] i16 v,h,dc,p:  3% 93%  0%  3%
+[libx264 @ 0x5d2cd8c5d4c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 41% 21%  0%  0%  0%  1%  0%  1%
+[libx264 @ 0x5d2cd8c5d4c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 16% 25%  4%  2%  4%  5%  3%  5%
+[libx264 @ 0x5d2cd8c5d4c0] i8c dc,h,v,p: 95%  2%  1%  2%
+[libx264 @ 0x5d2cd8c5d4c0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5d2cd8c5d4c0] ref P L0: 65.6%  8.3% 17.6%  8.6%
+[libx264 @ 0x5d2cd8c5d4c0] ref B L0: 56.2% 29.8% 14.0%
+[libx264 @ 0x5d2cd8c5d4c0] ref B L1: 87.9% 12.1%
+[libx264 @ 0x5d2cd8c5d4c0] kb/s:30.84
+{
+  "executed": true,
+  "scope": "Actual current learned hybrid modes and AcousticNet output for the SAME held-out box drive Gaussian rendering and audio. Trilinear center/F transport; procedural Gaussians, no photos/MPM/contact. FFAT remains magnitude-only.",
+  "source_sha256": "4750329fb0880e64361e291d70d4a7a794bdb0ec5fd824a9cf331b3d14128c99",
+  "gaussians": 168,
+  "shared_modal_trajectory_verified": true,
+  "audio_recomputation_verified": true,
+  "affine_interpolation_test_passed": true,
+  "min_visual_F_determinant": 0.9968025844698658,
+  "min_visual_covariance_eigenvalue": 6.580254383162677e-06,
+  "physical_max_sampled_displacement_m": 7.828229132900541e-07,
+  "per_listener_neural_BEM_audio_relative_L2": [
+    4.9534294635735305,
+    1.2755052165476914,
+    1.434048043959858
+  ],
+  "frame_count": 90,
+  "seconds": 3.0,
+  "fps": 30,
+  "visual_displacement_gain": 200.0,
+  "visual_gain_policy": "at most 200, conservatively bounded to amplified gradient norm <=0.35",
+  "slow_motion_time_factor": 1000,
+  "ffmpeg_commands": [
+    [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/ffmpeg",
+      "-y",
+      "-framerate",
+      "30",
+      "-i",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/frames/%04d.png",
+      "-i",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/bem.wav",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "18",
+      "-pix_fmt",
+      "yuv420p",
+      "-c:a",
+      "aac",
+      "-shortest",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/bem_synchronized.mp4"
+    ],
+    [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/ffmpeg",
+      "-y",
+      "-framerate",
+      "30",
+      "-i",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/frames/%04d.png",
+      "-i",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/neural.wav",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "18",
+      "-pix_fmt",
+      "yuv420p",
+      "-c:a",
+      "aac",
+      "-shortest",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/neural_synchronized.mp4"
+    ],
+    [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/ffmpeg",
+      "-y",
+      "-framerate",
+      "30",
+      "-i",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/slow_frames/%04d.png",
+      "-c:v",
+      "libx264",
+      "-crf",
+      "18",
+      "-pix_fmt",
+      "yuv420p",
+      "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/remediation_20261101/unified_neural_box/slow_motion_silent.mp4"
+    ]
+  ],
+  "limits": [
+    "Published FFAT magnitude convention; no phase/propagation delay or basis invariance claim",
+    "Learned-network errors retained, not corrected by rendering",
+    "Only procedural voxel Gaussian representation; not photometrically reconstructed 3DGS",
+    "No MPM-contact to high-frequency modal coupling; 30 fps cannot resolve true acoustic vibration"
+  ]
+}

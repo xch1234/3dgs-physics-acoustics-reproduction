@@ -1,0 +1,14 @@
+{
+  "name": "final-artifact-validation",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/validate_deliverables.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:21:06.522003+08:00",
+  "log": "logs/final-artifact-validation.log",
+  "exit_code": 1,
+  "finished": "2026-11-02T06:43:16.654793+08:00",
+  "elapsed_s": 1330.1033933590006
+}

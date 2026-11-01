@@ -1,0 +1,18 @@
+{
+  "name": "V30-neural-Minkowski-build",
+  "command": [
+    "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+    "setup.py",
+    "install",
+    "--force_cuda",
+    "--blas=openblas",
+    "--blas_include_dirs=/opt/3dgs-remediation/envs/neuralsound-clean/include",
+    "--blas_library_dirs=/opt/3dgs-remediation/envs/neuralsound-clean/lib"
+  ],
+  "cwd": "/opt/3dgs-remediation/build/MinkowskiEngine",
+  "started": "2026-11-01T21:36:40.645798+08:00",
+  "log": "logs/V30-neural-Minkowski-build.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:11:20.223734+08:00",
+  "elapsed_s": 2079.578671443
+}

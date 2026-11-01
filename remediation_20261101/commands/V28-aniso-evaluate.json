@@ -1,0 +1,18 @@
+{
+  "name": "V28-aniso-evaluate",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/eval_task.py",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy",
+    "--tag",
+    "anisotropy_30000"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T05:21:15.304449+08:00",
+  "log": "logs/V28-aniso-evaluate.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:24:29.880752+08:00",
+  "elapsed_s": 194.57613595399744
+}

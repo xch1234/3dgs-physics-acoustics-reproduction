@@ -1,0 +1,14 @@
+{
+  "name": "V19-local-snow",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/test_snow.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:29:46.882438+08:00",
+  "log": "logs/V19-local-snow.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:33:22.536378+08:00",
+  "elapsed_s": 215.653874396
+}

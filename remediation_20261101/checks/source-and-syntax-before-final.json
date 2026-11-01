@@ -1,0 +1,412 @@
+{
+  "passed": true,
+  "parsed": [
+    {
+      "file": "remediation_20261101/aniso_task.py",
+      "sha256": "70dc642085c0b63b533cdccbcabd2da56ab42058704402dc912a757a84f9a35e"
+    },
+    {
+      "file": "remediation_20261101/artifact_queue.py",
+      "sha256": "1d35fc1a726d6abe177ac8d2029d519f57f422c3f438513d6489b443de06130c"
+    },
+    {
+      "file": "remediation_20261101/audit_changes.py",
+      "sha256": "28fae55ddfc7215920b87468bc629a028e0e12ab44a593f59811914f761e0567"
+    },
+    {
+      "file": "remediation_20261101/build_command_index.py",
+      "sha256": "04b8ba1e04d2e9b920a0a335882faaa2e156d26a7ba599fa8ba1783a26030fc0"
+    },
+    {
+      "file": "remediation_20261101/check_dependency_sources.py",
+      "sha256": "1cbb42ad16e897e500a1f1132c2d2ad0e1e47f1e87c0abcaf1de9fe52e4ebeab"
+    },
+    {
+      "file": "remediation_20261101/check_final_documents.py",
+      "sha256": "f5147a91bf7b13d27473d2e6189e0b0a35262f765f8dd4f79b3e2b158105520e"
+    },
+    {
+      "file": "remediation_20261101/check_new_radiation.py",
+      "sha256": "5df9441bbf7a7e9bd9eafe8d0d8ac9a181cd803158ac8b87d5eb402c99a3e209"
+    },
+    {
+      "file": "remediation_20261101/check_original_ficus.py",
+      "sha256": "4571c8fcfde9d8ec3842575c093b4d6e2eeffd4dda6ab9a0d6e556d5beaac763"
+    },
+    {
+      "file": "remediation_20261101/check_psnr_definition.py",
+      "sha256": "3855c988082b5d78b5eec518c0a87ff9e732f28732dc654cf75b7742884ea5cb"
+    },
+    {
+      "file": "remediation_20261101/check_remote.py",
+      "sha256": "16d45752de06c56975265837c5cda9a02ef3eed0545bf1337f77699b40fc4a33"
+    },
+    {
+      "file": "remediation_20261101/clean_eval_task.py",
+      "sha256": "0374d15c84e03005e9ed6048d74b46203db4b0a4a44810832c729dab1c42a46e"
+    },
+    {
+      "file": "remediation_20261101/clean_neural_smoke.py",
+      "sha256": "9998c7ae9ed870bb6029207ffbc93ecfd05ea0525ab79f41fd4d1c779a2d43c1"
+    },
+    {
+      "file": "remediation_20261101/clean_pat_task.py",
+      "sha256": "a6bd2a5125c885d38f937e5decbc8d465566037ccb940ad20065c4131fde7fb2"
+    },
+    {
+      "file": "remediation_20261101/common.py",
+      "sha256": "3036a3a43639f0f5061c04ecd757d60165695daac4da838ed1bbfc5f7591dd1e"
+    },
+    {
+      "file": "remediation_20261101/compare_reconstruction_images.py",
+      "sha256": "f0eec4db7a0345319b3c2273b3a3800c9dcb444950898abc438ab844581e8beb"
+    },
+    {
+      "file": "remediation_20261101/cpu_extensions.py",
+      "sha256": "a48354eb36160b5a13d5b6c73e8d21696a84aca199b5d5670670814e174536f5"
+    },
+    {
+      "file": "remediation_20261101/create_clean_cpu.py",
+      "sha256": "35119434059626c21e7326acd625bae159920e8f9ee38633a06c6e3caaa9fe32"
+    },
+    {
+      "file": "remediation_20261101/create_clean_gpu.py",
+      "sha256": "b9ca71a5274408874a960f97b81efa660bf0ba706b485ad485b1a74e60b7c99d"
+    },
+    {
+      "file": "remediation_20261101/create_clean_neural.py",
+      "sha256": "af52d00c5b961fbc0a901990025ea96bc23ff5b37ddae5b15a45ca138bfc2bfc"
+    },
+    {
+      "file": "remediation_20261101/create_clean_windows_phys.py",
+      "sha256": "5556ee22634390e6775e7524e38736cddb72773e1c946f5fa55d1db63fa132ed"
+    },
+    {
+      "file": "remediation_20261101/eval_task.py",
+      "sha256": "c4202a635d2444fcd68256dc9350de921823de6e60146e5fd79b05af9b9d7a28"
+    },
+    {
+      "file": "remediation_20261101/example_isolated_retry.py",
+      "sha256": "86274c4c88e5e66763b4db83cf84c3e931cb60530e3160564e7b11d279389f09"
+    },
+    {
+      "file": "remediation_20261101/example_retry_queue.py",
+      "sha256": "41d4ff30ff66bb9e758fd080dc477be601ac4b791d4fa914edf67328df9a8a48"
+    },
+    {
+      "file": "remediation_20261101/extend_training_cli.py",
+      "sha256": "e24399e283e4a738c38f3d1bda2ead5ca5d2dfc047de846aa1b31f06d86e612d"
+    },
+    {
+      "file": "remediation_20261101/finalize_windows_exports.py",
+      "sha256": "8cb1c61a197f03b5eaf8d638e70f2bc1a2387e41e199e44721c1b7333abb27fb"
+    },
+    {
+      "file": "remediation_20261101/final_metadata_checks.py",
+      "sha256": "e9c0bf60156b4e540904d6b5df797cb065451f2c21a5e03ec9291d89538e43a3"
+    },
+    {
+      "file": "remediation_20261101/finish_clean_gpu.py",
+      "sha256": "f7cfc824873aac7382d8f75dafb8b269bb05a3621a1eefae915abb46b9440963"
+    },
+    {
+      "file": "remediation_20261101/finish_clean_windows_phys.py",
+      "sha256": "f5848bac80b0ec5ccc28ede26115a25c24a581f61764fd0626afb29b81e716e9"
+    },
+    {
+      "file": "remediation_20261101/fix_exports.py",
+      "sha256": "dc44564d98ae7140083dcfdc417e85efbaf8fc96f03d35d65a6d13814882f415"
+    },
+    {
+      "file": "remediation_20261101/fix_sh_default.py",
+      "sha256": "07600e8a2a4c5ecfab4ce479354767d6fb902012081b21d4489088ae2482976f"
+    },
+    {
+      "file": "remediation_20261101/generate_acceptance.py",
+      "sha256": "98665fab373a2757f631f7a58c847e70a0ed157dfa894f2877382de709f6db9b"
+    },
+    {
+      "file": "remediation_20261101/gpu_final_queue.py",
+      "sha256": "009363fe0e92f730b042440dac03a1a90c520b01c75e67639254ffe1c27138b0"
+    },
+    {
+      "file": "remediation_20261101/gpu_followup.py",
+      "sha256": "a00dde7882343ec5a2216861dd17e4de14bc79ae3e45d58ebf672f37a41b776f"
+    },
+    {
+      "file": "remediation_20261101/gpu_queue.py",
+      "sha256": "ee8ff81fe18970d6101d383f5dd448910038109eddb364968b4bf6454f9179d8"
+    },
+    {
+      "file": "remediation_20261101/gpu_task.py",
+      "sha256": "47c088d348009c55b1d0ebd91889ab8b46329e00243f3ec04971c1f2fa752936"
+    },
+    {
+      "file": "remediation_20261101/launch_artifact_queue.py",
+      "sha256": "31f6b9860bfef95df078dfb9ab42e1f7da9c1125147134e12be6666c92a2245b"
+    },
+    {
+      "file": "remediation_20261101/launch_canonical_probe.py",
+      "sha256": "896a499212a933eaabd4ffaebff43c15f310ba8c7342e3f56fb7292610aeeb76"
+    },
+    {
+      "file": "remediation_20261101/launch_clean_gpu.py",
+      "sha256": "50c267989697748214c4341a1612b827ad5ef138cb6cfa6c43353d2315bc8208"
+    },
+    {
+      "file": "remediation_20261101/launch_clean_neural.py",
+      "sha256": "0a509854f56d63994731adc21bfd0da4d6d814192d14baf1a4e5e6a7b722791a"
+    },
+    {
+      "file": "remediation_20261101/launch_convergence.py",
+      "sha256": "20c29d3601263fd2d5bd0b9c0d39a7ce6c154d9867eec6041c570137e41fe0c1"
+    },
+    {
+      "file": "remediation_20261101/launch_cpu_extensions.py",
+      "sha256": "c5d92302073269d3811b03c991df2c12565868292d03fa4b7756b279dd8e2520"
+    },
+    {
+      "file": "remediation_20261101/launch_example_retry.py",
+      "sha256": "d4e8780cebe29adef26be07bad34b7b3e06f6b53d15792a3fb3a2b73508016e3"
+    },
+    {
+      "file": "remediation_20261101/launch_extra_checks.py",
+      "sha256": "a34ebf0362ae12b10109735e0bce02383b0b173fc1f29bb4e2c8dfc2c11aa7f9"
+    },
+    {
+      "file": "remediation_20261101/launch_final.py",
+      "sha256": "6405936adede5d548de1c3684303a5b7bd7c5e7c939583ad5538ad046d78d38d"
+    },
+    {
+      "file": "remediation_20261101/launch_followup.py",
+      "sha256": "c9ada2cbd17609ff708c2c09663eea3851c8e22085d25a92fc23c02f75cd28cc"
+    },
+    {
+      "file": "remediation_20261101/launch_gpu_queue.py",
+      "sha256": "1e62688f6c91d94a45c11e36b405c75514c2247d3b10e7e77ce9892c250a0fad"
+    },
+    {
+      "file": "remediation_20261101/launch_manufactured.py",
+      "sha256": "d22f97a27eb885512d6e065f754e20d760518a4fcf6a744c9a8abab39853c331"
+    },
+    {
+      "file": "remediation_20261101/launch_metrics.py",
+      "sha256": "58f58bf13947058b529829ace310ca51fc9842e71de50ef84580505adba67ee9"
+    },
+    {
+      "file": "remediation_20261101/launch_original_ficus.py",
+      "sha256": "816eb3dec799bff2d4aa3ea035753c91d9b3da72d2e07e53eed5b67dc9f98b78"
+    },
+    {
+      "file": "remediation_20261101/launch_phase.py",
+      "sha256": "0bfe6219cbcf5fd6ae8139cc171c4ed854864dfdc4e0bfac18c65c16550c79b7"
+    },
+    {
+      "file": "remediation_20261101/launch_phase_extensions.py",
+      "sha256": "d0a50cb4fbe3aae1c304312f22663b5946b901c35f1caa0ce3d8d3b283dccaab"
+    },
+    {
+      "file": "remediation_20261101/launch_post_gpu.py",
+      "sha256": "c9ba2e6e0554e7308fc5d0e8024c6805e32224d63b536e602246c81a275812f9"
+    },
+    {
+      "file": "remediation_20261101/launch_psnr_audit.py",
+      "sha256": "64e0ab5350c66a2e298463eeb49aaa6ad94354b27c0eba315a7261d4a5ce992a"
+    },
+    {
+      "file": "remediation_20261101/launch_remote_models.py",
+      "sha256": "b445cfb9b5254d090a6d3e7d65d6eb47a3a1e72cb5059a0a7321efb6fece625a"
+    },
+    {
+      "file": "remediation_20261101/launch_unified_neural.py",
+      "sha256": "3e9111a1b3eacf1e691a3238df750f49fb2137252f1c8a167a735a86aadec935"
+    },
+    {
+      "file": "remediation_20261101/launch_updated_ficus.py",
+      "sha256": "65f580441b279ac7a6c6437d8e090823a1f035ac72cf9a6cea29d86f0720b6df"
+    },
+    {
+      "file": "remediation_20261101/linux_job.py",
+      "sha256": "34daee0612b53787182fe5513796e2543faa225826e46f2f716c69b494b5ba6a"
+    },
+    {
+      "file": "remediation_20261101/neural_extension_task.py",
+      "sha256": "a9ff782e87cf329eeb460cb479fa18c9a8d08b4b3d60831b1985eb7c8a963959"
+    },
+    {
+      "file": "remediation_20261101/phase_extensions.py",
+      "sha256": "3bb5afc7fd451b156bff2d723f5317ebd1637da7524f0638e49d35f7f1dc8fe1"
+    },
+    {
+      "file": "remediation_20261101/plot_cpu_evidence.py",
+      "sha256": "d9155da1908f35f02b3083e0767ede34a36f318d29f2fb344484f105037a4d31"
+    },
+    {
+      "file": "remediation_20261101/plot_snow.py",
+      "sha256": "9c8ebd635d0b206331a3781696f0ec112ea5fc1063d31d658395f2929851db0a"
+    },
+    {
+      "file": "remediation_20261101/post_gpu.py",
+      "sha256": "5b9b7416f360b03519feaeb87ee7eca388dff9e653744034abf939feebd7f2c5"
+    },
+    {
+      "file": "remediation_20261101/post_unified_neural.py",
+      "sha256": "b78fe5c40cb21380b05c68d99ece3e0e49d4cae1da7c54a869872f0464f00974"
+    },
+    {
+      "file": "remediation_20261101/probe_canonical_source.py",
+      "sha256": "d9e8f09f8ea54054f8c84907030a530ef45ecf961bc3b9549989c39dc4003fa3"
+    },
+    {
+      "file": "remediation_20261101/recheck_model_downloads.py",
+      "sha256": "5b0386fc6514d0029c5bf3b01ab034078c5139e09a360b52084db3c4da4b32ac"
+    },
+    {
+      "file": "remediation_20261101/resource_inventory.py",
+      "sha256": "914c793f7921e53cedd4083a30867c87f03cd08e606cbcf1a8ce4149c81b717b"
+    },
+    {
+      "file": "remediation_20261101/run_native_metrics.py",
+      "sha256": "f1bb2e2062c2ee69ab36a3389e33f7f71bc4838009e3a76c73b0f19010022bb9"
+    },
+    {
+      "file": "remediation_20261101/run_phase_audio.py",
+      "sha256": "63e7b020ff6e601e4793a1c3e5c6b39834c9c6e37d99c2281ec2f2d9321b895d"
+    },
+    {
+      "file": "remediation_20261101/sh_cpu_task.py",
+      "sha256": "28aa3daa18e859982297c381cff111bf8a0846f153bc136336ae3fd799b54de3"
+    },
+    {
+      "file": "remediation_20261101/status_brief.py",
+      "sha256": "763d7a055b5064a6a86fe8596831392604b92b631cd9ace4aae81268872d7991"
+    },
+    {
+      "file": "remediation_20261101/test_convergence.py",
+      "sha256": "83e16cec64b15a1515cea954799f95649c4896b0fd4006846f2bc0b10646ff96"
+    },
+    {
+      "file": "remediation_20261101/test_manufactured.py",
+      "sha256": "2bbda0f2a71ddde8caa5e0702a8149ce67002d3d932370043d53c049091fe63f"
+    },
+    {
+      "file": "remediation_20261101/test_snow.py",
+      "sha256": "2f6f7d230b52e325ba84534856c8b1d07b0a8f812e9b4125e42b8f27b5e63189"
+    },
+    {
+      "file": "remediation_20261101/test_snow_scene.py",
+      "sha256": "fea60bf4ead08ac5f6210e3ec4a94406c40e0dd2394113c51df000c9af97cdac"
+    },
+    {
+      "file": "remediation_20261101/unified_beam.py",
+      "sha256": "18db8a4e5f41f9dfccccfed4aa1feab1d34557df0c0b2426033ae1a2e1f6e113"
+    },
+    {
+      "file": "remediation_20261101/unified_neural_box.py",
+      "sha256": "8fa4f979795228e458818888302549c2a5f83de55ce2604753bb820afb9a1fa8"
+    },
+    {
+      "file": "remediation_20261101/validate_deliverables.py",
+      "sha256": "611262ae0f86c0ac433b336068f9769e3d2bbb5cc566fe6ca1e98b4fd5451e29"
+    },
+    {
+      "file": "remediation_20261101/write_viewing_guide.py",
+      "sha256": "ee9e06543705e75b49a308b97bbe14042e51ef162a8dbb404e2a64d001ff5164"
+    },
+    {
+      "file": "01_PhysGaussian/code/snow_adapter.py",
+      "sha256": "99ce89266de30a988ddf37bf57aa65f90ea83d6277e541c95b6eb4cd375318a8"
+    },
+    {
+      "file": "01_PhysGaussian/code/run_official_linux.py",
+      "sha256": "6c271b9e18ecc1d3ed2eff844dfe5fbf66fe910abd08b16612d36af5fa0118b1"
+    },
+    {
+      "file": "01_PhysGaussian/code/run_scene_suite.py",
+      "sha256": "af623b73c92bc49b28c6dfcca79b460625ddf379fa3b78bbe14e28e9044c4e53"
+    },
+    {
+      "file": "02_PAT/code/phase_audio.py",
+      "sha256": "b5725061cee621f6daaf38f79fcaf5d2981f1395b6caf9ca8dc683121a962d55"
+    },
+    {
+      "file": "02_PAT/code/bem_near_quadrature.py",
+      "sha256": "2a7a3718a7bfd0eac6455294e5e81341a5357b542f5a823892130f240c658b02"
+    },
+    {
+      "file": "03_NeuralSound/code/train_radiation.py",
+      "sha256": "bd217b365adf32175410cb8c941d324722096683594b519be47107404250514a"
+    },
+    {
+      "file": "03_NeuralSound/code/run_neural_audio.py",
+      "sha256": "2aef0ab1579ca206c1fb929e0eb2c321c7ea7d4b0002a6120abcb5fb756732b9"
+    }
+  ],
+  "upstream": [
+    {
+      "repo": "PhysGaussian",
+      "files": 27,
+      "substantive_changes": []
+    },
+    {
+      "repo": "ModalSound",
+      "files": 244,
+      "substantive_changes": []
+    },
+    {
+      "repo": "NeuralSound",
+      "files": 51,
+      "substantive_changes": []
+    }
+  ],
+  "backups": [
+    {
+      "backup": "backups/run_official_linux.py",
+      "target": "not inferred"
+    },
+    {
+      "backup": "backups/run_scene_suite.py",
+      "target": "not inferred"
+    },
+    {
+      "backup": "backups/train_radiation.py",
+      "target": "not inferred"
+    },
+    {
+      "backup": "backups/01_PhysGaussian/environment.yml",
+      "current": "01_PhysGaussian/docs/environment.yml",
+      "before_sha256": "7329eadc313c826bdbc2f4ebf62a29b5938b92c1e31c332ee005489cdbf9adc8",
+      "after_sha256": "ffd5183c18a37fed1e8d00f90c5009c46fc65946002e0a8c4467799239076bfe"
+    },
+    {
+      "backup": "backups/02_PAT/environment.yml",
+      "current": "02_PAT/docs/environment.yml",
+      "before_sha256": "9c6d61a1fe1860c61ef7c26d094fc7cd2c2ac82377d4a13efb761c1ae7519335",
+      "after_sha256": "2580635bcbe0217a34ad4a337132a44ce5ec533255462e95f02b2e2ff6a39759"
+    },
+    {
+      "backup": "backups/03_NeuralSound/environment.yml",
+      "current": "03_NeuralSound/docs/environment.yml",
+      "before_sha256": "9c6d61a1fe1860c61ef7c26d094fc7cd2c2ac82377d4a13efb761c1ae7519335",
+      "after_sha256": "2580635bcbe0217a34ad4a337132a44ce5ec533255462e95f02b2e2ff6a39759"
+    },
+    {
+      "backup": "backups/03_NeuralSound/code/run_neural_audio.py",
+      "current": "03_NeuralSound/code/run_neural_audio.py",
+      "before_sha256": "ffa6be89da8d93ad43c466014f2d8927bf39ec1fd42fa9f89dd7e2a4481846c7",
+      "after_sha256": "2aef0ab1579ca206c1fb929e0eb2c321c7ea7d4b0002a6120abcb5fb756732b9"
+    }
+  ],
+  "runtime_source_alias": {
+    "alias": "/opt/3dgs-runtime/PhysGaussian-source",
+    "resolved": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian",
+    "matches_verified_source": true,
+    "kernels": {
+      "mpm_utils.py": "1e6258d9bc37ead5a32b0a1a8e8de08ead985000724e353b83e846cfc1f67336",
+      "engine_utils.py": "9be42643c315f2288a866a12d98ad4654b4da8fd13fbd73307fa6600a6a83398",
+      "warp_utils.py": "cd5ba6c6fe2b780e1be3ab167c2e2dcc6137fce914fa3e076b867dd57a17d900",
+      "mpm_solver_warp.py": "fc42981cf2f6c346ea2dec177c0897b6b39b0a5cb89eeb1f5229af6032cf9eb9"
+    }
+  },
+  "scope": "Syntax and source boundaries only; successful runtime checks remain separate."
+}

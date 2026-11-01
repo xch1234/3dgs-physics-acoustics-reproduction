@@ -1,0 +1,18 @@
+{
+  "name": "V30-clean-gpu-pip",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "-r",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean-gpu-pip.txt"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:23:11.904103+08:00",
+  "log": "logs/V30-clean-gpu-pip.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:23:47.674992+08:00",
+  "elapsed_s": 35.770510248999926
+}

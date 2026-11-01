@@ -1,0 +1,14 @@
+{
+  "name": "V08-phase-extensions",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\phase_extensions.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:31:58.547679+08:00",
+  "log": "logs\\V08-phase-extensions.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:32:18.198971+08:00",
+  "elapsed_s": 19.641000000061467
+}

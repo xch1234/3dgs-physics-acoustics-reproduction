@@ -1,0 +1,14 @@
+{
+  "name": "final-SH-diagnostic",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\diagnose_sh_artifact.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:44:20.442185+08:00",
+  "log": "logs\\final-SH-diagnostic.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:44:45.419119+08:00",
+  "elapsed_s": 24.984000000054948
+}

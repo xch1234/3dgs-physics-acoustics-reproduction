@@ -1,0 +1,452 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+WARP_SOURCE_MODULES {'mpm_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py', 'engine_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py', 'warp_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py'}
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /opt/3dgs-runtime/remediation-warp-cache
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Filling internal particles...
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/taichi/lang/ast/ast_transformer.py:54: Warning: Casting range_for boundary values from f32 to i32, which may cause numerical issues
+  warnings.warn(
+after dense grids:  0
+smooth finished
+after internal grids:  49183
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 34.76 ms
+Particles initialized from torch data.
+Total particles:  188201
+Module mpm_utils load on device 'cuda:0' took 334.62 ms
+  0%|          | 0/50 [00:00<?, ?it/s]Module mpm_solver_warp.mpm_solver_warp load on device 'cuda:0' took 1347.57 ms
+  2%|▏         | 1/50 [01:06<54:21, 66.55s/it]  4%|▍         | 2/50 [02:11<52:18, 65.38s/it]  6%|▌         | 3/50 [03:16<51:05, 65.22s/it]  8%|▊         | 4/50 [04:19<49:22, 64.40s/it] 10%|█         | 5/50 [05:22<47:53, 63.85s/it] 12%|█▏        | 6/50 [06:25<46:42, 63.69s/it] 14%|█▍        | 7/50 [07:30<45:56, 64.11s/it] 16%|█▌        | 8/50 [08:34<44:54, 64.15s/it] 18%|█▊        | 9/50 [09:43<44:51, 65.64s/it] 20%|██        | 10/50 [10:47<43:29, 65.23s/it] 22%|██▏       | 11/50 [11:54<42:40, 65.64s/it] 24%|██▍       | 12/50 [12:59<41:25, 65.41s/it] 26%|██▌       | 13/50 [14:04<40:13, 65.22s/it] 28%|██▊       | 14/50 [15:08<39:01, 65.04s/it] 30%|███       | 15/50 [16:13<37:55, 65.00s/it] 32%|███▏      | 16/50 [17:17<36:38, 64.67s/it] 34%|███▍      | 17/50 [18:21<35:25, 64.40s/it] 36%|███▌      | 18/50 [19:25<34:22, 64.44s/it] 38%|███▊      | 19/50 [20:30<33:21, 64.57s/it] 40%|████      | 20/50 [21:36<32:24, 64.80s/it] 42%|████▏     | 21/50 [22:41<31:22, 64.92s/it] 44%|████▍     | 22/50 [23:46<30:20, 65.01s/it] 46%|████▌     | 23/50 [24:56<29:53, 66.43s/it] 48%|████▊     | 24/50 [26:03<28:49, 66.53s/it] 50%|█████     | 25/50 [27:11<27:56, 67.06s/it] 52%|█████▏    | 26/50 [28:18<26:53, 67.21s/it] 54%|█████▍    | 27/50 [29:26<25:49, 67.37s/it] 56%|█████▌    | 28/50 [30:35<24:52, 67.86s/it] 58%|█████▊    | 29/50 [31:45<23:55, 68.34s/it] 60%|██████    | 30/50 [32:55<22:59, 68.98s/it] 62%|██████▏   | 31/50 [34:06<22:00, 69.50s/it] 64%|██████▍   | 32/50 [35:19<21:08, 70.46s/it] 66%|██████▌   | 33/50 [36:33<20:19, 71.73s/it] 68%|██████▊   | 34/50 [37:48<19:23, 72.71s/it] 70%|███████   | 35/50 [39:04<18:22, 73.49s/it] 72%|███████▏  | 36/50 [40:19<17:17, 74.11s/it] 74%|███████▍  | 37/50 [41:35<16:09, 74.58s/it] 76%|███████▌  | 38/50 [42:50<14:56, 74.75s/it] 78%|███████▊  | 39/50 [44:05<13:43, 74.86s/it] 80%|████████  | 40/50 [45:21<12:31, 75.11s/it] 82%|████████▏ | 41/50 [46:36<11:16, 75.13s/it] 84%|████████▍ | 42/50 [47:52<10:03, 75.43s/it] 86%|████████▌ | 43/50 [49:08<08:49, 75.71s/it] 88%|████████▊ | 44/50 [50:25<07:35, 75.87s/it] 90%|█████████ | 45/50 [51:41<06:20, 76.03s/it] 92%|█████████▏| 46/50 [52:58<05:05, 76.26s/it] 94%|█████████▍| 47/50 [54:15<03:49, 76.50s/it] 96%|█████████▌| 48/50 [55:32<02:33, 76.57s/it] 98%|█████████▊| 49/50 [56:47<01:16, 76.35s/it]100%|██████████| 50/50 [58:05<00:00, 76.58s/it]100%|██████████| 50/50 [58:05<00:00, 69.70s/it]
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/wolf_rerun/%04d.png':
+  Duration: 00:00:02.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 800x800, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x588c420748c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x588c420748c0] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x588c420748c0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/wolf_rerun/output.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 800x800, q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=   28 fps= 28 q=-1.0 size=       0KiB time=00:00:01.04 bitrate=   0.4kbits/s speed=1.04x elapsed=0:00:01.00    [out#0/mp4 @ 0x588c42073800] video:442KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.293701%
+frame=   50 fps= 42 q=-1.0 Lsize=     444KiB time=00:00:01.92 bitrate=1892.4kbits/s speed=1.61x elapsed=0:00:01.18    
+[libx264 @ 0x588c420748c0] frame I:1     Avg QP:15.84  size: 16782
+[libx264 @ 0x588c420748c0] frame P:25    Avg QP:22.13  size: 10676
+[libx264 @ 0x588c420748c0] frame B:24    Avg QP:27.54  size:  7020
+[libx264 @ 0x588c420748c0] consecutive B-frames: 34.0%  0.0% 18.0% 48.0%
+[libx264 @ 0x588c420748c0] mb I  I16..4: 26.2% 69.9%  3.9%
+[libx264 @ 0x588c420748c0] mb P  I16..4:  0.2%  3.9%  0.8%  P16..4:  3.6%  9.2%  9.0%  0.0%  0.0%    skip:73.1%
+[libx264 @ 0x588c420748c0] mb B  I16..4:  0.1%  2.2%  0.8%  B16..8:  8.6%  6.5%  3.0%  direct: 0.7%  skip:78.1%  L0:32.5% L1:26.4% BI:41.1%
+[libx264 @ 0x588c420748c0] 8x8 transform intra:73.8% inter:52.1%
+[libx264 @ 0x588c420748c0] coded y,uvDC,uvAC intra: 61.8% 22.1% 3.8% inter: 12.1% 1.0% 0.0%
+[libx264 @ 0x588c420748c0] i16 v,h,dc,p: 90%  3%  7%  0%
+[libx264 @ 0x588c420748c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 11% 26%  5%  9%  8%  7%  7%  8%
+[libx264 @ 0x588c420748c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 12% 16%  8% 12% 11% 10%  8%  9%
+[libx264 @ 0x588c420748c0] i8c dc,h,v,p: 74% 12% 13%  2%
+[libx264 @ 0x588c420748c0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x588c420748c0] ref P L0: 80.4% 17.2%  1.6%  0.8%
+[libx264 @ 0x588c420748c0] ref B L0: 95.8%  3.0%  1.1%
+[libx264 @ 0x588c420748c0] ref B L1: 99.1%  0.9%
+[libx264 @ 0x588c420748c0] kb/s:1808.61
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 188201,
+  "steps": 99950,
+  "duration_s": 1.999,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/wolf_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b",
+  "rendered_frames": 50,
+  "sh_frame_correction": false,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 250280960,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 306184192,
+  "elapsed_s": 3522.6475793820027,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.03998,
+      "max_displacement": 0.0,
+      "min_det_F": 0.9999963045120239,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 2,
+      "time_s": 0.07996,
+      "max_displacement": 0.0,
+      "min_det_F": 0.9999966621398926,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 3,
+      "time_s": 0.11994,
+      "max_displacement": 0.0010727940825745463,
+      "min_det_F": 0.9999821186065674,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 4,
+      "time_s": 0.15992,
+      "max_displacement": 0.009691494517028332,
+      "min_det_F": 0.9999796748161316,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 5,
+      "time_s": 0.19990000000000002,
+      "max_displacement": 0.03122559003531933,
+      "min_det_F": 0.9999614953994751,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 6,
+      "time_s": 0.23988,
+      "max_displacement": 0.06733500957489014,
+      "min_det_F": 0.999951958656311,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 7,
+      "time_s": 0.27986,
+      "max_displacement": 0.11883232742547989,
+      "min_det_F": 0.9999251365661621,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 8,
+      "time_s": 0.31984,
+      "max_displacement": 0.16472458839416504,
+      "min_det_F": 0.9973412752151489,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 9,
+      "time_s": 0.35982000000000003,
+      "max_displacement": 0.2027590423822403,
+      "min_det_F": 0.9985361695289612,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 10,
+      "time_s": 0.39980000000000004,
+      "max_displacement": 0.23778776824474335,
+      "min_det_F": 0.9967957735061646,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 11,
+      "time_s": 0.43978000000000006,
+      "max_displacement": 0.26412656903266907,
+      "min_det_F": 0.9977243542671204,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 12,
+      "time_s": 0.47976,
+      "max_displacement": 0.28139474987983704,
+      "min_det_F": 0.9965340495109558,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 13,
+      "time_s": 0.5197400000000001,
+      "max_displacement": 0.2938637435436249,
+      "min_det_F": 0.9962440133094788,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 14,
+      "time_s": 0.55972,
+      "max_displacement": 0.35062432289123535,
+      "min_det_F": 0.9967722296714783,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 15,
+      "time_s": 0.5997,
+      "max_displacement": 0.41760626435279846,
+      "min_det_F": 0.9969054460525513,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 16,
+      "time_s": 0.63968,
+      "max_displacement": 0.46576449275016785,
+      "min_det_F": 0.996462345123291,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 17,
+      "time_s": 0.67966,
+      "max_displacement": 0.5620554089546204,
+      "min_det_F": 0.9967569708824158,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7196400000000001,
+      "max_displacement": 0.6527827978134155,
+      "min_det_F": 0.9935627579689026,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 19,
+      "time_s": 0.7596200000000001,
+      "max_displacement": 0.7774091362953186,
+      "min_det_F": 0.995899498462677,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 20,
+      "time_s": 0.7996000000000001,
+      "max_displacement": 0.8511252403259277,
+      "min_det_F": 0.9968724250793457,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8395800000000001,
+      "max_displacement": 0.8966690301895142,
+      "min_det_F": 0.996293306350708,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 22,
+      "time_s": 0.8795600000000001,
+      "max_displacement": 0.9297324419021606,
+      "min_det_F": 0.9969704747200012,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 23,
+      "time_s": 0.91954,
+      "max_displacement": 0.9531161785125732,
+      "min_det_F": 0.996966540813446,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 24,
+      "time_s": 0.95952,
+      "max_displacement": 0.9724117517471313,
+      "min_det_F": 0.9954755306243896,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 25,
+      "time_s": 0.9995,
+      "max_displacement": 0.9874998927116394,
+      "min_det_F": 0.9966824650764465,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 26,
+      "time_s": 1.0394800000000002,
+      "max_displacement": 0.9988002181053162,
+      "min_det_F": 0.9951158165931702,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 27,
+      "time_s": 1.07946,
+      "max_displacement": 1.007244348526001,
+      "min_det_F": 0.9965065717697144,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 28,
+      "time_s": 1.11944,
+      "max_displacement": 1.014630675315857,
+      "min_det_F": 0.9965047240257263,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1594200000000001,
+      "max_displacement": 1.0240278244018555,
+      "min_det_F": 0.9967623949050903,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 30,
+      "time_s": 1.1994,
+      "max_displacement": 1.0324289798736572,
+      "min_det_F": 0.9967758059501648,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 31,
+      "time_s": 1.2393800000000001,
+      "max_displacement": 1.0375721454620361,
+      "min_det_F": 0.9965640902519226,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 32,
+      "time_s": 1.27936,
+      "max_displacement": 1.0402768850326538,
+      "min_det_F": 0.9975727200508118,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 33,
+      "time_s": 1.3193400000000002,
+      "max_displacement": 1.0417062044143677,
+      "min_det_F": 0.9962015151977539,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 34,
+      "time_s": 1.35932,
+      "max_displacement": 1.0427545309066772,
+      "min_det_F": 0.9965828061103821,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 35,
+      "time_s": 1.3993000000000002,
+      "max_displacement": 1.0436288118362427,
+      "min_det_F": 0.9969616532325745,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4392800000000001,
+      "max_displacement": 1.0443838834762573,
+      "min_det_F": 0.9970453977584839,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 37,
+      "time_s": 1.47926,
+      "max_displacement": 1.0450972318649292,
+      "min_det_F": 0.9974744915962219,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 38,
+      "time_s": 1.5192400000000001,
+      "max_displacement": 1.045792818069458,
+      "min_det_F": 0.9972802400588989,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 39,
+      "time_s": 1.55922,
+      "max_displacement": 1.046467661857605,
+      "min_det_F": 0.997414231300354,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 40,
+      "time_s": 1.5992000000000002,
+      "max_displacement": 1.0471073389053345,
+      "min_det_F": 0.9983699917793274,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 41,
+      "time_s": 1.63918,
+      "max_displacement": 1.0476731061935425,
+      "min_det_F": 0.9983550310134888,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6791600000000002,
+      "max_displacement": 1.0481704473495483,
+      "min_det_F": 0.9988049268722534,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 43,
+      "time_s": 1.7191400000000001,
+      "max_displacement": 1.0486242771148682,
+      "min_det_F": 0.9990082383155823,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 44,
+      "time_s": 1.7591200000000002,
+      "max_displacement": 1.049062728881836,
+      "min_det_F": 0.9992557764053345,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 45,
+      "time_s": 1.7991000000000001,
+      "max_displacement": 1.0494779348373413,
+      "min_det_F": 0.9993553757667542,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 46,
+      "time_s": 1.83908,
+      "max_displacement": 1.049863338470459,
+      "min_det_F": 0.9993943572044373,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8790600000000002,
+      "max_displacement": 1.0502233505249023,
+      "min_det_F": 0.9994238018989563,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 48,
+      "time_s": 1.91904,
+      "max_displacement": 1.0505836009979248,
+      "min_det_F": 0.9994065165519714,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9590200000000002,
+      "max_displacement": 1.0509436130523682,
+      "min_det_F": 0.9994224905967712,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 50,
+      "time_s": 1.999,
+      "max_displacement": 1.051303744316101,
+      "min_det_F": 0.9994310140609741,
+      "mass": 162.79598999023438
+    }
+  ]
+}

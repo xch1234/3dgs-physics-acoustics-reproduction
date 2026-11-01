@@ -1,0 +1,21 @@
+{
+  "name": "V30-pat-clean-build-fem",
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++14",
+    "-I/opt/3dgs-remediation/envs/pat-tools-clean/include",
+    "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_fem.cpp",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/deformable/stvk.cpp",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+    "-o",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/pat_clean/outputs/modalsound_fem/assemble_fem"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:20:17.405345+08:00",
+  "log": "logs/V30-pat-clean-build-fem.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:20:30.563374+08:00",
+  "elapsed_s": 13.157906393993471
+}

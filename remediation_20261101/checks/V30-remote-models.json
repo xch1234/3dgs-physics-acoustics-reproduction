@@ -1,0 +1,210 @@
+{
+  "rows": [
+    {
+      "id": "1e2_9OxfVtLSJTKl_y3TPaYQGjnvr3koT",
+      "archive": "bread-trained.zip",
+      "files": [
+        {
+          "file": "bread-trained/cfg_args",
+          "expected": "4aba5ea96c56fb29c7610166c2f39924be2de7322c98056e7551d4d50b388ba6",
+          "remote_sha256": "4aba5ea96c56fb29c7610166c2f39924be2de7322c98056e7551d4d50b388ba6",
+          "match": true
+        },
+        {
+          "file": "bread-trained/cameras.json",
+          "expected": "13260acfc45385bf1cdd4f58a8fee9b8c488eda73eab2019654a894e7e9666a5",
+          "remote_sha256": "13260acfc45385bf1cdd4f58a8fee9b8c488eda73eab2019654a894e7e9666a5",
+          "match": true
+        },
+        {
+          "file": "bread-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "6806e86a290b110455ed5c642e9b29520ad46f0f7b674bf7a1fa226fa6e9f5fb",
+          "remote_sha256": "6806e86a290b110455ed5c642e9b29520ad46f0f7b674bf7a1fa226fa6e9f5fb",
+          "match": true
+        },
+        {
+          "file": "bread-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "07e019407e920932094af67acb90b9fe8b37d1206a0724926dc117cb4d12b1bf",
+          "remote_sha256": "07e019407e920932094af67acb90b9fe8b37d1206a0724926dc117cb4d12b1bf",
+          "match": true
+        }
+      ],
+      "archive_sha256": "d20f677b41353e17cf3373ca5faa62ee4b613025b5f25973489b8df8eb04e7dd",
+      "passed": true
+    },
+    {
+      "id": "1zic8PNxUsYESyrVZ8Ywy-FxpmQ01PGpe",
+      "archive": "ficus_whitebg-trained.zip",
+      "files": [
+        {
+          "file": "ficus_whitebg-trained/cfg_args",
+          "expected": "19e90df85af8ac61d83925186f1084ce6386c73c2e424758cb468ead3cae3f60",
+          "remote_sha256": "19e90df85af8ac61d83925186f1084ce6386c73c2e424758cb468ead3cae3f60",
+          "match": true
+        },
+        {
+          "file": "ficus_whitebg-trained/cameras.json",
+          "expected": "e50e6fc777a436d148f396f8dbd5586ceec2b2240968c9f6fab2b16a46e6d838",
+          "remote_sha256": "e50e6fc777a436d148f396f8dbd5586ceec2b2240968c9f6fab2b16a46e6d838",
+          "match": true
+        },
+        {
+          "file": "ficus_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "781121206b6acc2b05f53f0e3a2cad0cb92fa949350d0d342172cb3215c1c278",
+          "remote_sha256": "781121206b6acc2b05f53f0e3a2cad0cb92fa949350d0d342172cb3215c1c278",
+          "match": true
+        },
+        {
+          "file": "ficus_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "a757dd2e92f578e87b53e873670c6333d024a5dd496399797438a7d0f13fd242",
+          "remote_sha256": "a757dd2e92f578e87b53e873670c6333d024a5dd496399797438a7d0f13fd242",
+          "match": true
+        },
+        {
+          "file": "ficus_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply",
+          "expected": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+          "remote_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+          "match": true
+        }
+      ],
+      "archive_sha256": "18b46f94f03eb915b6839d9c9a7cc0d8695fcd2707240e452c82dcf1c958e557",
+      "passed": true
+    },
+    {
+      "id": "1FdWHYPQNEOIFIcccOFDcG9FALgwlj-WN",
+      "archive": "pillow2sofa_whitebg-trained.zip",
+      "files": [
+        {
+          "file": "pillow2sofa_whitebg-trained/cfg_args",
+          "expected": "ccc89379c1dea8938826cb0826bbbca668c9496eb54d19d3c4a4d8ee4e2c8ef1",
+          "remote_sha256": "ccc89379c1dea8938826cb0826bbbca668c9496eb54d19d3c4a4d8ee4e2c8ef1",
+          "match": true
+        },
+        {
+          "file": "pillow2sofa_whitebg-trained/cameras.json",
+          "expected": "c2156b085fbf4f14209e526e7e1a14d45b949aeb6e621ced29b9661c757b6ce1",
+          "remote_sha256": "c2156b085fbf4f14209e526e7e1a14d45b949aeb6e621ced29b9661c757b6ce1",
+          "match": true
+        },
+        {
+          "file": "pillow2sofa_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "45d3dd3e02e74c5117030fadefae3eccce88cab7c9386cb073ca52a673cb1d2e",
+          "remote_sha256": "45d3dd3e02e74c5117030fadefae3eccce88cab7c9386cb073ca52a673cb1d2e",
+          "match": true
+        },
+        {
+          "file": "pillow2sofa_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "74e94dab1a435a134cfe16dbf609d51d01231598c16841f8f51079b4a4451f9c",
+          "remote_sha256": "74e94dab1a435a134cfe16dbf609d51d01231598c16841f8f51079b4a4451f9c",
+          "match": true
+        },
+        {
+          "file": "pillow2sofa_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply",
+          "expected": "7ac0be91d634d6a0b53fb5dde23fb2c2aca7f30ba357173fb0951b66b2b3162a",
+          "remote_sha256": "7ac0be91d634d6a0b53fb5dde23fb2c2aca7f30ba357173fb0951b66b2b3162a",
+          "match": true
+        }
+      ],
+      "archive_sha256": "46d5250f69f41c34ad88f88d3e94c7184e37fa27068fbc203586c5cb850f60ee",
+      "passed": true
+    },
+    {
+      "id": "17viNGxkhbJSlxtgJDK2sW2DEH3NdRwa-",
+      "archive": "plane-trained.zip",
+      "files": [
+        {
+          "file": "plane-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "96c2d144ba22ac5cfdd52c5247610914ef9f26adc50f303474fe50d85700057c",
+          "remote_sha256": "96c2d144ba22ac5cfdd52c5247610914ef9f26adc50f303474fe50d85700057c",
+          "match": true
+        },
+        {
+          "file": "plane-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "1ff04607704ec94ba082efa20a803aac29cbe481884fefb5db9fa460e97e0f03",
+          "remote_sha256": "1ff04607704ec94ba082efa20a803aac29cbe481884fefb5db9fa460e97e0f03",
+          "match": true
+        },
+        {
+          "file": "plane-trained/cfg_args",
+          "expected": "118032db3a27670bafdbf48ebb9b9c3cf7d45447eec81aed87e7ac2792fb990f",
+          "remote_sha256": "118032db3a27670bafdbf48ebb9b9c3cf7d45447eec81aed87e7ac2792fb990f",
+          "match": true
+        },
+        {
+          "file": "plane-trained/cameras.json",
+          "expected": "4dfca373808aa42cef7d02365ecc7142e1ab486e578d052707612c6cd6f66219",
+          "remote_sha256": "4dfca373808aa42cef7d02365ecc7142e1ab486e578d052707612c6cd6f66219",
+          "match": true
+        }
+      ],
+      "archive_sha256": "c00d99f69d9a3c3a14fae570bff5e7d7c1dcf1ed344934e9727f44ea56f8936f",
+      "passed": true
+    },
+    {
+      "id": "1AZh-JCNTwq9Za0rxFpDEBk-9tN6o_izs",
+      "archive": "vasedeck_whitebg-trained.zip",
+      "files": [
+        {
+          "file": "vasedeck_whitebg-trained/cfg_args",
+          "expected": "db0b39ae0db1e4e3f8b5cebd3bde9a77a893ec0f9c9af7a787e81e9bfef46e95",
+          "remote_sha256": "db0b39ae0db1e4e3f8b5cebd3bde9a77a893ec0f9c9af7a787e81e9bfef46e95",
+          "match": true
+        },
+        {
+          "file": "vasedeck_whitebg-trained/cameras.json",
+          "expected": "d2befee655f6b37033c6c09e9df4ed2ca01a0e1fad6134ab61d95274ee16145f",
+          "remote_sha256": "d2befee655f6b37033c6c09e9df4ed2ca01a0e1fad6134ab61d95274ee16145f",
+          "match": true
+        },
+        {
+          "file": "vasedeck_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "87e5014aca0a2018b7b19fc7db0faf72f142951c37a20260b49db89cd9c4713b",
+          "remote_sha256": "87e5014aca0a2018b7b19fc7db0faf72f142951c37a20260b49db89cd9c4713b",
+          "match": true
+        },
+        {
+          "file": "vasedeck_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+          "remote_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+          "match": true
+        }
+      ],
+      "archive_sha256": "58a7e6d28b2258427f296464a3b69f160bca813d0ce1fec7d4c533d4a45d3967",
+      "passed": true
+    },
+    {
+      "id": "1FhB_1LFaC2ax71gbySn6hVR88_IiK0eU",
+      "archive": "wolf_whitebg-trained.zip",
+      "files": [
+        {
+          "file": "wolf_whitebg-trained/cfg_args",
+          "expected": "3ec47c0f67ffdc9e66f25a6e6733056fb58582b14c3f61e3d28d1e866fc720de",
+          "remote_sha256": "3ec47c0f67ffdc9e66f25a6e6733056fb58582b14c3f61e3d28d1e866fc720de",
+          "match": true
+        },
+        {
+          "file": "wolf_whitebg-trained/cameras.json",
+          "expected": "dba96ab308a6e14e27d1f2e7cade3588a857b19fdc34ecfaf4cdde30e7b6d0c2",
+          "remote_sha256": "dba96ab308a6e14e27d1f2e7cade3588a857b19fdc34ecfaf4cdde30e7b6d0c2",
+          "match": true
+        },
+        {
+          "file": "wolf_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply",
+          "expected": "8b76d0876b14378d95b8c4040cf9c516a58ce6a2d5d757e426a10a564628d958",
+          "remote_sha256": "8b76d0876b14378d95b8c4040cf9c516a58ce6a2d5d757e426a10a564628d958",
+          "match": true
+        },
+        {
+          "file": "wolf_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+          "expected": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b",
+          "remote_sha256": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b",
+          "match": true
+        }
+      ],
+      "archive_sha256": "e563f1d0fe525184603aaa999a29eb923a68a8eaa02c3deaecfec3cffa994518",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "New download from the recorded author Google Drive IDs, checked against all recorded cfg/camera/PLY contents; no author-signed checksums"
+}

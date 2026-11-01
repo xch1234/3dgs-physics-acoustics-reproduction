@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "voxel_array_equal": true,
+  "mass_and_stiffness_exactly_equal": true,
+  "reference_eigenvalues_relative_difference": 0.0,
+  "original_reference_max_residual": 2.1351755674930463e-09,
+  "retry_reference_max_residual": 2.1351755674930463e-09,
+  "scope": "First-run artifacts retained and used downstream; exact FEM matrices and independent reference checks confirm those data. Complete replay uses separate CUDA processes and must also exit normally."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "V26-independent-new-inference",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/check_new_radiation.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:15:49.076119+08:00",
+  "log": "logs/V26-independent-new-inference.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:19:20.608529+08:00",
+  "elapsed_s": 211.50361870900088
+}

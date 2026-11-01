@@ -1,0 +1,21 @@
+{
+  "name": "V28-scene-pillow2sofa",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/pillow2sofa_whitebg-trained",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/pillow2sofa_config.json",
+    "--tag",
+    "pillow2sofa_rerun"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T01:51:22.754354+08:00",
+  "log": "logs/V28-scene-pillow2sofa.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T02:17:35.418555+08:00",
+  "elapsed_s": 1572.6638051009977
+}

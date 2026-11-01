@@ -1,0 +1,14 @@
+{
+  "name": "V30-dependency-sources",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\check_dependency_sources.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T23:20:23.243227+08:00",
+  "log": "logs\\V30-dependency-sources.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T23:22:05.991017+08:00",
+  "elapsed_s": 102.75
+}

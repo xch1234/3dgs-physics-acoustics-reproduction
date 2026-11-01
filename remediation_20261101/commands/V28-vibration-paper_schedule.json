@@ -1,0 +1,16 @@
+{
+  "name": "V28-vibration-paper_schedule",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "vibration",
+    "--paper-schedule"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:57:29.211181+08:00",
+  "log": "logs/V28-vibration-paper_schedule.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T23:01:45.963548+08:00",
+  "elapsed_s": 256.7522387199997
+}

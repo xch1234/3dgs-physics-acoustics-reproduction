@@ -1,4 +1,4 @@
-﻿name: F:\System\Desktop\3DGS\����\.conda\acoustics
+name: reproduction-acoustics
 channels:
   - defaults
   - https://repo.anaconda.com/pkgs/main
@@ -96,4 +96,3 @@ dependencies:
   - zstd=1.5.7=h56299aa_0
   - pip:
       - pymcubes==0.1.4
-prefix: F:\System\Desktop\3DGS\����\.conda\acoustics

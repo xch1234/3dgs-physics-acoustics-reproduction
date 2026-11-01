@@ -1,0 +1,309 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "scene": "bread",
+      "frame": 1,
+      "shape": [
+        3,
+        1000,
+        1000
+      ],
+      "float64_relative_L2": 1.0986085436814686e-05,
+      "recorded_relative_L2": 1.0986085726472083e-05,
+      "absolute_statistic_difference": 2.8965739718887426e-13,
+      "raw_sha256": "6ca381a9894bb7eb8cb4503e973ff31923e44c59cfcb00966984131ba65b2e88",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0001_original.png",
+          "max_byte_difference": 0,
+          "sha256": "9924e7e214c09fbc7f79e674ee2e4378b26d6fb7417e9cc563f86153aeb8af84"
+        },
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0001_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "3b347e7e86ba8b7f83edb5153b474de7eea8112dcfa12636acbd39c7fc2ad633"
+        }
+      ]
+    },
+    {
+      "scene": "bread",
+      "frame": 100,
+      "shape": [
+        3,
+        1000,
+        1000
+      ],
+      "float64_relative_L2": 0.006330553186054003,
+      "recorded_relative_L2": 0.006330553442239761,
+      "absolute_statistic_difference": 2.561857583710525e-10,
+      "raw_sha256": "eb22718d9ef4a28a12e9d3c86755154420a0ebccead256d09bb97e19656afc6f",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0100_original.png",
+          "max_byte_difference": 0,
+          "sha256": "c6cc6b5941cdb927640d2dc540a821bd5e7d09103e44affafd7bc62321c71e05"
+        },
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0100_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "26db31fa9016828c2b1a0a909fb2ccb86a7ada861117ff2de3362d23d0e4129a"
+        }
+      ]
+    },
+    {
+      "scene": "bread",
+      "frame": 200,
+      "shape": [
+        3,
+        1000,
+        1000
+      ],
+      "float64_relative_L2": 0.008149086534352245,
+      "recorded_relative_L2": 0.008149086497724056,
+      "absolute_statistic_difference": 3.6628188329612676e-11,
+      "raw_sha256": "cab4d551b3b5ef9b1b1ceec5d1ae70a8458fb00bfa6141c92e3494b4d554bf7b",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0200_original.png",
+          "max_byte_difference": 0,
+          "sha256": "8a2fd7cc68fbdd2e915384334fe5555d34bca0cc2712c1f336b3bec352e117d7"
+        },
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0200_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "5939e84305e6138dbb3313e2477822daad61c64e63f00496ae724332d8275a08"
+        }
+      ]
+    },
+    {
+      "scene": "bread",
+      "frame": 300,
+      "shape": [
+        3,
+        1000,
+        1000
+      ],
+      "float64_relative_L2": 0.0069455078965798825,
+      "recorded_relative_L2": 0.006945508066564798,
+      "absolute_statistic_difference": 1.699849159000899e-10,
+      "raw_sha256": "6f6e22e9e988977d51d3b85007e4c09b0a91628d6515c961d0600299d8c1908f",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0300_original.png",
+          "max_byte_difference": 0,
+          "sha256": "00c99540f47f187e70aabc9e83811340d2e0662d3e2148306918d5ed49097dd3"
+        },
+        {
+          "path": "physics\\outputs\\bread_corrected_rerun\\same_state_comparison\\frame_0300_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "1764f8b99749565c770c50a1070c67cd98658f933d9a6d9055f65b38d927b898"
+        }
+      ]
+    },
+    {
+      "scene": "plane",
+      "frame": 1,
+      "shape": [
+        3,
+        1895,
+        1060
+      ],
+      "float64_relative_L2": 0.00022817969408966388,
+      "recorded_relative_L2": 0.00022817969147581607,
+      "absolute_statistic_difference": 2.613847804649669e-12,
+      "raw_sha256": "b686196738340f1b9b1306d8adc3e4d2e5eccbd2053c45e01a17901619373e87",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0001_original.png",
+          "max_byte_difference": 0,
+          "sha256": "aff85bb6206ba46106b8cd3c2f647e9f4a202dd00947a1e51b5b7bae7c57a1b9"
+        },
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0001_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "24d284f7cbe11c87930db04cb90fc5e0ae58f6f23bb0e7d90074893f258bb62a"
+        }
+      ]
+    },
+    {
+      "scene": "plane",
+      "frame": 134,
+      "shape": [
+        3,
+        1895,
+        1060
+      ],
+      "float64_relative_L2": 0.010271914703260355,
+      "recorded_relative_L2": 0.010271914303302765,
+      "absolute_statistic_difference": 3.999575896168617e-10,
+      "raw_sha256": "d110736f121bd45c086ab740389f3e16d84729db19417317a0afc6e09a9752f8",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0134_original.png",
+          "max_byte_difference": 0,
+          "sha256": "4cd1a3909989f797042a989172a5665f81730b83ee1ff4ccbb084fb315304ee4"
+        },
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0134_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "eae7d60f4874f9daf0977b56234ed97325084bf23f358cff6b883021b964ee6f"
+        }
+      ]
+    },
+    {
+      "scene": "plane",
+      "frame": 267,
+      "shape": [
+        3,
+        1895,
+        1060
+      ],
+      "float64_relative_L2": 0.01659993212979217,
+      "recorded_relative_L2": 0.016599930822849274,
+      "absolute_statistic_difference": 1.3069428976553166e-09,
+      "raw_sha256": "e56153419ed601d3294a7de314137ed64b9476db2a6f95385a7e0f531b348462",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0267_original.png",
+          "max_byte_difference": 0,
+          "sha256": "c221981d19f75fe86d166b50346ac55a07b40706b567e899f1e4eb957da7ad73"
+        },
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0267_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "6b443d9e650bce0dad4354112295ba8aaaa83dac8bd8589f1f2869ddaaac0735"
+        }
+      ]
+    },
+    {
+      "scene": "plane",
+      "frame": 400,
+      "shape": [
+        3,
+        1895,
+        1060
+      ],
+      "float64_relative_L2": 0.017783484670059118,
+      "recorded_relative_L2": 0.017783483490347862,
+      "absolute_statistic_difference": 1.1797112557665468e-09,
+      "raw_sha256": "578760114adf1af1f766afd7835cabfe0db09f84ddbcc6cbc97c6e7eb4bd4ec2",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0400_original.png",
+          "max_byte_difference": 0,
+          "sha256": "ba4cfc0d7b3e38ced63c440dc909c1f75ba06898fcde88b2f13d053d18a51bb9"
+        },
+        {
+          "path": "physics\\outputs\\plane_corrected_rerun\\same_state_comparison\\frame_0400_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "2170a96f45d7502c4953db07d4c2962198873628fde9f2449c7bc4b3cbcfa9a6"
+        }
+      ]
+    },
+    {
+      "scene": "vasedeck",
+      "frame": 1,
+      "shape": [
+        3,
+        2995,
+        3994
+      ],
+      "float64_relative_L2": 0.0027716509441866126,
+      "recorded_relative_L2": 0.002771650906652212,
+      "absolute_statistic_difference": 3.753440050088819e-11,
+      "raw_sha256": "6270c879d19a8fc1bc135d5b06b0d31441d06524de900abf2c6e84e7a19436c6",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0001_original.png",
+          "max_byte_difference": 0,
+          "sha256": "60c8569639d608816bb901a0f99907635e842ac8b3c74f3c95f7d1d77c77bffb"
+        },
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0001_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "577de34ed53067b0a11335eef4c08b4aa0fa178bab8802d0b7cc5bcd0bdbe653"
+        }
+      ]
+    },
+    {
+      "scene": "vasedeck",
+      "frame": 25,
+      "shape": [
+        3,
+        2995,
+        3994
+      ],
+      "float64_relative_L2": 0.06252159173353083,
+      "recorded_relative_L2": 0.06252159178256989,
+      "absolute_statistic_difference": 4.9039050598054246e-11,
+      "raw_sha256": "29c8eaa798caad67666fea7db3d6a0ad039dfa57d69a88f4d2a226d7e8aed5b1",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0025_original.png",
+          "max_byte_difference": 0,
+          "sha256": "7047931db89482ca21309f6289148e7fb084955351ac9191cadd5a7d5161951e"
+        },
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0025_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "0668aa751b08f796a6043295e76418e4a7754a7a84df4ed9e3622e47840a5c47"
+        }
+      ]
+    },
+    {
+      "scene": "vasedeck",
+      "frame": 50,
+      "shape": [
+        3,
+        2995,
+        3994
+      ],
+      "float64_relative_L2": 0.01761300400271903,
+      "recorded_relative_L2": 0.0176130048930645,
+      "absolute_statistic_difference": 8.90345467491338e-10,
+      "raw_sha256": "6bd037dd71dfc0ea563a2689552e3215dd10d098f2da53fec87171366d74521d",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0050_original.png",
+          "max_byte_difference": 0,
+          "sha256": "84410ff7b965811e88ea70d855472fee32a3ef915f72707932a437365a80f993"
+        },
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0050_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "4a2cc74ee3dd34730ec14ea27e521aa1ae9230e2543c26b5b5214cae93791da7"
+        }
+      ]
+    },
+    {
+      "scene": "vasedeck",
+      "frame": 75,
+      "shape": [
+        3,
+        2995,
+        3994
+      ],
+      "float64_relative_L2": 0.014310896304435742,
+      "recorded_relative_L2": 0.014310895465314388,
+      "absolute_statistic_difference": 8.39121353998773e-10,
+      "raw_sha256": "f99982bbe5ca992e5a5beaf7010ee31f93b211ed16f39df92db29b6dca0e316a",
+      "pixels": [
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0075_original.png",
+          "max_byte_difference": 0,
+          "sha256": "ce32762d98eee47e1d8b501b85f89a8fb3838215619e9433411a94bb44260cdc"
+        },
+        {
+          "path": "physics\\outputs\\vasedeck_corrected_rerun\\same_state_comparison\\frame_0075_corrected.png",
+          "max_byte_difference": 0,
+          "sha256": "e323174a1b43773c44c97ed795b75a4666eab617c627e486a9768c3469b839fa"
+        }
+      ]
+    }
+  ],
+  "maximum_absolute_statistic_difference": 1.3069428976553166e-09,
+  "unchanged_tolerance": 1e-06,
+  "pixel_tolerance": 1,
+  "scope": "All 12 saved raw pairs and 24 PNGs rechecked with float64 norm accumulation. Original float32 CPU reduction audit retained; tolerances and simulation/rendered results unchanged. All 19 videos, 24 WAV and 2 PLY hashes reconfirmed before reusing completed decode/finite-state checks."
+}

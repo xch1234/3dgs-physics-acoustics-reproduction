@@ -1,0 +1,91 @@
+{
+  "scope": "PAT moving receiver and output-count evaluation on saved small beam",
+  "all_checks_passed": true,
+  "control_samples": 601,
+  "control_rate_hz": 200,
+  "frequency_modes": 12,
+  "duration_s": 3,
+  "impulse_times_s": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "complex_transfer_relative_L2": 0.007874271964100744,
+  "audio_relative_L2": 0.00228574264133021,
+  "timings": [
+    {
+      "receivers": 1,
+      "pat_seconds": [
+        0.028092899941839278,
+        0.028115900000557303,
+        0.020488500013016164
+      ],
+      "pat_median_seconds": 0.028092899941839278,
+      "bem_seconds": [
+        0.01713660010136664,
+        0.016854500048793852,
+        0.018005299963988364
+      ],
+      "bem_median_seconds": 0.01713660010136664,
+      "observed_speed_ratio": 0.6099975487345393
+    },
+    {
+      "receivers": 8,
+      "pat_seconds": [
+        0.022415900020860136,
+        0.02223569992929697,
+        0.021903300075791776
+      ],
+      "pat_median_seconds": 0.02223569992929697,
+      "bem_seconds": [
+        0.127619200036861,
+        0.1332715000025928,
+        0.13127949996851385
+      ],
+      "bem_median_seconds": 0.13127949996851385,
+      "observed_speed_ratio": 5.903996743342656
+    },
+    {
+      "receivers": 64,
+      "pat_seconds": [
+        0.045634299982339144,
+        0.03715139999985695,
+        0.037565500009804964
+      ],
+      "pat_median_seconds": 0.037565500009804964,
+      "bem_seconds": [
+        1.7924428000114858,
+        1.801347600063309,
+        1.782012899988331
+      ],
+      "bem_median_seconds": 1.7924428000114858,
+      "observed_speed_ratio": 47.715132223546625
+    },
+    {
+      "receivers": 256,
+      "pat_seconds": [
+        0.08845659997314215,
+        0.11986610002350062,
+        0.14222629996947944
+      ],
+      "pat_median_seconds": 0.11986610002350062,
+      "bem_seconds": [
+        7.620292600011453,
+        7.643175499979407,
+        7.264916299958713
+      ],
+      "bem_median_seconds": 7.620292600011453,
+      "observed_speed_ratio": 63.57337561259972
+    }
+  ],
+  "limitations": [
+    "amplitude-only paper acoustic transfer approximation",
+    "no Doppler or propagation delay",
+    "same scripted impulse every 0.5s, no collision engine",
+    "local Python timings with other background experiments, not original 7000x benchmark",
+    "both methods reuse precomputation; BEM timings are saved-density potential evaluation"
+  ]
+}

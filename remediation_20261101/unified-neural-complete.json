@@ -1,0 +1,14 @@
+{
+  "name": "V31-unified-neural-box",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:19:25.494580+08:00",
+  "log": "logs/V31-unified-neural-box.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:19:54.728201+08:00",
+  "elapsed_s": 29.211175039999944
+}

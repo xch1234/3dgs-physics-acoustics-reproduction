@@ -1,0 +1,655 @@
+WARNING: Skipping MinkowskiEngine as it is not installed.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+--------------------------------
+| FORCE_CUDA set                |
+--------------------------------
+--------------------------------
+| CUDA compilation set         |
+--------------------------------
+
+Using BLAS=openblas
+Using the default compiler
+running install
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/setuptools/_distutils/cmd.py:66: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running bdist_egg
+running egg_info
+creating MinkowskiEngine.egg-info
+writing MinkowskiEngine.egg-info/PKG-INFO
+writing dependency_links to MinkowskiEngine.egg-info/dependency_links.txt
+writing requirements to MinkowskiEngine.egg-info/requires.txt
+writing top-level names to MinkowskiEngine.egg-info/top_level.txt
+writing manifest file 'MinkowskiEngine.egg-info/SOURCES.txt'
+reading manifest file 'MinkowskiEngine.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'MinkowskiEngine.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-x86_64-cpython-39
+creating build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiCoordinateManager.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiNetwork.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiBroadcast.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiTensor.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiNormalization.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiOps.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiPooling.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiSparseTensor.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/__init__.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiTensorField.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/diagnostics.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiNonlinearity.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiChannelwiseConvolution.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiFunctional.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiInterpolation.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiConvolution.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/sparse_matrix_functions.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiPruning.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiUnion.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiCommon.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+copying ./MinkowskiEngine/MinkowskiKernelGenerator.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine
+creating build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/summary.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/gradcheck.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/__init__.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/quantization.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/collation.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/init.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+copying ./MinkowskiEngine/utils/coords.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils
+creating build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules
+copying ./MinkowskiEngine/modules/__init__.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules
+copying ./MinkowskiEngine/modules/resnet_block.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules
+copying ./MinkowskiEngine/modules/senet_block.py -> build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules
+warning: build_py: byte-compiling is disabled, skipping.
+
+running build_ext
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/utils/cpp_extension.py:398: UserWarning: There are no g++ version bounds defined for CUDA version 11.8
+  warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+building 'MinkowskiEngineBackend._C' extension
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src
+creating /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/pybind
+Emitting ninja build file /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/build.ninja...
+Compiling objects...
+Using envvar MAX_JOBS (1) as the number of workers...
+[1/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[2/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_kernel.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[3/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[4/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.cu(334): warning #68-D: integer conversion resulted in a change of sign
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.cu(573): warning #68-D: integer conversion resulted in a change of sign
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.cu(334): warning #68-D: integer conversion resulted in a change of sign
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.cu(573): warning #68-D: integer conversion resulted in a change of sign
+
+[5/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_transpose_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_transpose_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[6/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(625): here
+            instantiation of "minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::self_type minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_region(minkowski::cpu_kernel_region<coordinate_type> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_type &) const [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(2460): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(625): here
+            instantiation of "minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::self_type minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_region(minkowski::cpu_kernel_region<coordinate_type> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_type &) const [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(2460): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(625): here
+            instantiation of "minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::self_type minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_region(minkowski::cpu_kernel_region<coordinate_type> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_type &) const [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(2460): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(625): here
+            instantiation of "minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::self_type minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_region(minkowski::cpu_kernel_region<coordinate_type> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator>::stride_type &) const [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.cu(2460): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_tensor_stride() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(429): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_kernel_size() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(429): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_dilation() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(430): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_offset() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+[7/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_cpu.hpp(58): warning #177-D: variable "float_type" was declared but never referenced
+          detected during:
+            instantiation of "std::pair<at::Tensor, at::Tensor> minkowski::CoordinateMapCPU<coordinate_type, TemplatedAllocator>::field_map(const coordinate_field_type *, minkowski::CoordinateMapCPU<coordinate_type, TemplatedAllocator>::size_type) const [with coordinate_type=int32_t, TemplatedAllocator=std::allocator, coordinate_field_type=float]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(329): here
+            instantiation of "std::pair<at::Tensor, at::Tensor> minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::field_to_sparse_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=std::allocator, CoordinateMapType=minkowski::CoordinateMapCPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(1451): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=std::allocator, CoordinateMapType=minkowski::CoordinateMapCPU]" 
+(1451): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(205): here
+            instantiation of "minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>> minkowski::detail::kernel_map_functor<coordinate_type, TemplatedAllocator, minkowski::CoordinateMapGPU, minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>>>::operator()(const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, minkowski::CUDAKernelMapMode::Mode, minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(753): here
+            instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(205): here
+            instantiation of "minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>> minkowski::detail::kernel_map_functor<coordinate_type, TemplatedAllocator, minkowski::CoordinateMapGPU, minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>>>::operator()(const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, minkowski::CUDAKernelMapMode::Mode, minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(753): here
+            instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(205): here
+            instantiation of "minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>> minkowski::detail::kernel_map_functor<coordinate_type, TemplatedAllocator, minkowski::CoordinateMapGPU, minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>>>::operator()(const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, minkowski::CUDAKernelMapMode::Mode, minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(753): here
+            instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20014-D: calling a __host__ function from a __host__ __device__ function is not allowed
+          detected during:
+            instantiation of "minkowski::gpu_kernel_region<coordinate_type>::gpu_kernel_region(const minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(205): here
+            instantiation of "minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>> minkowski::detail::kernel_map_functor<coordinate_type, TemplatedAllocator, minkowski::CoordinateMapGPU, minkowski::gpu_kernel_map<minkowski::type_wrapper<uint32_t, int32_t, float>::index_type, TemplatedAllocator<char>>>::operator()(const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, const minkowski::CoordinateMapGPU<coordinate_type, TemplatedAllocator> &, minkowski::CUDAKernelMapMode::Mode, minkowski::cpu_kernel_region<coordinate_type> &) [with coordinate_type=int32_t, TemplatedAllocator=minkowski::detail::default_allocator]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(753): here
+            instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, __nv_bool, __nv_bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::c10_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(404): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(428): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_tensor_stride() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(429): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_kernel_size() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(429): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_dilation() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp(430): warning #20011-D: calling a __host__ function("minkowski::cpu_kernel_region<int> ::device_offset() const") from a __host__ __device__ function("minkowski::gpu_kernel_region<int> ::gpu_kernel_region") is not allowed
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, bool, bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=std::allocator, CoordinateMapType=minkowski::CoordinateMapCPU]" 
+(1451): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, bool, bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::default_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(401): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp(717): warning #430-D: returning reference to local temporary
+          detected during instantiation of "const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type &minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapKey *, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, const minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type &, minkowski::RegionType::Type, const at::Tensor &, bool, bool) [with coordinate_type=int32_t, coordinate_field_type=float, TemplatedAllocator=minkowski::detail::c10_allocator, CoordinateMapType=minkowski::CoordinateMapGPU]" 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu(404): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp: In instantiation of ‘const kernel_map_type& minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey*, const minkowski::CoordinateMapKey*, const stride_type&, const stride_type&, const stride_type&, minkowski::RegionType::Type, const at::Tensor&, bool, bool) [with coordinate_type = int; coordinate_field_type = float; TemplatedAllocator = std::allocator; CoordinateMapType = minkowski::CoordinateMapCPU; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type = minkowski::cpu_kernel_map; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type = std::vector<unsigned int, std::allocator<unsigned int> >]’:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp:1451:16:   required from here
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp:717:260: warning: returning reference to temporary [-Wreturn-local-addr]
+  717 |       return detail::empty_map_functor<coordinate_type, TemplatedAllocator,
+      |                                                                                                                                                                                                                                                                    ^
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp: In instantiation of ‘const kernel_map_type& minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey*, const minkowski::CoordinateMapKey*, const stride_type&, const stride_type&, const stride_type&, minkowski::RegionType::Type, const at::Tensor&, bool, bool) [with coordinate_type = int; coordinate_field_type = float; TemplatedAllocator = minkowski::detail::default_allocator; CoordinateMapType = minkowski::CoordinateMapGPU; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type = minkowski::gpu_kernel_map<unsigned int, minkowski::detail::default_allocator<char> >; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type = std::vector<unsigned int, std::allocator<unsigned int> >]’:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu:401:16:   required from here
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp:717:260: warning: returning reference to temporary [-Wreturn-local-addr]
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp: In instantiation of ‘const kernel_map_type& minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map(const minkowski::CoordinateMapKey*, const minkowski::CoordinateMapKey*, const stride_type&, const stride_type&, const stride_type&, minkowski::RegionType::Type, const at::Tensor&, bool, bool) [with coordinate_type = int; coordinate_field_type = float; TemplatedAllocator = minkowski::detail::c10_allocator; CoordinateMapType = minkowski::CoordinateMapGPU; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::kernel_map_type = minkowski::gpu_kernel_map<unsigned int, minkowski::detail::c10_allocator<char> >; minkowski::CoordinateMapManager<coordinate_type, coordinate_field_type, TemplatedAllocator, CoordinateMapType>::stride_type = std::vector<unsigned int, std::allocator<unsigned int> >]’:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cu:404:16:   required from here
+/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.cpp:717:260: warning: returning reference to temporary [-Wreturn-local-addr]
+[8/21] c++ -MMD -MF /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/direct_max_pool.o.d -pthread -B /opt/3dgs-remediation/envs/neuralsound-clean/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/direct_max_pool.cpp -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/direct_max_pool.o -fopenmp -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[9/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/global_pooling_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/global_pooling_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[10/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/build/MinkowskiEngine/src/gpu.cu(104): warning #177-D: function "minkowski::format_size" was declared but never referenced
+
+[11/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/interpolation_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/interpolation_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[12/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[13/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_transpose_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_transpose_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[14/21] c++ -MMD -MF /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_cpu.o.d -pthread -B /opt/3dgs-remediation/envs/neuralsound-clean/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_cpu.cpp -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_cpu.o -fopenmp -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[15/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[16/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_avg_kernel.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_avg_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[17/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_max_kernel.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_max_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[18/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/pruning_gpu.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pruning_gpu.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+[19/21] c++ -MMD -MF /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.o.d -pthread -B /opt/3dgs-remediation/envs/neuralsound-clean/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -O2 -isystem /opt/3dgs-remediation/envs/neuralsound-clean/include -fPIC -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.cpp -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.o -fopenmp -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+In file included from /opt/3dgs-remediation/build/MinkowskiEngine/src/allocators.cuh:39,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/kernel_region.hpp:40,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map.hpp:30,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_cpu.hpp:28,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.cpp:32:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/gpu.cuh:149: warning: "THRUST_CHECK" redefined
+  149 | #define THRUST_CHECK(condition)                                                \
+      | 
+In file included from /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate.hpp:30,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map.hpp:29,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_cpu.hpp:28,
+                 from /opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.cpp:32:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/utils.hpp:169: note: this is the location of the previous definition
+  169 | #define THRUST_CHECK(condition) condition;
+      | 
+/opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.cpp: In function ‘std::vector<std::vector<int> > minkowski::quantize_label(const int*, const int*, int, int, int)’:
+/opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.cpp:177:16: warning: variable ‘it’ set but not used [-Wunused-but-set-variable]
+  177 |     const auto it = map.find(key);
+      |                ^~
+[20/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/src/spmm.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/spmm.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/spmm.cu(93): warning #177-D: variable "is_int64" was declared but never referenced
+
+/opt/3dgs-remediation/build/MinkowskiEngine/src/spmm.cu(355): warning #177-D: variable "is_int64" was declared but never referenced
+
+[21/21] /opt/3dgs-remediation/envs/neuralsound-clean/bin/nvcc  -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/build/MinkowskiEngine/src -I/opt/3dgs-remediation/build/MinkowskiEngine/src/3rdparty -I/opt/3dgs-remediation/envs/neuralsound-clean/include -I/opt/3dgs-remediation/envs/neuralsound-clean/include/python3.9 -c -c /opt/3dgs-remediation/build/MinkowskiEngine/pybind/minkowski.cu -o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/pybind/minkowski.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' --expt-relaxed-constexpr --expt-extended-lambda -O3 -Xcompiler=-fno-gnu-unique -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+creating build/lib.linux-x86_64-cpython-39/MinkowskiEngineBackend
+g++ -pthread -B /opt/3dgs-remediation/envs/neuralsound-clean/compiler_compat -shared -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/3dgs-remediation/envs/neuralsound-clean/lib -Wl,-rpath-link,/opt/3dgs-remediation/envs/neuralsound-clean/lib -L/opt/3dgs-remediation/envs/neuralsound-clean/lib -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/3dgs-remediation/envs/neuralsound-clean/lib -Wl,-rpath-link,/opt/3dgs-remediation/envs/neuralsound-clean/lib -L/opt/3dgs-remediation/envs/neuralsound-clean/lib /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/broadcast_kernel.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_kernel.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/convolution_transpose_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/coordinate_map_manager.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/direct_max_pool.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/global_pooling_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/interpolation_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/local_pooling_transpose_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_cpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/math_functions_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_avg_kernel.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pooling_max_kernel.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/pruning_gpu.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/quantization.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/opt/3dgs-remediation/build/MinkowskiEngine/src/spmm.o /opt/3dgs-remediation/build/MinkowskiEngine/build/temp.linux-x86_64-cpython-39/pybind/minkowski.o -L/opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/torch/lib -L/opt/3dgs-remediation/envs/neuralsound-clean/lib -lcusparse -lopenblas -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-39/MinkowskiEngineBackend/_C.cpython-39-x86_64-linux-gnu.so
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/MinkowskiEngineBackend
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngineBackend/_C.cpython-39-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/egg/MinkowskiEngineBackend
+creating build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiCoordinateManager.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiNetwork.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiBroadcast.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiTensor.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiNormalization.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiOps.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiPooling.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiSparseTensor.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/__init__.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiTensorField.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+creating build/bdist.linux-x86_64/egg/MinkowskiEngine/modules
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules/__init__.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/modules
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules/resnet_block.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/modules
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/modules/senet_block.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/modules
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/diagnostics.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiNonlinearity.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiChannelwiseConvolution.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiFunctional.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiInterpolation.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiConvolution.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/sparse_matrix_functions.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiPruning.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiUnion.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiCommon.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/MinkowskiKernelGenerator.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine
+creating build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/summary.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/gradcheck.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/__init__.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/quantization.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/collation.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/init.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+copying build/lib.linux-x86_64-cpython-39/MinkowskiEngine/utils/coords.py -> build/bdist.linux-x86_64/egg/MinkowskiEngine/utils
+warning: install_lib: byte-compiling is disabled, skipping.
+
+creating stub loader for MinkowskiEngineBackend/_C.cpython-39-x86_64-linux-gnu.so
+warning: install_lib: byte-compiling is disabled, skipping.
+
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/not-zip-safe -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/requires.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying MinkowskiEngine.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+writing build/bdist.linux-x86_64/egg/EGG-INFO/native_libs.txt
+creating dist
+creating 'dist/MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg
+creating /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg
+Extracting MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg to /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Adding MinkowskiEngine 0.5.4 to easy-install.pth file
+
+Installed /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages/MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg
+Processing dependencies for MinkowskiEngine==0.5.4
+Searching for numpy==1.24.4
+Best match: numpy 1.24.4
+Adding numpy 1.24.4 to easy-install.pth file
+detected new path './MinkowskiEngine-0.5.4-py3.9-linux-x86_64.egg'
+Installing f2py script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing f2py3 script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing f2py3.9 script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for torch==2.0.0+cu118
+Best match: torch 2.0.0+cu118
+Adding torch 2.0.0+cu118 to easy-install.pth file
+Installing convert-caffe2-to-onnx script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing convert-onnx-to-caffe2 script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing torchrun script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for triton==2.0.0
+Best match: triton 2.0.0
+Adding triton 2.0.0 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for jinja2==3.1.6
+Best match: jinja2 3.1.6
+Adding jinja2 3.1.6 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for networkx==3.2.1
+Best match: networkx 3.2.1
+Adding networkx 3.2.1 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for sympy==1.14.0
+Best match: sympy 1.14.0
+Adding sympy 1.14.0 to easy-install.pth file
+Installing isympy script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for typing-extensions==4.14.1
+Best match: typing-extensions 4.14.1
+Adding typing-extensions 4.14.1 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for filelock==3.19.1
+Best match: filelock 3.19.1
+Adding filelock 3.19.1 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for lit==15.0.7
+Best match: lit 15.0.7
+Adding lit 15.0.7 to easy-install.pth file
+Installing lit script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for cmake==3.25.0
+Best match: cmake 3.25.0
+Adding cmake 3.25.0 to easy-install.pth file
+Installing cmake script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing cpack script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+Installing ctest script to /opt/3dgs-remediation/envs/neuralsound-clean/bin
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for MarkupSafe==3.0.2
+Best match: MarkupSafe 3.0.2
+Adding MarkupSafe 3.0.2 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Searching for mpmath==1.3.0
+Best match: mpmath 1.3.0
+Adding mpmath 1.3.0 to easy-install.pth file
+
+Using /opt/3dgs-remediation/envs/neuralsound-clean/lib/python3.9/site-packages
+Finished processing dependencies for MinkowskiEngine==0.5.4

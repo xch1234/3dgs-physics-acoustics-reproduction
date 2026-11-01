@@ -1,0 +1,21 @@
+{
+  "name": "V28-radiation-paper_schedule",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/train_radiation.py",
+    "--paper-schedule",
+    "--optimizer",
+    "cpu_adam",
+    "--output-dir",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural/outputs/radiation_paper_schedule",
+    "--checkpoint-dir",
+    "/opt/3dgs-runtime/remediation-checkpoints/paper_schedule"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T23:01:46.056988+08:00",
+  "log": "logs/V28-radiation-paper_schedule.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T23:35:27.736964+08:00",
+  "elapsed_s": 2021.6838041869996
+}

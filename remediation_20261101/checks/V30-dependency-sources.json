@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "name": "gaussian-splatting",
+      "commit": "d9fad7b3450bf4bd29316315032d57157e23a515",
+      "url": "https://codeload.github.com/graphdeco-inria/gaussian-splatting/tar.gz/d9fad7b3450bf4bd29316315032d57157e23a515",
+      "local": "01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+      "passed": true,
+      "archive_sha256": "bd71459535fafa71d908a095329c29eb2978fa5609cdcec3cdaacceffc7b377e",
+      "files": 38,
+      "newline_only_differences": 30,
+      "differences": []
+    },
+    {
+      "name": "diff-gaussian-rasterization",
+      "commit": "59f5f77e3ddbac3ed9db93ec2cfe99ed6c5d121d",
+      "url": "https://codeload.github.com/graphdeco-inria/diff-gaussian-rasterization/tar.gz/59f5f77e3ddbac3ed9db93ec2cfe99ed6c5d121d",
+      "local": "01_PhysGaussian/code/PhysGaussian/gaussian-splatting/submodules/diff-gaussian-rasterization",
+      "passed": true,
+      "archive_sha256": "845a564e9f9bf6e20a8a05e05821a9e56055e081804f4ef144fc6e4e42d3cb8c",
+      "files": 20,
+      "newline_only_differences": 20,
+      "differences": []
+    },
+    {
+      "name": "glm",
+      "commit": "5c46b9c07008ae65cb81ab79cd677ecc1934b903",
+      "url": "https://codeload.github.com/g-truc/glm/tar.gz/5c46b9c07008ae65cb81ab79cd677ecc1934b903",
+      "local": "01_PhysGaussian/code/PhysGaussian/gaussian-splatting/submodules/diff-gaussian-rasterization/third_party/glm",
+      "passed": true,
+      "archive_sha256": "d93f55fe6bc9dd9159dfde2c6181c504e15ce2d220e20e3ca653012154e9696b",
+      "files": 1529,
+      "newline_only_differences": 1449,
+      "differences": []
+    },
+    {
+      "name": "MinkowskiEngine",
+      "commit": "02fc608bea4c0549b0a7b00ca1bf15dee4a0b228",
+      "url": "https://codeload.github.com/NVIDIA/MinkowskiEngine/tar.gz/02fc608bea4c0549b0a7b00ca1bf15dee4a0b228",
+      "local": "03_NeuralSound/code/MinkowskiEngine",
+      "passed": true,
+      "archive_sha256": "9ac2730bff659202400a76abf370e9690caa1b68edd430629422192fccd7af02",
+      "files": 244,
+      "newline_only_differences": 227,
+      "differences": []
+    },
+    {
+      "name": "simple-knn",
+      "commit": "44f764299fa305faf6ec5ebd99939e0508331503",
+      "url": "https://gitlab.inria.fr/bkerbl/simple-knn/-/archive/44f764299fa305faf6ec5ebd99939e0508331503/simple-knn-44f764299fa305faf6ec5ebd99939e0508331503.tar.gz",
+      "local": "01_PhysGaussian/code/PhysGaussian/gaussian-splatting/submodules/simple-knn",
+      "passed": true,
+      "archive_sha256": "a4bb7c7a303ff5934c294a2318d2a00e9af5c45c2b04a0a8badf36bf9e04d7a5",
+      "files": 7,
+      "newline_only_differences": 6,
+      "differences": []
+    },
+    {
+      "name": "Eigen",
+      "url": "https://codeload.github.com/eigenteam/eigen-git-mirror/zip/refs/tags/3.3.7",
+      "archive_sha256": "92e819d037cced0b1d0596203d7e26263b3df9fb8fcb7b260d7c9fd61b277a2c",
+      "expected_sha256": "92e819d037cced0b1d0596203d7e26263b3df9fb8fcb7b260d7c9fd61b277a2c",
+      "files": 1612,
+      "differences": [],
+      "passed": true
+    }
+  ],
+  "scope": "Fixed remote dependency archives versus local files, allowing CRLF only; excludes unused SIBR viewer and binary wheels."
+}

@@ -1,0 +1,18 @@
+{
+  "name": "V28-example-retry-queue",
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/example_retry_queue.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T05:37:14.984131+08:00",
+  "log": "logs\\V28-example-retry-queue.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:44:23.376457+08:00",
+  "elapsed_s": 4028.390000000014
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "prefix": "/opt/3dgs-remediation/envs/physgaussian-clean",
+  "scope": "Fresh prefix with pinned Conda packages, cached downloads allowed, both CUDA extensions rebuilt; same machine/driver. GPU execution checked separately.",
+  "diagnostic_correction": "Warp 0.10.1 lacks __version__; query importlib.metadata.version instead. Initial diagnostic failure log retained, no package reinstall or code changes were needed."
+}

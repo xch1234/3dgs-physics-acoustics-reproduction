@@ -1,0 +1,15 @@
+{
+  "name": "V28-neural-example",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+    "example"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T05:32:36.088934+08:00",
+  "log": "logs/V28-neural-example.log",
+  "exit_code": -11,
+  "finished": "2026-11-02T05:33:35.946267+08:00",
+  "elapsed_s": 59.832959413000935
+}

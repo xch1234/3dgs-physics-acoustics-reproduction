@@ -1,0 +1,14 @@
+{
+  "name": "V03-windows-phys-import-corrected",
+  "command": [
+    "F:/3dgs-remediation/envs/physgaussian-windows-clean/python.exe",
+    "-c",
+    "import torch,warp,numpy; from importlib.metadata import version; print(torch.__version__,version(\"warp-lang\"),numpy.__version__)"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:52:18.442454+08:00",
+  "log": "logs\\V03-windows-phys-import-corrected.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:52:26.098693+08:00",
+  "elapsed_s": 7.655999999959022
+}

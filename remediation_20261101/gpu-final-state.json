@@ -1,0 +1,217 @@
+[
+  {
+    "name": "V28-neural-example",
+    "command": [
+      "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+      "example"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T05:32:36.088934+08:00",
+    "log": "logs/V28-neural-example.log",
+    "exit_code": -11,
+    "finished": "2026-11-02T05:33:35.946267+08:00",
+    "elapsed_s": 59.832959413000935
+  },
+  {
+    "name": "V28-neural-hybrid",
+    "command": [
+      "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+      "hybrid"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T05:33:36.058401+08:00",
+    "log": "logs/V28-neural-hybrid.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T05:37:16.704742+08:00",
+    "elapsed_s": 220.6462365160005
+  },
+  {
+    "name": "V28-neural-hybrid-extended",
+    "command": [
+      "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+      "hybrid",
+      "--extended",
+      "--iterations",
+      "10000"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T05:37:16.783813+08:00",
+    "log": "logs/V28-neural-hybrid-extended.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T05:46:17.507760+08:00",
+    "elapsed_s": 540.7238234110009
+  },
+  {
+    "name": "V28-neural-example-acoustics",
+    "command": [
+      "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+      "acoustics"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T05:46:17.942716+08:00",
+    "log": "logs/V28-neural-example-acoustics.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:03:02.762446+08:00",
+    "elapsed_s": 1004.8196627439975
+  },
+  {
+    "name": "V28-neural-audio",
+    "command": [
+      "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+      "audio"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:03:02.874160+08:00",
+    "log": "logs/V28-neural-audio.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:06:04.901934+08:00",
+    "elapsed_s": 182.02759603899904
+  },
+  {
+    "name": "V31-shared-beam",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam.py"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:06:05.001505+08:00",
+    "log": "logs/V31-shared-beam.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:06:34.977516+08:00",
+    "elapsed_s": 29.97583268499875
+  },
+  {
+    "name": "V30-clean-train",
+    "command": [
+      "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/train.py",
+      "-s",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+      "-m",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/clean_env_300",
+      "--eval",
+      "--white_background",
+      "--data_device",
+      "cpu",
+      "--resolution",
+      "1",
+      "--iterations",
+      "300",
+      "--port",
+      "6042",
+      "--test_iterations",
+      "300",
+      "--save_iterations",
+      "300"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+    "started": "2026-11-02T06:06:35.094872+08:00",
+    "log": "logs/V30-clean-train.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:08:26.066168+08:00",
+    "elapsed_s": 110.9773985690008
+  },
+  {
+    "name": "V30-clean-render",
+    "command": [
+      "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/render.py",
+      "-s",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+      "-m",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/clean_env_300",
+      "--eval",
+      "--white_background",
+      "--data_device",
+      "cpu",
+      "--resolution",
+      "1",
+      "--iteration",
+      "300",
+      "--skip_train"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+    "started": "2026-11-02T06:08:26.196238+08:00",
+    "log": "logs/V30-clean-render.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:10:29.483268+08:00",
+    "elapsed_s": 123.29729578499973
+  },
+  {
+    "name": "V30-clean-evaluate",
+    "command": [
+      "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_eval_task.py",
+      "--output-dir",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/clean_env_300",
+      "--iteration",
+      "300"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:10:29.581254+08:00",
+    "log": "logs/V30-clean-evaluate.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:12:35.781607+08:00",
+    "elapsed_s": 126.200219862003
+  },
+  {
+    "name": "V30-clean-warp-snow",
+    "command": [
+      "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/test_snow.py"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:12:35.907285+08:00",
+    "log": "logs/V30-clean-warp-snow.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:14:08.376114+08:00",
+    "elapsed_s": 92.46856374100025
+  },
+  {
+    "name": "V30-clean-neural-voxel-scatter",
+    "command": [
+      "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_neural_smoke.py"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:14:08.491215+08:00",
+    "log": "logs/V30-clean-neural-voxel-scatter.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:14:28.301318+08:00",
+    "elapsed_s": 19.809943786996882
+  },
+  {
+    "name": "V30-clean-neural-inference",
+    "command": [
+      "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/check_new_radiation.py",
+      "--namespace",
+      "neural_clean",
+      "--profiles",
+      "radiation_released_profile"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+    "started": "2026-11-02T06:14:28.383693+08:00",
+    "log": "logs/V30-clean-neural-inference.log",
+    "exit_code": 0,
+    "finished": "2026-11-02T06:15:43.797866+08:00",
+    "elapsed_s": 75.41405841399683
+  }
+]

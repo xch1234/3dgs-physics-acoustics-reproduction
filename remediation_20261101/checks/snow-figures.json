@@ -1,0 +1,7 @@
+{
+  "files": [
+    "figures/snow_validation.png",
+    "figures/snow_ficus_contact_sheet.png"
+  ],
+  "scope": "Plots from new raw stress/particle arrays and actual full CUDA-rendered frames."
+}

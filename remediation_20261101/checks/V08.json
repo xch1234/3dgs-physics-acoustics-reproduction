@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "basis_invariance_relative_errors": {
+    "sign_flip": 0.0,
+    "degenerate_pair_rotation": 1.6916029048654684e-16,
+    "independent_FEM_eigensolver_bases": 1.3532024122685792e-12
+  },
+  "PAT_vs_BEM_audio_relative_L2": 0.004404955451783973,
+  "scope": "Local phase-preserving extension; original magnitude-only path retained as historical paper-style baseline; not full transient acoustics or proof of paper correctness",
+  "method": "real(H @ hilbert(q)), exp(+i omega t), transfer sampled at modal frequencies; finite-window Hilbert edge effects, no propagation-delay/contact solver"
+}

@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "prefix": "F:\\3dgs-remediation\\envs\\acoustics-clean",
+  "scope": "fresh Windows Conda acoustics environment created from repaired YAML; imports, pip check and complete local PAT+phase chain executed; not a new physical machine or complete Linux GPU rebuild"
+}

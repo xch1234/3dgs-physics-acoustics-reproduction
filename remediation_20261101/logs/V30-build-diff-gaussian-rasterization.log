@@ -1,0 +1,15 @@
+Processing /opt/3dgs-remediation/build/diff-gaussian-rasterization
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: diff_gaussian_rasterization
+  DEPRECATION: Building 'diff_gaussian_rasterization' using the legacy setup.py bdist_wheel mechanism, which will be removed in a future version. pip 25.3 will enforce this behaviour change. A possible replacement is to use the standardized build interface by setting the `--use-pep517` option, (possibly combined with `--no-build-isolation`), or adding a `pyproject.toml` file to the source tree of 'diff_gaussian_rasterization'. Discussion can be found at https://github.com/pypa/pip/issues/6334
+  Building wheel for diff_gaussian_rasterization (setup.py): started
+  Building wheel for diff_gaussian_rasterization (setup.py): still running...
+  Building wheel for diff_gaussian_rasterization (setup.py): still running...
+  Building wheel for diff_gaussian_rasterization (setup.py): finished with status 'done'
+  Created wheel for diff_gaussian_rasterization: filename=diff_gaussian_rasterization-0.0.0-cp39-cp39-linux_x86_64.whl size=343129 sha256=329c4cef89944ff5bf030efa74f64ae20d880379f66808c87708a4a96c3b99d6
+  Stored in directory: /opt/3dgs-runtime/pip-cache/wheels/77/ca/cb/448f4c8ff1f869dcce2bf4aa1c49f225c792804259c5dab7c1
+Successfully built diff_gaussian_rasterization
+Installing collected packages: diff_gaussian_rasterization
+Successfully installed diff_gaussian_rasterization-0.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

@@ -1,0 +1,436 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+LOCAL SNOW EXTENSION: stretch clamp [0.975, 1.0075], plastic-volume hardening; not released author snow or calibrated material
+WARP_SOURCE_MODULES {'mpm_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py', 'engine_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py', 'warp_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py'}
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /opt/3dgs-runtime/remediation-warp-cache
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 662.69 ms
+Particles initialized from torch data.
+Total particles:  171553
+Module mpm_utils load on device 'cuda:0' took 49627.70 ms
+  0%|          | 0/25 [00:00<?, ?it/s]Module mpm_solver_warp.mpm_solver_warp load on device 'cuda:0' took 577.66 ms
+	Module physgaussian_local_snow load on device 'cuda:0' took 1378.70 ms
+  4%|▍         | 1/25 [00:05<02:05,  5.23s/it]  8%|▊         | 2/25 [00:07<01:18,  3.41s/it] 12%|█▏        | 3/25 [00:09<01:01,  2.79s/it] 16%|█▌        | 4/25 [00:11<00:52,  2.48s/it] 20%|██        | 5/25 [00:13<00:46,  2.31s/it] 24%|██▍       | 6/25 [00:15<00:41,  2.20s/it] 28%|██▊       | 7/25 [00:17<00:38,  2.15s/it] 32%|███▏      | 8/25 [00:19<00:35,  2.11s/it] 36%|███▌      | 9/25 [00:21<00:35,  2.23s/it] 40%|████      | 10/25 [00:23<00:32,  2.16s/it] 44%|████▍     | 11/25 [00:25<00:29,  2.12s/it] 48%|████▊     | 12/25 [00:28<00:27,  2.10s/it] 52%|█████▏    | 13/25 [00:30<00:24,  2.07s/it] 56%|█████▌    | 14/25 [00:32<00:22,  2.06s/it] 60%|██████    | 15/25 [00:34<00:20,  2.06s/it] 64%|██████▍   | 16/25 [00:36<00:18,  2.07s/it] 68%|██████▊   | 17/25 [00:38<00:17,  2.21s/it] 72%|███████▏  | 18/25 [00:40<00:15,  2.18s/it] 76%|███████▌  | 19/25 [00:43<00:13,  2.19s/it] 80%|████████  | 20/25 [00:45<00:10,  2.19s/it] 84%|████████▍ | 21/25 [00:47<00:08,  2.21s/it] 88%|████████▊ | 22/25 [00:49<00:06,  2.21s/it] 92%|█████████▏| 23/25 [00:52<00:04,  2.23s/it] 96%|█████████▌| 24/25 [00:54<00:02,  2.22s/it]100%|██████████| 25/25 [00:56<00:00,  2.36s/it]100%|██████████| 25/25 [00:56<00:00,  2.28s/it]
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/snow_ficus_local/%04d.png':
+  Duration: 00:00:01.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 800x800, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5857c7c29700] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5857c7c29700] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x5857c7c29700] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/snow_ficus_local/output.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 800x800, q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0x5857c7c29240] video:77KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.411171%
+frame=   25 fps=0.0 q=-1.0 Lsize=      78KiB time=00:00:00.92 bitrate= 698.6kbits/s speed=2.03x elapsed=0:00:00.45    
+[libx264 @ 0x5857c7c29700] frame I:1     Avg QP:14.46  size: 18447
+[libx264 @ 0x5857c7c29700] frame P:12    Avg QP:24.02  size:  3806
+[libx264 @ 0x5857c7c29700] frame B:12    Avg QP:26.86  size:  1201
+[libx264 @ 0x5857c7c29700] consecutive B-frames: 24.0% 32.0% 12.0% 32.0%
+[libx264 @ 0x5857c7c29700] mb I  I16..4: 45.6% 44.2% 10.1%
+[libx264 @ 0x5857c7c29700] mb P  I16..4:  0.1%  0.6%  0.1%  P16..4:  4.5%  3.7%  4.3%  0.0%  0.0%    skip:86.6%
+[libx264 @ 0x5857c7c29700] mb B  I16..4:  0.0%  0.1%  0.0%  B16..8:  5.7%  1.7%  0.6%  direct: 0.5%  skip:91.3%  L0:30.3% L1:31.0% BI:38.7%
+[libx264 @ 0x5857c7c29700] 8x8 transform intra:47.2% inter:37.4%
+[libx264 @ 0x5857c7c29700] coded y,uvDC,uvAC intra: 15.3% 16.7% 15.6% inter: 3.4% 3.3% 1.5%
+[libx264 @ 0x5857c7c29700] i16 v,h,dc,p: 95%  1%  5%  0%
+[libx264 @ 0x5857c7c29700] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35%  9% 49%  1%  1%  1%  1%  1%  2%
+[libx264 @ 0x5857c7c29700] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 14% 14%  7% 10% 10%  9%  9%  6%
+[libx264 @ 0x5857c7c29700] i8c dc,h,v,p: 89%  4%  6%  2%
+[libx264 @ 0x5857c7c29700] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5857c7c29700] ref P L0: 80.6% 14.1%  3.9%  1.3%
+[libx264 @ 0x5857c7c29700] ref B L0: 96.2%  3.5%  0.3%
+[libx264 @ 0x5857c7c29700] ref B L1: 99.7%  0.3%
+[libx264 @ 0x5857c7c29700] kb/s:628.28
+{
+  "scope": "upstream simulation/rendering with local snow constitutive extension",
+  "all_checks_passed": true,
+  "physical_particles": 171553,
+  "steps": 10000,
+  "duration_s": 1.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/ficus_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply",
+  "model_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+  "rendered_frames": 25,
+  "sh_frame_correction": true,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 251536384,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 314572800,
+  "elapsed_s": 117.84823564699946,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path",
+    "Local snow stress and Jp=1 initialization; not author-released snow or experimental calibration",
+    "Conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.002816269639879465,
+      "min_det_F": 0.9931898713111877,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.006071281153708696,
+      "min_det_F": 0.9820116758346558,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.010428964160382748,
+      "min_det_F": 0.9778330326080322,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.015870485454797745,
+      "min_det_F": 0.9760406017303467,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.022518550977110863,
+      "min_det_F": 0.9756119251251221,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.030241617932915688,
+      "min_det_F": 0.975132167339325,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.03899870067834854,
+      "min_det_F": 0.9735292792320251,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.04877769574522972,
+      "min_det_F": 0.9734293222427368,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.05943407490849495,
+      "min_det_F": 0.9733613133430481,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.07077889889478683,
+      "min_det_F": 0.9731057286262512,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.08265727013349533,
+      "min_det_F": 0.9730287790298462,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.0949275866150856,
+      "min_det_F": 0.9730066061019897,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.1074460819363594,
+      "min_det_F": 0.9719696044921875,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.12028446048498154,
+      "min_det_F": 0.9706498980522156,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.13328702747821808,
+      "min_det_F": 0.9695413708686829,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.1467386782169342,
+      "min_det_F": 0.9693824052810669,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.1607649177312851,
+      "min_det_F": 0.9701077938079834,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.17523832619190216,
+      "min_det_F": 0.9711728096008301,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.19016417860984802,
+      "min_det_F": 0.972496747970581,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.2055588811635971,
+      "min_det_F": 0.9732072353363037,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.2214781492948532,
+      "min_det_F": 0.973235011100769,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.23800203204154968,
+      "min_det_F": 0.9732263684272766,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.25516465306282043,
+      "min_det_F": 0.9733260273933411,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.27299466729164124,
+      "min_det_F": 0.9722357392311096,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.29149794578552246,
+      "min_det_F": 0.9694243669509888,
+      "mass": 73.02400207519531
+    }
+  ],
+  "local_snow_extension": {
+    "compression_limit": 0.025,
+    "stretch_limit": 0.0075,
+    "hardening": 10.0,
+    "plastic_volume_clip": [
+      0.6,
+      20.0
+    ]
+  },
+  "sh_same_state_comparison": [
+    {
+      "frame": 1,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 2,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 3,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 4,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 5,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 6,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 7,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 8,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 9,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 10,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 11,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 12,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 13,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 14,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 15,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 16,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 17,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 18,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 19,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 20,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 21,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 22,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 23,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 24,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 25,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "final-acceptance-report-v2",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\generate_acceptance.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:51:47.703783+08:00",
+  "log": "logs\\final-acceptance-report-v2.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:51:48.020656+08:00",
+  "elapsed_s": 0.31299999996554106
+}

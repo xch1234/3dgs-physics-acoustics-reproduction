@@ -1,0 +1,14 @@
+{
+  "name": "V30-clean-warp-snow",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/test_snow.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:12:35.907285+08:00",
+  "log": "logs/V30-clean-warp-snow.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:14:08.376114+08:00",
+  "elapsed_s": 92.46856374100025
+}

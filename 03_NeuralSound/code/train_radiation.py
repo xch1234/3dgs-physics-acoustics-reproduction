@@ -1,7 +1,8 @@
 """Train the unmodified public AcousticNet on a documented small local split.
 
 Real sparse-convolution network; not pretrained paper weights or ABC evaluation.
-Uses the released dataset normalization and MSE objectives, batch size forty.
+Uses released normalization and MSE objectives; default batch size is forty.
+Explicit local controls can set isolated outputs, batch size and training schedule.
 """
 import os
 os.environ.setdefault('OMP_NUM_THREADS','2')
@@ -80,6 +81,14 @@ def main():
     parser.add_argument('--batch-size',type=int,default=40);parser.add_argument('--optimizer',choices=['adam','cpu_adam','sgd'],default='adam')
     parser.add_argument('--cpu-threads',type=int,default=8)
     parser.add_argument('--paper-schedule',action='store_true',help='Separate local control using paper Sec.6.2 optimizer schedule; does not overwrite released-profile results')
+    parser.add_argument('--output-dir',type=Path)
+    parser.add_argument('--checkpoint-dir',type=Path)
+    parser.add_argument('--input-dir',type=Path)
+    parser.add_argument('--no-augmentation',action='store_true')
+    parser.add_argument('--learning-rate',type=float)
+    parser.add_argument('--decay-period',type=int)
+    parser.add_argument('--decay-factor',type=float)
+    parser.add_argument('--seed',type=int,default=20261102)
     parser.add_argument('--resume',action='store_true');args=parser.parse_args()
     if args.paper_schedule:
         if args.epochs!=100:parser.error('The paper schedule control is fixed to 100 epochs.')
@@ -87,10 +96,13 @@ def main():
     learning_rate=1e-4 if args.paper_schedule else 1e-3
     decay_period=20 if args.paper_schedule else 8
     decay_factor=.5 if args.paper_schedule else .8
-    np.random.seed(20261102);torch.manual_seed(20261102);torch.cuda.manual_seed_all(20261102)
+    if args.learning_rate is not None:learning_rate=args.learning_rate
+    if args.decay_period is not None:decay_period=args.decay_period
+    if args.decay_factor is not None:decay_factor=args.decay_factor
+    np.random.seed(args.seed);torch.manual_seed(args.seed);torch.cuda.manual_seed_all(args.seed)
     torch.set_num_threads(args.cpu_threads);device='cuda:0'
-    out=ROOT/'outputs'/('radiation_paper_schedule' if args.paper_schedule else 'radiation_training');out.mkdir(parents=True,exist_ok=True)
-    checkpoint_dir=out/'checkpoints' if args.paper_schedule else Path('/opt/3dgs-runtime/checkpoints/neuralsound-radiation')
+    out=args.output_dir or ROOT/'outputs'/('radiation_paper_schedule' if args.paper_schedule else 'radiation_training');out.mkdir(parents=True,exist_ok=True)
+    checkpoint_dir=args.checkpoint_dir or (out/'checkpoints' if args.output_dir or args.paper_schedule else Path('/opt/3dgs-runtime/checkpoints/neuralsound-radiation'))
     if not args.resume and checkpoint_dir.exists() and (checkpoint_dir/'last.pt').exists():
         from datetime import datetime
         archive=checkpoint_dir.with_name(checkpoint_dir.name+'-previous-'+datetime.now().strftime('%Y%m%d-%H%M%S-%f'))
@@ -102,7 +114,7 @@ def main():
     if args.resume and not (checkpoint_dir/'last.pt').exists() and (out/'last.pt').exists():
         for name in ('last.pt','best.pt'):
             shutil.copy2(out/name,checkpoint_dir/name)
-    train=Maps('train',True);val=Maps('val');test=Maps('test')
+    train=Maps('train',not args.no_augmentation,folder=args.input_dir);val=Maps('val',folder=args.input_dir);test=Maps('test',folder=args.input_dir)
     tr=DataLoader(train,batch_size=args.batch_size,shuffle=True,num_workers=0,collate_fn=collate,drop_last=True)
     va=DataLoader(val,batch_size=2,num_workers=0,collate_fn=collate)
     te=DataLoader(test,batch_size=2,num_workers=0,collate_fn=collate)
@@ -163,11 +175,11 @@ def main():
         resumed_from_epoch=start_epoch,elapsed_note='current invocation; previous interrupted segment excluded',
         checkpoint_policy='atomic best checkpoints; full state every five epochs and final; final best/last copied to output directory',
         protocol='paper Sec.6.2 optimizer-parameter control on unchanged local data/public architecture' if args.paper_schedule else 'released-code local profile',
-        training_settings=dict(initial_learning_rate=learning_rate,decay_period=decay_period,decay_factor=decay_factor,batches_per_epoch=len(tr),parameter_updates=len(tr)*args.epochs),
+        training_settings=dict(seed=args.seed,augmentation=not args.no_augmentation,input_dir=str(args.input_dir) if args.input_dir else None,initial_learning_rate=learning_rate,decay_period=decay_period,decay_factor=decay_factor,batches_per_epoch=len(tr),parameter_updates=len(tr)*args.epochs),
         adaptations=['local geometry-disjoint dataset; released Bempp operators with double precision and Numba CPU backend',
             f'batch size {args.batch_size}; released setting is 40','gradient norm clipped at 10','fixed full-mode validation, best chosen only on validation'])
     metric_name='radiation-paper-schedule-metrics.json' if args.paper_schedule else 'radiation-training-metrics.json'
-    payload=json.dumps(metrics,indent=2);(out/'metrics.json').write_text(payload);(ROOT/'docs'/metric_name).write_text(payload)
+    payload=json.dumps(metrics,indent=2);(out/'metrics.json').write_text(payload);(out/metric_name if args.output_dir else ROOT/'docs'/metric_name).write_text(payload)
     fig,ax=plt.subplots(figsize=(7,4),layout='constrained')
     ax.semilogy([r['epoch'] for r in history],[r['train_loss'] for r in history],label='Train')
     ax.semilogy([r['epoch'] for r in history],[r['validation_loss'] for r in history],label='Validation')

@@ -1,0 +1,14 @@
+{
+  "name": "final-viewing-guide",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\write_viewing_guide.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:49:17.151636+08:00",
+  "log": "logs\\final-viewing-guide.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:49:17.389143+08:00",
+  "elapsed_s": 0.23499999998603016
+}

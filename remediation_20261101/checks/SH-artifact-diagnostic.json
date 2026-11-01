@@ -1,0 +1,118 @@
+[
+  {
+    "frame": 1,
+    "shape": [
+      3,
+      2995,
+      3994
+    ],
+    "expected": 0.002771650906652212,
+    "numpy_float32": 0.002771642291918397,
+    "numpy_float64": 0.0027716509441866126,
+    "pixels": {
+      "original": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0015079781878739595,
+          1.1810948848724365
+        ]
+      },
+      "corrected": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.001527574029751122,
+          1.182271957397461
+        ]
+      }
+    }
+  },
+  {
+    "frame": 25,
+    "shape": [
+      3,
+      2995,
+      3994
+    ],
+    "expected": 0.06252159178256989,
+    "numpy_float32": 0.0625208392739296,
+    "numpy_float64": 0.06252159173353083,
+    "pixels": {
+      "original": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0028463073540478945,
+          1.3125426769256592
+        ]
+      },
+      "corrected": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0033593911211937666,
+          1.1814348697662354
+        ]
+      }
+    }
+  },
+  {
+    "frame": 50,
+    "shape": [
+      3,
+      2995,
+      3994
+    ],
+    "expected": 0.0176130048930645,
+    "numpy_float32": 0.017612960189580917,
+    "numpy_float64": 0.01761300400271903,
+    "pixels": {
+      "original": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0004934268072247505,
+          1.1359144449234009
+        ]
+      },
+      "corrected": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0005085611483082175,
+          1.1274070739746094
+        ]
+      }
+    }
+  },
+  {
+    "frame": 75,
+    "shape": [
+      3,
+      2995,
+      3994
+    ],
+    "expected": 0.014310895465314388,
+    "numpy_float32": 0.01431086752563715,
+    "numpy_float64": 0.014310896304435742,
+    "pixels": {
+      "original": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.0005489384057000279,
+          1.1262195110321045
+        ]
+      },
+      "corrected": {
+        "max_difference": 0,
+        "pixels_above_one": 0,
+        "range": [
+          0.000511457328684628,
+          1.1473156213760376
+        ]
+      }
+    }
+  }
+]

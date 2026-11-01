@@ -1,0 +1,175 @@
+{
+  "generated": "2026-11-02T06:51:47.968098+08:00",
+  "counts": {
+    "通过": 6,
+    "失败": 1,
+    "未验证": 4
+  },
+  "items": [
+    {
+      "id": "V03",
+      "original_status": "失败",
+      "title": "Windows 环境导出文件的路径记录",
+      "status": "通过",
+      "summary": "三份 Windows 导出已修复；两种不同规格从空 Conda 前缀恢复，并实跑 CPU SH 与声学流程。",
+      "evidence": [
+        "checks/V03.json",
+        "checks/V03-clean-windows-phys.json",
+        "checks/V30-clean-cpu.json"
+      ],
+      "limits": "Windows PhysGaussian 这里只验证 CPU 路径；CUDA 实跑记录在 V30。"
+    },
+    {
+      "id": "V08",
+      "original_status": "失败",
+      "title": "声学输出对等价 FEM 模态基的不变性",
+      "status": "通过",
+      "summary": "本地相位扩展通过符号、重根旋转和独立 FEM 基不变性。6 模态 PAT/BEM 音频误差 0.4405%；移动听者 0.3258%。",
+      "evidence": [
+        "checks/V08.json",
+        "checks/V08-extensions.json",
+        "figures/basis_invariance.png"
+      ],
+      "limits": "通过的是新相位扩展；旧幅值路径仍保留其失败。窄带 Hilbert 合成不包含完整传播延迟、Doppler 或瞬态接触声学。"
+    },
+    {
+      "id": "V09",
+      "original_status": "未验证",
+      "title": "PAT 网格收敛、完整原论文场景与性能",
+      "status": "未验证",
+      "summary": "均匀 Neumann 球体 80/320/1280/5120 面片误差依次为 0.2775%、2.2319%、1.6620%、0.9673%，不完全单调；精确单极子制造解另有单调收敛证据。",
+      "evidence": [
+        "checks/V09-convergence.json",
+        "checks/V09-manufactured.json",
+        "figures/bem_refinement.png"
+      ],
+      "limits": "原收敛判据没有通过；制造解边界条件不同。NeoAcoustics、原论文全部场景、薄壳/高频、多层算法、7000 倍性能与听感实验仍未完成。"
+    },
+    {
+      "id": "V12",
+      "original_status": "未验证",
+      "title": "未修改作者 metrics.py 全视图入口",
+      "status": "通过",
+      "summary": "未修改作者 metrics.py 实际评估 200/200 图：PSNR 34.8505973816，SSIM 0.9871883988，LPIPS 0.0117154643；与独立流式评估一致。",
+      "evidence": [
+        "checks/V12.json",
+        "outputs/native_metrics/results.json",
+        "outputs/native_metrics/per_view.json",
+        "commands/V12-original-metrics-all200.json"
+      ],
+      "limits": "这验证原始评估入口与当前 Ficus 重建，不是 PhysGaussian 变形真值基准。"
+    },
+    {
+      "id": "V17",
+      "original_status": "失败",
+      "title": "发布代码的非单位预旋转 SH 坐标不变性",
+      "status": "通过",
+      "summary": "本地入口默认世界坐标 SH 修正，保留 legacy 对照；不变性和 bread/plane/vasedeck 三个完整场景已重跑，保存同状态原始/修正渲染及原始浮点数组。",
+      "evidence": [
+        "physics/outputs/sh_frame_audit/metrics.json",
+        "physics/outputs/bread_corrected_rerun/metrics.json",
+        "physics/outputs/plane_corrected_rerun/metrics.json",
+        "physics/outputs/vasedeck_corrected_rerun/metrics.json",
+        "checks/final-artifacts.json"
+      ],
+      "limits": "修复在外部适配器，作者上游源码仍有原坐标系问题；无变形真值时不能用画面变化声称论文指标提升。"
+    },
+    {
+      "id": "V19",
+      "original_status": "失败",
+      "title": "snow 材料的实际本构支持",
+      "status": "通过",
+      "summary": "新增 snow 本构适配器，通过独立 NumPy 应力参考、125 粒子 4000 步接触，以及 Ficus 几何 171553 粒子/10000 步/25 帧 CUDA 场景。",
+      "evidence": [
+        "checks/V19-snow-extension.json",
+        "checks/V19-snow_ficus_local.json",
+        "figures/snow_validation.png",
+        "physics/outputs/snow_ficus_local/output.mp4"
+      ],
+      "limits": "这是固定参数的本地弹塑性雪扩展，不是作者已发布的 snow 或实测材料标定；旧 upstream 分支仍保留。"
+    },
+    {
+      "id": "V26",
+      "original_status": "失败",
+      "title": "当前本地辐射网络作为高精度 FFAT 近似",
+      "status": "失败",
+      "summary": "三套完整训练后独立重编码全部 24 张测试图：radiation_released_profile 平均/中位/最坏相对 L2=373.93%/91.20%/3667.48%，全局加权 L2=73.86%；radiation_paper_schedule 平均/中位/最坏相对 L2=335.10%/84.83%/3517.11%，全局加权 L2=85.82%；radiation_longer 平均/中位/最坏相对 L2=88.96%/48.27%/967.70%，全局加权 L2=52.87%",
+      "evidence": [
+        "checks/V26-independent.json",
+        "neural/evaluations/radiation_released_profile/metrics.json",
+        "neural/evaluations/radiation_paper_schedule/metrics.json",
+        "neural/evaluations/radiation_longer/metrics.json",
+        "neural/evaluations/radiation_released_profile/shape_and_amplitude.png",
+        "neural/evaluations/radiation_paper_schedule/shape_and_amplitude.png",
+        "neural/evaluations/radiation_longer/shape_and_amplitude.png"
+      ],
+      "limits": "10% 逐图线仅为严格本地诊断，不是论文 Table 5。全部模型只按验证损失选 best；不按测试表现挑选或隐藏失败。完成训练不等于高精度。"
+    },
+    {
+      "id": "V28",
+      "original_status": "未验证",
+      "title": "未重复的训练与全部扩展场景",
+      "status": "通过",
+      "summary": "重复网络训练、30000 步各向异性训练/200 视图渲染与评估、11 个物理场景、12 模态/移动听者、作者网格/混合优化与神经音频。原队列要求内命令 21 条，首次失败 1 条，恢复后未解决 0 条；完成核查的物理场景 11 个。作者 example 首次退出 -11，隔离 PyCUDA 体素化与 Torch 求解后完整重跑及数值对照通过=True；首次失败日志仍保留。",
+      "evidence": [
+        "gpu-queue-state.json",
+        "gpu-followup-state.json",
+        "gpu-final-state.json",
+        "checks/V28-example-retry.json",
+        "checks/V28-example-retry-numerics.json",
+        "checks/V28-pat-extensions.json",
+        "checks/V28-anisotropy-comparison.json",
+        "checks/final-artifacts.json"
+      ],
+      "limits": "通过仅指这些本地扩展被重复执行且产物有效；其精度仍分别受 V08/V26 等限制，不将执行成功当作论文复现。"
+    },
+    {
+      "id": "V29",
+      "original_status": "未验证",
+      "title": "三篇论文原始数据、架构与完整指标/性能复现",
+      "status": "未验证",
+      "summary": "复核三篇论文数据、模型与评测要求；本机仍未完成全部原始数据/架构/性能与听感协议。",
+      "evidence": [
+        "未能完成的论文级要求.md",
+        "checks/V29-public-resource-inventory.json"
+      ],
+      "limits": "24 个程序化几何不等于 100K ABC；公开紧凑网络不等于论文网络；静态 Ficus 不等于变形真值；RTX 2050 不替代 3080 Ti/3090，未组织受试者实验。"
+    },
+    {
+      "id": "V30",
+      "original_status": "未验证",
+      "title": "全新机器环境恢复与远端资源真实性",
+      "status": "未验证",
+      "summary": "两种 Windows 与三种 Linux Conda 前缀已从空目录恢复；CUDA/C++ 重新构建并实跑。新 Linux 环境执行状态：{'checks/V30-clean-gpu-execution.json': True, 'checks/V30-clean-neural-execution.json': True, 'checks/V30-clean-pat-execution.json': True}。403 个 Ficus 文件与当前作者数据包逐字节一致，作者仓库/六份模型/使用的源码依赖均重新远端核对。",
+      "evidence": [
+        "checks/V03.json",
+        "checks/V30-clean-gpu-execution.json",
+        "checks/V30-clean-neural-execution.json",
+        "checks/V30-clean-pat-execution.json",
+        "checks/V30-canonical-ficus-updated-folder.json",
+        "checks/V30-dependency-sources.json",
+        "checks/V30-remote.json",
+        "checks/V30-remote-models.json"
+      ],
+      "limits": "仍在同一台物理机器、同一驱动与 WSL 上；另一台新机器尚未验证。HTTPS 内容匹配不是作者数字签名认证。旧作者 Drive 链接 404 的失败记录保留。"
+    },
+    {
+      "id": "V31",
+      "original_status": "未验证",
+      "title": "统一的同一 3DGS 物体受力—振动—声辐射系统",
+      "status": "未验证",
+      "summary": "新增同 FEM 梁的高斯/PAT/BEM 同步原型，以及同 held-out box_21 的混合模态/AcousticNet/高斯原型，分别导出真实速度与标注放大/慢动作视频。",
+      "evidence": [
+        "checks/V31-local-prototype.json",
+        "checks/V31-neural-box-prototype.json",
+        "checks/final-artifacts.json",
+        "unified_beam/metrics.json",
+        "unified_neural_box/metrics.json"
+      ],
+      "limits": "过程生成高斯不等于照片训练的 3DGS；没有完成照片高斯—体积绑定、MPM 接触—高频振动与神经声辐射完整耦合。神经原型仍保留幅值 FFAT 与预测误差，完整目标未通过。"
+    }
+  ],
+  "artifact_audit_passed": true,
+  "source_audit_passed": true,
+  "paper_reproduction_success": false
+}

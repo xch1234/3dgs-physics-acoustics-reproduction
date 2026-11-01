@@ -1,0 +1,3 @@
+usage: check_original_ficus.py [-h] [--file-id FILE_ID] [--tag TAG]
+                               [--source-label SOURCE_LABEL]
+check_original_ficus.py: error: argument --tag: expected one argument

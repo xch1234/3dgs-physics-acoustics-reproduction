@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "scope": "Fresh-prefix 300-step 3DGS training + 200-view render/evaluation and local Warp snow tests. Environment smoke test, not 30k reconstruction quality or another physical machine."
+}

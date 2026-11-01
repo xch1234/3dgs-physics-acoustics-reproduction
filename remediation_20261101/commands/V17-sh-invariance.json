@@ -1,0 +1,15 @@
+{
+  "name": "V17-sh-invariance",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:29:37.806174+08:00",
+  "log": "logs/V17-sh-invariance.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:29:46.659250+08:00",
+  "elapsed_s": 8.816836566999882
+}

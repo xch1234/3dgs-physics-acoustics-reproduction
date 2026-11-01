@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "project": "01_PhysGaussian",
+      "path": "01_PhysGaussian\\docs\\environment.yml",
+      "sha256": "ffd5183c18a37fed1e8d00f90c5009c46fc65946002e0a8c4467799239076bfe"
+    },
+    {
+      "project": "02_PAT",
+      "path": "02_PAT\\docs\\environment.yml",
+      "sha256": "2580635bcbe0217a34ad4a337132a44ce5ec533255462e95f02b2e2ff6a39759"
+    },
+    {
+      "project": "03_NeuralSound",
+      "path": "03_NeuralSound\\docs\\environment.yml",
+      "sha256": "2580635bcbe0217a34ad4a337132a44ce5ec533255462e95f02b2e2ff6a39759"
+    }
+  ],
+  "acoustics_exports_identical": true,
+  "restored_physgaussian_prefix": "F:/3dgs-remediation/envs/physgaussian-windows-clean",
+  "restored_acoustics_prefix": "F:\\3dgs-remediation\\envs\\acoustics-clean",
+  "scope": "Portable corrected Windows exports, each distinct specification actually installed from an empty prefix. PhysGaussian CPU-Torch/SH and acoustic PAT pipeline exercised. Linux CUDA is recorded under V30."
+}

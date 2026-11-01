@@ -1,0 +1,14 @@
+{
+  "name": "V28-PSNR-definition",
+  "command": [
+    "F:/3dgs-remediation/envs/acoustics-clean/python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\check_psnr_definition.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T05:26:15.336523+08:00",
+  "log": "logs\\V28-PSNR-definition.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:26:46.744520+08:00",
+  "elapsed_s": 31.405999999959022
+}

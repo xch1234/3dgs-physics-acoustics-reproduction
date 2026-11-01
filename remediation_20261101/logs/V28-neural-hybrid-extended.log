@@ -1,0 +1,4 @@
+linear network
+{'initialization': 'random', 'network_and_ritz_seconds': 1.539799995953217e-05, 'total_seconds': 151.28792958800113, 'iterations': 5593, 'max_eigenvalue_relative_error': 2.7663513231677257e-12, 'max_relative_residual': 3.627528130314974e-07, 'converged': True, 'peak_gpu_allocated_bytes': 106971648}
+{'initialization': 'untrained_network', 'network_and_ritz_seconds': 0.2962967790008406, 'total_seconds': 200.84111106800265, 'iterations': 8056, 'max_eigenvalue_relative_error': 2.7566892663444657e-12, 'max_relative_residual': 3.371304182115819e-07, 'converged': True, 'peak_gpu_allocated_bytes': 147152896}
+{'initialization': 'trained_network', 'network_and_ritz_seconds': 0.13823397300075158, 'total_seconds': 176.62909937199947, 'iterations': 6965, 'max_eigenvalue_relative_error': 2.716604787361481e-12, 'max_relative_residual': 2.378038989874612e-07, 'converged': True, 'peak_gpu_allocated_bytes': 149642752}

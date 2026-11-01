@@ -1,0 +1,32 @@
+{
+  "name": "V30-clean-train",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/train.py",
+    "-s",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/clean_env_300",
+    "--eval",
+    "--white_background",
+    "--data_device",
+    "cpu",
+    "--resolution",
+    "1",
+    "--iterations",
+    "300",
+    "--port",
+    "6042",
+    "--test_iterations",
+    "300",
+    "--save_iterations",
+    "300"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-02T06:06:35.094872+08:00",
+  "log": "logs/V30-clean-train.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:08:26.066168+08:00",
+  "elapsed_s": 110.9773985690008
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "static_basis_relative_error": 1.5366236999106544e-16,
+  "moving_basis_relative_error": 4.8583115127931914e-17,
+  "static_PAT_BEM_audio_relative_L2": 0.004405253014758902,
+  "moving_PAT_BEM_audio_relative_L2": 0.0032581361349025848,
+  "waves": 8,
+  "sample_rate_hz": 48000,
+  "scope": "Local complex narrowband extension to historical 12-mode and moving-listener magnitude playback; not original PAT output, retarded acoustics or Doppler."
+}

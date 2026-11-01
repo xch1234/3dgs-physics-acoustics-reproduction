@@ -1,0 +1,1017 @@
+{
+  "passed": true,
+  "images": 200,
+  "PNG_global_RGB_PSNR": 34.28561008759079,
+  "PNG_mean_channel_PSNR": 34.44933661348992,
+  "training_float_tensor_channel_PSNR": 34.45191311836243,
+  "channel_aggregation_difference_dB": 0.16372652589912917,
+  "training_minus_PNG_channelwise_dB": 0.002576504872507712,
+  "source_hashes": {
+    "train.py": "a5313e4631405dcd9ace7d2f54a6d212c232135b6ae7f780146bca3027c2fce6",
+    "metrics.py": "a1334b4f421dc8e5aaf91f694e088b009b19d5ecaa87fc3b6f6972e63dc2afa0",
+    "utils/image_utils.py": "47949e71f2d4aadebfccd38019717a1ec3b9c00d83ada1732b78a757ba73f92b"
+  },
+  "records": [
+    {
+      "view": "00000.png",
+      "global_RGB_PSNR": 36.3556168637488,
+      "mean_channel_PSNR": 36.57878596912254
+    },
+    {
+      "view": "00001.png",
+      "global_RGB_PSNR": 36.79523224220783,
+      "mean_channel_PSNR": 37.04137244084912
+    },
+    {
+      "view": "00002.png",
+      "global_RGB_PSNR": 37.221694975558734,
+      "mean_channel_PSNR": 37.470780078376414
+    },
+    {
+      "view": "00003.png",
+      "global_RGB_PSNR": 36.57867039686005,
+      "mean_channel_PSNR": 36.83359260642184
+    },
+    {
+      "view": "00004.png",
+      "global_RGB_PSNR": 35.996524271179446,
+      "mean_channel_PSNR": 36.249659760406786
+    },
+    {
+      "view": "00005.png",
+      "global_RGB_PSNR": 35.474565444000525,
+      "mean_channel_PSNR": 35.73037678066336
+    },
+    {
+      "view": "00006.png",
+      "global_RGB_PSNR": 35.15350937031229,
+      "mean_channel_PSNR": 35.40933077542092
+    },
+    {
+      "view": "00007.png",
+      "global_RGB_PSNR": 34.795274750502685,
+      "mean_channel_PSNR": 35.05854861200001
+    },
+    {
+      "view": "00008.png",
+      "global_RGB_PSNR": 34.4243912904767,
+      "mean_channel_PSNR": 34.6855654477201
+    },
+    {
+      "view": "00009.png",
+      "global_RGB_PSNR": 34.1165568430973,
+      "mean_channel_PSNR": 34.37677673817054
+    },
+    {
+      "view": "00010.png",
+      "global_RGB_PSNR": 33.863681966749944,
+      "mean_channel_PSNR": 34.12359219085831
+    },
+    {
+      "view": "00011.png",
+      "global_RGB_PSNR": 33.89200664623402,
+      "mean_channel_PSNR": 34.14414132511638
+    },
+    {
+      "view": "00012.png",
+      "global_RGB_PSNR": 33.788170856609206,
+      "mean_channel_PSNR": 34.030928984904016
+    },
+    {
+      "view": "00013.png",
+      "global_RGB_PSNR": 33.8718119762523,
+      "mean_channel_PSNR": 34.11356492918045
+    },
+    {
+      "view": "00014.png",
+      "global_RGB_PSNR": 34.05274703904468,
+      "mean_channel_PSNR": 34.2902719241247
+    },
+    {
+      "view": "00015.png",
+      "global_RGB_PSNR": 34.23591593003858,
+      "mean_channel_PSNR": 34.46278571167289
+    },
+    {
+      "view": "00016.png",
+      "global_RGB_PSNR": 34.09102727345156,
+      "mean_channel_PSNR": 34.31666627054408
+    },
+    {
+      "view": "00017.png",
+      "global_RGB_PSNR": 33.71199474156531,
+      "mean_channel_PSNR": 33.932322672511724
+    },
+    {
+      "view": "00018.png",
+      "global_RGB_PSNR": 33.360764870773394,
+      "mean_channel_PSNR": 33.578118360997294
+    },
+    {
+      "view": "00019.png",
+      "global_RGB_PSNR": 33.101012420337945,
+      "mean_channel_PSNR": 33.32345403292415
+    },
+    {
+      "view": "00020.png",
+      "global_RGB_PSNR": 32.86962339731295,
+      "mean_channel_PSNR": 33.081165333498994
+    },
+    {
+      "view": "00021.png",
+      "global_RGB_PSNR": 32.785379971168496,
+      "mean_channel_PSNR": 32.98791218396822
+    },
+    {
+      "view": "00022.png",
+      "global_RGB_PSNR": 32.692493625127824,
+      "mean_channel_PSNR": 32.877186725086496
+    },
+    {
+      "view": "00023.png",
+      "global_RGB_PSNR": 32.71237341824134,
+      "mean_channel_PSNR": 32.88772815884902
+    },
+    {
+      "view": "00024.png",
+      "global_RGB_PSNR": 32.634365194121244,
+      "mean_channel_PSNR": 32.79653469064525
+    },
+    {
+      "view": "00025.png",
+      "global_RGB_PSNR": 32.631396829864784,
+      "mean_channel_PSNR": 32.777581201986
+    },
+    {
+      "view": "00026.png",
+      "global_RGB_PSNR": 32.758531000669265,
+      "mean_channel_PSNR": 32.89063666159698
+    },
+    {
+      "view": "00027.png",
+      "global_RGB_PSNR": 32.656945389913204,
+      "mean_channel_PSNR": 32.781925113120195
+    },
+    {
+      "view": "00028.png",
+      "global_RGB_PSNR": 32.39500891782467,
+      "mean_channel_PSNR": 32.51287867022241
+    },
+    {
+      "view": "00029.png",
+      "global_RGB_PSNR": 32.21226100290389,
+      "mean_channel_PSNR": 32.33999883637663
+    },
+    {
+      "view": "00030.png",
+      "global_RGB_PSNR": 32.054692073659254,
+      "mean_channel_PSNR": 32.20202561239771
+    },
+    {
+      "view": "00031.png",
+      "global_RGB_PSNR": 32.12424588468852,
+      "mean_channel_PSNR": 32.27561954408338
+    },
+    {
+      "view": "00032.png",
+      "global_RGB_PSNR": 32.03707123330869,
+      "mean_channel_PSNR": 32.20077988441768
+    },
+    {
+      "view": "00033.png",
+      "global_RGB_PSNR": 32.04241978487793,
+      "mean_channel_PSNR": 32.208739584233
+    },
+    {
+      "view": "00034.png",
+      "global_RGB_PSNR": 32.32135146847643,
+      "mean_channel_PSNR": 32.4873263652508
+    },
+    {
+      "view": "00035.png",
+      "global_RGB_PSNR": 32.64788867113457,
+      "mean_channel_PSNR": 32.82054098860357
+    },
+    {
+      "view": "00036.png",
+      "global_RGB_PSNR": 33.036000296427744,
+      "mean_channel_PSNR": 33.21266874976791
+    },
+    {
+      "view": "00037.png",
+      "global_RGB_PSNR": 33.488057130726,
+      "mean_channel_PSNR": 33.66996685921608
+    },
+    {
+      "view": "00038.png",
+      "global_RGB_PSNR": 34.19617355691805,
+      "mean_channel_PSNR": 34.377405943723275
+    },
+    {
+      "view": "00039.png",
+      "global_RGB_PSNR": 34.72192005217976,
+      "mean_channel_PSNR": 34.9099120990355
+    },
+    {
+      "view": "00040.png",
+      "global_RGB_PSNR": 34.72577811075347,
+      "mean_channel_PSNR": 34.89125691445418
+    },
+    {
+      "view": "00041.png",
+      "global_RGB_PSNR": 34.40706249129698,
+      "mean_channel_PSNR": 34.5514844546746
+    },
+    {
+      "view": "00042.png",
+      "global_RGB_PSNR": 34.01816979327756,
+      "mean_channel_PSNR": 34.150712409279045
+    },
+    {
+      "view": "00043.png",
+      "global_RGB_PSNR": 33.792611500807716,
+      "mean_channel_PSNR": 33.89698637325037
+    },
+    {
+      "view": "00044.png",
+      "global_RGB_PSNR": 33.633272959038564,
+      "mean_channel_PSNR": 33.73578705945146
+    },
+    {
+      "view": "00045.png",
+      "global_RGB_PSNR": 33.2618519472891,
+      "mean_channel_PSNR": 33.36820329236391
+    },
+    {
+      "view": "00046.png",
+      "global_RGB_PSNR": 33.25756530322608,
+      "mean_channel_PSNR": 33.36468607415557
+    },
+    {
+      "view": "00047.png",
+      "global_RGB_PSNR": 33.26881636933845,
+      "mean_channel_PSNR": 33.38474070208486
+    },
+    {
+      "view": "00048.png",
+      "global_RGB_PSNR": 33.41913587047033,
+      "mean_channel_PSNR": 33.541857938446235
+    },
+    {
+      "view": "00049.png",
+      "global_RGB_PSNR": 33.528496011361625,
+      "mean_channel_PSNR": 33.66756090593879
+    },
+    {
+      "view": "00050.png",
+      "global_RGB_PSNR": 33.76655961603996,
+      "mean_channel_PSNR": 33.91051152588616
+    },
+    {
+      "view": "00051.png",
+      "global_RGB_PSNR": 34.05578577436756,
+      "mean_channel_PSNR": 34.22213099105878
+    },
+    {
+      "view": "00052.png",
+      "global_RGB_PSNR": 34.46476222727714,
+      "mean_channel_PSNR": 34.64269374415971
+    },
+    {
+      "view": "00053.png",
+      "global_RGB_PSNR": 35.05175882033634,
+      "mean_channel_PSNR": 35.24659557073164
+    },
+    {
+      "view": "00054.png",
+      "global_RGB_PSNR": 35.73173799813395,
+      "mean_channel_PSNR": 35.931625614095616
+    },
+    {
+      "view": "00055.png",
+      "global_RGB_PSNR": 36.77610420466779,
+      "mean_channel_PSNR": 36.99193153189709
+    },
+    {
+      "view": "00056.png",
+      "global_RGB_PSNR": 37.9248782946613,
+      "mean_channel_PSNR": 38.13763759345527
+    },
+    {
+      "view": "00057.png",
+      "global_RGB_PSNR": 37.613233233201576,
+      "mean_channel_PSNR": 37.82553058217365
+    },
+    {
+      "view": "00058.png",
+      "global_RGB_PSNR": 36.77689410267033,
+      "mean_channel_PSNR": 36.98144330638952
+    },
+    {
+      "view": "00059.png",
+      "global_RGB_PSNR": 35.582441160186335,
+      "mean_channel_PSNR": 35.78670595124237
+    },
+    {
+      "view": "00060.png",
+      "global_RGB_PSNR": 34.57421951995783,
+      "mean_channel_PSNR": 34.77513374731431
+    },
+    {
+      "view": "00061.png",
+      "global_RGB_PSNR": 33.87216092373959,
+      "mean_channel_PSNR": 34.064327249860824
+    },
+    {
+      "view": "00062.png",
+      "global_RGB_PSNR": 33.55623674582079,
+      "mean_channel_PSNR": 33.73731280303098
+    },
+    {
+      "view": "00063.png",
+      "global_RGB_PSNR": 33.59719587429452,
+      "mean_channel_PSNR": 33.76592516244194
+    },
+    {
+      "view": "00064.png",
+      "global_RGB_PSNR": 33.65776232104459,
+      "mean_channel_PSNR": 33.81849283989274
+    },
+    {
+      "view": "00065.png",
+      "global_RGB_PSNR": 33.65527483663389,
+      "mean_channel_PSNR": 33.815265751185585
+    },
+    {
+      "view": "00066.png",
+      "global_RGB_PSNR": 33.67488537692856,
+      "mean_channel_PSNR": 33.84336208125516
+    },
+    {
+      "view": "00067.png",
+      "global_RGB_PSNR": 33.59575171349583,
+      "mean_channel_PSNR": 33.77545853022821
+    },
+    {
+      "view": "00068.png",
+      "global_RGB_PSNR": 33.55470574515585,
+      "mean_channel_PSNR": 33.74090870686041
+    },
+    {
+      "view": "00069.png",
+      "global_RGB_PSNR": 33.30368842015136,
+      "mean_channel_PSNR": 33.49736601091424
+    },
+    {
+      "view": "00070.png",
+      "global_RGB_PSNR": 33.1565764987858,
+      "mean_channel_PSNR": 33.36106275335899
+    },
+    {
+      "view": "00071.png",
+      "global_RGB_PSNR": 33.20903969346402,
+      "mean_channel_PSNR": 33.4182320466202
+    },
+    {
+      "view": "00072.png",
+      "global_RGB_PSNR": 33.30527467579404,
+      "mean_channel_PSNR": 33.50873494975592
+    },
+    {
+      "view": "00073.png",
+      "global_RGB_PSNR": 33.33943199334591,
+      "mean_channel_PSNR": 33.52918488617314
+    },
+    {
+      "view": "00074.png",
+      "global_RGB_PSNR": 33.41280405841174,
+      "mean_channel_PSNR": 33.599245788678765
+    },
+    {
+      "view": "00075.png",
+      "global_RGB_PSNR": 33.656304905869334,
+      "mean_channel_PSNR": 33.84330613091282
+    },
+    {
+      "view": "00076.png",
+      "global_RGB_PSNR": 34.060561445089476,
+      "mean_channel_PSNR": 34.23994904998674
+    },
+    {
+      "view": "00077.png",
+      "global_RGB_PSNR": 34.40601171513994,
+      "mean_channel_PSNR": 34.58245394293294
+    },
+    {
+      "view": "00078.png",
+      "global_RGB_PSNR": 34.939610012761314,
+      "mean_channel_PSNR": 35.11472944299834
+    },
+    {
+      "view": "00079.png",
+      "global_RGB_PSNR": 35.3186270153167,
+      "mean_channel_PSNR": 35.49031919016115
+    },
+    {
+      "view": "00080.png",
+      "global_RGB_PSNR": 35.79230377409959,
+      "mean_channel_PSNR": 35.96157597039249
+    },
+    {
+      "view": "00081.png",
+      "global_RGB_PSNR": 36.58512261865671,
+      "mean_channel_PSNR": 36.7512383373461
+    },
+    {
+      "view": "00082.png",
+      "global_RGB_PSNR": 37.67781041504349,
+      "mean_channel_PSNR": 37.838664115037574
+    },
+    {
+      "view": "00083.png",
+      "global_RGB_PSNR": 38.62082014029054,
+      "mean_channel_PSNR": 38.78417749740972
+    },
+    {
+      "view": "00084.png",
+      "global_RGB_PSNR": 38.497311553578555,
+      "mean_channel_PSNR": 38.63403028478072
+    },
+    {
+      "view": "00085.png",
+      "global_RGB_PSNR": 38.295410606729476,
+      "mean_channel_PSNR": 38.42756359622131
+    },
+    {
+      "view": "00086.png",
+      "global_RGB_PSNR": 37.91202316532047,
+      "mean_channel_PSNR": 38.054948813674535
+    },
+    {
+      "view": "00087.png",
+      "global_RGB_PSNR": 37.34613215000056,
+      "mean_channel_PSNR": 37.47568895826
+    },
+    {
+      "view": "00088.png",
+      "global_RGB_PSNR": 36.92332397169221,
+      "mean_channel_PSNR": 37.054774758458215
+    },
+    {
+      "view": "00089.png",
+      "global_RGB_PSNR": 36.71961399148721,
+      "mean_channel_PSNR": 36.864251377832744
+    },
+    {
+      "view": "00090.png",
+      "global_RGB_PSNR": 36.69579529611867,
+      "mean_channel_PSNR": 36.81531362671492
+    },
+    {
+      "view": "00091.png",
+      "global_RGB_PSNR": 36.97263514739423,
+      "mean_channel_PSNR": 37.09696731230062
+    },
+    {
+      "view": "00092.png",
+      "global_RGB_PSNR": 37.31620026518796,
+      "mean_channel_PSNR": 37.4568764179733
+    },
+    {
+      "view": "00093.png",
+      "global_RGB_PSNR": 36.745579060804005,
+      "mean_channel_PSNR": 36.88595060151682
+    },
+    {
+      "view": "00094.png",
+      "global_RGB_PSNR": 36.333788908829675,
+      "mean_channel_PSNR": 36.47624468423061
+    },
+    {
+      "view": "00095.png",
+      "global_RGB_PSNR": 36.091824737000096,
+      "mean_channel_PSNR": 36.223856765274256
+    },
+    {
+      "view": "00096.png",
+      "global_RGB_PSNR": 36.242911448098894,
+      "mean_channel_PSNR": 36.38253675522146
+    },
+    {
+      "view": "00097.png",
+      "global_RGB_PSNR": 36.710156907992506,
+      "mean_channel_PSNR": 36.843565886057554
+    },
+    {
+      "view": "00098.png",
+      "global_RGB_PSNR": 37.012770666698955,
+      "mean_channel_PSNR": 37.11834953535888
+    },
+    {
+      "view": "00099.png",
+      "global_RGB_PSNR": 36.36512227898969,
+      "mean_channel_PSNR": 36.449176190344346
+    },
+    {
+      "view": "00100.png",
+      "global_RGB_PSNR": 35.936530536549114,
+      "mean_channel_PSNR": 36.000890707671346
+    },
+    {
+      "view": "00101.png",
+      "global_RGB_PSNR": 35.78600909991538,
+      "mean_channel_PSNR": 35.823877365970844
+    },
+    {
+      "view": "00102.png",
+      "global_RGB_PSNR": 35.71565229648678,
+      "mean_channel_PSNR": 35.74692542953439
+    },
+    {
+      "view": "00103.png",
+      "global_RGB_PSNR": 35.59728104982439,
+      "mean_channel_PSNR": 35.630409997905865
+    },
+    {
+      "view": "00104.png",
+      "global_RGB_PSNR": 35.995032300019844,
+      "mean_channel_PSNR": 36.04305729714306
+    },
+    {
+      "view": "00105.png",
+      "global_RGB_PSNR": 34.28516224782494,
+      "mean_channel_PSNR": 34.344043822147235
+    },
+    {
+      "view": "00106.png",
+      "global_RGB_PSNR": 32.267167773434174,
+      "mean_channel_PSNR": 32.32088710573836
+    },
+    {
+      "view": "00107.png",
+      "global_RGB_PSNR": 30.972801530818654,
+      "mean_channel_PSNR": 31.021350486026922
+    },
+    {
+      "view": "00108.png",
+      "global_RGB_PSNR": 30.6412512821738,
+      "mean_channel_PSNR": 30.686458380720648
+    },
+    {
+      "view": "00109.png",
+      "global_RGB_PSNR": 30.85539069952401,
+      "mean_channel_PSNR": 30.905465992155175
+    },
+    {
+      "view": "00110.png",
+      "global_RGB_PSNR": 31.546345639188424,
+      "mean_channel_PSNR": 31.60115868273221
+    },
+    {
+      "view": "00111.png",
+      "global_RGB_PSNR": 32.42260292806276,
+      "mean_channel_PSNR": 32.49523572846986
+    },
+    {
+      "view": "00112.png",
+      "global_RGB_PSNR": 33.21715989184425,
+      "mean_channel_PSNR": 33.31205240093801
+    },
+    {
+      "view": "00113.png",
+      "global_RGB_PSNR": 33.586574364933284,
+      "mean_channel_PSNR": 33.68324333051209
+    },
+    {
+      "view": "00114.png",
+      "global_RGB_PSNR": 33.60295651130888,
+      "mean_channel_PSNR": 33.683839198597546
+    },
+    {
+      "view": "00115.png",
+      "global_RGB_PSNR": 33.03233821476832,
+      "mean_channel_PSNR": 33.093887010085304
+    },
+    {
+      "view": "00116.png",
+      "global_RGB_PSNR": 32.466097048968145,
+      "mean_channel_PSNR": 32.5240573087184
+    },
+    {
+      "view": "00117.png",
+      "global_RGB_PSNR": 32.04383761813986,
+      "mean_channel_PSNR": 32.10537063857684
+    },
+    {
+      "view": "00118.png",
+      "global_RGB_PSNR": 31.97237017371462,
+      "mean_channel_PSNR": 32.04485744364652
+    },
+    {
+      "view": "00119.png",
+      "global_RGB_PSNR": 31.90545238080848,
+      "mean_channel_PSNR": 31.980774471018936
+    },
+    {
+      "view": "00120.png",
+      "global_RGB_PSNR": 32.22161256424585,
+      "mean_channel_PSNR": 32.30978917942097
+    },
+    {
+      "view": "00121.png",
+      "global_RGB_PSNR": 32.47108423109667,
+      "mean_channel_PSNR": 32.56208323965826
+    },
+    {
+      "view": "00122.png",
+      "global_RGB_PSNR": 32.84845692071342,
+      "mean_channel_PSNR": 32.93937186486963
+    },
+    {
+      "view": "00123.png",
+      "global_RGB_PSNR": 33.33935454328978,
+      "mean_channel_PSNR": 33.42794203931124
+    },
+    {
+      "view": "00124.png",
+      "global_RGB_PSNR": 33.718638852888624,
+      "mean_channel_PSNR": 33.79304284039289
+    },
+    {
+      "view": "00125.png",
+      "global_RGB_PSNR": 33.73227754444217,
+      "mean_channel_PSNR": 33.79404634929719
+    },
+    {
+      "view": "00126.png",
+      "global_RGB_PSNR": 33.90626267803226,
+      "mean_channel_PSNR": 33.96281365808641
+    },
+    {
+      "view": "00127.png",
+      "global_RGB_PSNR": 33.95191778000802,
+      "mean_channel_PSNR": 34.005793921434126
+    },
+    {
+      "view": "00128.png",
+      "global_RGB_PSNR": 34.0194319174659,
+      "mean_channel_PSNR": 34.084876578860964
+    },
+    {
+      "view": "00129.png",
+      "global_RGB_PSNR": 34.419022160464884,
+      "mean_channel_PSNR": 34.50711385786033
+    },
+    {
+      "view": "00130.png",
+      "global_RGB_PSNR": 34.81230101106412,
+      "mean_channel_PSNR": 34.93311274677907
+    },
+    {
+      "view": "00131.png",
+      "global_RGB_PSNR": 35.3284391905478,
+      "mean_channel_PSNR": 35.483722951508206
+    },
+    {
+      "view": "00132.png",
+      "global_RGB_PSNR": 35.836406693907435,
+      "mean_channel_PSNR": 36.010740769769406
+    },
+    {
+      "view": "00133.png",
+      "global_RGB_PSNR": 35.946098334650515,
+      "mean_channel_PSNR": 36.13684932888064
+    },
+    {
+      "view": "00134.png",
+      "global_RGB_PSNR": 35.65824814976881,
+      "mean_channel_PSNR": 35.829360732952985
+    },
+    {
+      "view": "00135.png",
+      "global_RGB_PSNR": 35.62792029114493,
+      "mean_channel_PSNR": 35.77622589076241
+    },
+    {
+      "view": "00136.png",
+      "global_RGB_PSNR": 35.15720599251151,
+      "mean_channel_PSNR": 35.301627651377906
+    },
+    {
+      "view": "00137.png",
+      "global_RGB_PSNR": 34.727454634209636,
+      "mean_channel_PSNR": 34.86485248605422
+    },
+    {
+      "view": "00138.png",
+      "global_RGB_PSNR": 34.42783082376527,
+      "mean_channel_PSNR": 34.5707400817771
+    },
+    {
+      "view": "00139.png",
+      "global_RGB_PSNR": 33.99113964306605,
+      "mean_channel_PSNR": 34.12693474985138
+    },
+    {
+      "view": "00140.png",
+      "global_RGB_PSNR": 33.727749915402505,
+      "mean_channel_PSNR": 33.85655013921968
+    },
+    {
+      "view": "00141.png",
+      "global_RGB_PSNR": 33.66823172072513,
+      "mean_channel_PSNR": 33.78920899704473
+    },
+    {
+      "view": "00142.png",
+      "global_RGB_PSNR": 33.71737995490612,
+      "mean_channel_PSNR": 33.82223890762032
+    },
+    {
+      "view": "00143.png",
+      "global_RGB_PSNR": 33.825233623004976,
+      "mean_channel_PSNR": 33.91901304340529
+    },
+    {
+      "view": "00144.png",
+      "global_RGB_PSNR": 33.80480776591723,
+      "mean_channel_PSNR": 33.89790921621704
+    },
+    {
+      "view": "00145.png",
+      "global_RGB_PSNR": 33.656678215937525,
+      "mean_channel_PSNR": 33.754813599739485
+    },
+    {
+      "view": "00146.png",
+      "global_RGB_PSNR": 33.88999333323194,
+      "mean_channel_PSNR": 33.985513216307986
+    },
+    {
+      "view": "00147.png",
+      "global_RGB_PSNR": 33.96960301184582,
+      "mean_channel_PSNR": 34.08362126811917
+    },
+    {
+      "view": "00148.png",
+      "global_RGB_PSNR": 34.05431705962105,
+      "mean_channel_PSNR": 34.18146274250787
+    },
+    {
+      "view": "00149.png",
+      "global_RGB_PSNR": 34.000447314213226,
+      "mean_channel_PSNR": 34.13852780639822
+    },
+    {
+      "view": "00150.png",
+      "global_RGB_PSNR": 33.98804000322872,
+      "mean_channel_PSNR": 34.13457273262096
+    },
+    {
+      "view": "00151.png",
+      "global_RGB_PSNR": 34.05474080058651,
+      "mean_channel_PSNR": 34.22016251157131
+    },
+    {
+      "view": "00152.png",
+      "global_RGB_PSNR": 34.20577191009996,
+      "mean_channel_PSNR": 34.38149055890093
+    },
+    {
+      "view": "00153.png",
+      "global_RGB_PSNR": 34.38255010385299,
+      "mean_channel_PSNR": 34.568616364878785
+    },
+    {
+      "view": "00154.png",
+      "global_RGB_PSNR": 34.59296042015135,
+      "mean_channel_PSNR": 34.79014023409534
+    },
+    {
+      "view": "00155.png",
+      "global_RGB_PSNR": 34.797019684861795,
+      "mean_channel_PSNR": 34.99679787874468
+    },
+    {
+      "view": "00156.png",
+      "global_RGB_PSNR": 34.88206181698455,
+      "mean_channel_PSNR": 35.07069750015103
+    },
+    {
+      "view": "00157.png",
+      "global_RGB_PSNR": 34.60570747190547,
+      "mean_channel_PSNR": 34.79644217747083
+    },
+    {
+      "view": "00158.png",
+      "global_RGB_PSNR": 34.282195413429555,
+      "mean_channel_PSNR": 34.4730633750522
+    },
+    {
+      "view": "00159.png",
+      "global_RGB_PSNR": 33.88442743281052,
+      "mean_channel_PSNR": 34.07170899237969
+    },
+    {
+      "view": "00160.png",
+      "global_RGB_PSNR": 33.72586217046158,
+      "mean_channel_PSNR": 33.922651039742696
+    },
+    {
+      "view": "00161.png",
+      "global_RGB_PSNR": 33.53672825115708,
+      "mean_channel_PSNR": 33.732419553082075
+    },
+    {
+      "view": "00162.png",
+      "global_RGB_PSNR": 33.56946017998588,
+      "mean_channel_PSNR": 33.77383112876851
+    },
+    {
+      "view": "00163.png",
+      "global_RGB_PSNR": 33.68270170897057,
+      "mean_channel_PSNR": 33.89399992577548
+    },
+    {
+      "view": "00164.png",
+      "global_RGB_PSNR": 34.04154488547956,
+      "mean_channel_PSNR": 34.257668611705306
+    },
+    {
+      "view": "00165.png",
+      "global_RGB_PSNR": 34.61820703100805,
+      "mean_channel_PSNR": 34.84310051507316
+    },
+    {
+      "view": "00166.png",
+      "global_RGB_PSNR": 35.32750639111307,
+      "mean_channel_PSNR": 35.56470242610353
+    },
+    {
+      "view": "00167.png",
+      "global_RGB_PSNR": 36.89980354502342,
+      "mean_channel_PSNR": 37.160054474885605
+    },
+    {
+      "view": "00168.png",
+      "global_RGB_PSNR": 39.479206279451525,
+      "mean_channel_PSNR": 39.77990038709964
+    },
+    {
+      "view": "00169.png",
+      "global_RGB_PSNR": 37.38006594891025,
+      "mean_channel_PSNR": 37.65891537849358
+    },
+    {
+      "view": "00170.png",
+      "global_RGB_PSNR": 35.91380572658859,
+      "mean_channel_PSNR": 36.16841690007938
+    },
+    {
+      "view": "00171.png",
+      "global_RGB_PSNR": 34.95285922366027,
+      "mean_channel_PSNR": 35.19272543331505
+    },
+    {
+      "view": "00172.png",
+      "global_RGB_PSNR": 34.54605125005403,
+      "mean_channel_PSNR": 34.78643177015156
+    },
+    {
+      "view": "00173.png",
+      "global_RGB_PSNR": 34.29880672257679,
+      "mean_channel_PSNR": 34.5330816804454
+    },
+    {
+      "view": "00174.png",
+      "global_RGB_PSNR": 33.972750905596136,
+      "mean_channel_PSNR": 34.1971865520913
+    },
+    {
+      "view": "00175.png",
+      "global_RGB_PSNR": 33.85065492088381,
+      "mean_channel_PSNR": 34.05876759563581
+    },
+    {
+      "view": "00176.png",
+      "global_RGB_PSNR": 33.844118720327934,
+      "mean_channel_PSNR": 34.04700566661117
+    },
+    {
+      "view": "00177.png",
+      "global_RGB_PSNR": 33.76893893573785,
+      "mean_channel_PSNR": 33.962763869124295
+    },
+    {
+      "view": "00178.png",
+      "global_RGB_PSNR": 33.624602105915,
+      "mean_channel_PSNR": 33.81015646598743
+    },
+    {
+      "view": "00179.png",
+      "global_RGB_PSNR": 33.493293383020855,
+      "mean_channel_PSNR": 33.673446101780854
+    },
+    {
+      "view": "00180.png",
+      "global_RGB_PSNR": 33.236371650441036,
+      "mean_channel_PSNR": 33.39813046126296
+    },
+    {
+      "view": "00181.png",
+      "global_RGB_PSNR": 32.950041095374154,
+      "mean_channel_PSNR": 33.10126744777983
+    },
+    {
+      "view": "00182.png",
+      "global_RGB_PSNR": 32.667844807389976,
+      "mean_channel_PSNR": 32.824795020072465
+    },
+    {
+      "view": "00183.png",
+      "global_RGB_PSNR": 32.54802011380772,
+      "mean_channel_PSNR": 32.70431296756074
+    },
+    {
+      "view": "00184.png",
+      "global_RGB_PSNR": 32.44565536804315,
+      "mean_channel_PSNR": 32.605729168722426
+    },
+    {
+      "view": "00185.png",
+      "global_RGB_PSNR": 32.412907067217844,
+      "mean_channel_PSNR": 32.57858833678382
+    },
+    {
+      "view": "00186.png",
+      "global_RGB_PSNR": 32.442401542784566,
+      "mean_channel_PSNR": 32.61981889066005
+    },
+    {
+      "view": "00187.png",
+      "global_RGB_PSNR": 32.54620176019166,
+      "mean_channel_PSNR": 32.73855672399312
+    },
+    {
+      "view": "00188.png",
+      "global_RGB_PSNR": 32.606269120690044,
+      "mean_channel_PSNR": 32.81849724872434
+    },
+    {
+      "view": "00189.png",
+      "global_RGB_PSNR": 32.85094721057506,
+      "mean_channel_PSNR": 33.06217888831785
+    },
+    {
+      "view": "00190.png",
+      "global_RGB_PSNR": 33.03030015043451,
+      "mean_channel_PSNR": 33.250210880963735
+    },
+    {
+      "view": "00191.png",
+      "global_RGB_PSNR": 33.16151447568934,
+      "mean_channel_PSNR": 33.39729108394905
+    },
+    {
+      "view": "00192.png",
+      "global_RGB_PSNR": 33.359845462957175,
+      "mean_channel_PSNR": 33.60330541649185
+    },
+    {
+      "view": "00193.png",
+      "global_RGB_PSNR": 33.57072330047926,
+      "mean_channel_PSNR": 33.8228908354101
+    },
+    {
+      "view": "00194.png",
+      "global_RGB_PSNR": 33.86718786780481,
+      "mean_channel_PSNR": 34.11228661683068
+    },
+    {
+      "view": "00195.png",
+      "global_RGB_PSNR": 34.30309729339872,
+      "mean_channel_PSNR": 34.536140067394086
+    },
+    {
+      "view": "00196.png",
+      "global_RGB_PSNR": 34.63617342479965,
+      "mean_channel_PSNR": 34.86997960827251
+    },
+    {
+      "view": "00197.png",
+      "global_RGB_PSNR": 35.03895216182658,
+      "mean_channel_PSNR": 35.26167754081508
+    },
+    {
+      "view": "00198.png",
+      "global_RGB_PSNR": 35.48747185191518,
+      "mean_channel_PSNR": 35.71519777342971
+    },
+    {
+      "view": "00199.png",
+      "global_RGB_PSNR": 35.79502353594393,
+      "mean_channel_PSNR": 36.03203336271467
+    }
+  ],
+  "scope": "Original train.py passes CHW to psnr(), which flattens dimension 0 as independent channels and then averages dB. metrics.py adds a batch axis and computes all-RGB MSE before log. Independent calculations on the SAME PNGs isolate that aggregation difference. The remaining small float-training vs PNG difference is reported, not asserted zero."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "V17-corrected-plane",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/plane-trained",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/plane_config.json",
+    "--tag",
+    "plane_corrected_rerun",
+    "--correct-sh-frame"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T03:47:13.384544+08:00",
+  "log": "logs/V17-corrected-plane.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T04:04:48.409993+08:00",
+  "elapsed_s": 1055.0254499659968
+}

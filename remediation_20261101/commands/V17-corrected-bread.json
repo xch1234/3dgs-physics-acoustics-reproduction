@@ -1,0 +1,22 @@
+{
+  "name": "V17-corrected-bread",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/bread-trained",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/tear_bread_config.json",
+    "--tag",
+    "bread_corrected_rerun",
+    "--correct-sh-frame"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T03:40:04.664425+08:00",
+  "log": "logs/V17-corrected-bread.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T03:47:13.268555+08:00",
+  "elapsed_s": 428.6034473660002
+}

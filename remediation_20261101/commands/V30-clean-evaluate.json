@@ -1,0 +1,18 @@
+{
+  "name": "V30-clean-evaluate",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_eval_task.py",
+    "--output-dir",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/clean_env_300",
+    "--iteration",
+    "300"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:10:29.581254+08:00",
+  "log": "logs/V30-clean-evaluate.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:12:35.781607+08:00",
+  "elapsed_s": 126.200219862003
+}

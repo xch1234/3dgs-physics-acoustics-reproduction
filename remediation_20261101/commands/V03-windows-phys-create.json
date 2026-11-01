@@ -1,0 +1,19 @@
+{
+  "name": "V03-windows-phys-create",
+  "command": [
+    "C:/ProgramData/anaconda3/Scripts/conda.exe",
+    "env",
+    "create",
+    "--yes",
+    "--prefix",
+    "F:\\3dgs-remediation\\envs\\physgaussian-windows-clean",
+    "--file",
+    "F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\docs\\environment.yml"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:41:10.878604+08:00",
+  "log": "logs\\V03-windows-phys-create.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:47:12.836232+08:00",
+  "elapsed_s": 361.9529999999795
+}

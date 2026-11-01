@@ -1,0 +1,15 @@
+{
+  "name": "V30-pat-clean-test-transfer",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_pat_task.py",
+    "transfer"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:20:47.971795+08:00",
+  "log": "logs/V30-pat-clean-test-transfer.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:20:59.722112+08:00",
+  "elapsed_s": 11.750142169003084
+}

@@ -1,0 +1,14 @@
+{
+  "name": "V30-canonical-access",
+  "command": [
+    "F:/3dgs-remediation/envs/physgaussian-windows-clean/python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\probe_canonical_source.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T23:08:28.344283+08:00",
+  "log": "logs\\V30-canonical-access.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T23:08:32.889958+08:00",
+  "elapsed_s": 4.547000000020489
+}

@@ -1,0 +1,14 @@
+{
+  "name": "final-SH-precision-recheck",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\recheck_sh_precision.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:46:50.207147+08:00",
+  "log": "logs\\final-SH-precision-recheck.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:47:24.174961+08:00",
+  "elapsed_s": 33.96900000004098
+}

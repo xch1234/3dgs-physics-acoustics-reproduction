@@ -5,8 +5,8 @@ ROOT=Path(__file__).resolve().parents[1]
 def digest(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--prefix',default='');ap.add_argument('--all',action='store_true');ap.add_argument('--list',action='store_true');ap.add_argument('--cache',type=Path,default=ROOT/'.artifact-cache');ap.add_argument('--destination',type=Path,default=ROOT);a=ap.parse_args()
- m=json.loads((ROOT/'sharing/artifacts.json').read_text(encoding='utf8'));files=[x for x in m['files'] if x['path'].startswith(a.prefix)]
+ ap=argparse.ArgumentParser();ap.add_argument('--prefix',default='');ap.add_argument('--all',action='store_true');ap.add_argument('--list',action='store_true');ap.add_argument('--cache',type=Path,default=ROOT/'.artifact-cache');ap.add_argument('--destination',type=Path,default=ROOT);ap.add_argument('--manifest',type=Path,default=ROOT/'sharing/artifacts.json',help='Use sharing/remediation-artifacts.json for the November 2 supplement.');a=ap.parse_args()
+ m=json.loads(a.manifest.read_text(encoding='utf8'));files=[x for x in m['files'] if x['path'].startswith(a.prefix)]
  if not files:raise SystemExit('No matching paths')
  if a.list:
   for f in files:print(f"{f['size']:>12}  {f['path']}")

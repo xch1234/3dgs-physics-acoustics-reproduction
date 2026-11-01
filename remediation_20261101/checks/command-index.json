@@ -1,0 +1,14 @@
+{
+  "record_count": 108,
+  "nonzero_or_missing_exit": [
+    "V30-clean-gpu-imports",
+    "V03-windows-phys-import",
+    "V30-canonical-ficus",
+    "V30-canonical-ficus-updated-folder",
+    "V28-neural-example",
+    "final-artifact-validation",
+    "final-command-index",
+    "final-document-validation"
+  ],
+  "scope": "Execution metadata including failed attempts; not scientific acceptance."
+}

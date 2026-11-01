@@ -1,0 +1,16 @@
+{
+  "name": "V30-gdown-install",
+  "command": [
+    "F:/3dgs-remediation/envs/acoustics-clean/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "gdown==5.2.0"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:26:02.176034+08:00",
+  "log": "logs\\V30-gdown-install.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:26:16.347625+08:00",
+  "elapsed_s": 14.172000000020489
+}

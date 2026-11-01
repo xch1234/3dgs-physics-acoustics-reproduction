@@ -1,0 +1,15 @@
+{
+  "name": "V30-pat-clean-test-fem",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/clean_pat_task.py",
+    "fem"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:20:30.606666+08:00",
+  "log": "logs/V30-pat-clean-test-fem.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:20:33.252522+08:00",
+  "elapsed_s": 2.6457673979966785
+}

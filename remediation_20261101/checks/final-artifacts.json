@@ -1,0 +1,809 @@
+{
+  "passed": true,
+  "video_and_scene_checks": [
+    {
+      "path": "physics/outputs/ficus_rerun/output.mp4",
+      "frames": 125,
+      "fps": 25.0,
+      "video_seconds": 5.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "915c6343a5a35b00ae13e9af1073eb25b0003f21bc117bc20ddf49524b1ee4fd",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_rerun/output.mp4"
+      ],
+      "scene": "ficus_rerun",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 171553,
+      "minimum_recorded_F_determinant": 0.9811096787452698,
+      "model_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+      "nominal_simulation_seconds": 5.0,
+      "actual_simulation_seconds": 5.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 50000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/bread_rerun/output.mp4",
+      "frames": 300,
+      "fps": 100.0,
+      "video_seconds": 3.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "e2edfc7074b29aba99d44e46a342b9795fc5dea15e694939e895bff8a9148c6b",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/bread_rerun/output.mp4"
+      ],
+      "scene": "bread_rerun",
+      "image_dimensions": [
+        1000,
+        1000
+      ],
+      "arrays_finite": true,
+      "particle_count": 182959,
+      "minimum_recorded_F_determinant": 0.10566120594739914,
+      "model_sha256": "07e019407e920932094af67acb90b9fe8b37d1206a0724926dc117cb4d12b1bf",
+      "nominal_simulation_seconds": 3.0,
+      "actual_simulation_seconds": 3.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 30000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/pillow2sofa_rerun/output.mp4",
+      "frames": 300,
+      "fps": 50.0,
+      "video_seconds": 6.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "2689e43c2a840ee02e15f5856c9985240a0557cfed4007058c99c564c0b8a62f",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/pillow2sofa_rerun/output.mp4"
+      ],
+      "scene": "pillow2sofa_rerun",
+      "image_dimensions": [
+        1000,
+        1000
+      ],
+      "arrays_finite": true,
+      "particle_count": 695984,
+      "minimum_recorded_F_determinant": 0.08881884813308716,
+      "model_sha256": "7ac0be91d634d6a0b53fb5dde23fb2c2aca7f30ba357173fb0951b66b2b3162a",
+      "nominal_simulation_seconds": 6.0,
+      "actual_simulation_seconds": 6.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 60000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/plane_rerun/output.mp4",
+      "frames": 400,
+      "fps": 100.0,
+      "video_seconds": 4.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "25f0062a255d38838fc7bdce77c18e1a95e6c8bbb36b05b5a33f5a3df7ab7951",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/plane_rerun/output.mp4"
+      ],
+      "scene": "plane_rerun",
+      "image_dimensions": [
+        1060,
+        1895
+      ],
+      "arrays_finite": true,
+      "particle_count": 67260,
+      "minimum_recorded_F_determinant": 0.9443758726119995,
+      "model_sha256": "1ff04607704ec94ba082efa20a803aac29cbe481884fefb5db9fa460e97e0f03",
+      "nominal_simulation_seconds": 4.0,
+      "actual_simulation_seconds": 4.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 40000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/vasedeck_rerun/output.mp4",
+      "frames": 75,
+      "fps": 25.0,
+      "video_seconds": 3.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "bc78bae4ba8f3f8a028b7dae9083b2f5df2c71358534ab3c628cb910f8492236",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/vasedeck_rerun/output.mp4"
+      ],
+      "scene": "vasedeck_rerun",
+      "image_dimensions": [
+        3994,
+        2995
+      ],
+      "arrays_finite": true,
+      "particle_count": 55364,
+      "minimum_recorded_F_determinant": 0.8625667691230774,
+      "model_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+      "nominal_simulation_seconds": 3.0,
+      "actual_simulation_seconds": 3.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 30000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/wolf_rerun/output.mp4",
+      "frames": 50,
+      "fps": 25.0,
+      "video_seconds": 2.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "18334a1c8d3c93d322de0d4dda20f42e9258eac37f5585d2730ec8e3cca6b20d",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/wolf_rerun/output.mp4"
+      ],
+      "scene": "wolf_rerun",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 188201,
+      "minimum_recorded_F_determinant": 0.9935627579689026,
+      "model_sha256": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b",
+      "nominal_simulation_seconds": 2.0,
+      "actual_simulation_seconds": 1.999,
+      "simulation_minus_video_seconds": -0.0009999999999998899,
+      "steps": 99950,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/bread_corrected_rerun/output.mp4",
+      "frames": 300,
+      "fps": 100.0,
+      "video_seconds": 3.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "fa1be1cf41ae664f0ba1ce6bf0a7dc96d7298b35ec7c7290b079ab2a4cc775ec",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/bread_corrected_rerun/output.mp4"
+      ],
+      "scene": "bread_corrected_rerun",
+      "image_dimensions": [
+        1000,
+        1000
+      ],
+      "arrays_finite": true,
+      "particle_count": 182959,
+      "minimum_recorded_F_determinant": 0.12380902469158173,
+      "model_sha256": "07e019407e920932094af67acb90b9fe8b37d1206a0724926dc117cb4d12b1bf",
+      "nominal_simulation_seconds": 3.0,
+      "actual_simulation_seconds": 3.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 30000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/plane_corrected_rerun/output.mp4",
+      "frames": 400,
+      "fps": 100.0,
+      "video_seconds": 4.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "7b055b0947ecdaae1f780d603dc9bb7443f573015d3dac531d6423fa58064ec4",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/plane_corrected_rerun/output.mp4"
+      ],
+      "scene": "plane_corrected_rerun",
+      "image_dimensions": [
+        1060,
+        1895
+      ],
+      "arrays_finite": true,
+      "particle_count": 67260,
+      "minimum_recorded_F_determinant": 0.9443599581718445,
+      "model_sha256": "1ff04607704ec94ba082efa20a803aac29cbe481884fefb5db9fa460e97e0f03",
+      "nominal_simulation_seconds": 4.0,
+      "actual_simulation_seconds": 4.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 40000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/vasedeck_corrected_rerun/output.mp4",
+      "frames": 75,
+      "fps": 25.0,
+      "video_seconds": 3.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "1ea9d849744ac189a154f539060fe938883fca8431825074751cca4dc510f4ee",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/vasedeck_corrected_rerun/output.mp4"
+      ],
+      "scene": "vasedeck_corrected_rerun",
+      "image_dimensions": [
+        3994,
+        2995
+      ],
+      "arrays_finite": true,
+      "particle_count": 55364,
+      "minimum_recorded_F_determinant": 0.8625639081001282,
+      "model_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+      "nominal_simulation_seconds": 3.0,
+      "actual_simulation_seconds": 3.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 30000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/ficus_reconstructed_rerun/output.mp4",
+      "frames": 125,
+      "fps": 25.0,
+      "video_seconds": 5.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "ec9a2f8af2466cd3510da2658312890df0527ee5c0b9d3b5998724d4b821bee6",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_reconstructed_rerun/output.mp4"
+      ],
+      "scene": "ficus_reconstructed_rerun",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 215654,
+      "minimum_recorded_F_determinant": 0.9748014211654663,
+      "model_sha256": "2d885267faa054bb842c8a86c5d27c6dba1fd485a6fee6afa9b4e525b0066697",
+      "nominal_simulation_seconds": 5.0,
+      "actual_simulation_seconds": 5.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 50000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/ficus_anisotropy_rerun/output.mp4",
+      "frames": 125,
+      "fps": 25.0,
+      "video_seconds": 5.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "59b942678f336b4d586c9b858e79ac9b1ed82c01009592e2589c854fb6389c20",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy_rerun/output.mp4"
+      ],
+      "scene": "ficus_anisotropy_rerun",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 250272,
+      "minimum_recorded_F_determinant": 0.9737613797187805,
+      "model_sha256": "eda2d548c6c52f9d92e9c8029ea9cd673144557f301c2bfdb1c98eb2a01af85f",
+      "nominal_simulation_seconds": 5.0,
+      "actual_simulation_seconds": 5.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 50000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/snow_ficus_local/output.mp4",
+      "frames": 25,
+      "fps": 25.0,
+      "video_seconds": 1.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "321effa323cd706490cf3e7a5d4ab77b10f64dcb5c4e8cc0b79b1925017fcc64",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/snow_ficus_local/output.mp4"
+      ],
+      "scene": "snow_ficus_local",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 171553,
+      "minimum_recorded_F_determinant": 0.9693824052810669,
+      "model_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+      "nominal_simulation_seconds": 1.0,
+      "actual_simulation_seconds": 1.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 10000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "physics/outputs/snow_ficus_clean_env/output.mp4",
+      "frames": 25,
+      "fps": 25.0,
+      "video_seconds": 1.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "a1f17983fab7c731013b4fbfa90bfc26fc1d55825622335d36d53d080122add8",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/snow_ficus_clean_env/output.mp4"
+      ],
+      "scene": "snow_ficus_clean_env",
+      "image_dimensions": [
+        800,
+        800
+      ],
+      "arrays_finite": true,
+      "particle_count": 171553,
+      "minimum_recorded_F_determinant": 0.9693838953971863,
+      "model_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+      "nominal_simulation_seconds": 1.0,
+      "actual_simulation_seconds": 1.0,
+      "simulation_minus_video_seconds": 0.0,
+      "steps": 10000,
+      "step_rounding_note": "Original simulator uses int(frame_dt/substep_dt); floating-point ratios can truncate one step. Nominal/video and actual simulated times are reported separately; not silently asserted identical."
+    },
+    {
+      "path": "unified_beam/bem_synchronized.mp4",
+      "frames": 90,
+      "fps": 30.0,
+      "video_seconds": 3.0,
+      "audio_streams": 1,
+      "audio_timing": [
+        {
+          "start_seconds": 0.0,
+          "duration_seconds": 3.0,
+          "sample_rate": 48000,
+          "channels": 1
+        }
+      ],
+      "codec": "h264",
+      "sha256": "bf208c5d534e1a6180157b4353a59c22a8e856b9f1ba024ed1edb5b8bacbe476",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam/bem_synchronized.mp4"
+      ]
+    },
+    {
+      "path": "unified_beam/pat_synchronized.mp4",
+      "frames": 90,
+      "fps": 30.0,
+      "video_seconds": 3.0,
+      "audio_streams": 1,
+      "audio_timing": [
+        {
+          "start_seconds": 0.0,
+          "duration_seconds": 3.0,
+          "sample_rate": 48000,
+          "channels": 1
+        }
+      ],
+      "codec": "h264",
+      "sha256": "5eb816f871ff0713107c5d4c413a794c3bb3f9b55b20072e0b0271b685838d0b",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam/pat_synchronized.mp4"
+      ]
+    },
+    {
+      "path": "unified_beam/slow_motion_silent.mp4",
+      "frames": 120,
+      "fps": 30.0,
+      "video_seconds": 4.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "070d9d3caf04809a98427bd843e8d2093df2b029aa60b8a439895e8ea20fd862",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam/slow_motion_silent.mp4"
+      ]
+    },
+    {
+      "path": "unified_neural_box/bem_synchronized.mp4",
+      "frames": 90,
+      "fps": 30.0,
+      "video_seconds": 3.0,
+      "audio_streams": 1,
+      "audio_timing": [
+        {
+          "start_seconds": 0.0,
+          "duration_seconds": 3.0,
+          "sample_rate": 48000,
+          "channels": 1
+        }
+      ],
+      "codec": "h264",
+      "sha256": "96558ae7066cad39af182ea840a9e59b4891ac5852d39c8fed6b7c041b5ddc20",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/bem_synchronized.mp4"
+      ]
+    },
+    {
+      "path": "unified_neural_box/neural_synchronized.mp4",
+      "frames": 90,
+      "fps": 30.0,
+      "video_seconds": 3.0,
+      "audio_streams": 1,
+      "audio_timing": [
+        {
+          "start_seconds": 0.0,
+          "duration_seconds": 3.0,
+          "sample_rate": 48000,
+          "channels": 1
+        }
+      ],
+      "codec": "h264",
+      "sha256": "a4b2f48a52f6e0fa729915f38958d43bb62753c651056aa079b57c25d453905b",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/neural_synchronized.mp4"
+      ]
+    },
+    {
+      "path": "unified_neural_box/slow_motion_silent.mp4",
+      "frames": 120,
+      "fps": 30.0,
+      "video_seconds": 4.0,
+      "audio_streams": 0,
+      "audio_timing": [],
+      "codec": "h264",
+      "sha256": "5be5c6867d00976871b966174444107ccdd55fbc3edfd84615b002e81ffe0d62",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/ffprobe",
+        "-v",
+        "error",
+        "-count_frames",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_neural_box/slow_motion_silent.mp4"
+      ]
+    }
+  ],
+  "wav_checks": [
+    {
+      "path": "pat_phase/outputs/phase_preserving/bem_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 259,
+      "sha256": "47bd509b8624e08bb5993715d9847c104f5fcb09e3604315f807717ece1f987e"
+    },
+    {
+      "path": "pat_phase/outputs/phase_preserving/bem_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 27852,
+      "sha256": "df6e6af20971f549ec86ce685e8fa0fca683cd46f04d5a99fa9226b5173cbbab"
+    },
+    {
+      "path": "pat_phase/outputs/phase_preserving/bem_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1005,
+      "sha256": "4ebba8a881e1222cdaa18fb87e9a2b204576a0d32df6ebcb1774254b5dbcafc7"
+    },
+    {
+      "path": "pat_phase/outputs/phase_preserving/pat_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 230,
+      "sha256": "3d601136715c060107f4f21e4e3e8d482ae56359485be2a2b27c4830e69f0d01"
+    },
+    {
+      "path": "pat_phase/outputs/phase_preserving/pat_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 27777,
+      "sha256": "085566c84a8786efe61f4767f83219ada737f8fd72d1e2f6237d5254d94d09ec"
+    },
+    {
+      "path": "pat_phase/outputs/phase_preserving/pat_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1013,
+      "sha256": "c7b48d25e12b93cdb3e658a37e02a76d01a9cdb169b1913c2cba33719e0ca728"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/bem_moving.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 27829,
+      "sha256": "4840be9bbbd431b6782e9c60cc8ffb9a03f76a6e18bf03a5c37f357e96183dd1"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/bem_static_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1717,
+      "sha256": "12923e38d84ae344f5fb4b67cfcf72e574387695b74aaeccaf75f432becf7708"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/bem_static_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 9267,
+      "sha256": "95db258e037c24e87ff56f86e6840d53dcdbb4d39ad6842fc2072509f6550a13"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/bem_static_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1942,
+      "sha256": "a6ef2f988e43e64cf0c04251f28983228ba6c20ae7cbdfbd94306902e489c323"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/pat_moving.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 27852,
+      "sha256": "305bd13831e9c869762c05887a89dcb81ef67a76860514a5197a457eb2193cb9"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/pat_static_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1692,
+      "sha256": "54560ab2ba2ecbbd4e7eebca06ebc42229231ab270ebb795d66cde200e8fab0f"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/pat_static_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 9273,
+      "sha256": "959b90a4980a1bfdb112199ea5aefaf622c78a8e14c6dbb64c15ec5cb7e2bb52"
+    },
+    {
+      "path": "pat_extensions/outputs/phase_preserving/pat_static_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1968,
+      "sha256": "8d37eaf25ca9658d60804b7d00cbad7eadbf360836cfd76a448a855890ef16d2"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/bem_listener_1.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1766,
+      "sha256": "44c263ef736b7619fdfe4152e53c7157fed8cbb7135a69119d6256055c87715f"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/bem_listener_2.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 3778,
+      "sha256": "bfdc4c3104c2817f05014bc041dd6415148ef567ada38f193b8d98247b14adef"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/bem_listener_3.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 14212,
+      "sha256": "21dbf8cd9bfbddebd4902fe102b9e808fc2c2591aec1c29b74d1b2bb7abe419e"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/neural_listener_1.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 10702,
+      "sha256": "9b0357a8266515b71305ed8527288384fcfae5dfbfe5648971f405742263339a"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/neural_listener_2.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 12365,
+      "sha256": "d694a24b3b410cc00098ac654135be7fa9763bb979d0615225ea91e359c158a5"
+    },
+    {
+      "path": "neural_extensions/outputs/neural_audio/neural_listener_3.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 27852,
+      "sha256": "6031de4755e4fbf808a6abfeca65d3e0212ec012536f2ff517026e23bff7033d"
+    },
+    {
+      "path": "unified_beam/bem.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 259,
+      "sha256": "47bd509b8624e08bb5993715d9847c104f5fcb09e3604315f807717ece1f987e"
+    },
+    {
+      "path": "unified_beam/pat.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 230,
+      "sha256": "3d601136715c060107f4f21e4e3e8d482ae56359485be2a2b27c4830e69f0d01"
+    },
+    {
+      "path": "unified_neural_box/bem.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 1766,
+      "sha256": "44c263ef736b7619fdfe4152e53c7157fed8cbb7135a69119d6256055c87715f"
+    },
+    {
+      "path": "unified_neural_box/neural.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak_PCM": 10702,
+      "sha256": "9b0357a8266515b71305ed8527288384fcfae5dfbfe5648971f405742263339a"
+    }
+  ],
+  "models": [
+    {
+      "model": "fresh_anisotropy",
+      "sha256": "eda2d548c6c52f9d92e9c8029ea9cd673144557f301c2bfdb1c98eb2a01af85f",
+      "gaussians": 307714,
+      "mean_axis_ratio": 4.479243744922045,
+      "median_axis_ratio": 4.585155632621099,
+      "maximum_axis_ratio": 5.1567558208119575,
+      "fraction_above_5": 0.006093320420910326
+    },
+    {
+      "model": "independent_baseline",
+      "sha256": "d2bebb659fff7fc6a5f80c5e6b1b1a8eec33ef73b0f7094c887eaaeb97636003",
+      "gaussians": 294998,
+      "mean_axis_ratio": 13241.31707490262,
+      "median_axis_ratio": 4390.969215434266,
+      "maximum_axis_ratio": 1024946.8442760607,
+      "fraction_above_5": 0.990718581142923
+    }
+  ],
+  "errors": [],
+  "scope": "All listed media decoded and dimensions/frame counts checked; array/model finiteness. This does not establish paper accuracy or subjective audio quality.",
+  "initial_audit": "checks/final-artifacts-first-attempt.json",
+  "initial_audit_sha256": "a2c56899a6ae6dc619ccf0021feef8fa7f9f06dc1fd98828522a147a2617e162",
+  "recovery": "checks/SH-artifact-precision-recheck.json"
+}

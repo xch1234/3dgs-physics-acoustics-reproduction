@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "changes": [
+    {
+      "path": "01_PhysGaussian\\docs\\environment.yml",
+      "original_replacement_characters": 8,
+      "name": "reproduction-physgaussian",
+      "prefix_removed": true,
+      "backup": "backups\\01_PhysGaussian\\environment.yml"
+    },
+    {
+      "path": "02_PAT\\docs\\environment.yml",
+      "original_replacement_characters": 8,
+      "name": "reproduction-acoustics",
+      "prefix_removed": true,
+      "backup": "backups\\02_PAT\\environment.yml"
+    },
+    {
+      "path": "03_NeuralSound\\docs\\environment.yml",
+      "original_replacement_characters": 8,
+      "name": "reproduction-acoustics",
+      "prefix_removed": true,
+      "backup": "backups\\03_NeuralSound\\environment.yml"
+    }
+  ],
+  "clean_environment_creation": "pending"
+}

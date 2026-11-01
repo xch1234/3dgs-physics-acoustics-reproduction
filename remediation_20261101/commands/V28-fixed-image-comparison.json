@@ -1,0 +1,14 @@
+{
+  "name": "V28-fixed-image-comparison",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/compare_reconstruction_images.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:43:16.741740+08:00",
+  "log": "logs/V28-fixed-image-comparison.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:43:29.349793+08:00",
+  "elapsed_s": 12.607764826003404
+}

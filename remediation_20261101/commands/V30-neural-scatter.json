@@ -1,0 +1,20 @@
+{
+  "name": "V30-neural-scatter",
+  "command": [
+    "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "torch-scatter==2.1.2+pt20cu118",
+    "--only-binary=:all:",
+    "-f",
+    "https://data.pyg.org/whl/torch-2.0.0+cu118.html"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:36:24.250924+08:00",
+  "log": "logs/V30-neural-scatter.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:36:27.366852+08:00",
+  "elapsed_s": 3.1157724649999636
+}

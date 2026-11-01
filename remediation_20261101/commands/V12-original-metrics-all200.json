@@ -1,0 +1,16 @@
+{
+  "name": "V12-original-metrics-all200",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/metrics.py",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/outputs/native_metrics"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-01T21:06:22.835670+08:00",
+  "log": "logs/V12-original-metrics-all200.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:29:35.169407+08:00",
+  "elapsed_s": 4992.3359580470005
+}

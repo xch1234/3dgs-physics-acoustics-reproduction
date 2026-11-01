@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "exit": 0,
+  "seconds": 1.7153193950653076
+}

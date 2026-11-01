@@ -1,0 +1,17 @@
+{
+  "name": "V28-example-retry-voxel",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-X",
+    "faulthandler",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/example_isolated_retry.py",
+    "voxel"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:43:39.844497+08:00",
+  "log": "logs/V28-example-retry-voxel.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:43:51.955119+08:00",
+  "elapsed_s": 12.088358932996925
+}

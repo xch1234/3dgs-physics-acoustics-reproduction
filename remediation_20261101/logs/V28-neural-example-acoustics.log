@@ -1,0 +1,78 @@
+ORIGINAL EXAMPLE: 3863 voxels, 8144 surface triangles, first two physical modes
+  0%|          | 0/2 [00:00<?, ?it/s]GMRES failed strict residual; direct LU fallback: {'info': 500, 'relative_residual': 2.353225296742328e-05, 'iterations': 500}
+SOLVE {'method': 'SciPy dense LU on identical Bempp weak form', 'info': 0, 'relative_residual': 5.115959454462984e-15, 'gmres_attempt': {'info': 500, 'relative_residual': 2.353225296742328e-05, 'iterations': 500}}
+ 50%|█████     | 1/2 [08:12<08:12, 492.84s/it]GMRES failed strict residual; direct LU fallback: {'info': 500, 'relative_residual': 7.733406294640421e-07, 'iterations': 500}
+SOLVE {'method': 'SciPy dense LU on identical Bempp weak form', 'info': 0, 'relative_residual': 6.1125989494187414e-15, 'gmres_attempt': {'info': 500, 'relative_residual': 7.733406294640421e-07, 'iterations': 500}}
+100%|██████████| 2/2 [15:11<00:00, 449.12s/it]100%|██████████| 2/2 [15:11<00:00, 455.68s/it]
+{'scope': 'original author example geometry, first two modes of independent Ceramic FEM reference', 'reference_checks_passed': True, 'frequencies_Hz': [2877.472080794523, 3021.664768236604], 'modal_relative_residuals': [1.4939330951568348e-10, 5.810540083261159e-11], 'bem_solves': [{'method': 'SciPy dense LU on identical Bempp weak form', 'info': 0, 'relative_residual': 5.115959454462984e-15, 'gmres_attempt': {'info': 500, 'relative_residual': 2.353225296742328e-05, 'iterations': 500}}, {'method': 'SciPy dense LU on identical Bempp weak form', 'info': 0, 'relative_residual': 6.1125989494187414e-15, 'gmres_attempt': {'info': 500, 'relative_residual': 7.733406294640421e-07, 'iterations': 500}}], 'elapsed_s': 928.504062449003, 'occupied_voxels': 3863, 'surface_triangles': 8144, 'adaptation': 'GMRES failure retained; if needed dense LU solves the identical assembled weak equation without relaxing residual tolerance'}
+{
+  "scope": "frozen locally trained public AcousticNet on original author example mesh",
+  "execution_completed": true,
+  "inference_device": "cuda:0",
+  "cpu_gpu_consistency": null,
+  "geometry_out_of_distribution": true,
+  "within_training_frequency_range": true,
+  "mode_selection": "first two original Ceramic modes, fixed before training completed",
+  "reference": {
+    "scope": "original author example geometry, first two modes of independent Ceramic FEM reference",
+    "reference_checks_passed": true,
+    "frequencies_Hz": [
+      2877.472080794523,
+      3021.664768236604
+    ],
+    "modal_relative_residuals": [
+      1.4939330951568348e-10,
+      5.810540083261159e-11
+    ],
+    "bem_solves": [
+      {
+        "method": "SciPy dense LU on identical Bempp weak form",
+        "info": 0,
+        "relative_residual": 5.115959454462984e-15,
+        "gmres_attempt": {
+          "info": 500,
+          "relative_residual": 2.353225296742328e-05,
+          "iterations": 500
+        }
+      },
+      {
+        "method": "SciPy dense LU on identical Bempp weak form",
+        "info": 0,
+        "relative_residual": 6.1125989494187414e-15,
+        "gmres_attempt": {
+          "info": 500,
+          "relative_residual": 7.733406294640421e-07,
+          "iterations": 500
+        }
+      }
+    ],
+    "elapsed_s": 928.504062449003,
+    "occupied_voxels": 3863,
+    "surface_triangles": 8144,
+    "adaptation": "GMRES failure retained; if needed dense LU solves the identical assembled weak equation without relaxing residual tolerance"
+  },
+  "test": {
+    "loss": 3.9901570081710815,
+    "mean_transfer_relative_L2": 0.9980484843254089,
+    "samples": [
+      {
+        "sample": "example.npz:0",
+        "normalized_map_relative_L2": 0.5875782370567322,
+        "amplitude_log_error": -5.628354072570801,
+        "transfer_relative_L2": 0.9978371262550354
+      },
+      {
+        "sample": "example.npz:1",
+        "normalized_map_relative_L2": 0.6091480255126953,
+        "amplitude_log_error": -5.804969787597656,
+        "transfer_relative_L2": 0.9982598423957825
+      }
+    ]
+  },
+  "checkpoint_sha256": "edaf533e237fb900194b113bff0cb39c87f85c7a68fe6eb4671451651893e2cf",
+  "limits": [
+    "network trained only on cuboids; no tuning to example",
+    "uses independent reference FEM modes for isolated radiation evaluation",
+    "two in-range modes only; not all modes or ABC benchmark"
+  ]
+}

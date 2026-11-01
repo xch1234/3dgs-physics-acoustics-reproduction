@@ -1,0 +1,37 @@
+{
+  "gdown_version": "6.5.1",
+  "read_only": true,
+  "checks": [
+    {
+      "url": "https://drive.google.com/file/d/18JxhpWD-4ZmuFKLzKlAw-w5PpzZxXOcG/view",
+      "status": 404,
+      "title": "Page Not Found",
+      "visible_text": "Page Not Found Sorry, the file you have requested does not exist. Make sure that you have the correct URL and the file exists. Get stuff done with Google Drive Apps in Google Drive make it easy to create, store and share online documents, spreadsheets, presentations and more. Learn more at drive.google.com/start/apps ."
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4",
+      "files": [
+        {
+          "id": "1PHCpUEbjsrSyDEqXk2kzBMqL7tuSU7t0",
+          "path": "license_CC_BY.txt"
+        },
+        {
+          "id": "1aDEyybmunQurPQimSZxSMQdCObpZNmQn",
+          "path": "nerf_example_data.zip"
+        },
+        {
+          "id": "11PhkBXZZNYTD2emdG1awALlhCnkq7aN-",
+          "path": "nerf_llff_data.zip"
+        },
+        {
+          "id": "17d-NWYGWBcLh3CwFRjGVeb0LXLUBa2QK",
+          "path": "nerf_real_360.zip"
+        },
+        {
+          "id": "1OsiBs2udl32-1CqTXCitmov4NQCYdA9g",
+          "path": "nerf_synthetic.zip"
+        }
+      ]
+    }
+  ]
+}

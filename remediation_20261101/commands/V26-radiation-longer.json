@@ -1,0 +1,31 @@
+{
+  "name": "V26-radiation-longer",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/train_radiation.py",
+    "--epochs",
+    "400",
+    "--batch-size",
+    "16",
+    "--optimizer",
+    "cpu_adam",
+    "--no-augmentation",
+    "--learning-rate",
+    "0.0001",
+    "--decay-period",
+    "100",
+    "--decay-factor",
+    "0.5",
+    "--output-dir",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural/outputs/radiation_longer",
+    "--checkpoint-dir",
+    "/opt/3dgs-runtime/remediation-checkpoints/longer"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T23:35:27.870387+08:00",
+  "log": "logs/V26-radiation-longer.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T01:37:56.506127+08:00",
+  "elapsed_s": 7348.6414107969995
+}

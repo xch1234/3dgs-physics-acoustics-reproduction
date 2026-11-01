@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "F:\System\Desktop\3DGS\复现\remediation_20261101\check_final_documents.py", line 14, in <module>
+    text=file.read_text(encoding='utf8')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\3dgs-remediation\envs\acoustics-clean\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\3dgs-remediation\envs\acoustics-clean\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\命令与输出索引.md'

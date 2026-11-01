@@ -1,0 +1,14 @@
+{
+  "name": "V30-clean-gpu-imports",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-c",
+    "import torch,warp,diff_gaussian_rasterization,simple_knn._C; print(torch.__version__,warp.__version__)"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:32:31.821801+08:00",
+  "log": "logs/V30-clean-gpu-imports.log",
+  "exit_code": 1,
+  "finished": "2026-11-01T21:32:35.243324+08:00",
+  "elapsed_s": 3.4214272959998198
+}

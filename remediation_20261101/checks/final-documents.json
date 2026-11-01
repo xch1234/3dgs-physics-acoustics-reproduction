@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "files": [
+    "remediation_20261101\\补做验收报告.md",
+    "remediation_20261101\\本轮结果查看指南.md",
+    "remediation_20261101\\命令与输出索引.md",
+    "remediation_20261101\\README.md",
+    "remediation_20261101\\可视化人工核查.md",
+    "本轮补做入口.md"
+  ],
+  "local_links_checked": 331,
+  "errors": [],
+  "scope": "Local navigation, item counts and prerequisite evidence gates; not a replacement for scientific or visual review."
+}

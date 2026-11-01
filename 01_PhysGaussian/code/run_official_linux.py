@@ -1,7 +1,8 @@
-"""Run upstream gs_simulation.py with a memory cap and independent state audit.
+"""Run the original MPM/render pipeline with documented external adapters.
 
-No model, material, camera or rendering replacements. Only lower Taichi's
-requested allocation from 8 GiB to 0.5 GiB for this 4 GiB GPU, and disable grads.
+Cap Taichi memory for 4 GiB GPUs, correct the SH basis by default, and dispatch
+snow to an explicit local constitutive extension. Upstream files stay unchanged.
+Legacy switches preserve the known original SH/snow limitations for controls.
 """
 import os
 os.environ['OMP_NUM_THREADS']='1'
@@ -12,6 +13,8 @@ import time
 import argparse
 import hashlib
 import importlib
+import importlib.util
+import contextlib
 from pathlib import Path
 import numpy as np
 import torch
@@ -25,8 +28,12 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--config',default=str(REPO/'config/ficus_config.json'))
     parser.add_argument('--model',default=str(ROOT/'inputs/ficus_whitebg-trained'))
-    parser.add_argument('--tag',default='ficus_official_full')
-    parser.add_argument('--correct-sh-frame',action='store_true',help='Opt-in external basis conversion for SH inverse rotations; preserve original runs separately')
+    parser.add_argument('--tag',default='ficus_frame_corrected_full')
+    parser.add_argument('--snow-model',choices=['local','upstream'],default='local',help='For material=snow, use the documented local constitutive extension; upstream preserves its known missing stress branch')
+    frame=parser.add_mutually_exclusive_group()
+    frame.add_argument('--correct-sh-frame',dest='correct_sh_frame',action='store_true',help='Use the world-basis SH rotation correction (default)')
+    frame.add_argument('--legacy-sh-frame',dest='correct_sh_frame',action='store_false',help='Explicit historical upstream behavior, including its known nonidentity-basis error')
+    parser.set_defaults(correct_sh_frame=True)
     args=parser.parse_args()
     args.model=str(Path(args.model).resolve());args.config=str(Path(args.config).resolve())
     out=ROOT/'outputs'/args.tag;out.mkdir(parents=True,exist_ok=True)
@@ -87,6 +94,15 @@ def main():
         render_utils.convert_SH=converted_sh
         render_utils.initialize_resterize=paired_initialize
     from mpm_solver_warp.mpm_solver_warp import MPM_Simulator_WARP
+    snow_adapter=None
+    if config.get('material')=='snow' and args.snow_model=='local':
+        source=Path(__file__).with_name('snow_adapter.py').read_bytes()
+        directory=Path('/tmp/physgaussian-local-snow')/hashlib.sha256(source).hexdigest()[:16]
+        directory.mkdir(parents=True,exist_ok=True)
+        adapter_file=directory/'snow_adapter.py';adapter_file.write_bytes(source)
+        spec=importlib.util.spec_from_file_location('physgaussian_local_snow',adapter_file)
+        snow_adapter=importlib.util.module_from_spec(spec);sys.modules[spec.name]=snow_adapter;spec.loader.exec_module(snow_adapter)
+        print('LOCAL SNOW EXTENSION: stretch clamp [0.975, 1.0075], plastic-volume hardening; not released author snow or calibrated material',flush=True)
     kernel_modules={name:str(sys.modules[name].__file__) for name in ('mpm_utils','engine_utils','warp_utils')}
     print('WARP_SOURCE_MODULES',kernel_modules,flush=True)
     original_step=MPM_Simulator_WARP.p2g2p
@@ -96,6 +112,7 @@ def main():
         nonlocal calls,last_solver
         last_solver=self
         if calls==0:
+            if snow_adapter is not None:snow_adapter.initialize_plastic_volume(self)
             initial['positions']=self.mpm_state.particle_x.numpy().copy()
             initial['mass']=float(self.mpm_state.particle_mass.numpy().sum())
         result=original_step(self,*a,**kw);calls+=1
@@ -114,7 +131,9 @@ def main():
     sys.argv=['gs_simulation.py','--model_path',str(Path(args.model).resolve()),'--output_path',str(out),
               '--config',str(Path(args.config).resolve()),'--render_img','--compile_video','--white_bg']
     start=time.perf_counter()
-    runpy.run_path(str(REPO/'gs_simulation.py'),run_name='__main__')
+    snow_context=snow_adapter.install(importlib.import_module('mpm_solver_warp.mpm_solver_warp')) if snow_adapter is not None else contextlib.nullcontext()
+    with snow_context:
+        runpy.run_path(str(REPO/'gs_simulation.py'),run_name='__main__')
     torch.cuda.synchronize()
     np.savez_compressed(out/'final_state.npz',initial_positions=initial['positions'],
         final_positions=last_solver.mpm_state.particle_x.numpy(),final_F=last_solver.mpm_state.particle_F_trial.numpy(),
@@ -131,9 +150,14 @@ def main():
         adaptations=['Taichi device_memory_GB capped at 0.5 instead of upstream 8','torch no_grad','external per-frame state audits','ASCII symlink for Warp generated CUDA source path comments','WSL libcuda dynamic library path'],
         memory_note='PyTorch peak excludes Warp and Taichi allocations',frames=checks)
     payload=json.dumps(metrics,indent=2)
+    if snow_adapter is not None:
+        metrics['scope']='upstream simulation/rendering with local snow constitutive extension'
+        metrics['adaptations'].append('Local snow stress and Jp=1 initialization; not author-released snow or experimental calibration')
+        metrics['local_snow_extension']=dict(compression_limit=.025,stretch_limit=.0075,hardening=10.,plastic_volume_clip=[.6,20.])
+        payload=json.dumps(metrics,indent=2)
     if args.correct_sh_frame:
         assert len(sh_comparisons)==config['frame_num']
-        metrics['adaptations'].append('Opt-in conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering')
+        metrics['adaptations'].append('Conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering')
         metrics['sh_same_state_comparison']=sh_comparisons
         payload=json.dumps(metrics,indent=2)
     (out/'metrics.json').write_text(payload)

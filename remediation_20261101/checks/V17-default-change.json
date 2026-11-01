@@ -1,0 +1,1 @@
+{"change":"local scene runner defaults to corrected SH basis; --legacy-sh-frame preserves deliberate comparison mode","upstream_source_modified":false,"new_default_output_suffix":"frame_corrected_full","actual_tests":"pending GPU queue"}

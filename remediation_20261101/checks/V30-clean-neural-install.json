@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "prefix": "/opt/3dgs-remediation/envs/neuralsound-clean",
+  "scope": "Fresh Conda explicit package installation, pinned pip packages, rebuilt MinkowskiEngine; GPU inference tested separately; same physical machine."
+}

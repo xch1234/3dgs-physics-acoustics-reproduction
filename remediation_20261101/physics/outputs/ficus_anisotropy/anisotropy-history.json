@@ -1,0 +1,281 @@
+[
+  {
+    "iteration": 1,
+    "particles": 100000,
+    "photometric_loss": 0.4311504065990448,
+    "anisotropy_loss": 0.0,
+    "mean_axis_ratio": 1.0,
+    "fraction_above_threshold": 0.0,
+    "max_axis_ratio": 1.0
+  },
+  {
+    "iteration": 1000,
+    "particles": 10794,
+    "photometric_loss": 0.022385239601135254,
+    "anisotropy_loss": 0.0022212292533367872,
+    "mean_axis_ratio": 3.92468523979187,
+    "fraction_above_threshold": 0.0322401337325573,
+    "max_axis_ratio": 12.815067291259766
+  },
+  {
+    "iteration": 2000,
+    "particles": 54981,
+    "photometric_loss": 0.01601046696305275,
+    "anisotropy_loss": 0.003839593380689621,
+    "mean_axis_ratio": 4.486147880554199,
+    "fraction_above_threshold": 0.0327385812997818,
+    "max_axis_ratio": 11.446588516235352
+  },
+  {
+    "iteration": 3000,
+    "particles": 98785,
+    "photometric_loss": 0.009674059227108955,
+    "anisotropy_loss": 0.0034625313710421324,
+    "mean_axis_ratio": 4.534478187561035,
+    "fraction_above_threshold": 0.026471629738807678,
+    "max_axis_ratio": 14.826581001281738
+  },
+  {
+    "iteration": 4000,
+    "particles": 130176,
+    "photometric_loss": 0.008567778393626213,
+    "anisotropy_loss": 0.00256133615039289,
+    "mean_axis_ratio": 4.56921911239624,
+    "fraction_above_threshold": 0.020841015502810478,
+    "max_axis_ratio": 13.353748321533203
+  },
+  {
+    "iteration": 5000,
+    "particles": 167036,
+    "photometric_loss": 0.005710521712899208,
+    "anisotropy_loss": 0.0015088982181623578,
+    "mean_axis_ratio": 4.567230224609375,
+    "fraction_above_threshold": 0.014457961544394493,
+    "max_axis_ratio": 12.64606761932373
+  },
+  {
+    "iteration": 6000,
+    "particles": 200482,
+    "photometric_loss": 0.008553504943847656,
+    "anisotropy_loss": 0.0009241823572665453,
+    "mean_axis_ratio": 4.571890830993652,
+    "fraction_above_threshold": 0.011078301817178726,
+    "max_axis_ratio": 10.990251541137695
+  },
+  {
+    "iteration": 7000,
+    "particles": 219255,
+    "photometric_loss": 0.006950943730771542,
+    "anisotropy_loss": 0.0005074969958513975,
+    "mean_axis_ratio": 4.578421115875244,
+    "fraction_above_threshold": 0.01359604112803936,
+    "max_axis_ratio": 8.993175506591797
+  },
+  {
+    "iteration": 8000,
+    "particles": 244391,
+    "photometric_loss": 0.006867103278636932,
+    "anisotropy_loss": 0.0002999652351718396,
+    "mean_axis_ratio": 4.577887058258057,
+    "fraction_above_threshold": 0.012079005129635334,
+    "max_axis_ratio": 8.435786247253418
+  },
+  {
+    "iteration": 9000,
+    "particles": 265233,
+    "photometric_loss": 0.005022467114031315,
+    "anisotropy_loss": 0.00020940395188517869,
+    "mean_axis_ratio": 4.571900844573975,
+    "fraction_above_threshold": 0.014330795966088772,
+    "max_axis_ratio": 7.745336532592773
+  },
+  {
+    "iteration": 10000,
+    "particles": 271468,
+    "photometric_loss": 0.005872109904885292,
+    "anisotropy_loss": 0.0001272825466003269,
+    "mean_axis_ratio": 4.559535503387451,
+    "fraction_above_threshold": 0.01163304690271616,
+    "max_axis_ratio": 6.715825080871582
+  },
+  {
+    "iteration": 11000,
+    "particles": 284796,
+    "photometric_loss": 0.004476751200854778,
+    "anisotropy_loss": 9.848256013356149e-05,
+    "mean_axis_ratio": 4.553797245025635,
+    "fraction_above_threshold": 0.00976488459855318,
+    "max_axis_ratio": 6.226099967956543
+  },
+  {
+    "iteration": 12000,
+    "particles": 295897,
+    "photometric_loss": 0.0047036828473210335,
+    "anisotropy_loss": 8.130421338137239e-05,
+    "mean_axis_ratio": 4.537971496582031,
+    "fraction_above_threshold": 0.007830427028238773,
+    "max_axis_ratio": 5.496374607086182
+  },
+  {
+    "iteration": 13000,
+    "particles": 296406,
+    "photometric_loss": 0.004658939782530069,
+    "anisotropy_loss": 7.906141399871558e-05,
+    "mean_axis_ratio": 4.530879974365234,
+    "fraction_above_threshold": 0.009459997527301311,
+    "max_axis_ratio": 5.178781986236572
+  },
+  {
+    "iteration": 14000,
+    "particles": 302535,
+    "photometric_loss": 0.00448137242347002,
+    "anisotropy_loss": 7.329056825255975e-05,
+    "mean_axis_ratio": 4.526608467102051,
+    "fraction_above_threshold": 0.008461831137537956,
+    "max_axis_ratio": 5.162983417510986
+  },
+  {
+    "iteration": 15000,
+    "particles": 307714,
+    "photometric_loss": 0.004394251387566328,
+    "anisotropy_loss": 0.00010507201659493148,
+    "mean_axis_ratio": 4.5164384841918945,
+    "fraction_above_threshold": 0.009814308024942875,
+    "max_axis_ratio": 5.1727399826049805
+  },
+  {
+    "iteration": 16000,
+    "particles": 307714,
+    "photometric_loss": 0.003584550693631172,
+    "anisotropy_loss": 6.714560004184023e-05,
+    "mean_axis_ratio": 4.500728607177734,
+    "fraction_above_threshold": 0.008169923909008503,
+    "max_axis_ratio": 5.192323207855225
+  },
+  {
+    "iteration": 17000,
+    "particles": 307714,
+    "photometric_loss": 0.003859550692141056,
+    "anisotropy_loss": 6.175174348754808e-05,
+    "mean_axis_ratio": 4.483571529388428,
+    "fraction_above_threshold": 0.007900193333625793,
+    "max_axis_ratio": 5.132357120513916
+  },
+  {
+    "iteration": 18000,
+    "particles": 307714,
+    "photometric_loss": 0.0032811909914016724,
+    "anisotropy_loss": 7.282195292646065e-05,
+    "mean_axis_ratio": 4.469367027282715,
+    "fraction_above_threshold": 0.008397407829761505,
+    "max_axis_ratio": 5.282273292541504
+  },
+  {
+    "iteration": 19000,
+    "particles": 307714,
+    "photometric_loss": 0.0034874016419053078,
+    "anisotropy_loss": 5.11432699568104e-05,
+    "mean_axis_ratio": 4.461714744567871,
+    "fraction_above_threshold": 0.006980508100241423,
+    "max_axis_ratio": 5.116518497467041
+  },
+  {
+    "iteration": 20000,
+    "particles": 307714,
+    "photometric_loss": 0.0025740312412381172,
+    "anisotropy_loss": 5.46828523511067e-05,
+    "mean_axis_ratio": 4.456961154937744,
+    "fraction_above_threshold": 0.0074224770069122314,
+    "max_axis_ratio": 5.141173362731934
+  },
+  {
+    "iteration": 21000,
+    "particles": 307714,
+    "photometric_loss": 0.0063873641192913055,
+    "anisotropy_loss": 4.980465746484697e-05,
+    "mean_axis_ratio": 4.455820560455322,
+    "fraction_above_threshold": 0.0067530241794884205,
+    "max_axis_ratio": 5.131600379943848
+  },
+  {
+    "iteration": 22000,
+    "particles": 307714,
+    "photometric_loss": 0.002904906403273344,
+    "anisotropy_loss": 5.971232894808054e-05,
+    "mean_axis_ratio": 4.458064079284668,
+    "fraction_above_threshold": 0.008114677853882313,
+    "max_axis_ratio": 5.105581760406494
+  },
+  {
+    "iteration": 23000,
+    "particles": 307714,
+    "photometric_loss": 0.003303526435047388,
+    "anisotropy_loss": 4.105363768758252e-05,
+    "mean_axis_ratio": 4.460331916809082,
+    "fraction_above_threshold": 0.006369551178067923,
+    "max_axis_ratio": 5.087638854980469
+  },
+  {
+    "iteration": 24000,
+    "particles": 307714,
+    "photometric_loss": 0.002680802019312978,
+    "anisotropy_loss": 5.715483348467387e-05,
+    "mean_axis_ratio": 4.4572248458862305,
+    "fraction_above_threshold": 0.007386729586869478,
+    "max_axis_ratio": 5.13240909576416
+  },
+  {
+    "iteration": 25000,
+    "particles": 307714,
+    "photometric_loss": 0.002472108229994774,
+    "anisotropy_loss": 5.278224853100255e-05,
+    "mean_axis_ratio": 4.464412689208984,
+    "fraction_above_threshold": 0.0068375179544091225,
+    "max_axis_ratio": 5.230598449707031
+  },
+  {
+    "iteration": 26000,
+    "particles": 307714,
+    "photometric_loss": 0.004363626707345247,
+    "anisotropy_loss": 5.3650343033950776e-05,
+    "mean_axis_ratio": 4.466262340545654,
+    "fraction_above_threshold": 0.00725348899140954,
+    "max_axis_ratio": 5.098361015319824
+  },
+  {
+    "iteration": 27000,
+    "particles": 307714,
+    "photometric_loss": 0.0025982616934925318,
+    "anisotropy_loss": 5.0943919632118195e-05,
+    "mean_axis_ratio": 4.472270488739014,
+    "fraction_above_threshold": 0.00661003403365612,
+    "max_axis_ratio": 5.166696071624756
+  },
+  {
+    "iteration": 28000,
+    "particles": 307714,
+    "photometric_loss": 0.003626639023423195,
+    "anisotropy_loss": 5.3691859648097306e-05,
+    "mean_axis_ratio": 4.475428581237793,
+    "fraction_above_threshold": 0.007302235346287489,
+    "max_axis_ratio": 5.118220329284668
+  },
+  {
+    "iteration": 29000,
+    "particles": 307714,
+    "photometric_loss": 0.0028618662618100643,
+    "anisotropy_loss": 5.530060298042372e-05,
+    "mean_axis_ratio": 4.477970123291016,
+    "fraction_above_threshold": 0.007549217902123928,
+    "max_axis_ratio": 5.154364109039307
+  },
+  {
+    "iteration": 30000,
+    "particles": 307714,
+    "photometric_loss": 0.00423924345523119,
+    "anisotropy_loss": 4.025830639875494e-05,
+    "mean_axis_ratio": 4.479243755340576,
+    "fraction_above_threshold": 0.006090071052312851,
+    "max_axis_ratio": 5.1567559242248535
+  }
+]

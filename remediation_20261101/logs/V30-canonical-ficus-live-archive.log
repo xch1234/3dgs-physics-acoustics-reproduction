@@ -1,0 +1,19 @@
+CANONICAL FICUS 50
+CANONICAL FICUS 100
+CANONICAL FICUS 150
+CANONICAL FICUS 200
+CANONICAL FICUS 250
+CANONICAL FICUS 300
+CANONICAL FICUS 350
+CANONICAL FICUS 400
+{
+  "passed": true,
+  "url": "https://drive.google.com/file/d/1OsiBs2udl32-1CqTXCitmov4NQCYdA9g/view",
+  "linked_from": "Current nerf_synthetic.zip entry in the canonical NeRF dataset folder 1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4; live listing saved in V30-canonical-access.json",
+  "archive_bytes": 1266782178,
+  "archive_sha256": "554fed5d4884028f95e0da422f99f5fc071fffefc9f2fc72c5f9361801df2599",
+  "files": 403,
+  "all_bytes_match": true,
+  "all_semantics_match": true,
+  "scope": "Canonical author-linked archive versus all 403 mirror assets; any byte/decoded differences recorded explicitly. Not another-machine execution."
+}

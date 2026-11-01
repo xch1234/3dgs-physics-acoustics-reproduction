@@ -1,0 +1,14 @@
+{
+  "name": "final-source-audit-after-recovery",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/audit_changes.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:48:04.497814+08:00",
+  "log": "logs/final-source-audit-after-recovery.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:48:13.472551+08:00",
+  "elapsed_s": 8.974345611
+}

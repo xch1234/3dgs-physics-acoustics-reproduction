@@ -1,0 +1,21 @@
+{
+  "name": "V28-scene-plane",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/plane-trained",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/plane_config.json",
+    "--tag",
+    "plane_rerun"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T02:17:35.517025+08:00",
+  "log": "logs/V28-scene-plane.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T02:32:19.426975+08:00",
+  "elapsed_s": 883.909763331998
+}

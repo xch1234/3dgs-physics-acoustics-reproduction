@@ -1,0 +1,83 @@
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [01:07<05:37, 67.42s/it] 33%|███▎      | 2/6 [01:10<01:57, 29.44s/it] 50%|█████     | 3/6 [01:13<00:51, 17.30s/it] 67%|██████▋   | 4/6 [01:16<00:23, 11.61s/it] 83%|████████▎ | 5/6 [01:18<00:08,  8.48s/it]100%|██████████| 6/6 [01:21<00:00,  6.57s/it]100%|██████████| 6/6 [01:21<00:00, 13.63s/it]
+{
+  "scope": "trained official hybrid modal output -> trained official AcousticNet -> local modal pressure audio",
+  "execution_completed": true,
+  "reference_checks_passed": true,
+  "sample": "box_21.npz",
+  "held_out_geometry": true,
+  "material": {
+    "density": 2700,
+    "young_modulus_Pa": 720000000.0,
+    "poisson_ratio": 0.19,
+    "rayleigh_alpha": 6.0,
+    "rayleigh_beta": 1e-07
+  },
+  "material_note": "0.01 stiffness-scaled Ceramic FEM for controlled in-range demonstration; not measured ceramic",
+  "frequencies_Hz": [
+    1572.635526022466,
+    1918.5282480785759,
+    2329.3534674736743,
+    3723.1104260483667,
+    3935.8659790243682,
+    4225.719054203841
+  ],
+  "modal_relative_residuals": [
+    1.0687345997398584e-08,
+    2.9202440992790756e-09,
+    1.983375886273869e-09,
+    2.5826140899513364e-09,
+    4.43549468460013e-10,
+    3.499934277764668e-10
+  ],
+  "bem_solves": [
+    {
+      "info": 0,
+      "relative_residual": 7.430807362739516e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 3.563974563415189e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 9.586121246982675e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 9.351652604150124e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 8.750701377310005e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 8.004935805429694e-09
+    }
+  ],
+  "per_mode_ffat_relative_L2": [
+    0.9413403956479048,
+    3.030001601689587,
+    0.5596668928528402,
+    0.5960818982263761,
+    0.5888370297132896,
+    1.0596550163659657
+  ],
+  "negative_prediction_fraction": 0.0,
+  "per_listener_audio_relative_L2": [
+    4.9534294635735305,
+    1.2755052165476914,
+    1.434048043959858
+  ],
+  "bem_seconds": 96.98893642199982,
+  "network_six_map_seconds": 0.6617563420004444,
+  "peak_gpu_allocated_bytes": 1261417984,
+  "modal_artifact_sha256": "4b637b00d015b5fd0cae6fbc559491d7199526716dd0d6a664a2899c1eb77015",
+  "radiation_checkpoint_sha256": "edaf533e237fb900194b113bff0cb39c87f85c7a68fe6eb4671451651893e2cf",
+  "limits": [
+    "six elastic modes; no rigid-body motion/collision engine",
+    "far FFAT magnitude divided by distance; no phase or propagation delay",
+    "negative network predictions clamped only for audio, raw errors remain unclamped",
+    "small local training, not paper accuracy"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "V30-pat-clean-build-transfer",
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++14",
+    "-I/opt/3dgs-remediation/envs/pat-tools-clean/include",
+    "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/dependencies/eigen-git-mirror-3.3.7",
+    "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_transfer.cpp",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+    "-L/opt/3dgs-remediation/envs/pat-tools-clean/lib",
+    "-Wl,-rpath,/opt/3dgs-remediation/envs/pat-tools-clean/lib",
+    "-lgsl",
+    "-lgslcblas",
+    "-o",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/pat_clean/outputs/modalsound_transfer/evaluate_transfer"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:20:33.304064+08:00",
+  "log": "logs/V30-pat-clean-build-transfer.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:20:47.950975+08:00",
+  "elapsed_s": 14.646828616001585
+}

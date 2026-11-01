@@ -1,0 +1,18 @@
+{
+  "name": "V30-build-simple-knn",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "/opt/3dgs-remediation/build/simple-knn"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:29:25.630101+08:00",
+  "log": "logs/V30-build-simple-knn.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:32:30.728295+08:00",
+  "elapsed_s": 185.09840344300005
+}

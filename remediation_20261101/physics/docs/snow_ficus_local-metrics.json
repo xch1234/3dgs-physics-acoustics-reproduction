@@ -1,0 +1,368 @@
+{
+  "scope": "upstream simulation/rendering with local snow constitutive extension",
+  "all_checks_passed": true,
+  "physical_particles": 171553,
+  "steps": 10000,
+  "duration_s": 1.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/ficus_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply",
+  "model_sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e",
+  "rendered_frames": 25,
+  "sh_frame_correction": true,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 251536384,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 314572800,
+  "elapsed_s": 117.84823564699946,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path",
+    "Local snow stress and Jp=1 initialization; not author-released snow or experimental calibration",
+    "Conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.002816269639879465,
+      "min_det_F": 0.9931898713111877,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.006071281153708696,
+      "min_det_F": 0.9820116758346558,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.010428964160382748,
+      "min_det_F": 0.9778330326080322,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.015870485454797745,
+      "min_det_F": 0.9760406017303467,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.022518550977110863,
+      "min_det_F": 0.9756119251251221,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.030241617932915688,
+      "min_det_F": 0.975132167339325,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.03899870067834854,
+      "min_det_F": 0.9735292792320251,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.04877769574522972,
+      "min_det_F": 0.9734293222427368,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.05943407490849495,
+      "min_det_F": 0.9733613133430481,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.07077889889478683,
+      "min_det_F": 0.9731057286262512,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.08265727013349533,
+      "min_det_F": 0.9730287790298462,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.0949275866150856,
+      "min_det_F": 0.9730066061019897,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.1074460819363594,
+      "min_det_F": 0.9719696044921875,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.12028446048498154,
+      "min_det_F": 0.9706498980522156,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.13328702747821808,
+      "min_det_F": 0.9695413708686829,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.1467386782169342,
+      "min_det_F": 0.9693824052810669,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.1607649177312851,
+      "min_det_F": 0.9701077938079834,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.17523832619190216,
+      "min_det_F": 0.9711728096008301,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.19016417860984802,
+      "min_det_F": 0.972496747970581,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.2055588811635971,
+      "min_det_F": 0.9732072353363037,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.2214781492948532,
+      "min_det_F": 0.973235011100769,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.23800203204154968,
+      "min_det_F": 0.9732263684272766,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.25516465306282043,
+      "min_det_F": 0.9733260273933411,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.27299466729164124,
+      "min_det_F": 0.9722357392311096,
+      "mass": 73.02400207519531
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.29149794578552246,
+      "min_det_F": 0.9694243669509888,
+      "mass": 73.02400207519531
+    }
+  ],
+  "local_snow_extension": {
+    "compression_limit": 0.025,
+    "stretch_limit": 0.0075,
+    "hardening": 10.0,
+    "plastic_volume_clip": [
+      0.6,
+      20.0
+    ]
+  },
+  "sh_same_state_comparison": [
+    {
+      "frame": 1,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 2,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 3,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 4,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 5,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 6,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 7,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 8,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 9,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 10,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 11,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 12,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 13,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 14,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 15,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 16,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 17,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 18,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 19,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 20,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 21,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 22,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 23,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 24,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "frame": 25,
+      "relative_image_L2": 0.0,
+      "mean_absolute_difference": 0.0,
+      "max_absolute_difference": 0.0
+    }
+  ]
+}

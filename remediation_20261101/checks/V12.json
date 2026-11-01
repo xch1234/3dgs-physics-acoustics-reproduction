@@ -1,0 +1,34 @@
+{
+  "command": {
+    "name": "V12-original-metrics-all200",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/metrics.py",
+      "-m",
+      "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/outputs/native_metrics"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+    "started": "2026-11-01T21:06:22.835670+08:00",
+    "log": "logs/V12-original-metrics-all200.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T22:29:35.169407+08:00",
+    "elapsed_s": 4992.3359580470005
+  },
+  "passed": true,
+  "values": {
+    "SSIM": 0.9871883988380432,
+    "PSNR": 34.8505973815918,
+    "LPIPS": 0.011715464293956757
+  },
+  "reference": {
+    "PSNR": 34.85059181535086,
+    "SSIM": 0.9871881982684135,
+    "LPIPS": 0.011715445469599217
+  },
+  "per_view_counts": {
+    "SSIM": 200,
+    "PSNR": 200,
+    "LPIPS": 200
+  }
+}

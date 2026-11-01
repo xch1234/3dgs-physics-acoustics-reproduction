@@ -1,0 +1,119 @@
+"""Write plain-language navigation after result files have actually been checked."""
+from common import ROOT,AUDIT
+import json
+state=json.loads((AUDIT/'最终验收状态.json').read_text(encoding='utf8'))
+guide='''# 本轮补做结果怎么看
+
+先看[补做验收报告](补做验收报告.md)。这里解决的是上一轮 5 项失败和 6 项未验证，不是宣称三篇论文已全部达到原论文水平。机器可读结论在[最终验收状态](最终验收状态.json)。
+
+## 不需要重新配置环境就能看的内容
+
+在资源管理器打开本目录，双击 MP4、PNG/JPG、WAV 即可。Windows 自带照片/媒体播放器通常可用；若 MP4 无法播放，可安装 VLC。查看结果不需要安装 Conda、CUDA、COLMAP 或 SIBR。它们属于复跑/训练环境，和观看视频是两件事。
+
+## 1. PhysGaussian：看受力后的三维外观如何变化
+
+优先打开下列新跑的视频：
+
+- [面包形变，SH 已修正](physics/outputs/bread_corrected_rerun/output.mp4)
+- [飞机，SH 已修正](physics/outputs/plane_corrected_rerun/output.mp4)
+- [花瓶/甲板，SH 已修正](physics/outputs/vasedeck_corrected_rerun/output.mp4)
+- [本轮 30000 步各向异性训练模型的动态模拟](physics/outputs/ficus_anisotropy_rerun/output.mp4)
+- [新增 snow 本构测试](physics/outputs/snow_ficus_local/output.mp4)
+- [枕头落入藤椅](physics/outputs/pillow2sofa_rerun/output.mp4)
+- [狼外观的沙体塌落](physics/outputs/wolf_rerun/output.mp4)
+
+这些物理场景视频没有音轨是正常的，原单独 PhysGaussian 链路不生成声音。视频只展示有限视角的渲染；如果想任意转动视角，需要加载对应 PLY 到兼容 3D Gaussian Splatting 的查看器。普通点云查看器通常不会正确还原高斯的透明度、尺度和球谐外观。MP4 最容易查看，也最接近本轮已验证的输出。
+
+snow 视频使用的是 Ficus 的几何，加上人为指定的雪参数。它验证新本构能进入完整仿真和渲染，不表示真实植物会像雪一样运动，也不代表实测雪材料。
+
+狼场景配置指定的是 sand（沙），并逐层释放粒子，所以它会从狼的外形塌成一团；这不是布料玩偶的材料模拟。花瓶场景给选定区域使用 jelly 参数，不能直接解释为实测花束的材料性质。面包拉伸后部分移出固定画面、枕头初始时顶部部分超出视野，这些实际显示限制记录在[视觉核查](可视化人工核查.md)。
+
+SH 修复主要影响颜色随视线/旋转的计算，肉眼看两段视频可能不明显。请看 [bread 同状态对照](figures/bread_corrected_rerun_same_state.jpg)：左边是原始 SH，中央是修正 SH，右边是放大 20 倍的绝对差。右侧并不是实际场景颜色。两边使用同一物理状态，因此差异不会被运动时刻不同混淆。
+
+重建指标里的 PSNR/SSIM 越高通常越好、LPIPS 越低通常越好；这些衡量图片与参考图片的接近程度，不直接衡量物理定律是否正确。原作者 200 图指标见[原始评估结果](outputs/native_metrics/results.json)，新各向异性模型比较见[本轮指标](checks/V28-anisotropy-comparison.json)。
+
+新训练日志写的 PSNR 34.4519 和正式评估的 34.2856 不直接可比：训练代码先分别算三个颜色通道的 PSNR，再平均；正式指标先合并 RGB 误差再计算。对同一批保存图片两种定义都已复算，[核查记录](checks/V28-psnr-definition.json)解释了差异。比较新旧模型时使用一致的正式评估定义。另可打开[固定四个测试视角的对照](figures/ficus_reconstruction_comparison.png)，依次查看参考图、原基线和本轮各向异性模型。
+
+## 2. PAT：看近似声场是否接近 BEM，以及声音是否依赖任意模态符号
+
+打开[基不变性图](figures/basis_invariance.png)。FEM 的一个振型可以整体反号，这只是数学表示变化；相同物体和敲击的声音本应不变。上方旧幅值路径可能因表示变化而改变；下方新相位路径的曲线重合，说明本轮修复保住了这项不变性。上下图纵轴范围不同，不能比较曲线高度来判断音量。
+
+- [6 模态新相位音频目录](pat_phase/outputs/phase_preserving/)：BEM 是数值参考，PAT 是较快的近似。
+- [12 模态与移动听者音频目录](pat_extensions/outputs/phase_preserving/)：包含移动位置后的声音。所有比较共用播放增益，没有逐条独立归一化来掩盖误差。
+- [网格误差图](figures/bem_refinement.png)：横轴越右网格越密，纵轴越低误差越小。原均匀 Neumann 测试并不全程下降，不能说它已通过收敛判据。另一条制造解曲线对应不同边界条件，不能拿来替代原测试。
+
+约 0.44% 的静态 PAT/BEM 音频误差说明这两个当前数值结果接近，不表示它们与真实录音只有 0.44% 的差距。本轮没有真实录音验证或人类听感研究。
+
+## 3. NeuralSound：分清“训练跑完”与“预测准确”
+
+查看三套模型的完整独立评估：
+
+- [原公开配置](neural/evaluations/radiation_released_profile/shape_and_amplitude.png)
+- [论文学习率计划的本地对照](neural/evaluations/radiation_paper_schedule/shape_and_amplitude.png)
+- [预先设定的 400 epoch 对照](neural/evaluations/radiation_longer/shape_and_amplitude.png)
+- [三套模型全部数值](checks/V26-independent.json)
+
+这些彩图不是物体的 RGB 照片。它们表示从不同方向听时，一个振动模态的远场声辐射幅值。参考图的亮暗带/波瓣表示方向性；网络图应该同时接近参考的形状和幅度。
+
+每张汇总图按最好、中间、最坏三个测试样本展示。左侧两列使用原始幅度，右侧两列分别除以各自 RMS，仅用来观察形状；右侧看起来相似不代表响度预测正确。每个评估目录另有 comparison_00.png 到 comparison_20.png，覆盖全部 24 图，并非只挑好看的结果。
+
+相对 L2 = 预测与参考之差的整体大小 / 参考本身的整体大小。0% 是完全一致；输出全零会得到 100%。平均值、中位数与全局加权误差不相同：某些很弱的参考图可能产生特别大的相对误差。不能只展示其中最低的一项。
+
+神经音频在[新音频目录](neural_extensions/outputs/neural_audio/)，但它保留网络预测误差和幅值近似的限制。该音频和 box_21 原型沿用预定的 released_profile 检查点；400 epoch 模型作为单独的声场对照评估，因此不能把它的改善直接套用到这些声音上。听见声音仅证明合成链路能输出音频，不证明网络达到论文精度。
+
+## 4. 同一个对象同时动起来、发出声音的新增原型
+
+先看易于观察的慢动作：
+
+- [FEM 梁慢动作，无声](unified_beam/slow_motion_silent.mp4)：时间放慢 500 倍、位移放大 50 倍。
+- [神经 box_21 慢动作，无声](unified_neural_box/slow_motion_silent.mp4)：时间放慢 1000 倍，实际位移放大倍数直接写在画面上。
+
+再比较真实时间的有声视频：
+
+- [同梁 BEM 参考](unified_beam/bem_synchronized.mp4) 与 [同梁 PAT](unified_beam/pat_synchronized.mp4)。
+- [同 box_21 的 BEM 参考](unified_neural_box/bem_synchronized.mp4) 与 [同 box_21 的神经预测](unified_neural_box/neural_synchronized.mp4)。
+
+真实时间视频左边使用真实位移，右边是明确标注的位移放大。高频振动幅度很小，且 30 帧/秒无法解析 kHz 振动，所以“声音明显、物体几乎没动”并不自动说明程序错误。慢动作是观察形状变化的诊断工具，不能当作真实速度；也没有把声音拉长来伪装成真实实验。
+
+这两个原型的高斯是过程生成的，没有从照片训练重建；也还没有 MPM 接触到高频模态的完整耦合。因此只能称同对象局部原型，V31 完整目标仍未验证。
+
+## 找到证据与复跑命令
+
+[命令与输出索引](命令与输出索引.md)列出实际执行命令、工作目录、时间、退出码、日志末尾输出和原始 JSON。完整日志在 logs/，断言/误差在 checks/。退出码 0 表示运行完成，是否科学达标仍要看误差与验收报告。
+
+环境恢复已优先使用 Conda。Windows 与 WSL Linux 不是同一套环境，不要在 PowerShell 中直接执行 /opt/... 的 Linux 路径。Linux 命令先进入 `wsl -d Ubuntu1` 再运行。环境创建脚本要求新的空前缀；队列仍运行时不能重复启动。
+
+本目录是本轮新增本地结果；旧 verification_20261101 和旧 GitHub release 属历史快照。不要把旧页面的状态自动理解为本轮最终状态。
+'''
+(AUDIT/'本轮结果查看指南.md').write_text(guide,encoding='utf8')
+counts=state['counts']
+readme=f'''# 5 项失败 + 6 项未验证：本轮补做
+
+已完成本轮可执行任务与逐项验收。原 11 项结果：通过 {counts['通过']} 项、失败 {counts['失败']} 项、未验证 {counts['未验证']} 项。**仍不能称三篇论文完整复现成功。** “通过”只限报告注明的本地修复或执行范围。
+
+- [补做验收报告](补做验收报告.md)：11 项结论、真实指标、证据与尚缺内容。
+- [本轮结果查看指南](本轮结果查看指南.md)：先看哪些视频/图、怎么理解误差与声音。
+- [命令与输出索引](命令与输出索引.md)：实际命令、退出码、关键日志。
+- [最终验收状态 JSON](最终验收状态.json)：机器可读结论。
+- [执行协议](执行协议.md)与[论文级缺口](未能完成的论文级要求.md)：原定边界，未将本地案例冒充原论文。
+
+历史 `../verification_20261101` 保持原样。作者源码与本地包装器修改分别核对；[源码检查](checks/source-and-syntax.json)、[修改补丁](local_changes.patch)、[媒体/数组审计](checks/final-artifacts.json)均留档。新环境优先使用 Conda；未更换物理机器、驱动或系统配置。
+
+本轮新增内容保存在本地，尚未将全部新文件同步到 GitHub。不要上传 Conda 环境、缓存和大模型到普通 Git 仓库；旧公开 release 仍为历史快照。
+'''
+(AUDIT/'README.md').write_text(readme,encoding='utf8')
+gap=AUDIT/'未能完成的论文级要求.md'
+gap_text=gap.read_text(encoding='utf8')
+addition='\n此外，本轮同一 held-out box_21 的混合模态、AcousticNet 声音和过程高斯原型也已执行，补充了局部同对象链路；其预测误差与幅值近似限制保留。它仍不是照片训练高斯与 MPM 接触耦合的完整系统。具体实际状态与指标以本轮验收报告和 V31 检查文件为准。\n'
+if addition.strip() not in gap_text:gap.write_text(gap_text.replace('## 实际查到的页面与入口',addition+'\n## 实际查到的页面与入口'),encoding='utf8')
+(ROOT/'本轮补做入口.md').write_text('''# 本轮补做入口
+
+本轮针对上一轮 5 项失败 + 6 项未验证进行了修复、实际重跑与验收。历史报告保留，新的结果在 remediation_20261101。
+
+- [补做验收报告](remediation_20261101/补做验收报告.md)：逐项通过/失败/未验证及证据。
+- [结果查看指南](remediation_20261101/本轮结果查看指南.md)：视频、音频与图像的含义。
+- [命令和关键输出](remediation_20261101/命令与输出索引.md)：实际执行记录。
+
+不能把本轮局部通过理解为三篇论文完整复现成功，具体缺口以新验收报告为准。本轮新增文件尚未同步到旧 GitHub release。
+''',encoding='utf8')
+print('Wrote viewing guide and final README')

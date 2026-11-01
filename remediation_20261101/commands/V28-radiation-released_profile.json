@@ -1,0 +1,20 @@
+{
+  "name": "V28-radiation-released_profile",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/train_radiation.py",
+    "--optimizer",
+    "cpu_adam",
+    "--output-dir",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural/outputs/radiation_released_profile",
+    "--checkpoint-dir",
+    "/opt/3dgs-runtime/remediation-checkpoints/released_profile"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:40:36.194896+08:00",
+  "log": "logs/V28-radiation-released_profile.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:57:29.044225+08:00",
+  "elapsed_s": 1012.8538579780006
+}

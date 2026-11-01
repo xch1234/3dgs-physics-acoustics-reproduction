@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "original_failed_command": "V28-neural-example",
+  "original_exit_code": -11,
+  "resolution_commands": [
+    {
+      "name": "V28-example-retry-voxel",
+      "command": [
+        "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+        "-X",
+        "faulthandler",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/example_isolated_retry.py",
+        "voxel"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:43:39.844497+08:00",
+      "log": "logs/V28-example-retry-voxel.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:43:51.955119+08:00",
+      "elapsed_s": 12.088358932996925
+    },
+    {
+      "name": "V28-example-retry-solve",
+      "command": [
+        "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+        "-X",
+        "faulthandler",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/example_isolated_retry.py",
+        "solve"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:43:52.066492+08:00",
+      "log": "logs/V28-example-retry-solve.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:44:21.963294+08:00",
+      "elapsed_s": 29.896373483999923
+    },
+    {
+      "name": "V28-example-retry-compare",
+      "command": [
+        "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+        "-X",
+        "faulthandler",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/example_isolated_retry.py",
+        "compare"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+      "started": "2026-11-02T06:44:22.052390+08:00",
+      "log": "logs/V28-example-retry-compare.log",
+      "exit_code": 0,
+      "finished": "2026-11-02T06:44:23.114201+08:00",
+      "elapsed_s": 1.0617044419996091
+    }
+  ],
+  "scope": "Complete replay split into PyCUDA voxelization and Torch solve processes, preserving normal teardown. No os._exit, ignored signal, or forced successful exit code. First failed logs/artifacts preserved."
+}

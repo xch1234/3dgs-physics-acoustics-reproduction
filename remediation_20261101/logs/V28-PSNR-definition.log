@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "images": 200,
+  "PNG_global_RGB_PSNR": 34.28561008759079,
+  "PNG_mean_channel_PSNR": 34.44933661348992,
+  "training_float_tensor_channel_PSNR": 34.45191311836243,
+  "channel_aggregation_difference_dB": 0.16372652589912917,
+  "training_minus_PNG_channelwise_dB": 0.002576504872507712,
+  "scope": "Original train.py passes CHW to psnr(), which flattens dimension 0 as independent channels and then averages dB. metrics.py adds a batch axis and computes all-RGB MSE before log. Independent calculations on the SAME PNGs isolate that aggregation difference. The remaining small float-training vs PNG difference is reported, not asserted zero."
+}

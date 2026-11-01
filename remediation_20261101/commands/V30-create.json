@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "C:/ProgramData/anaconda3/Scripts/conda.exe",
+    "env",
+    "create",
+    "--yes",
+    "--prefix",
+    "F:\\3dgs-remediation\\envs\\acoustics-clean",
+    "--file",
+    "F:\\System\\Desktop\\3DGS\\\u590d\u73b0\\02_PAT\\docs\\environment.yml"
+  ],
+  "exit": 0,
+  "seconds": 664.5721726417542,
+  "prefix": "F:\\3dgs-remediation\\envs\\acoustics-clean"
+}

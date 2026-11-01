@@ -1,0 +1,18 @@
+{
+  "name": "V30-pat-clean-conda",
+  "command": [
+    "/opt/3dgs-runtime/miniconda3/bin/conda",
+    "create",
+    "--yes",
+    "--prefix",
+    "/opt/3dgs-remediation/envs/pat-tools-clean",
+    "--file",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/docs/conda-explicit-linux64.txt"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:20:01.036439+08:00",
+  "log": "logs/V30-pat-clean-conda.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:20:17.311815+08:00",
+  "elapsed_s": 16.250596801997744
+}

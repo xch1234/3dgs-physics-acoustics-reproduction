@@ -1,0 +1,14 @@
+{
+  "name": "V31-shared-beam",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:06:05.001505+08:00",
+  "log": "logs/V31-shared-beam.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:06:34.977516+08:00",
+  "elapsed_s": 29.97583268499875
+}

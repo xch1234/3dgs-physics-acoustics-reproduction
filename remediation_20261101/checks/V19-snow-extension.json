@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "local snow extension, not upstream snow reproduction or experimental material validation",
+  "max_numpy_stress_relative_error": 0.00010363537484986794,
+  "rigid_stress_norm": 0.07324051111936569,
+  "max_shear": 205.09571838378906,
+  "spatial_steps": 4000,
+  "particles": 125,
+  "mass_preserved": true,
+  "min_height": 0.24535474181175232
+}

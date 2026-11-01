@@ -1,0 +1,25 @@
+{
+  "execution_completed": true,
+  "adapter_checks_passed": true,
+  "upstream_nonidentity_frame_invariance_passed": false,
+  "records": [
+    {
+      "case": "identity",
+      "original_color_relative_L2": 5.1331490402423435e-17,
+      "corrected_color_relative_L2": 5.1331490402423435e-17
+    },
+    {
+      "case": "x90",
+      "original_color_relative_L2": 0.08545382741018154,
+      "corrected_color_relative_L2": 5.1331490402423435e-17
+    },
+    {
+      "case": "composed",
+      "original_color_relative_L2": 0.05874388644777667,
+      "corrected_color_relative_L2": 6.711830216899563e-17
+    }
+  ],
+  "source_sha256": "b58cc649e6c1e341aad8057423b1a2ce9e01bb9c57a261e6a8d831e3381b00a2",
+  "conclusion": "The released gs_simulation restores positions/covariances to world space but passes the MPM-basis inverse rotation directly to world-space SH view directions. Conjugation Q.T @ R_inverse @ Q fixes the noncommuting-frame case.",
+  "scope": "original convert_SH function on CPU plus an external basis-conversion adapter; no claim that previous full-scene videos used this correction"
+}

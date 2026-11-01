@@ -1,0 +1,89 @@
+{
+  "scope": "unchanged educational ModalSound C++ mass/stiffness assembly, not complete PAT author pipeline",
+  "all_checks_passed": true,
+  "vertices": 63,
+  "tetrahedra": 144,
+  "density_kg_m3": 1050.0,
+  "poisson_ratio": 0.35,
+  "total_mass_kg": 0.20159999999999997,
+  "records": [
+    {
+      "case": "free",
+      "fixed_vertices": 0,
+      "young_modulus_Pa": 3500000000.0,
+      "stiffness_relative_error": 5.514876158819661e-16,
+      "mass_relative_error": 5.441799159782309e-16,
+      "max_relative_eigen_residual": 6.546227529659823e-14,
+      "frequencies_Hz": [
+        5169.50657828289,
+        5964.607160743263,
+        6554.529432375613,
+        7595.9286172237535,
+        10175.993254203804,
+        10907.831894149285,
+        13327.251687254062,
+        15357.953047333855,
+        15415.592921354279,
+        16270.225312944804,
+        16449.65348241887,
+        16532.94631295882
+      ]
+    },
+    {
+      "case": "fixed",
+      "fixed_vertices": 9,
+      "young_modulus_Pa": 3500000000.0,
+      "stiffness_relative_error": 5.256126430752307e-16,
+      "mass_relative_error": 5.388993038756149e-16,
+      "max_relative_eigen_residual": 1.6930845051551562e-12,
+      "frequencies_Hz": [
+        1002.7442496472166,
+        1167.203193289061,
+        3252.54342313751,
+        3934.3413392432503,
+        4286.349504533351,
+        4654.204199462905,
+        9235.662051710207,
+        9951.600192267235,
+        10085.28835258455,
+        11978.756779568112,
+        14206.61390345529,
+        14719.671756960524
+      ]
+    },
+    {
+      "case": "stiff",
+      "fixed_vertices": 9,
+      "young_modulus_Pa": 14000000000.0,
+      "stiffness_relative_error": 5.256126430752307e-16,
+      "mass_relative_error": 5.388993038756149e-16,
+      "max_relative_eigen_residual": 1.6930845051551562e-12,
+      "frequencies_Hz": [
+        2005.4884992944333,
+        2334.406386578122,
+        6505.08684627502,
+        7868.682678486501,
+        8572.699009066702,
+        9308.40839892581,
+        18471.324103420415,
+        19903.20038453447,
+        20170.5767051691,
+        23957.513559136223,
+        28413.22780691058,
+        29439.34351392105
+      ]
+    }
+  ],
+  "young_times_four_frequency_ratio_error": 0.0,
+  "sources": {
+    "deformable/fem.hpp": "2c5067a7f9a62c56c996ab7ded8158fd366875b933e4558c30c3790272002eb5",
+    "deformable/stvk.cpp": "ed3be6db0cdfcfd6852554636cc10bbef9281f1c0dddfb8573e211de55cdb036",
+    "geometry/Tet.hpp": "9efa785b05304d971d25e3b1a4e1a48535cc2c17560fca4b81d83366ce18d17f"
+  },
+  "notes": [
+    "official mass_mat stores unit-density mass; density applied once externally",
+    "independent Python linear tetrahedron B-transpose-D-B reference",
+    "six rigid modes checked in free body",
+    "not a hex-vs-tet convergence benchmark"
+  ]
+}

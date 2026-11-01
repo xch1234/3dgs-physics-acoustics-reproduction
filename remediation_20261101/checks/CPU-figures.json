@@ -1,0 +1,7 @@
+{
+  "files": [
+    "figures/bem_refinement.png",
+    "figures/basis_invariance.png"
+  ],
+  "scope": "Plots directly from current checks and preserved raw arrays; no perceptual claim."
+}

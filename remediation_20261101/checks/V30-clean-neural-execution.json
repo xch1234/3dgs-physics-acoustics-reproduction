@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "scope": "Actual CUDA voxelizer, scatter, and complete 24-map AcousticNet inference in fresh prefix. Fixed current trained weights; not fresh retraining or another machine."
+}

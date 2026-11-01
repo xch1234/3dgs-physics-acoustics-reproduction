@@ -1,0 +1,19 @@
+{
+  "name": "V30-clean-gpu-torch",
+  "command": [
+    "/opt/3dgs-remediation/envs/physgaussian-clean/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "torch==2.0.0+cu118",
+    "torchvision==0.15.1+cu118",
+    "--index-url",
+    "https://download.pytorch.org/whl/cu118"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:21:16.684576+08:00",
+  "log": "logs/V30-clean-gpu-torch.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:23:11.857104+08:00",
+  "elapsed_s": 115.17286943199997
+}

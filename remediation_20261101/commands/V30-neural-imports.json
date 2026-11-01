@@ -1,0 +1,14 @@
+{
+  "name": "V30-neural-imports",
+  "command": [
+    "/opt/3dgs-remediation/envs/neuralsound-clean/bin/python",
+    "-c",
+    "import torch,torch_scatter,MinkowskiEngine,bempp.api,pycuda,pyopencl; print(torch.__version__,MinkowskiEngine.__version__,pyopencl.get_platforms())"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:11:21.466373+08:00",
+  "log": "logs/V30-neural-imports.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:11:27.923762+08:00",
+  "elapsed_s": 6.4572848139996495
+}

@@ -1,0 +1,23 @@
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /mnt/f/System/Desktop/3DGS/复现/remediation_20261101/cache/xdg/warp/0.10.1
+Module warp_utils load on device 'cuda:0' took 1468.44 ms
+Module mpm_utils load on device 'cuda:0' took 55949.00 ms
+Module snow_adapter load on device 'cuda:0' took 1859.62 ms
+	Module mpm_solver_warp load on device 'cuda:0' took 829.92 ms
+{
+  "passed": true,
+  "scope": "local snow extension, not upstream snow reproduction or experimental material validation",
+  "max_numpy_stress_relative_error": 0.00010363537484986794,
+  "rigid_stress_norm": 0.07324051111936569,
+  "max_shear": 205.09571838378906,
+  "spatial_steps": 4000,
+  "particles": 125,
+  "mass_preserved": true,
+  "min_height": 0.24535474181175232
+}
+START V19-snow_ficus_local
+END V19-snow_ficus_local 0

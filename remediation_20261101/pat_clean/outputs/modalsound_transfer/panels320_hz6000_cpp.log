@@ -1,0 +1,20 @@
+[1;32mMESSAGE:[0m [37mread solution: Frequency fixture token token token token 6000
+[0m============ Equivalent Source Simulation ============
+Number of elements      = 320
+Number of nodes         = 162
+Number of field points  = 0
+Frequency               = 6000.000000
+Wave number (K)         = 109.909947
+Speed of sound (c)      = 343.000000
+Mass density (rho)      = 1.225000
+[1;32mMESSAGE:[0m [37mread solution: Frequency fixture token token token token 6000
+[0m============ Equivalent Source Simulation ============
+Number of elements      = 320
+Number of nodes         = 162
+Number of field points  = 0
+Frequency               = 6000.000000
+Wave number (K)         = 109.909947
+Speed of sound (c)      = 343.000000
+Mass density (rho)      = 1.225000
+# of FMM expansions     = 23
+======================================================

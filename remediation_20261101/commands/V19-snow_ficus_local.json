@@ -1,0 +1,22 @@
+{
+  "name": "V19-snow_ficus_local",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/ficus_whitebg-trained",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/snow/snow_ficus_local_config.json",
+    "--tag",
+    "snow_ficus_local",
+    "--correct-sh-frame"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T22:31:08.098430+08:00",
+  "log": "logs/V19-snow_ficus_local.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T22:33:22.491385+08:00",
+  "elapsed_s": 134.390436744
+}

@@ -1,0 +1,14 @@
+{
+  "name": "final-command-index",
+  "command": [
+    "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\build_command_index.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T06:49:18.302264+08:00",
+  "log": "logs\\final-command-index.log",
+  "exit_code": 1,
+  "finished": "2026-11-02T06:49:19.169648+08:00",
+  "elapsed_s": 0.875
+}

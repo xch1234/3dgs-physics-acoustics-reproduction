@@ -1,0 +1,18 @@
+{
+  "name": "V30-clean-gpu-conda",
+  "command": [
+    "/opt/3dgs-runtime/miniconda3/bin/conda",
+    "create",
+    "--yes",
+    "--prefix",
+    "/opt/3dgs-remediation/envs/physgaussian-clean",
+    "--file",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/docs/conda-explicit-linux64.txt"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:20:57.618371+08:00",
+  "log": "logs/V30-clean-gpu-conda.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:21:16.670134+08:00",
+  "elapsed_s": 19.051200954000024
+}

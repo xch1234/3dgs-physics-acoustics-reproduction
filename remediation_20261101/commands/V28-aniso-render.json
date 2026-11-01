@@ -1,0 +1,27 @@
+{
+  "name": "V28-aniso-render",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/render.py",
+    "-s",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy",
+    "--eval",
+    "--white_background",
+    "--data_device",
+    "cpu",
+    "--resolution",
+    "1",
+    "--iteration",
+    "30000",
+    "--skip_train"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-02T05:19:16.202273+08:00",
+  "log": "logs/V28-aniso-render.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:21:15.263099+08:00",
+  "elapsed_s": 119.06043206899994
+}

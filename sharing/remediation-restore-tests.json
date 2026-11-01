@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "path": "remediation_20261101/neural/outputs/radiation_longer/best.pt",
+      "chunks": 10,
+      "sha256": "dfda4e1818f83c56c30ede420a13d65a54366522d9b2d70ba91d8c5030b958a2",
+      "passed": true,
+      "command": [
+        "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--manifest",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\sharing\\remediation-artifacts.json",
+        "--prefix",
+        "remediation_20261101/neural/outputs/radiation_longer/best.pt",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\restore-smoke"
+      ]
+    },
+    {
+      "path": "remediation_20261101/physics/outputs/ficus_rerun/0000.png",
+      "chunks": 1,
+      "sha256": "23484af7e35d32a051884afe645b2d9573078eadfe3b916476a79ab8c585c122",
+      "passed": true,
+      "command": [
+        "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--manifest",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\sharing\\remediation-artifacts.json",
+        "--prefix",
+        "remediation_20261101/physics/outputs/ficus_rerun/0000.png",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\restore-smoke"
+      ]
+    },
+    {
+      "path": "remediation_20261101/neural/evaluations/radiation_longer/predictions.npz",
+      "chunks": 1,
+      "sha256": "2b3caef3e3a9c3bde8afff03235e53da535444cb466487ae41cf58982952c7bf",
+      "passed": true,
+      "command": [
+        "F:\\3dgs-remediation\\envs\\acoustics-clean\\python.exe",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\tools\\restore_artifacts.py",
+        "--manifest",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\github\\sharing\\remediation-artifacts.json",
+        "--prefix",
+        "remediation_20261101/neural/evaluations/radiation_longer/predictions.npz",
+        "--cache",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\release",
+        "--destination",
+        "F:\\System\\Desktop\\3DGS\\复现\\_publication\\remediation_20261102\\restore-smoke"
+      ]
+    }
+  ],
+  "repeated_restore_skipped": true,
+  "refused_differing_file": true,
+  "legacy_manifest_list_passed": true,
+  "scope": "Actual archives and multi-chunk checkpoint restored locally; public anonymous download checked after publishing."
+}

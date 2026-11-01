@@ -29,5 +29,7 @@ reproduction/vendor/
 reproduction/cache/
 verification_20261101/cache/
 verification_20261101/build/
+remediation_20261101/cache/
+remediation_20261101/remote/
 **/[0-9][0-9][0-9][0-9].png
 **/[0-9][0-9][0-9][0-9][0-9].png

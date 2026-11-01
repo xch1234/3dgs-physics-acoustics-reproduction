@@ -1,0 +1,14 @@
+{
+  "name": "final-SH-diagnostic-linux",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/diagnose_sh_artifact.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:45:36.608159+08:00",
+  "log": "logs/final-SH-diagnostic-linux.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:46:30.305361+08:00",
+  "elapsed_s": 53.69681129499804
+}

@@ -1,0 +1,15 @@
+{
+  "name": "V28-neural-hybrid",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+    "hybrid"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T05:33:36.058401+08:00",
+  "log": "logs/V28-neural-hybrid.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:37:16.704742+08:00",
+  "elapsed_s": 220.6462365160005
+}

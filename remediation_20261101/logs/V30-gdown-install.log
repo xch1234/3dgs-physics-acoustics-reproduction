@@ -1,0 +1,28 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting gdown==5.2.0
+  Downloading gdown-5.2.0-py3-none-any.whl (18 kB)
+Collecting beautifulsoup4 (from gdown==5.2.0)
+  Using cached beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Collecting filelock (from gdown==5.2.0)
+  Using cached filelock-4.2.6-py3-none-any.whl (164 kB)
+Requirement already satisfied: requests[socks] in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from gdown==5.2.0) (2.34.2)
+Collecting tqdm (from gdown==5.2.0)
+  Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4->gdown==5.2.0)
+  Using cached soupsieve-3.0.4-py3-none-any.whl (42 kB)
+Collecting typing-extensions>=4.0.0 (from beautifulsoup4->gdown==5.2.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from requests[socks]->gdown==5.2.0) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from requests[socks]->gdown==5.2.0) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from requests[socks]->gdown==5.2.0) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from requests[socks]->gdown==5.2.0) (2026.10.23)
+Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in F:\3dgs-remediation\envs\acoustics-clean\Lib\site-packages (from requests[socks]->gdown==5.2.0) (1.7.1)
+Collecting colorama (from tqdm->gdown==5.2.0)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Installing collected packages: typing-extensions, soupsieve, filelock, colorama, tqdm, beautifulsoup4, gdown
+  WARNING: The script tqdm.exe is installed in 'F:\3dgs-remediation\envs\acoustics-clean\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script gdown.exe is installed in 'F:\3dgs-remediation\envs\acoustics-clean\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed beautifulsoup4-4.15.0 colorama-0.4.6 filelock-4.2.6 gdown-5.2.0 soupsieve-3.0.4 tqdm-4.70.1 typing-extensions-4.16.0

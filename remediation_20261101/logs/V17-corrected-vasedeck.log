@@ -1,0 +1,1074 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+WARP_SOURCE_MODULES {'mpm_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py', 'engine_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py', 'warp_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py'}
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /opt/3dgs-runtime/remediation-warp-cache
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 41.07 ms
+Particles initialized from torch data.
+Total particles:  55364
+Module mpm_utils load on device 'cuda:0' took 417.01 ms
+  0%|          | 0/75 [00:00<?, ?it/s]Module mpm_solver_warp.mpm_solver_warp load on device 'cuda:0' took 783.27 ms
+  1%|▏         | 1/75 [00:56<1:09:42, 56.52s/it]  3%|▎         | 2/75 [01:02<32:48, 26.96s/it]    4%|▍         | 3/75 [01:08<20:58, 17.48s/it]  5%|▌         | 4/75 [01:15<15:26, 13.05s/it]  7%|▋         | 5/75 [01:21<12:25, 10.65s/it]  8%|▊         | 6/75 [01:27<10:13,  8.89s/it]  9%|▉         | 7/75 [01:33<09:00,  7.95s/it] 11%|█         | 8/75 [01:38<08:07,  7.28s/it] 12%|█▏        | 9/75 [01:45<07:37,  6.93s/it] 13%|█▎        | 10/75 [01:51<07:13,  6.67s/it] 15%|█▍        | 11/75 [01:57<06:53,  6.46s/it] 16%|█▌        | 12/75 [02:03<06:40,  6.35s/it] 17%|█▋        | 13/75 [02:09<06:30,  6.30s/it] 19%|█▊        | 14/75 [02:15<06:24,  6.30s/it] 20%|██        | 15/75 [02:21<06:05,  6.10s/it] 21%|██▏       | 16/75 [02:27<06:08,  6.24s/it] 23%|██▎       | 17/75 [02:34<06:05,  6.31s/it] 24%|██▍       | 18/75 [02:40<06:00,  6.32s/it] 25%|██▌       | 19/75 [02:47<05:57,  6.39s/it] 27%|██▋       | 20/75 [02:53<05:53,  6.43s/it] 28%|██▊       | 21/75 [02:59<05:41,  6.33s/it] 29%|██▉       | 22/75 [03:06<05:36,  6.34s/it] 31%|███       | 23/75 [03:12<05:32,  6.39s/it] 32%|███▏      | 24/75 [03:19<05:24,  6.37s/it] 33%|███▎      | 25/75 [04:14<17:37, 21.16s/it] 35%|███▍      | 26/75 [04:21<13:40, 16.74s/it] 36%|███▌      | 27/75 [04:29<11:26, 14.31s/it] 37%|███▋      | 28/75 [04:37<09:37, 12.29s/it] 39%|███▊      | 29/75 [04:45<08:24, 10.96s/it] 40%|████      | 30/75 [04:53<07:32, 10.06s/it] 41%|████▏     | 31/75 [05:01<06:55,  9.45s/it] 43%|████▎     | 32/75 [05:08<06:20,  8.85s/it] 44%|████▍     | 33/75 [05:16<05:59,  8.57s/it] 45%|████▌     | 34/75 [05:24<05:39,  8.28s/it] 47%|████▋     | 35/75 [05:31<05:12,  7.82s/it] 48%|████▊     | 36/75 [05:37<04:52,  7.51s/it] 49%|████▉     | 37/75 [05:44<04:37,  7.31s/it] 51%|█████     | 38/75 [05:51<04:21,  7.08s/it] 52%|█████▏    | 39/75 [05:57<04:07,  6.87s/it] 53%|█████▎    | 40/75 [06:04<03:57,  6.79s/it] 55%|█████▍    | 41/75 [06:11<03:51,  6.81s/it] 56%|█████▌    | 42/75 [06:17<03:42,  6.74s/it] 57%|█████▋    | 43/75 [06:24<03:35,  6.74s/it] 59%|█████▊    | 44/75 [06:31<03:29,  6.75s/it] 60%|██████    | 45/75 [06:37<03:21,  6.71s/it] 61%|██████▏   | 46/75 [06:44<03:12,  6.65s/it] 63%|██████▎   | 47/75 [06:50<03:05,  6.62s/it] 64%|██████▍   | 48/75 [06:57<02:59,  6.67s/it] 65%|██████▌   | 49/75 [07:04<02:54,  6.71s/it] 67%|██████▋   | 50/75 [08:01<09:06, 21.85s/it] 68%|██████▊   | 51/75 [08:08<06:55, 17.33s/it] 69%|██████▉   | 52/75 [08:15<05:26, 14.20s/it] 71%|███████   | 53/75 [08:22<04:26, 12.12s/it] 72%|███████▏  | 54/75 [08:29<03:41, 10.55s/it] 73%|███████▎  | 55/75 [08:36<03:09,  9.47s/it] 75%|███████▍  | 56/75 [08:43<02:44,  8.63s/it] 76%|███████▌  | 57/75 [08:49<02:25,  8.09s/it] 77%|███████▋  | 58/75 [08:56<02:12,  7.78s/it] 79%|███████▊  | 59/75 [09:04<02:01,  7.59s/it] 80%|████████  | 60/75 [09:10<01:50,  7.40s/it] 81%|████████▏ | 61/75 [09:17<01:41,  7.28s/it] 83%|████████▎ | 62/75 [09:24<01:33,  7.19s/it] 84%|████████▍ | 63/75 [09:32<01:26,  7.17s/it] 85%|████████▌ | 64/75 [09:39<01:18,  7.09s/it] 87%|████████▋ | 65/75 [09:46<01:11,  7.14s/it] 88%|████████▊ | 66/75 [09:53<01:04,  7.14s/it] 89%|████████▉ | 67/75 [10:00<00:57,  7.19s/it] 91%|█████████ | 68/75 [10:07<00:49,  7.04s/it] 92%|█████████▏| 69/75 [10:14<00:42,  7.02s/it] 93%|█████████▎| 70/75 [10:21<00:35,  7.00s/it] 95%|█████████▍| 71/75 [10:28<00:27,  6.94s/it] 96%|█████████▌| 72/75 [10:35<00:20,  6.93s/it] 97%|█████████▋| 73/75 [10:42<00:13,  6.95s/it] 99%|█████████▊| 74/75 [10:48<00:06,  6.94s/it]100%|██████████| 75/75 [11:46<00:00, 22.00s/it]100%|██████████| 75/75 [11:46<00:00,  9.41s/it]
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/vasedeck_corrected_rerun/%04d.png':
+  Duration: 00:00:03.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 3994x2995, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x610964e72e80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x610964e72e80] profile High, level 6.0, 4:2:0, 8-bit
+[libx264 @ 0x610964e72e80] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/vasedeck_corrected_rerun/output.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 3994x2994, q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:09.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:09.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:10.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:10.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:11.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:11.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:12.02    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:12.53    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:13.04    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:13.54    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:14.06    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:14.57    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:15.07    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:15.57    frame=    1 fps=0.1 q=28.0 size=       0KiB time=-00:00:00.04 bitrate=N/A speed=N/A elapsed=0:00:16.08    frame=    2 fps=0.1 q=28.0 size=     256KiB time=00:00:00.00 bitrate=N/A speed=   0x elapsed=0:00:16.58    frame=    4 fps=0.2 q=28.0 size=     512KiB time=00:00:00.08 bitrate=52433.6kbits/s speed=0.00468x elapsed=0:00:17.08    frame=    6 fps=0.3 q=28.0 size=     512KiB time=00:00:00.16 bitrate=26216.8kbits/s speed=0.0091x elapsed=0:00:17.59    frame=   21 fps=1.2 q=28.0 size=    1536KiB time=00:00:00.76 bitrate=16557.0kbits/s speed=0.0419x elapsed=0:00:18.12    frame=   22 fps=1.2 q=28.0 size=    1536KiB time=00:00:00.80 bitrate=15729.1kbits/s speed=0.0429x elapsed=0:00:18.63    frame=   25 fps=1.3 q=28.0 size=    1792KiB time=00:00:00.92 bitrate=15957.0kbits/s speed=0.0481x elapsed=0:00:19.14    frame=   29 fps=1.5 q=28.0 size=    2048KiB time=00:00:01.08 bitrate=15534.8kbits/s speed=0.055x elapsed=0:00:19.64    frame=   29 fps=1.4 q=28.0 size=    2048KiB time=00:00:01.08 bitrate=15534.8kbits/s speed=0.0536x elapsed=0:00:20.15    frame=   29 fps=1.4 q=28.0 size=    2048KiB time=00:00:01.08 bitrate=15534.8kbits/s speed=0.0523x elapsed=0:00:20.66    frame=   38 fps=1.8 q=28.0 size=    2560KiB time=00:00:01.44 bitrate=14563.8kbits/s speed=0.068x elapsed=0:00:21.17    frame=   50 fps=2.3 q=28.0 size=    3072KiB time=00:00:01.92 bitrate=13107.4kbits/s speed=0.0885x elapsed=0:00:21.68    frame=   53 fps=2.4 q=-1.0 size=    3328KiB time=00:00:02.04 bitrate=13364.4kbits/s speed=0.0919x elapsed=0:00:22.19    frame=   57 fps=2.5 q=-1.0 size=    3328KiB time=00:00:02.20 bitrate=12392.4kbits/s speed=0.0969x elapsed=0:00:22.69    [out#0/mp4 @ 0x610964e70f80] video:3964KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.044980%
+frame=   75 fps=3.3 q=-1.0 Lsize=    3966KiB time=00:00:02.92 bitrate=11127.2kbits/s speed=0.127x elapsed=0:00:22.94    
+[libx264 @ 0x610964e72e80] frame I:1     Avg QP:19.70  size:421375
+[libx264 @ 0x610964e72e80] frame P:19    Avg QP:20.88  size:111883
+[libx264 @ 0x610964e72e80] frame B:55    Avg QP:23.79  size: 27487
+[libx264 @ 0x610964e72e80] consecutive B-frames:  1.3%  2.7%  0.0% 96.0%
+[libx264 @ 0x610964e72e80] mb I  I16..4: 10.2% 85.4%  4.4%
+[libx264 @ 0x610964e72e80] mb P  I16..4:  2.1%  7.7%  0.3%  P16..4: 36.9%  7.3%  1.9%  0.0%  0.0%    skip:43.8%
+[libx264 @ 0x610964e72e80] mb B  I16..4:  0.1%  0.4%  0.0%  B16..8: 21.5%  1.5%  0.2%  direct: 0.6%  skip:75.6%  L0:43.2% L1:52.9% BI: 3.8%
+[libx264 @ 0x610964e72e80] 8x8 transform intra:79.3% inter:91.2%
+[libx264 @ 0x610964e72e80] coded y,uvDC,uvAC intra: 59.3% 64.4% 20.2% inter: 6.2% 8.2% 0.1%
+[libx264 @ 0x610964e72e80] i16 v,h,dc,p:  6% 20%  3% 70%
+[libx264 @ 0x610964e72e80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 23% 12%  8%  7%  6%  8%  6% 17%
+[libx264 @ 0x610964e72e80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 26%  9%  7% 12%  8%  9%  5%  5%
+[libx264 @ 0x610964e72e80] i8c dc,h,v,p: 50% 24% 16% 10%
+[libx264 @ 0x610964e72e80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x610964e72e80] ref P L0: 55.6% 16.9% 19.3%  8.2%
+[libx264 @ 0x610964e72e80] ref B L0: 87.4% 10.3%  2.3%
+[libx264 @ 0x610964e72e80] ref B L1: 97.9%  2.1%
+[libx264 @ 0x610964e72e80] kb/s:10823.81
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 55364,
+  "steps": 30000,
+  "duration_s": 3.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/vasedeck_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+  "rendered_frames": 75,
+  "sh_frame_correction": true,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 2609579008,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 4007657472,
+  "elapsed_s": 743.4297404569988,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path",
+    "Conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.00939666572958231,
+      "min_det_F": 0.979841947555542,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.018862418830394745,
+      "min_det_F": 0.9660309553146362,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.02902042493224144,
+      "min_det_F": 0.9498353004455566,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.03922055661678314,
+      "min_det_F": 0.9359399080276489,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.04937576875090599,
+      "min_det_F": 0.9180693626403809,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.059381868690252304,
+      "min_det_F": 0.900039553642273,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.06933838874101639,
+      "min_det_F": 0.8986535668373108,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.07636816799640656,
+      "min_det_F": 0.9139288067817688,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.08841653168201447,
+      "min_det_F": 0.9203231334686279,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.10886403918266296,
+      "min_det_F": 0.933942973613739,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.12776803970336914,
+      "min_det_F": 0.9480272531509399,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.1446191966533661,
+      "min_det_F": 0.9508524537086487,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.16392205655574799,
+      "min_det_F": 0.9480183124542236,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.18229421973228455,
+      "min_det_F": 0.946111798286438,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.1999831646680832,
+      "min_det_F": 0.9458334445953369,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.21610519289970398,
+      "min_det_F": 0.9307413697242737,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.23069486021995544,
+      "min_det_F": 0.9117149114608765,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.24269910156726837,
+      "min_det_F": 0.899267852306366,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.25045856833457947,
+      "min_det_F": 0.9014058709144592,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.25394973158836365,
+      "min_det_F": 0.9091019630432129,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.25385040044784546,
+      "min_det_F": 0.9053149223327637,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.2524479627609253,
+      "min_det_F": 0.907332718372345,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.2598798871040344,
+      "min_det_F": 0.9079861044883728,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.26701265573501587,
+      "min_det_F": 0.9037215709686279,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.2732605040073395,
+      "min_det_F": 0.8902549147605896,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 26,
+      "time_s": 1.04,
+      "max_displacement": 0.28394851088523865,
+      "min_det_F": 0.8649669885635376,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 27,
+      "time_s": 1.08,
+      "max_displacement": 0.2970384955406189,
+      "min_det_F": 0.8625639081001282,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 28,
+      "time_s": 1.12,
+      "max_displacement": 0.3102070689201355,
+      "min_det_F": 0.865919291973114,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1600000000000001,
+      "max_displacement": 0.3234446048736572,
+      "min_det_F": 0.870832622051239,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 30,
+      "time_s": 1.2,
+      "max_displacement": 0.33674299716949463,
+      "min_det_F": 0.8736283183097839,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 31,
+      "time_s": 1.24,
+      "max_displacement": 0.35009530186653137,
+      "min_det_F": 0.8807474374771118,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 32,
+      "time_s": 1.28,
+      "max_displacement": 0.3634956181049347,
+      "min_det_F": 0.8876895904541016,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 33,
+      "time_s": 1.32,
+      "max_displacement": 0.37693876028060913,
+      "min_det_F": 0.8995485901832581,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 34,
+      "time_s": 1.36,
+      "max_displacement": 0.3904203176498413,
+      "min_det_F": 0.9124475717544556,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4000000000000001,
+      "max_displacement": 0.4039364755153656,
+      "min_det_F": 0.9231513142585754,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4400000000000002,
+      "max_displacement": 0.4174838662147522,
+      "min_det_F": 0.933728039264679,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 37,
+      "time_s": 1.48,
+      "max_displacement": 0.4310595393180847,
+      "min_det_F": 0.945652425289154,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 38,
+      "time_s": 1.52,
+      "max_displacement": 0.44466087222099304,
+      "min_det_F": 0.9494729042053223,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 39,
+      "time_s": 1.56,
+      "max_displacement": 0.4582856297492981,
+      "min_det_F": 0.951719343662262,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 40,
+      "time_s": 1.6,
+      "max_displacement": 0.4719317555427551,
+      "min_det_F": 0.9547214508056641,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 41,
+      "time_s": 1.6400000000000001,
+      "max_displacement": 0.48559749126434326,
+      "min_det_F": 0.9582205414772034,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6800000000000002,
+      "max_displacement": 0.4992811679840088,
+      "min_det_F": 0.9616227746009827,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 43,
+      "time_s": 1.72,
+      "max_displacement": 0.5129813551902771,
+      "min_det_F": 0.9640223383903503,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 44,
+      "time_s": 1.76,
+      "max_displacement": 0.5266968011856079,
+      "min_det_F": 0.9638522863388062,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8,
+      "max_displacement": 0.5404263138771057,
+      "min_det_F": 0.9636819362640381,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 46,
+      "time_s": 1.84,
+      "max_displacement": 0.5541688203811646,
+      "min_det_F": 0.9635837078094482,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8800000000000001,
+      "max_displacement": 0.5679234862327576,
+      "min_det_F": 0.963615894317627,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 48,
+      "time_s": 1.9200000000000002,
+      "max_displacement": 0.5816893577575684,
+      "min_det_F": 0.9637442827224731,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9600000000000002,
+      "max_displacement": 0.5954656600952148,
+      "min_det_F": 0.9639757871627808,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 50,
+      "time_s": 2.0,
+      "max_displacement": 0.6092517375946045,
+      "min_det_F": 0.964219868183136,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 51,
+      "time_s": 2.04,
+      "max_displacement": 0.623046875,
+      "min_det_F": 0.9642859697341919,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 52,
+      "time_s": 2.08,
+      "max_displacement": 0.6368504762649536,
+      "min_det_F": 0.9644984602928162,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 53,
+      "time_s": 2.12,
+      "max_displacement": 0.6506621241569519,
+      "min_det_F": 0.9647635817527771,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 54,
+      "time_s": 2.16,
+      "max_displacement": 0.6644812226295471,
+      "min_det_F": 0.9648938775062561,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 55,
+      "time_s": 2.2,
+      "max_displacement": 0.678307294845581,
+      "min_det_F": 0.9652069211006165,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 56,
+      "time_s": 2.24,
+      "max_displacement": 0.6921399831771851,
+      "min_det_F": 0.9655983448028564,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 57,
+      "time_s": 2.2800000000000002,
+      "max_displacement": 0.7059788703918457,
+      "min_det_F": 0.9597353935241699,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 58,
+      "time_s": 2.3200000000000003,
+      "max_displacement": 0.7198235988616943,
+      "min_det_F": 0.9553722143173218,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 59,
+      "time_s": 2.3600000000000003,
+      "max_displacement": 0.7336738109588623,
+      "min_det_F": 0.9550511837005615,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "max_displacement": 0.7475292682647705,
+      "min_det_F": 0.9530578851699829,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 61,
+      "time_s": 2.44,
+      "max_displacement": 0.7613896131515503,
+      "min_det_F": 0.9529613852500916,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 62,
+      "time_s": 2.48,
+      "max_displacement": 0.7752546668052673,
+      "min_det_F": 0.95458984375,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 63,
+      "time_s": 2.52,
+      "max_displacement": 0.7891241312026978,
+      "min_det_F": 0.9572937488555908,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 64,
+      "time_s": 2.56,
+      "max_displacement": 0.8029977679252625,
+      "min_det_F": 0.9607012271881104,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 65,
+      "time_s": 2.6,
+      "max_displacement": 0.8168753385543823,
+      "min_det_F": 0.9645819664001465,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 66,
+      "time_s": 2.64,
+      "max_displacement": 0.8307567238807678,
+      "min_det_F": 0.9656721949577332,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 67,
+      "time_s": 2.68,
+      "max_displacement": 0.8446416854858398,
+      "min_det_F": 0.9655030965805054,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 68,
+      "time_s": 2.72,
+      "max_displacement": 0.8585299849510193,
+      "min_det_F": 0.9653173089027405,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 69,
+      "time_s": 2.7600000000000002,
+      "max_displacement": 0.8724216818809509,
+      "min_det_F": 0.9651321768760681,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 70,
+      "time_s": 2.8000000000000003,
+      "max_displacement": 0.8863163590431213,
+      "min_det_F": 0.9649266600608826,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 71,
+      "time_s": 2.8400000000000003,
+      "max_displacement": 0.9002140760421753,
+      "min_det_F": 0.964728593826294,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 72,
+      "time_s": 2.8800000000000003,
+      "max_displacement": 0.9141144752502441,
+      "min_det_F": 0.9645888209342957,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 73,
+      "time_s": 2.92,
+      "max_displacement": 0.9280176758766174,
+      "min_det_F": 0.9643968343734741,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 74,
+      "time_s": 2.96,
+      "max_displacement": 0.9419234395027161,
+      "min_det_F": 0.9642179608345032,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 75,
+      "time_s": 3.0,
+      "max_displacement": 0.9558316469192505,
+      "min_det_F": 0.964076817035675,
+      "mass": 1.5559260845184326
+    }
+  ],
+  "sh_same_state_comparison": [
+    {
+      "frame": 1,
+      "relative_image_L2": 0.002771650906652212,
+      "mean_absolute_difference": 0.0001936566986842081,
+      "max_absolute_difference": 0.07256710529327393
+    },
+    {
+      "frame": 2,
+      "relative_image_L2": 0.00565792340785265,
+      "mean_absolute_difference": 0.00052716612117365,
+      "max_absolute_difference": 0.12733560800552368
+    },
+    {
+      "frame": 3,
+      "relative_image_L2": 0.008695089258253574,
+      "mean_absolute_difference": 0.0009843140142038465,
+      "max_absolute_difference": 0.16949355602264404
+    },
+    {
+      "frame": 4,
+      "relative_image_L2": 0.012125464156270027,
+      "mean_absolute_difference": 0.0016226451843976974,
+      "max_absolute_difference": 0.19670185446739197
+    },
+    {
+      "frame": 5,
+      "relative_image_L2": 0.016263794153928757,
+      "mean_absolute_difference": 0.0024860044941306114,
+      "max_absolute_difference": 0.22750386595726013
+    },
+    {
+      "frame": 6,
+      "relative_image_L2": 0.021364903077483177,
+      "mean_absolute_difference": 0.003556491807103157,
+      "max_absolute_difference": 0.2692290246486664
+    },
+    {
+      "frame": 7,
+      "relative_image_L2": 0.027614781633019447,
+      "mean_absolute_difference": 0.004804663825780153,
+      "max_absolute_difference": 0.3015953600406647
+    },
+    {
+      "frame": 8,
+      "relative_image_L2": 0.03471111133694649,
+      "mean_absolute_difference": 0.006135976407676935,
+      "max_absolute_difference": 0.34641432762145996
+    },
+    {
+      "frame": 9,
+      "relative_image_L2": 0.042287714779376984,
+      "mean_absolute_difference": 0.00751635804772377,
+      "max_absolute_difference": 0.4429042339324951
+    },
+    {
+      "frame": 10,
+      "relative_image_L2": 0.04990852251648903,
+      "mean_absolute_difference": 0.0088778305798769,
+      "max_absolute_difference": 0.5410776734352112
+    },
+    {
+      "frame": 11,
+      "relative_image_L2": 0.05706794187426567,
+      "mean_absolute_difference": 0.010243884287774563,
+      "max_absolute_difference": 0.6280659437179565
+    },
+    {
+      "frame": 12,
+      "relative_image_L2": 0.0633990541100502,
+      "mean_absolute_difference": 0.011425078846514225,
+      "max_absolute_difference": 0.6998170018196106
+    },
+    {
+      "frame": 13,
+      "relative_image_L2": 0.06871850043535233,
+      "mean_absolute_difference": 0.012508248910307884,
+      "max_absolute_difference": 0.7624882459640503
+    },
+    {
+      "frame": 14,
+      "relative_image_L2": 0.07343079149723053,
+      "mean_absolute_difference": 0.013611280359327793,
+      "max_absolute_difference": 0.8039237856864929
+    },
+    {
+      "frame": 15,
+      "relative_image_L2": 0.07732909172773361,
+      "mean_absolute_difference": 0.01454850286245346,
+      "max_absolute_difference": 0.8446944355964661
+    },
+    {
+      "frame": 16,
+      "relative_image_L2": 0.08019083738327026,
+      "mean_absolute_difference": 0.01523588690906763,
+      "max_absolute_difference": 0.8758997321128845
+    },
+    {
+      "frame": 17,
+      "relative_image_L2": 0.08212646842002869,
+      "mean_absolute_difference": 0.015678081661462784,
+      "max_absolute_difference": 0.8876906633377075
+    },
+    {
+      "frame": 18,
+      "relative_image_L2": 0.0829719826579094,
+      "mean_absolute_difference": 0.015880534425377846,
+      "max_absolute_difference": 0.9085392951965332
+    },
+    {
+      "frame": 19,
+      "relative_image_L2": 0.08310326933860779,
+      "mean_absolute_difference": 0.015859456732869148,
+      "max_absolute_difference": 0.9038587808609009
+    },
+    {
+      "frame": 20,
+      "relative_image_L2": 0.08226923644542694,
+      "mean_absolute_difference": 0.01563710719347,
+      "max_absolute_difference": 0.890283465385437
+    },
+    {
+      "frame": 21,
+      "relative_image_L2": 0.08037173002958298,
+      "mean_absolute_difference": 0.015207400545477867,
+      "max_absolute_difference": 0.8646265268325806
+    },
+    {
+      "frame": 22,
+      "relative_image_L2": 0.0773407593369484,
+      "mean_absolute_difference": 0.014707673341035843,
+      "max_absolute_difference": 0.8198506236076355
+    },
+    {
+      "frame": 23,
+      "relative_image_L2": 0.07308037579059601,
+      "mean_absolute_difference": 0.01407657004892826,
+      "max_absolute_difference": 0.7577216029167175
+    },
+    {
+      "frame": 24,
+      "relative_image_L2": 0.06807611137628555,
+      "mean_absolute_difference": 0.013363651931285858,
+      "max_absolute_difference": 0.6967315673828125
+    },
+    {
+      "frame": 25,
+      "relative_image_L2": 0.06252159178256989,
+      "mean_absolute_difference": 0.012611765414476395,
+      "max_absolute_difference": 0.6156654357910156
+    },
+    {
+      "frame": 26,
+      "relative_image_L2": 0.056645091623067856,
+      "mean_absolute_difference": 0.011677862145006657,
+      "max_absolute_difference": 0.5898773670196533
+    },
+    {
+      "frame": 27,
+      "relative_image_L2": 0.05142907425761223,
+      "mean_absolute_difference": 0.010722036473453045,
+      "max_absolute_difference": 0.5833846926689148
+    },
+    {
+      "frame": 28,
+      "relative_image_L2": 0.04671843722462654,
+      "mean_absolute_difference": 0.009740176610648632,
+      "max_absolute_difference": 0.6101712584495544
+    },
+    {
+      "frame": 29,
+      "relative_image_L2": 0.042543184012174606,
+      "mean_absolute_difference": 0.00883087981492281,
+      "max_absolute_difference": 0.6360142230987549
+    },
+    {
+      "frame": 30,
+      "relative_image_L2": 0.03901927173137665,
+      "mean_absolute_difference": 0.008024034090340137,
+      "max_absolute_difference": 0.6803714036941528
+    },
+    {
+      "frame": 31,
+      "relative_image_L2": 0.03647570312023163,
+      "mean_absolute_difference": 0.007432789541780949,
+      "max_absolute_difference": 0.7178274989128113
+    },
+    {
+      "frame": 32,
+      "relative_image_L2": 0.03468598797917366,
+      "mean_absolute_difference": 0.006920619867742062,
+      "max_absolute_difference": 0.7328715324401855
+    },
+    {
+      "frame": 33,
+      "relative_image_L2": 0.033610306680202484,
+      "mean_absolute_difference": 0.006501310039311647,
+      "max_absolute_difference": 0.781447172164917
+    },
+    {
+      "frame": 34,
+      "relative_image_L2": 0.03265749663114548,
+      "mean_absolute_difference": 0.006176054012030363,
+      "max_absolute_difference": 0.7933557033538818
+    },
+    {
+      "frame": 35,
+      "relative_image_L2": 0.03172607347369194,
+      "mean_absolute_difference": 0.005872171372175217,
+      "max_absolute_difference": 0.8013012409210205
+    },
+    {
+      "frame": 36,
+      "relative_image_L2": 0.030667830258607864,
+      "mean_absolute_difference": 0.005681929644197226,
+      "max_absolute_difference": 0.7886430621147156
+    },
+    {
+      "frame": 37,
+      "relative_image_L2": 0.02960224449634552,
+      "mean_absolute_difference": 0.005450102966278791,
+      "max_absolute_difference": 0.7635233402252197
+    },
+    {
+      "frame": 38,
+      "relative_image_L2": 0.028250066563487053,
+      "mean_absolute_difference": 0.005190164316445589,
+      "max_absolute_difference": 0.7358639240264893
+    },
+    {
+      "frame": 39,
+      "relative_image_L2": 0.026828749105334282,
+      "mean_absolute_difference": 0.004974032752215862,
+      "max_absolute_difference": 0.7042789459228516
+    },
+    {
+      "frame": 40,
+      "relative_image_L2": 0.025386331602931023,
+      "mean_absolute_difference": 0.004757057409733534,
+      "max_absolute_difference": 0.6736103296279907
+    },
+    {
+      "frame": 41,
+      "relative_image_L2": 0.024101974442601204,
+      "mean_absolute_difference": 0.00460353959351778,
+      "max_absolute_difference": 0.6393449306488037
+    },
+    {
+      "frame": 42,
+      "relative_image_L2": 0.022916525602340698,
+      "mean_absolute_difference": 0.00437126075848937,
+      "max_absolute_difference": 0.5973173379898071
+    },
+    {
+      "frame": 43,
+      "relative_image_L2": 0.02169007435441017,
+      "mean_absolute_difference": 0.004116700496524572,
+      "max_absolute_difference": 0.560138463973999
+    },
+    {
+      "frame": 44,
+      "relative_image_L2": 0.02057482860982418,
+      "mean_absolute_difference": 0.0038734350819140673,
+      "max_absolute_difference": 0.5199347734451294
+    },
+    {
+      "frame": 45,
+      "relative_image_L2": 0.019823787733912468,
+      "mean_absolute_difference": 0.0037718205712735653,
+      "max_absolute_difference": 0.49584802985191345
+    },
+    {
+      "frame": 46,
+      "relative_image_L2": 0.01933433674275875,
+      "mean_absolute_difference": 0.003841773374006152,
+      "max_absolute_difference": 0.49666351079940796
+    },
+    {
+      "frame": 47,
+      "relative_image_L2": 0.019058972597122192,
+      "mean_absolute_difference": 0.004001374822109938,
+      "max_absolute_difference": 0.4897555410861969
+    },
+    {
+      "frame": 48,
+      "relative_image_L2": 0.01892394758760929,
+      "mean_absolute_difference": 0.0041858297772705555,
+      "max_absolute_difference": 0.4640602469444275
+    },
+    {
+      "frame": 49,
+      "relative_image_L2": 0.01844356395304203,
+      "mean_absolute_difference": 0.0042775156907737255,
+      "max_absolute_difference": 0.43866559863090515
+    },
+    {
+      "frame": 50,
+      "relative_image_L2": 0.0176130048930645,
+      "mean_absolute_difference": 0.0042118290439248085,
+      "max_absolute_difference": 0.4137983024120331
+    },
+    {
+      "frame": 51,
+      "relative_image_L2": 0.016878562048077583,
+      "mean_absolute_difference": 0.004072684329003096,
+      "max_absolute_difference": 0.3796219825744629
+    },
+    {
+      "frame": 52,
+      "relative_image_L2": 0.016596436500549316,
+      "mean_absolute_difference": 0.004102678503841162,
+      "max_absolute_difference": 0.3491465747356415
+    },
+    {
+      "frame": 53,
+      "relative_image_L2": 0.016578644514083862,
+      "mean_absolute_difference": 0.004197363741695881,
+      "max_absolute_difference": 0.31837180256843567
+    },
+    {
+      "frame": 54,
+      "relative_image_L2": 0.016477307304739952,
+      "mean_absolute_difference": 0.004267074167728424,
+      "max_absolute_difference": 0.2832999527454376
+    },
+    {
+      "frame": 55,
+      "relative_image_L2": 0.016455167904496193,
+      "mean_absolute_difference": 0.004351472482085228,
+      "max_absolute_difference": 0.24847102165222168
+    },
+    {
+      "frame": 56,
+      "relative_image_L2": 0.016326479613780975,
+      "mean_absolute_difference": 0.004391142632812262,
+      "max_absolute_difference": 0.21477675437927246
+    },
+    {
+      "frame": 57,
+      "relative_image_L2": 0.016410525888204575,
+      "mean_absolute_difference": 0.004510233644396067,
+      "max_absolute_difference": 0.1933569312095642
+    },
+    {
+      "frame": 58,
+      "relative_image_L2": 0.016688253730535507,
+      "mean_absolute_difference": 0.004646680783480406,
+      "max_absolute_difference": 0.18617254495620728
+    },
+    {
+      "frame": 59,
+      "relative_image_L2": 0.016734976321458817,
+      "mean_absolute_difference": 0.004700916353613138,
+      "max_absolute_difference": 0.18130624294281006
+    },
+    {
+      "frame": 60,
+      "relative_image_L2": 0.01652645505964756,
+      "mean_absolute_difference": 0.004677031189203262,
+      "max_absolute_difference": 0.17762959003448486
+    },
+    {
+      "frame": 61,
+      "relative_image_L2": 0.016185007989406586,
+      "mean_absolute_difference": 0.004595767706632614,
+      "max_absolute_difference": 0.17558062076568604
+    },
+    {
+      "frame": 62,
+      "relative_image_L2": 0.01580772176384926,
+      "mean_absolute_difference": 0.004488255362957716,
+      "max_absolute_difference": 0.17348194122314453
+    },
+    {
+      "frame": 63,
+      "relative_image_L2": 0.015461037866771221,
+      "mean_absolute_difference": 0.0043855104595422745,
+      "max_absolute_difference": 0.17184746265411377
+    },
+    {
+      "frame": 64,
+      "relative_image_L2": 0.015162141993641853,
+      "mean_absolute_difference": 0.0042951046489179134,
+      "max_absolute_difference": 0.16994190216064453
+    },
+    {
+      "frame": 65,
+      "relative_image_L2": 0.014885647222399712,
+      "mean_absolute_difference": 0.004208458121865988,
+      "max_absolute_difference": 0.16767919063568115
+    },
+    {
+      "frame": 66,
+      "relative_image_L2": 0.01467751432210207,
+      "mean_absolute_difference": 0.0041658394038677216,
+      "max_absolute_difference": 0.16557317972183228
+    },
+    {
+      "frame": 67,
+      "relative_image_L2": 0.0146125303581357,
+      "mean_absolute_difference": 0.004173814319074154,
+      "max_absolute_difference": 0.16352170705795288
+    },
+    {
+      "frame": 68,
+      "relative_image_L2": 0.014784806407988071,
+      "mean_absolute_difference": 0.004231844563037157,
+      "max_absolute_difference": 0.16185295581817627
+    },
+    {
+      "frame": 69,
+      "relative_image_L2": 0.01507260650396347,
+      "mean_absolute_difference": 0.004281511530280113,
+      "max_absolute_difference": 0.16072392463684082
+    },
+    {
+      "frame": 70,
+      "relative_image_L2": 0.015044283121824265,
+      "mean_absolute_difference": 0.0042480179108679295,
+      "max_absolute_difference": 0.16023975610733032
+    },
+    {
+      "frame": 71,
+      "relative_image_L2": 0.01452559418976307,
+      "mean_absolute_difference": 0.004101258236914873,
+      "max_absolute_difference": 0.16100960969924927
+    },
+    {
+      "frame": 72,
+      "relative_image_L2": 0.014038183726370335,
+      "mean_absolute_difference": 0.003913122229278088,
+      "max_absolute_difference": 0.16227459907531738
+    },
+    {
+      "frame": 73,
+      "relative_image_L2": 0.01416870765388012,
+      "mean_absolute_difference": 0.003948180004954338,
+      "max_absolute_difference": 0.16484010219573975
+    },
+    {
+      "frame": 74,
+      "relative_image_L2": 0.01443320233374834,
+      "mean_absolute_difference": 0.0039994921535253525,
+      "max_absolute_difference": 0.1680135726928711
+    },
+    {
+      "frame": 75,
+      "relative_image_L2": 0.014310895465314388,
+      "mean_absolute_difference": 0.003928177058696747,
+      "max_absolute_difference": 0.17088496685028076
+    }
+  ]
+}

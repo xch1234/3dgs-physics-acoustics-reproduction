@@ -1,0 +1,35 @@
+{
+  "scope": "manufactured outgoing monopole: exact Neumann data on the actual flat polyhedron and exact exterior solution; different boundary condition from uniform g=1 sphere; isolates quadrature/discretization from geometry mismatch",
+  "rows": [
+    {
+      "triangles": 80,
+      "relative_complex_error": 0.1236742720381522,
+      "linear_residual": 3.1247057866168024e-16,
+      "near_pairs": 1440,
+      "seconds": 0.10412120819091797
+    },
+    {
+      "triangles": 320,
+      "relative_complex_error": 0.05216050684992008,
+      "linear_residual": 6.631575165318108e-16,
+      "near_pairs": 6000,
+      "seconds": 0.3349721431732178
+    },
+    {
+      "triangles": 1280,
+      "relative_complex_error": 0.02397691846172029,
+      "linear_residual": 1.4839347251891164e-15,
+      "near_pairs": 23820,
+      "seconds": 3.9820127487182617
+    },
+    {
+      "triangles": 5120,
+      "relative_complex_error": 0.011496414417946549,
+      "linear_residual": 2.798409840442688e-15,
+      "near_pairs": 94380,
+      "seconds": 74.08608889579773
+    }
+  ],
+  "monotonic": true,
+  "finest_below_half_percent": false
+}

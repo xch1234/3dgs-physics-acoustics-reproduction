@@ -1,0 +1,15 @@
+{
+  "name": "V31-preparation",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/unified_beam.py",
+    "--prepare-only"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-01T21:30:41.498778+08:00",
+  "log": "logs/V31-preparation.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:30:53.010154+08:00",
+  "elapsed_s": 11.511525220000067
+}

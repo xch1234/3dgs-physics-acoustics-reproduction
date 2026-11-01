@@ -1,0 +1,21 @@
+{
+  "name": "V28-aniso-simulation",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/gpu_task.py",
+    "scene",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/physics/outputs/ficus_anisotropy",
+    "--config",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/ficus_config.json",
+    "--tag",
+    "ficus_anisotropy_rerun"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T05:24:29.970001+08:00",
+  "log": "logs/V28-aniso-simulation.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:32:28.985737+08:00",
+  "elapsed_s": 479.0156274930014
+}

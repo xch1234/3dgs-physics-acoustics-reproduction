@@ -1,0 +1,38 @@
+[
+  {
+    "producer": "check_remote.py",
+    "producer_sha256": "16d45752de06c56975265837c5cda9a02ef3eed0545bf1337f77699b40fc4a33",
+    "replay_command": [
+      "python",
+      "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\check_remote.py"
+    ],
+    "existing_log": "logs/V30-remote.log",
+    "evidence": "checks/V30-remote.json",
+    "evidence_sha256": "344c562b82b67d709455c62915916ac9ac89e53cd8eca14ff58b9c0b0e1749fb",
+    "recording_note": "Original full shell argument list and start/end times were not separately retained. This is a replay entry point, not an invented historical command record. Existing numerical/log artifacts remain available."
+  },
+  {
+    "producer": "plot_cpu_evidence.py",
+    "producer_sha256": "d9155da1908f35f02b3083e0767ede34a36f318d29f2fb344484f105037a4d31",
+    "replay_command": [
+      "python",
+      "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\plot_cpu_evidence.py"
+    ],
+    "existing_log": null,
+    "evidence": "checks/CPU-figures.json",
+    "evidence_sha256": "b6a11265a124f17f7c8490e994349a23a4a129f62ef61c496be1e21107614e93",
+    "recording_note": "Original full shell argument list and start/end times were not separately retained. This is a replay entry point, not an invented historical command record. Existing numerical/log artifacts remain available."
+  },
+  {
+    "producer": "plot_snow.py",
+    "producer_sha256": "9c8ebd635d0b206331a3781696f0ec112ea5fc1063d31d658395f2929851db0a",
+    "replay_command": [
+      "python",
+      "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\plot_snow.py"
+    ],
+    "existing_log": null,
+    "evidence": "checks/snow-figures.json",
+    "evidence_sha256": "f1d44c43d60a33cd8294a1730d12fb08e9ec4e1680384b1e558e2e96af726d31",
+    "recording_note": "Original full shell argument list and start/end times were not separately retained. This is a replay entry point, not an invented historical command record. Existing numerical/log artifacts remain available."
+  }
+]

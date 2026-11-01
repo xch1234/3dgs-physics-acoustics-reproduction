@@ -1,0 +1,18 @@
+{
+  "name": "final-artifact-queue",
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/artifact_queue.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T00:17:32.494080+08:00",
+  "log": "logs\\final-artifact-queue.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:43:39.322195+08:00",
+  "elapsed_s": 23166.765000000014
+}

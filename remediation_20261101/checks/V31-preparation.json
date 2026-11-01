@@ -1,0 +1,7 @@
+{
+  "mass_orthogonality_error": 2.5027085344098175e-15,
+  "energy_nonincreasing": true,
+  "shared_modal_trajectory_matches_PAT": true,
+  "gaussians": 1792,
+  "scope": "CPU mathematical preparation only; CUDA render not yet checked"
+}

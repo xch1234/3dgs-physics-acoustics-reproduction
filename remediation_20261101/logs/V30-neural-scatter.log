@@ -1,0 +1,6 @@
+Looking in links: https://data.pyg.org/whl/torch-2.0.0+cu118.html
+Collecting torch-scatter==2.1.2+pt20cu118
+  Using cached https://data.pyg.org/whl/torch-2.0.0%2Bcu118/torch_scatter-2.1.2%2Bpt20cu118-cp39-cp39-linux_x86_64.whl (10.2 MB)
+Installing collected packages: torch-scatter
+Successfully installed torch-scatter-2.1.2+pt20cu118
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

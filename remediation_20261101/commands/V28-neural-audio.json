@@ -1,0 +1,15 @@
+{
+  "name": "V28-neural-audio",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101/neural_extension_task.py",
+    "audio"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/remediation_20261101",
+  "started": "2026-11-02T06:03:02.874160+08:00",
+  "log": "logs/V28-neural-audio.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T06:06:04.901934+08:00",
+  "elapsed_s": 182.02759603899904
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "F:\System\Desktop\3DGS\∏¥œ÷\remediation_20261101\build_command_index.py", line 7, in <module>
+    rows.sort(key=lambda d:(d.get('started',''),d['name']))
+  File "F:\System\Desktop\3DGS\∏¥œ÷\remediation_20261101\build_command_index.py", line 7, in <lambda>
+    rows.sort(key=lambda d:(d.get('started',''),d['name']))
+                                                ~^^^^^^^^
+KeyError: 'name'

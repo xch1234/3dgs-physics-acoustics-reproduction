@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "copied_files_checked": 755,
+  "science_files_byte_identical_except_publication_navigation": true,
+  "secret_findings": [],
+  "links": {
+    "git": 348,
+    "release": 0
+  },
+  "missing": [],
+  "demo_media_files": 53,
+  "demo_zip_crc_and_content_verified": true,
+  "preserved_scientific_status": {
+    "通过": 6,
+    "失败": 1,
+    "未验证": 4
+  }
+}

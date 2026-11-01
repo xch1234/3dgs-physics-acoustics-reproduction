@@ -1,0 +1,14 @@
+{
+  "name": "V03-windows-phys-SH",
+  "command": [
+    "F:/3dgs-remediation/envs/physgaussian-windows-clean/python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\sh_cpu_task.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:52:26.106756+08:00",
+  "log": "logs\\V03-windows-phys-SH.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:52:33.213338+08:00",
+  "elapsed_s": 7.10999999998603
+}

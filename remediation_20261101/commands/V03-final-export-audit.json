@@ -1,0 +1,14 @@
+{
+  "name": "V03-final-export-audit",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\finalize_windows_exports.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-02T05:01:12.646628+08:00",
+  "log": "logs\\V03-final-export-audit.log",
+  "exit_code": 0,
+  "finished": "2026-11-02T05:01:13.277759+08:00",
+  "elapsed_s": 0.6410000000614673
+}

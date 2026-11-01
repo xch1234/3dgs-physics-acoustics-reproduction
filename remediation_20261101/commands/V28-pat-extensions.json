@@ -1,0 +1,14 @@
+{
+  "name": "V28-pat-extensions",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\cpu_extensions.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:20:57.132301+08:00",
+  "log": "logs\\V28-pat-extensions.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:27:53.410620+08:00",
+  "elapsed_s": 416.280999999959
+}

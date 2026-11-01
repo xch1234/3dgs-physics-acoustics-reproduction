@@ -1,0 +1,14 @@
+{
+  "name": "V30-author-model-downloads",
+  "command": [
+    "F:/3dgs-remediation/envs/acoustics-clean/python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101\\recheck_model_downloads.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\remediation_20261101",
+  "started": "2026-11-01T21:26:16.357693+08:00",
+  "log": "logs\\V30-author-model-downloads.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T21:32:17.051166+08:00",
+  "elapsed_s": 360.7029999999795
+}
