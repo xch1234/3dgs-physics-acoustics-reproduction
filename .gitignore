@@ -10,3 +10,24 @@ __pycache__/
 reproduction/vendor/
 *.restore-part
 *.part
+# Keep restored/downloaded data out of subsequent Git commits.
+*.pt
+*.pth
+*.npz
+*.npy
+*.ply
+*.h5
+*.hdf5
+*.zip
+*.o
+*.so
+*.pyd
+*.dll
+*.exe
+*.a
+01_PhysGaussian/inputs/
+reproduction/cache/
+verification_20261101/cache/
+verification_20261101/build/
+**/[0-9][0-9][0-9][0-9].png
+**/[0-9][0-9][0-9][0-9][0-9].png

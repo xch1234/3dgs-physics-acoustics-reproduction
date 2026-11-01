@@ -1,0 +1,256 @@
+{
+  "repository": "xch1234/3dgs-physics-acoustics-reproduction",
+  "release_id": 430470088,
+  "tag": "verified-2026-11-01",
+  "checked_assets": 35,
+  "all_sizes_and_sha256_match": true,
+  "assets": [
+    {
+      "name": "artifacts-001.zip",
+      "size": 635515955,
+      "sha256": "0bb4e9cb986ff24e2943b25f8b77121378c9c79c34239efaa238ef4f2bfae45b",
+      "remote_digest": "sha256:0bb4e9cb986ff24e2943b25f8b77121378c9c79c34239efaa238ef4f2bfae45b",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-001.zip"
+    },
+    {
+      "name": "artifacts-002.zip",
+      "size": 742426737,
+      "sha256": "e56d2a8bd2f96650e0c3411a414025220c839337b00a2cd52e9e2a40cceed422",
+      "remote_digest": "sha256:e56d2a8bd2f96650e0c3411a414025220c839337b00a2cd52e9e2a40cceed422",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-002.zip"
+    },
+    {
+      "name": "artifacts-003.zip",
+      "size": 715592335,
+      "sha256": "2785ca788b68a5a59fef346c7e5c3650b0978fc009b1f92e4497418de3013cc8",
+      "remote_digest": "sha256:2785ca788b68a5a59fef346c7e5c3650b0978fc009b1f92e4497418de3013cc8",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-003.zip"
+    },
+    {
+      "name": "artifacts-004.zip",
+      "size": 763329676,
+      "sha256": "43380e986f9d3751fe9323b9f4193fedebaf444dc67bf807eb20aff8c0c0d4ad",
+      "remote_digest": "sha256:43380e986f9d3751fe9323b9f4193fedebaf444dc67bf807eb20aff8c0c0d4ad",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-004.zip"
+    },
+    {
+      "name": "artifacts-005.zip",
+      "size": 760544272,
+      "sha256": "ce61c96eae046e22681471b2088ae0e84f5c6bdc8841dadfe21556a10272d9ac",
+      "remote_digest": "sha256:ce61c96eae046e22681471b2088ae0e84f5c6bdc8841dadfe21556a10272d9ac",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-005.zip"
+    },
+    {
+      "name": "artifacts-006.zip",
+      "size": 762613460,
+      "sha256": "605e8931b4a44a0e525355a35757793c271d8767bddc36fdab936dfa655157b7",
+      "remote_digest": "sha256:605e8931b4a44a0e525355a35757793c271d8767bddc36fdab936dfa655157b7",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-006.zip"
+    },
+    {
+      "name": "artifacts-007.zip",
+      "size": 721542533,
+      "sha256": "af2b01d0d12d68ba375e5c94201ec814f2503ef7150779be89b777e53239c0a5",
+      "remote_digest": "sha256:af2b01d0d12d68ba375e5c94201ec814f2503ef7150779be89b777e53239c0a5",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-007.zip"
+    },
+    {
+      "name": "artifacts-008.zip",
+      "size": 679122029,
+      "sha256": "477ba528f9af8cf006cf813237fe2f14f412f051c77b7e520aaae0aef434949c",
+      "remote_digest": "sha256:477ba528f9af8cf006cf813237fe2f14f412f051c77b7e520aaae0aef434949c",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-008.zip"
+    },
+    {
+      "name": "artifacts-009.zip",
+      "size": 752926984,
+      "sha256": "8dbdc7075aab5bfe7c2b1ece44b8487dff112def1d8ac950bb07d07078bc4745",
+      "remote_digest": "sha256:8dbdc7075aab5bfe7c2b1ece44b8487dff112def1d8ac950bb07d07078bc4745",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-009.zip"
+    },
+    {
+      "name": "artifacts-010.zip",
+      "size": 717937871,
+      "sha256": "92909373fc5c8d608a98075d859a16ed397954250a6e11dedf2d6727024f0aad",
+      "remote_digest": "sha256:92909373fc5c8d608a98075d859a16ed397954250a6e11dedf2d6727024f0aad",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-010.zip"
+    },
+    {
+      "name": "artifacts-011.zip",
+      "size": 749886753,
+      "sha256": "3f0a08f7f4d482c4d7375eb2a9dfb06e83a6e7073cd9ae120076662d2f34ab04",
+      "remote_digest": "sha256:3f0a08f7f4d482c4d7375eb2a9dfb06e83a6e7073cd9ae120076662d2f34ab04",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-011.zip"
+    },
+    {
+      "name": "artifacts-012.zip",
+      "size": 659224759,
+      "sha256": "0bdf390082f2f6ec8078f490c27e97164263d2d9aeba362232a0a9eb905d59ea",
+      "remote_digest": "sha256:0bdf390082f2f6ec8078f490c27e97164263d2d9aeba362232a0a9eb905d59ea",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-012.zip"
+    },
+    {
+      "name": "artifacts-013.zip",
+      "size": 749907260,
+      "sha256": "6818c64d1f438f031d7e1ac104122be40bd70f0f3a53181aea530153c4cf6232",
+      "remote_digest": "sha256:6818c64d1f438f031d7e1ac104122be40bd70f0f3a53181aea530153c4cf6232",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-013.zip"
+    },
+    {
+      "name": "artifacts-014.zip",
+      "size": 301512547,
+      "sha256": "b0b2c947b7e55eaad389181decccfd893ef3404e7e895f1305791e49a98190d4",
+      "remote_digest": "sha256:b0b2c947b7e55eaad389181decccfd893ef3404e7e895f1305791e49a98190d4",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-014.zip"
+    },
+    {
+      "name": "artifacts-015.zip",
+      "size": 291574052,
+      "sha256": "f99541f92e0a939b5c9034ab72bebe3d3a71907246552c179b1953086ff21c91",
+      "remote_digest": "sha256:f99541f92e0a939b5c9034ab72bebe3d3a71907246552c179b1953086ff21c91",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-015.zip"
+    },
+    {
+      "name": "artifacts-016.zip",
+      "size": 249322347,
+      "sha256": "491e203e74bdfd3e303b9c3a788d7468acc5bdd345452f534ee62ae9f61d6536",
+      "remote_digest": "sha256:491e203e74bdfd3e303b9c3a788d7468acc5bdd345452f534ee62ae9f61d6536",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-016.zip"
+    },
+    {
+      "name": "artifacts-017.zip",
+      "size": 695595528,
+      "sha256": "a75b9fb33536fa3b6056f59f000488815cdf5522d6850e22b7d6388baef1c371",
+      "remote_digest": "sha256:a75b9fb33536fa3b6056f59f000488815cdf5522d6850e22b7d6388baef1c371",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-017.zip"
+    },
+    {
+      "name": "artifacts-018.zip",
+      "size": 658760923,
+      "sha256": "a318481a4ee2a340d74ee6064f4199e275cef5c708a51f94390e8921ef08d398",
+      "remote_digest": "sha256:a318481a4ee2a340d74ee6064f4199e275cef5c708a51f94390e8921ef08d398",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-018.zip"
+    },
+    {
+      "name": "artifacts-019.zip",
+      "size": 749393636,
+      "sha256": "0403c98e173b56b44d9ea8cd963ce0335c7dbc0497b01a06fe1639ce10df7e82",
+      "remote_digest": "sha256:0403c98e173b56b44d9ea8cd963ce0335c7dbc0497b01a06fe1639ce10df7e82",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-019.zip"
+    },
+    {
+      "name": "artifacts-020.zip",
+      "size": 478927495,
+      "sha256": "f658ac7e1211d27b57241c87d38f4107d783cef984c925f0722c4cbf8425dbbf",
+      "remote_digest": "sha256:f658ac7e1211d27b57241c87d38f4107d783cef984c925f0722c4cbf8425dbbf",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-020.zip"
+    },
+    {
+      "name": "artifacts-021.zip",
+      "size": 262790450,
+      "sha256": "e380601ad0c37eadfcf63781f9be8139262a60767339205436640d49a493bb0b",
+      "remote_digest": "sha256:e380601ad0c37eadfcf63781f9be8139262a60767339205436640d49a493bb0b",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-021.zip"
+    },
+    {
+      "name": "artifacts-022.zip",
+      "size": 291875901,
+      "sha256": "898ea3093cb1a3992486e208cec7a4d04ec02f4bc33a6990a167ed35d48b3084",
+      "remote_digest": "sha256:898ea3093cb1a3992486e208cec7a4d04ec02f4bc33a6990a167ed35d48b3084",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-022.zip"
+    },
+    {
+      "name": "artifacts-023.zip",
+      "size": 513994833,
+      "sha256": "53ac289bf9731882afa50b27003be8ddf2622f10a6c101d33344efed4562597f",
+      "remote_digest": "sha256:53ac289bf9731882afa50b27003be8ddf2622f10a6c101d33344efed4562597f",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-023.zip"
+    },
+    {
+      "name": "artifacts-024.zip",
+      "size": 749421789,
+      "sha256": "1ee8bf9b69b62e3966ee14982cd0cd87ddedfe11797e7505db1e181c31b57953",
+      "remote_digest": "sha256:1ee8bf9b69b62e3966ee14982cd0cd87ddedfe11797e7505db1e181c31b57953",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-024.zip"
+    },
+    {
+      "name": "artifacts-025.zip",
+      "size": 658631739,
+      "sha256": "d29cc8b99532c3e425bcb1c3b347fd56665522d75d54e881b6ece23cbb4dff6f",
+      "remote_digest": "sha256:d29cc8b99532c3e425bcb1c3b347fd56665522d75d54e881b6ece23cbb4dff6f",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-025.zip"
+    },
+    {
+      "name": "artifacts-026.zip",
+      "size": 616564314,
+      "sha256": "fd1122a0936f503e66f13d4f07027bdb7804d9814ba5d1fb09e084eb00b8b9b0",
+      "remote_digest": "sha256:fd1122a0936f503e66f13d4f07027bdb7804d9814ba5d1fb09e084eb00b8b9b0",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-026.zip"
+    },
+    {
+      "name": "artifacts-027.zip",
+      "size": 263995678,
+      "sha256": "a784ed83022b5002f6ce46fa8c57ac2da0695369c45c2da7fea3c50b5a155aab",
+      "remote_digest": "sha256:a784ed83022b5002f6ce46fa8c57ac2da0695369c45c2da7fea3c50b5a155aab",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-027.zip"
+    },
+    {
+      "name": "artifacts-028.zip",
+      "size": 327786121,
+      "sha256": "795f4f26d68616e139c8c530334f341b7e29daa0eb02f4c7ad556e0e32d07076",
+      "remote_digest": "sha256:795f4f26d68616e139c8c530334f341b7e29daa0eb02f4c7ad556e0e32d07076",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-028.zip"
+    },
+    {
+      "name": "artifacts-029.zip",
+      "size": 356925744,
+      "sha256": "ba675c3154ff9e47f5f549f7c12fea50d0658d9f2713ff1f74a17f14564aef43",
+      "remote_digest": "sha256:ba675c3154ff9e47f5f549f7c12fea50d0658d9f2713ff1f74a17f14564aef43",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-029.zip"
+    },
+    {
+      "name": "artifacts-030.zip",
+      "size": 705438558,
+      "sha256": "8a710f784c91f6220118bdd823a1031ccafb90eebdeb3a3baa9c244941e2677a",
+      "remote_digest": "sha256:8a710f784c91f6220118bdd823a1031ccafb90eebdeb3a3baa9c244941e2677a",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-030.zip"
+    },
+    {
+      "name": "artifacts-031.zip",
+      "size": 142329055,
+      "sha256": "24deb50cb16b7401b5be8f7cc95049c2fb7db3dcd229507b4dca24c9cd44c361",
+      "remote_digest": "sha256:24deb50cb16b7401b5be8f7cc95049c2fb7db3dcd229507b4dca24c9cd44c361",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts-031.zip"
+    },
+    {
+      "name": "ficus-30000.ply",
+      "size": 73161035,
+      "sha256": "d2bebb659fff7fc6a5f80c5e6b1b1a8eec33ef73b0f7094c887eaaeb97636003",
+      "remote_digest": "sha256:d2bebb659fff7fc6a5f80c5e6b1b1a8eec33ef73b0f7094c887eaaeb97636003",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/ficus-30000.ply"
+    },
+    {
+      "name": "viewing-demo.zip",
+      "size": 19247826,
+      "sha256": "d3a2633c0670d1f0b57976bdb0426e3d8b64857ebc379a22b49393ce56b82926",
+      "remote_digest": "sha256:d3a2633c0670d1f0b57976bdb0426e3d8b64857ebc379a22b49393ce56b82926",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/viewing-demo.zip"
+    },
+    {
+      "name": "artifacts.json",
+      "size": 2145858,
+      "sha256": "3c70c0b2c39424efcb1ce0645347fe83e07136f168016f08eadb537a7c69c347",
+      "remote_digest": "sha256:3c70c0b2c39424efcb1ce0645347fe83e07136f168016f08eadb537a7c69c347",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/artifacts.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 2884,
+      "sha256": "ca5aa6c3b91f07527f080ac323e85f20c781d8368e2989b431de7b6ba52f1c02",
+      "remote_digest": "sha256:ca5aa6c3b91f07527f080ac323e85f20c781d8368e2989b431de7b6ba52f1c02",
+      "url": "https://github.com/xch1234/3dgs-physics-acoustics-reproduction/releases/download/untagged-bdef083182edf6455a1f/SHA256SUMS.txt"
+    }
+  ],
+  "checked_at": "2026-11-01T17:57:02+0800",
+  "note": "Checked against GitHub server-reported SHA-256 digests after upload; publication status checked separately."
+}
