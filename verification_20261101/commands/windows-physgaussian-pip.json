@@ -1,0 +1,15 @@
+{
+  "name": "windows-physgaussian-pip",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\physgaussian\\python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:04:59.824375+08:00",
+  "log": "logs\\windows-physgaussian-pip.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:05:03.862313+08:00",
+  "elapsed_s": 4.030999999959022
+}

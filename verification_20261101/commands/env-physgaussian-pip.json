@@ -1,0 +1,15 @@
+{
+  "name": "env-physgaussian-pip",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:57:42.504277+08:00",
+  "log": "logs/env-physgaussian-pip.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:57:43.686265+08:00",
+  "elapsed_s": 1.1817694669999996
+}

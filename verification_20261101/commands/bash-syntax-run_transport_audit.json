@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_transport_audit",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_transport_audit.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.767258+08:00",
+  "log": "logs/bash-syntax-run_transport_audit.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.862771+08:00",
+  "elapsed_s": 0.09540538299984291
+}

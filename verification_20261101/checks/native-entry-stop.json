@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-01T16:50:10.747717+08:00",
+  "pid": 26,
+  "verified_command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/metrics.py",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000"
+  ],
+  "signal": "SIGTERM",
+  "completed_views": 6,
+  "total_views": 200,
+  "last_progress": "Metric evaluation progress:   3%|▎         | 6/200 [02:21<1:17:43, 24.04s/it]",
+  "process_elapsed_s": 185.39000000000001,
+  "status": "未验证",
+  "reason": "Original per-image LPIPS wrapper reconstructs the network for each image; measured progress forecasts more than an hour. User permits marking excessive-duration checks unverified. Full 200-view independent streaming evaluation has already completed; do not infer original entry completion."
+}

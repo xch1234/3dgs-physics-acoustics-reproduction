@@ -1,0 +1,14 @@
+{
+  "name": "vibration-fresh-solves",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/vibration_rerun.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:17:17.147672+08:00",
+  "log": "logs/vibration-fresh-solves.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:17:47.241238+08:00",
+  "elapsed_s": 30.093014298000526
+}

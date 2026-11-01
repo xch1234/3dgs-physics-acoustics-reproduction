@@ -1,0 +1,26 @@
+{
+  "name": "cuda-rebuilt-render",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/render.py",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_rebuilt_renderer",
+    "-s",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+    "--eval",
+    "--white_background",
+    "--data_device",
+    "cpu",
+    "--resolution",
+    "1",
+    "--iteration",
+    "30000",
+    "--skip_train"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-01T16:31:12.683687+08:00",
+  "log": "logs/cuda-rebuilt-render.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:33:10.962265+08:00",
+  "elapsed_s": 118.27632617099971
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nvcc",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/nvcc",
+    "--version"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:58:05.067568+08:00",
+  "log": "logs/nvcc.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:58:05.082645+08:00",
+  "elapsed_s": 0.014968574999997486
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cuda-source-build",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build_cuda.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:17:47.368637+08:00",
+  "log": "logs/cuda-source-build.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:33:56.367806+08:00",
+  "elapsed_s": 968.9992159249996
+}

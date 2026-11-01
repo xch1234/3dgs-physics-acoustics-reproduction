@@ -1,0 +1,93 @@
+[
+  {
+    "name": "build-pat-fem",
+    "command": [
+      "g++",
+      "-O2",
+      "-std=c++14",
+      "-I/opt/3dgs-runtime/envs/pat-tools/include",
+      "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_fem.cpp",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/deformable/stvk.cpp",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+      "-o",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/pat/outputs/modalsound_fem/assemble_fem"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:01:48.972270+08:00",
+    "log": "logs/build-pat-fem.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:02:01.753936+08:00",
+    "elapsed_s": 12.781209141000005
+  },
+  {
+    "name": "build-pat-transfer",
+    "command": [
+      "g++",
+      "-O2",
+      "-std=c++14",
+      "-I/opt/3dgs-runtime/envs/pat-tools/include",
+      "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/dependencies/eigen-git-mirror-3.3.7",
+      "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_transfer.cpp",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+      "-L/opt/3dgs-runtime/envs/pat-tools/lib",
+      "-Wl,-rpath,/opt/3dgs-runtime/envs/pat-tools/lib",
+      "-lgsl",
+      "-lgslcblas",
+      "-o",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/pat/outputs/modalsound_transfer/evaluate_transfer"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:02:01.769441+08:00",
+    "log": "logs/build-pat-transfer.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:02:14.698879+08:00",
+    "elapsed_s": 12.92923165999997
+  },
+  {
+    "name": "rerun-pat-fem",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+      "fem"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:02:14.715231+08:00",
+    "log": "logs/rerun-pat-fem.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:02:18.242607+08:00",
+    "elapsed_s": 3.527179519000015
+  },
+  {
+    "name": "rerun-pat-transfer",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+      "transfer"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:02:18.254199+08:00",
+    "log": "logs/rerun-pat-transfer.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:02:29.814833+08:00",
+    "elapsed_s": 11.560543146000043
+  },
+  {
+    "name": "rerun-pat-pipeline",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+      "pipeline"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:02:29.827768+08:00",
+    "log": "logs/rerun-pat-pipeline.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:02:42.750173+08:00",
+    "elapsed_s": 12.922420800999987
+  }
+]

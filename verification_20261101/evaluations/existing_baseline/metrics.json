@@ -1,0 +1,1612 @@
+{
+  "images": 200,
+  "mean": {
+    "PSNR": 34.84732306769082,
+    "SSIM": 0.9871804329752922,
+    "LPIPS": 0.011693474827334285
+  },
+  "per_image": [
+    {
+      "image": "00000.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_0.png",
+      "PSNR": 37.00831762726595,
+      "SSIM": 0.9912405610084534,
+      "LPIPS": 0.008021922782063484,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00001.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_1.png",
+      "PSNR": 37.48287439668813,
+      "SSIM": 0.9923928380012512,
+      "LPIPS": 0.007614505011588335,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00002.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_2.png",
+      "PSNR": 37.91334547861923,
+      "SSIM": 0.9927820563316345,
+      "LPIPS": 0.006988441105931997,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00003.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_3.png",
+      "PSNR": 37.28134676480549,
+      "SSIM": 0.9920158982276917,
+      "LPIPS": 0.008310141041874886,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00004.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_4.png",
+      "PSNR": 36.62476065819037,
+      "SSIM": 0.9911541938781738,
+      "LPIPS": 0.009164661169052124,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00005.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_5.png",
+      "PSNR": 36.127783045844055,
+      "SSIM": 0.9904135465621948,
+      "LPIPS": 0.009722884744405746,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00006.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_6.png",
+      "PSNR": 35.7424154696038,
+      "SSIM": 0.9897912740707397,
+      "LPIPS": 0.010192165151238441,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00007.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_7.png",
+      "PSNR": 35.33586388300262,
+      "SSIM": 0.9895582795143127,
+      "LPIPS": 0.010023294016718864,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00008.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_8.png",
+      "PSNR": 34.92165454071233,
+      "SSIM": 0.9885358810424805,
+      "LPIPS": 0.011384017765522003,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00009.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_9.png",
+      "PSNR": 34.59273366151063,
+      "SSIM": 0.9880195260047913,
+      "LPIPS": 0.011351161636412144,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00010.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_10.png",
+      "PSNR": 34.362411347855385,
+      "SSIM": 0.9878144860267639,
+      "LPIPS": 0.011318647302687168,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00011.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_11.png",
+      "PSNR": 34.44118370413464,
+      "SSIM": 0.9877930283546448,
+      "LPIPS": 0.011514614336192608,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00012.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_12.png",
+      "PSNR": 34.33651062653468,
+      "SSIM": 0.987727165222168,
+      "LPIPS": 0.01237607654184103,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00013.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_13.png",
+      "PSNR": 34.39664790913045,
+      "SSIM": 0.9878758192062378,
+      "LPIPS": 0.01219367515295744,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00014.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_14.png",
+      "PSNR": 34.60885819399825,
+      "SSIM": 0.9885140657424927,
+      "LPIPS": 0.012157140299677849,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00015.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_15.png",
+      "PSNR": 34.89148552922474,
+      "SSIM": 0.9895461797714233,
+      "LPIPS": 0.010484195314347744,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00016.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_16.png",
+      "PSNR": 34.76780045602141,
+      "SSIM": 0.9894101619720459,
+      "LPIPS": 0.010532615706324577,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00017.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_17.png",
+      "PSNR": 34.3947493388413,
+      "SSIM": 0.9885666966438293,
+      "LPIPS": 0.011351212859153748,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00018.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_18.png",
+      "PSNR": 33.98445497753296,
+      "SSIM": 0.9874544739723206,
+      "LPIPS": 0.011651509441435337,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00019.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_19.png",
+      "PSNR": 33.684575413920996,
+      "SSIM": 0.9865990877151489,
+      "LPIPS": 0.012249469757080078,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00020.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_20.png",
+      "PSNR": 33.44670677421169,
+      "SSIM": 0.9860007762908936,
+      "LPIPS": 0.012918573804199696,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00021.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_21.png",
+      "PSNR": 33.346765908614785,
+      "SSIM": 0.9854646325111389,
+      "LPIPS": 0.012811873108148575,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00022.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_22.png",
+      "PSNR": 33.2369180556806,
+      "SSIM": 0.9849274754524231,
+      "LPIPS": 0.01360353548079729,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00023.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_23.png",
+      "PSNR": 33.27994260344853,
+      "SSIM": 0.9848690629005432,
+      "LPIPS": 0.012823356315493584,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00024.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_24.png",
+      "PSNR": 33.209904410100876,
+      "SSIM": 0.9848922491073608,
+      "LPIPS": 0.013421476818621159,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00025.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_25.png",
+      "PSNR": 33.23942162450982,
+      "SSIM": 0.9852273464202881,
+      "LPIPS": 0.013933544978499413,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00026.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_26.png",
+      "PSNR": 33.33720743020024,
+      "SSIM": 0.9856987595558167,
+      "LPIPS": 0.013456733897328377,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00027.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_27.png",
+      "PSNR": 33.243123385258706,
+      "SSIM": 0.986058235168457,
+      "LPIPS": 0.013021688908338547,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00028.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_28.png",
+      "PSNR": 32.972939144733466,
+      "SSIM": 0.9854624271392822,
+      "LPIPS": 0.013017689809203148,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00029.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_29.png",
+      "PSNR": 32.78362536701173,
+      "SSIM": 0.9851723909378052,
+      "LPIPS": 0.0133997593075037,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00030.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_30.png",
+      "PSNR": 32.58506523210052,
+      "SSIM": 0.9842650890350342,
+      "LPIPS": 0.01468228455632925,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00031.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_31.png",
+      "PSNR": 32.63547977936509,
+      "SSIM": 0.9841307401657104,
+      "LPIPS": 0.01487713772803545,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00032.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_32.png",
+      "PSNR": 32.527750491658864,
+      "SSIM": 0.9832345843315125,
+      "LPIPS": 0.015775039792060852,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00033.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_33.png",
+      "PSNR": 32.54062082316754,
+      "SSIM": 0.9834299683570862,
+      "LPIPS": 0.015998832881450653,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00034.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_34.png",
+      "PSNR": 32.82170730578354,
+      "SSIM": 0.9837517738342285,
+      "LPIPS": 0.014461532235145569,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00035.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_35.png",
+      "PSNR": 33.17897449792582,
+      "SSIM": 0.984667181968689,
+      "LPIPS": 0.014809617772698402,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00036.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_36.png",
+      "PSNR": 33.60946267674546,
+      "SSIM": 0.98587566614151,
+      "LPIPS": 0.013716318644583225,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00037.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_37.png",
+      "PSNR": 34.15041832810661,
+      "SSIM": 0.9871997237205505,
+      "LPIPS": 0.01172865554690361,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00038.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_38.png",
+      "PSNR": 34.972765574872916,
+      "SSIM": 0.9887579083442688,
+      "LPIPS": 0.010393017902970314,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00039.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_39.png",
+      "PSNR": 35.561187909852464,
+      "SSIM": 0.99013352394104,
+      "LPIPS": 0.00980378594249487,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00040.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_40.png",
+      "PSNR": 35.59711936403308,
+      "SSIM": 0.9898964762687683,
+      "LPIPS": 0.010482028126716614,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00041.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_41.png",
+      "PSNR": 35.180502075113196,
+      "SSIM": 0.9883584976196289,
+      "LPIPS": 0.011384463869035244,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00042.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_42.png",
+      "PSNR": 34.752115417332504,
+      "SSIM": 0.9870949983596802,
+      "LPIPS": 0.011931832879781723,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00043.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_43.png",
+      "PSNR": 34.457100723257675,
+      "SSIM": 0.9851320385932922,
+      "LPIPS": 0.012560655362904072,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00044.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_44.png",
+      "PSNR": 34.25372161218223,
+      "SSIM": 0.9840573072433472,
+      "LPIPS": 0.013050055131316185,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00045.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_45.png",
+      "PSNR": 33.85744516579707,
+      "SSIM": 0.9829537868499756,
+      "LPIPS": 0.01475856639444828,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00046.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_46.png",
+      "PSNR": 33.75427015009023,
+      "SSIM": 0.9828410148620605,
+      "LPIPS": 0.015371319837868214,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00047.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_47.png",
+      "PSNR": 33.74623471950145,
+      "SSIM": 0.9826651215553284,
+      "LPIPS": 0.014081820845603943,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00048.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_48.png",
+      "PSNR": 33.86948306904096,
+      "SSIM": 0.9829270243644714,
+      "LPIPS": 0.014413394033908844,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00049.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_49.png",
+      "PSNR": 33.97329146595825,
+      "SSIM": 0.9831341505050659,
+      "LPIPS": 0.013877121731638908,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00050.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_50.png",
+      "PSNR": 34.222846619359395,
+      "SSIM": 0.9842908382415771,
+      "LPIPS": 0.013127421960234642,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00051.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_51.png",
+      "PSNR": 34.512074302188324,
+      "SSIM": 0.9856004118919373,
+      "LPIPS": 0.012282387353479862,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00052.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_52.png",
+      "PSNR": 34.96729944623209,
+      "SSIM": 0.986892580986023,
+      "LPIPS": 0.011920742690563202,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00053.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_53.png",
+      "PSNR": 35.628749283265215,
+      "SSIM": 0.9884660840034485,
+      "LPIPS": 0.011601126752793789,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00054.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_54.png",
+      "PSNR": 36.3394955330446,
+      "SSIM": 0.9898701310157776,
+      "LPIPS": 0.009282048791646957,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00055.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_55.png",
+      "PSNR": 37.405423277661775,
+      "SSIM": 0.992020308971405,
+      "LPIPS": 0.007551524788141251,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00056.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_56.png",
+      "PSNR": 38.56556244259958,
+      "SSIM": 0.9937241077423096,
+      "LPIPS": 0.006638622842729092,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00057.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_57.png",
+      "PSNR": 38.25396456809901,
+      "SSIM": 0.9934434294700623,
+      "LPIPS": 0.006496484857052565,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00058.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_58.png",
+      "PSNR": 37.430135037610356,
+      "SSIM": 0.9921585917472839,
+      "LPIPS": 0.0076483129523694515,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00059.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_59.png",
+      "PSNR": 36.24577273497728,
+      "SSIM": 0.990012526512146,
+      "LPIPS": 0.008908001706004143,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00060.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_60.png",
+      "PSNR": 35.21956577920636,
+      "SSIM": 0.9880576133728027,
+      "LPIPS": 0.010511663742363453,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00061.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_61.png",
+      "PSNR": 34.46778057756313,
+      "SSIM": 0.9862254858016968,
+      "LPIPS": 0.011736579239368439,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00062.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_62.png",
+      "PSNR": 34.14472938474104,
+      "SSIM": 0.985276460647583,
+      "LPIPS": 0.01284024491906166,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00063.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_63.png",
+      "PSNR": 34.100645725778655,
+      "SSIM": 0.9846222996711731,
+      "LPIPS": 0.013655802235007286,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00064.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_64.png",
+      "PSNR": 34.16357909973244,
+      "SSIM": 0.9842106103897095,
+      "LPIPS": 0.013324686326086521,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00065.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_65.png",
+      "PSNR": 34.14950308516663,
+      "SSIM": 0.9843623638153076,
+      "LPIPS": 0.01380546297878027,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00066.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_66.png",
+      "PSNR": 34.16875127290475,
+      "SSIM": 0.984153151512146,
+      "LPIPS": 0.013443093746900558,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00067.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_67.png",
+      "PSNR": 34.061136973542155,
+      "SSIM": 0.9839031100273132,
+      "LPIPS": 0.013767652213573456,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00068.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_68.png",
+      "PSNR": 34.08320163859375,
+      "SSIM": 0.9837085008621216,
+      "LPIPS": 0.014077081345021725,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00069.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_69.png",
+      "PSNR": 33.917867576342374,
+      "SSIM": 0.9833608865737915,
+      "LPIPS": 0.014046764932572842,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00070.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_70.png",
+      "PSNR": 33.78875950084845,
+      "SSIM": 0.9830877780914307,
+      "LPIPS": 0.014234957285225391,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00071.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_71.png",
+      "PSNR": 33.849460985666,
+      "SSIM": 0.9831770062446594,
+      "LPIPS": 0.01484345830976963,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00072.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_72.png",
+      "PSNR": 33.902771072324924,
+      "SSIM": 0.9837098121643066,
+      "LPIPS": 0.013946238905191422,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00073.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_73.png",
+      "PSNR": 33.933249745112846,
+      "SSIM": 0.9839223623275757,
+      "LPIPS": 0.014244889840483665,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00074.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_74.png",
+      "PSNR": 34.01913140351339,
+      "SSIM": 0.9844356179237366,
+      "LPIPS": 0.014113489538431168,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00075.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_75.png",
+      "PSNR": 34.2944650292549,
+      "SSIM": 0.9855757355690002,
+      "LPIPS": 0.013277513906359673,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00076.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_76.png",
+      "PSNR": 34.698709361724184,
+      "SSIM": 0.9868950247764587,
+      "LPIPS": 0.011837813071906567,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00077.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_77.png",
+      "PSNR": 35.029022823463606,
+      "SSIM": 0.9875457286834717,
+      "LPIPS": 0.01144438050687313,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00078.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_78.png",
+      "PSNR": 35.51033730523092,
+      "SSIM": 0.9886548519134521,
+      "LPIPS": 0.010734557174146175,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00079.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_79.png",
+      "PSNR": 35.88450761340467,
+      "SSIM": 0.9895927309989929,
+      "LPIPS": 0.009485840797424316,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00080.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_80.png",
+      "PSNR": 36.34243677149131,
+      "SSIM": 0.9908310174942017,
+      "LPIPS": 0.008514145389199257,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00081.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_81.png",
+      "PSNR": 37.114413514464516,
+      "SSIM": 0.9924760460853577,
+      "LPIPS": 0.007484056521207094,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00082.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_82.png",
+      "PSNR": 38.24714200252743,
+      "SSIM": 0.9941961169242859,
+      "LPIPS": 0.006657018326222897,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00083.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_83.png",
+      "PSNR": 39.185667109893146,
+      "SSIM": 0.9951926469802856,
+      "LPIPS": 0.005613227374851704,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00084.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_84.png",
+      "PSNR": 39.08932194769995,
+      "SSIM": 0.9950463771820068,
+      "LPIPS": 0.00566723570227623,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00085.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_85.png",
+      "PSNR": 38.92381543038794,
+      "SSIM": 0.9947383999824524,
+      "LPIPS": 0.006098847836256027,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00086.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_86.png",
+      "PSNR": 38.50978644324928,
+      "SSIM": 0.9943409562110901,
+      "LPIPS": 0.0065145245753228664,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00087.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_87.png",
+      "PSNR": 37.88966663191872,
+      "SSIM": 0.9934343695640564,
+      "LPIPS": 0.0071641020476818085,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00088.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_88.png",
+      "PSNR": 37.421121454156946,
+      "SSIM": 0.9926396608352661,
+      "LPIPS": 0.007742361631244421,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00089.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_89.png",
+      "PSNR": 37.25693170698767,
+      "SSIM": 0.9925447106361389,
+      "LPIPS": 0.008262448944151402,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00090.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_90.png",
+      "PSNR": 37.28320242965809,
+      "SSIM": 0.9926676154136658,
+      "LPIPS": 0.008171605877578259,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00091.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_91.png",
+      "PSNR": 37.55393915726152,
+      "SSIM": 0.992900013923645,
+      "LPIPS": 0.007457486353814602,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00092.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_92.png",
+      "PSNR": 37.918707908867574,
+      "SSIM": 0.9936466813087463,
+      "LPIPS": 0.006941285915672779,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00093.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_93.png",
+      "PSNR": 37.21766245995075,
+      "SSIM": 0.9925650954246521,
+      "LPIPS": 0.0076793828047811985,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00094.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_94.png",
+      "PSNR": 36.79921410114609,
+      "SSIM": 0.9918289184570312,
+      "LPIPS": 0.008717356249690056,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00095.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_95.png",
+      "PSNR": 36.53701949937998,
+      "SSIM": 0.9913845062255859,
+      "LPIPS": 0.008948540315032005,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00096.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_96.png",
+      "PSNR": 36.653848949913076,
+      "SSIM": 0.991835355758667,
+      "LPIPS": 0.008240683004260063,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00097.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_97.png",
+      "PSNR": 37.18098928233912,
+      "SSIM": 0.9926428198814392,
+      "LPIPS": 0.007371214218437672,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00098.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_98.png",
+      "PSNR": 37.513748409030036,
+      "SSIM": 0.9932100176811218,
+      "LPIPS": 0.006696409545838833,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00099.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_99.png",
+      "PSNR": 36.836712224744545,
+      "SSIM": 0.9921576976776123,
+      "LPIPS": 0.0077485935762524605,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00100.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_100.png",
+      "PSNR": 36.357679645628316,
+      "SSIM": 0.9917773008346558,
+      "LPIPS": 0.008024206385016441,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00101.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_101.png",
+      "PSNR": 36.0993456108277,
+      "SSIM": 0.9917186498641968,
+      "LPIPS": 0.008360069245100021,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00102.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_102.png",
+      "PSNR": 36.062814042853496,
+      "SSIM": 0.9915497303009033,
+      "LPIPS": 0.008649240247905254,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00103.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_103.png",
+      "PSNR": 36.09029726666261,
+      "SSIM": 0.9917632341384888,
+      "LPIPS": 0.008689411915838718,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00104.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_104.png",
+      "PSNR": 36.57042499815016,
+      "SSIM": 0.9928116202354431,
+      "LPIPS": 0.00864376313984394,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00105.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_105.png",
+      "PSNR": 34.76183133984086,
+      "SSIM": 0.9902802109718323,
+      "LPIPS": 0.010109852999448776,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00106.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_106.png",
+      "PSNR": 32.60420730114605,
+      "SSIM": 0.9859941601753235,
+      "LPIPS": 0.013448316603899002,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00107.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_107.png",
+      "PSNR": 31.248702231485215,
+      "SSIM": 0.9818204641342163,
+      "LPIPS": 0.016517583280801773,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00108.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_108.png",
+      "PSNR": 30.86653895895939,
+      "SSIM": 0.9795787334442139,
+      "LPIPS": 0.018699629232287407,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00109.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_109.png",
+      "PSNR": 31.04840179918577,
+      "SSIM": 0.979200005531311,
+      "LPIPS": 0.01850416697561741,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00110.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_110.png",
+      "PSNR": 31.731392293480994,
+      "SSIM": 0.9807344675064087,
+      "LPIPS": 0.017164839431643486,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00111.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_111.png",
+      "PSNR": 32.71316488718874,
+      "SSIM": 0.9830560684204102,
+      "LPIPS": 0.015147235244512558,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00112.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_112.png",
+      "PSNR": 33.654263490024825,
+      "SSIM": 0.9854919910430908,
+      "LPIPS": 0.013050578534603119,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00113.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_113.png",
+      "PSNR": 34.16302131502785,
+      "SSIM": 0.9868793487548828,
+      "LPIPS": 0.012312796898186207,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00114.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_114.png",
+      "PSNR": 34.196962270485336,
+      "SSIM": 0.9870603680610657,
+      "LPIPS": 0.012142013758420944,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00115.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_115.png",
+      "PSNR": 33.55288612608101,
+      "SSIM": 0.9859223961830139,
+      "LPIPS": 0.012624196708202362,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00116.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_116.png",
+      "PSNR": 32.86588495952855,
+      "SSIM": 0.9840844869613647,
+      "LPIPS": 0.013344376347959042,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00117.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_117.png",
+      "PSNR": 32.426758476565254,
+      "SSIM": 0.9829681515693665,
+      "LPIPS": 0.01520317979156971,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00118.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_118.png",
+      "PSNR": 32.346703905366745,
+      "SSIM": 0.9830894470214844,
+      "LPIPS": 0.014940140768885612,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00119.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_119.png",
+      "PSNR": 32.31162853113559,
+      "SSIM": 0.9828310012817383,
+      "LPIPS": 0.015285626985132694,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00120.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_120.png",
+      "PSNR": 32.669581866972294,
+      "SSIM": 0.9837950468063354,
+      "LPIPS": 0.013900935649871826,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00121.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_121.png",
+      "PSNR": 32.95690473529515,
+      "SSIM": 0.9851294755935669,
+      "LPIPS": 0.013398068025708199,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00122.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_122.png",
+      "PSNR": 33.35187403965002,
+      "SSIM": 0.9863653182983398,
+      "LPIPS": 0.014001170173287392,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00123.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_123.png",
+      "PSNR": 33.82756604005235,
+      "SSIM": 0.9872680306434631,
+      "LPIPS": 0.012640157714486122,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00124.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_124.png",
+      "PSNR": 34.115428859637355,
+      "SSIM": 0.987790584564209,
+      "LPIPS": 0.01211879774928093,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00125.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_125.png",
+      "PSNR": 34.069796379912525,
+      "SSIM": 0.987962007522583,
+      "LPIPS": 0.0117849912494421,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00126.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_126.png",
+      "PSNR": 34.263856112124984,
+      "SSIM": 0.9887977242469788,
+      "LPIPS": 0.011459575966000557,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00127.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_127.png",
+      "PSNR": 34.38608872285758,
+      "SSIM": 0.9891327619552612,
+      "LPIPS": 0.01156735047698021,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00128.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_128.png",
+      "PSNR": 34.46269241617834,
+      "SSIM": 0.989361584186554,
+      "LPIPS": 0.011030042544007301,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00129.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_129.png",
+      "PSNR": 34.88891588293791,
+      "SSIM": 0.9900333881378174,
+      "LPIPS": 0.01016215793788433,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00130.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_130.png",
+      "PSNR": 35.319856410683535,
+      "SSIM": 0.9903306365013123,
+      "LPIPS": 0.009663994424045086,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00131.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_131.png",
+      "PSNR": 35.84698103492944,
+      "SSIM": 0.9909441471099854,
+      "LPIPS": 0.008984650485217571,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00132.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_132.png",
+      "PSNR": 36.386736421805736,
+      "SSIM": 0.9918642044067383,
+      "LPIPS": 0.008167194202542305,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00133.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_133.png",
+      "PSNR": 36.528594956047755,
+      "SSIM": 0.9922800660133362,
+      "LPIPS": 0.008060208521783352,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00134.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_134.png",
+      "PSNR": 36.25222666742174,
+      "SSIM": 0.9915485382080078,
+      "LPIPS": 0.008640908636152744,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00135.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_135.png",
+      "PSNR": 36.23299921382797,
+      "SSIM": 0.9912592768669128,
+      "LPIPS": 0.009044586680829525,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00136.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_136.png",
+      "PSNR": 35.80153834174125,
+      "SSIM": 0.9906838536262512,
+      "LPIPS": 0.009553507901728153,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00137.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_137.png",
+      "PSNR": 35.31254199410626,
+      "SSIM": 0.9892221093177795,
+      "LPIPS": 0.010618433356285095,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00138.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_138.png",
+      "PSNR": 35.02346700300325,
+      "SSIM": 0.9886875152587891,
+      "LPIPS": 0.011120473966002464,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00139.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_139.png",
+      "PSNR": 34.54010398259851,
+      "SSIM": 0.9875800609588623,
+      "LPIPS": 0.012074805796146393,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00140.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_140.png",
+      "PSNR": 34.25185032617521,
+      "SSIM": 0.986685037612915,
+      "LPIPS": 0.012892736122012138,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00141.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_141.png",
+      "PSNR": 34.128302697177986,
+      "SSIM": 0.9859393835067749,
+      "LPIPS": 0.012813376262784004,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00142.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_142.png",
+      "PSNR": 34.169119009405826,
+      "SSIM": 0.9854562878608704,
+      "LPIPS": 0.013120817020535469,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00143.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_143.png",
+      "PSNR": 34.24326165203614,
+      "SSIM": 0.9851484298706055,
+      "LPIPS": 0.012906735762953758,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00144.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_144.png",
+      "PSNR": 34.23368639970623,
+      "SSIM": 0.984495997428894,
+      "LPIPS": 0.014978097751736641,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00145.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_145.png",
+      "PSNR": 34.145422882881206,
+      "SSIM": 0.984054684638977,
+      "LPIPS": 0.013560420833528042,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00146.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_146.png",
+      "PSNR": 34.32480783992464,
+      "SSIM": 0.9844862818717957,
+      "LPIPS": 0.012843361124396324,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00147.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_147.png",
+      "PSNR": 34.414919556874075,
+      "SSIM": 0.9846208691596985,
+      "LPIPS": 0.013552374206483364,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00148.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_148.png",
+      "PSNR": 34.51544065772671,
+      "SSIM": 0.9851028323173523,
+      "LPIPS": 0.012131253257393837,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00149.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_149.png",
+      "PSNR": 34.45260163082308,
+      "SSIM": 0.9845429062843323,
+      "LPIPS": 0.012841413728892803,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00150.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_150.png",
+      "PSNR": 34.43288252901485,
+      "SSIM": 0.9850268959999084,
+      "LPIPS": 0.012432609684765339,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00151.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_151.png",
+      "PSNR": 34.51030906106065,
+      "SSIM": 0.985611081123352,
+      "LPIPS": 0.012248651124536991,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00152.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_152.png",
+      "PSNR": 34.6893933869485,
+      "SSIM": 0.9860429167747498,
+      "LPIPS": 0.013194749131798744,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00153.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_153.png",
+      "PSNR": 34.91404996385659,
+      "SSIM": 0.9866772294044495,
+      "LPIPS": 0.01182905025780201,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00154.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_154.png",
+      "PSNR": 35.16058294676011,
+      "SSIM": 0.9872018098831177,
+      "LPIPS": 0.011896228417754173,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00155.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_155.png",
+      "PSNR": 35.41398184568506,
+      "SSIM": 0.987831711769104,
+      "LPIPS": 0.011026306077837944,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00156.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_156.png",
+      "PSNR": 35.45413144597741,
+      "SSIM": 0.9881674647331238,
+      "LPIPS": 0.010656090453267097,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00157.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_157.png",
+      "PSNR": 35.18274010877009,
+      "SSIM": 0.9876790046691895,
+      "LPIPS": 0.010678334161639214,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00158.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_158.png",
+      "PSNR": 34.82700792938515,
+      "SSIM": 0.9865890741348267,
+      "LPIPS": 0.01133272610604763,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00159.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_159.png",
+      "PSNR": 34.444799094634824,
+      "SSIM": 0.9852417707443237,
+      "LPIPS": 0.012092234566807747,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00160.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_160.png",
+      "PSNR": 34.304029275356044,
+      "SSIM": 0.9844763278961182,
+      "LPIPS": 0.01393118780106306,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00161.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_161.png",
+      "PSNR": 34.12749405019096,
+      "SSIM": 0.9838488101959229,
+      "LPIPS": 0.014363134279847145,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00162.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_162.png",
+      "PSNR": 34.12721988591008,
+      "SSIM": 0.9834975600242615,
+      "LPIPS": 0.012753533199429512,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00163.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_163.png",
+      "PSNR": 34.24879095253277,
+      "SSIM": 0.9839194416999817,
+      "LPIPS": 0.013014167547225952,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00164.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_164.png",
+      "PSNR": 34.68293612333602,
+      "SSIM": 0.9857447743415833,
+      "LPIPS": 0.012370947748422623,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00165.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_165.png",
+      "PSNR": 35.298782923108845,
+      "SSIM": 0.9875717163085938,
+      "LPIPS": 0.010835008695721626,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00166.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_166.png",
+      "PSNR": 36.05925264050104,
+      "SSIM": 0.989298939704895,
+      "LPIPS": 0.00947511289268732,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00167.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_167.png",
+      "PSNR": 37.67470229707473,
+      "SSIM": 0.9918946027755737,
+      "LPIPS": 0.007757521700114012,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00168.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_168.png",
+      "PSNR": 40.286852344685684,
+      "SSIM": 0.9950382709503174,
+      "LPIPS": 0.005342140328139067,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00169.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_169.png",
+      "PSNR": 38.263279352262806,
+      "SSIM": 0.9927806258201599,
+      "LPIPS": 0.006607494316995144,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00170.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_170.png",
+      "PSNR": 36.694102361189145,
+      "SSIM": 0.9903316497802734,
+      "LPIPS": 0.008831560611724854,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00171.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_171.png",
+      "PSNR": 35.69517030249092,
+      "SSIM": 0.9881831407546997,
+      "LPIPS": 0.011243029497563839,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00172.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_172.png",
+      "PSNR": 35.319161991583165,
+      "SSIM": 0.9874020218849182,
+      "LPIPS": 0.011375440284609795,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00173.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_173.png",
+      "PSNR": 35.030384475982245,
+      "SSIM": 0.9865313768386841,
+      "LPIPS": 0.012158584780991077,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00174.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_174.png",
+      "PSNR": 34.727505980274294,
+      "SSIM": 0.986246645450592,
+      "LPIPS": 0.012252803891897202,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00175.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_175.png",
+      "PSNR": 34.66842394312846,
+      "SSIM": 0.9863599538803101,
+      "LPIPS": 0.01245427317917347,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00176.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_176.png",
+      "PSNR": 34.742251377610394,
+      "SSIM": 0.9866658449172974,
+      "LPIPS": 0.012479597702622414,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00177.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_177.png",
+      "PSNR": 34.6514194634029,
+      "SSIM": 0.9861330986022949,
+      "LPIPS": 0.01214668806642294,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00178.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_178.png",
+      "PSNR": 34.43243780871824,
+      "SSIM": 0.9853743314743042,
+      "LPIPS": 0.01331733912229538,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00179.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_179.png",
+      "PSNR": 34.23318011187307,
+      "SSIM": 0.9847034215927124,
+      "LPIPS": 0.012878366746008396,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00180.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_180.png",
+      "PSNR": 33.89266997339331,
+      "SSIM": 0.9834907650947571,
+      "LPIPS": 0.014613382518291473,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00181.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_181.png",
+      "PSNR": 33.54240973590296,
+      "SSIM": 0.9823493361473083,
+      "LPIPS": 0.014044801704585552,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00182.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_182.png",
+      "PSNR": 33.286389020199636,
+      "SSIM": 0.981734037399292,
+      "LPIPS": 0.015114499256014824,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00183.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_183.png",
+      "PSNR": 33.101377511094114,
+      "SSIM": 0.9808968901634216,
+      "LPIPS": 0.01503234263509512,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00184.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_184.png",
+      "PSNR": 32.99097272968497,
+      "SSIM": 0.9801515340805054,
+      "LPIPS": 0.016594722867012024,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00185.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_185.png",
+      "PSNR": 32.95310327804423,
+      "SSIM": 0.9800193905830383,
+      "LPIPS": 0.015470300801098347,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00186.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_186.png",
+      "PSNR": 32.91740193027242,
+      "SSIM": 0.9798675179481506,
+      "LPIPS": 0.016008462756872177,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00187.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_187.png",
+      "PSNR": 33.0301347172153,
+      "SSIM": 0.9798216819763184,
+      "LPIPS": 0.01539570465683937,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00188.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_188.png",
+      "PSNR": 33.11151482871146,
+      "SSIM": 0.980502724647522,
+      "LPIPS": 0.015560880303382874,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00189.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_189.png",
+      "PSNR": 33.363840403999404,
+      "SSIM": 0.9815449714660645,
+      "LPIPS": 0.015025072731077671,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00190.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_190.png",
+      "PSNR": 33.57492780037105,
+      "SSIM": 0.982128381729126,
+      "LPIPS": 0.013408510945737362,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00191.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_191.png",
+      "PSNR": 33.74862395531983,
+      "SSIM": 0.9825593829154968,
+      "LPIPS": 0.015125108882784843,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00192.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_192.png",
+      "PSNR": 33.961170605956355,
+      "SSIM": 0.9834087491035461,
+      "LPIPS": 0.014497552067041397,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00193.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_193.png",
+      "PSNR": 34.21411108533748,
+      "SSIM": 0.9841035008430481,
+      "LPIPS": 0.01299454178661108,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00194.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_194.png",
+      "PSNR": 34.52654969554506,
+      "SSIM": 0.9852160215377808,
+      "LPIPS": 0.012419993057847023,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00195.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_195.png",
+      "PSNR": 35.014862118418606,
+      "SSIM": 0.9859008193016052,
+      "LPIPS": 0.012372540310025215,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00196.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_196.png",
+      "PSNR": 35.30338287970848,
+      "SSIM": 0.9867202043533325,
+      "LPIPS": 0.011649208143353462,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00197.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_197.png",
+      "PSNR": 35.69505256664637,
+      "SSIM": 0.9881959557533264,
+      "LPIPS": 0.01028665341436863,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00198.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_198.png",
+      "PSNR": 36.190559171258755,
+      "SSIM": 0.9893530607223511,
+      "LPIPS": 0.00897977128624916,
+      "ground_truth_max_byte_difference": 0
+    },
+    {
+      "image": "00199.png",
+      "source_image": "01_PhysGaussian/inputs/nerf_synthetic_ficus/test/r_199.png",
+      "PSNR": 36.50333963032601,
+      "SSIM": 0.9901489615440369,
+      "LPIPS": 0.008944744244217873,
+      "ground_truth_max_byte_difference": 0
+    }
+  ],
+  "model_sha256": "2d885267faa054bb842c8a86c5d27c6dba1fd485a6fee6afa9b4e525b0066697",
+  "method": "Independent NumPy RGB PNG PSNR; original SSIM and LPIPS-VGG; raw RGBA camera-order GT checked"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "01_PhysGaussian/code/PhysGaussian",
+    "url": "https://github.com/XPandora/PhysGaussian.git",
+    "commit": "8339ed6aa2cd5d50e1001a254a3d95aea678a956"
+  },
+  {
+    "path": "02_PAT/code/ModalSound",
+    "url": "https://github.com/cxzheng/ModalSound.git",
+    "commit": "1af5e40893d0ad1b73b594a0cba7a5466b4fc56d"
+  },
+  {
+    "path": "03_NeuralSound/code/NeuralSound",
+    "url": "https://github.com/hellojxt/NeuralSound.git",
+    "commit": "b18e81b1e3dba7e963b09a7d9a45b584707d805f"
+  },
+  {
+    "path": "03_NeuralSound/code/MinkowskiEngine",
+    "url": "https://github.com/NVIDIA/MinkowskiEngine.git",
+    "commit": "02fc608bea4c0549b0a7b00ca1bf15dee4a0b228"
+  },
+  {
+    "path": "reproduction/vendor/ModalSound",
+    "url": "https://github.com/cxzheng/ModalSound.git",
+    "commit": "1af5e40893d0ad1b73b594a0cba7a5466b4fc56d"
+  },
+  {
+    "path": "reproduction/vendor/NeuralSound",
+    "url": "https://github.com/hellojxt/NeuralSound.git",
+    "commit": "b18e81b1e3dba7e963b09a7d9a45b584707d805f"
+  }
+]

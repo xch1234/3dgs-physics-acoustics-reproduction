@@ -1,0 +1,23 @@
+{
+  "execution_completed": true,
+  "records": [
+    {
+      "scene": "bread",
+      "frames": 300,
+      "mean_relative_image_L2": 0.006019769165838322,
+      "maximum_relative_image_L2": 0.010867240838706493
+    },
+    {
+      "scene": "plane",
+      "frames": 400,
+      "mean_relative_image_L2": 0.012695037886223871,
+      "maximum_relative_image_L2": 0.017785219475626945
+    },
+    {
+      "scene": "vasedeck",
+      "frames": 75,
+      "mean_relative_image_L2": 0.03294253294356167,
+      "maximum_relative_image_L2": 0.08310460299253464
+    }
+  ]
+}

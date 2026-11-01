@@ -1,0 +1,35 @@
+[
+  {
+    "path": "01_PhysGaussian/docs/environment-linux.yml",
+    "unicode_replacement_lines": []
+  },
+  {
+    "path": "01_PhysGaussian/docs/environment.yml",
+    "unicode_replacement_lines": [
+      "name: F:\\System\\Desktop\\3DGS\\����\\.conda\\physgaussian",
+      "prefix: F:\\System\\Desktop\\3DGS\\����\\.conda\\physgaussian"
+    ]
+  },
+  {
+    "path": "02_PAT/docs/environment-linux.yml",
+    "unicode_replacement_lines": []
+  },
+  {
+    "path": "02_PAT/docs/environment.yml",
+    "unicode_replacement_lines": [
+      "name: F:\\System\\Desktop\\3DGS\\����\\.conda\\acoustics",
+      "prefix: F:\\System\\Desktop\\3DGS\\����\\.conda\\acoustics"
+    ]
+  },
+  {
+    "path": "03_NeuralSound/docs/environment-linux.yml",
+    "unicode_replacement_lines": []
+  },
+  {
+    "path": "03_NeuralSound/docs/environment.yml",
+    "unicode_replacement_lines": [
+      "name: F:\\System\\Desktop\\3DGS\\����\\.conda\\acoustics",
+      "prefix: F:\\System\\Desktop\\3DGS\\����\\.conda\\acoustics"
+    ]
+  }
+]

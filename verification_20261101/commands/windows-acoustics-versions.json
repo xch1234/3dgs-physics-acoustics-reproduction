@@ -1,0 +1,14 @@
+{
+  "name": "windows-acoustics-versions",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-c",
+    "import sys,numpy,scipy; print(sys.version);print(numpy.__version__,scipy.__version__)"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:04:58.956559+08:00",
+  "log": "logs\\windows-acoustics-versions.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:04:59.821361+08:00",
+  "elapsed_s": 0.875
+}

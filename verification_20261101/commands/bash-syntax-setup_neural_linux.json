@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-setup_neural_linux",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/setup_neural_linux.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:42.531239+08:00",
+  "log": "logs/bash-syntax-setup_neural_linux.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:42.599175+08:00",
+  "elapsed_s": 0.06775500000003376
+}

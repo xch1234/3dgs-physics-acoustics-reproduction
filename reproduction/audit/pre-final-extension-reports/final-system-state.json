@@ -1,0 +1,20 @@
+﻿{
+    "time":  "2026-11-01T09:17:36.6594667+08:00",
+    "gpu":  [
+                "name, driver_version, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu",
+                "NVIDIA GeForce RTX 2050, 595.95, 0 MiB, 4096 MiB, 0 %, 54"
+            ],
+    "linux_processes":  [
+                            "  PID STAT     ELAPSED COMMAND",
+                            "    1 Sl+        00:15 /init",
+                            "    9 Sl+        00:14 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate",
+                            "   48 Ss         00:00 /init",
+                            "   49 S          00:00 /init",
+                            "   50 Rs+        00:00 ps -eo pid,stat,etime,args"
+                        ],
+    "linux_memory":  [
+                         "              total        used        free      shared  buff/cache   available",
+                         "Mem:          7.6Gi       312Mi       7.0Gi       2.0Mi       247Mi       7.1Gi",
+                         "Swap:         2.0Gi       4.0Mi       2.0Gi"
+                     ]
+}

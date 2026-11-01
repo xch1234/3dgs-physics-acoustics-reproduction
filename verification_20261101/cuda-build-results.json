@@ -1,0 +1,78 @@
+[
+  {
+    "name": "cuda-build-simple-knn",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/source/setup.py",
+      "build_ext",
+      "--build-temp",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/temp",
+      "--build-lib",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/lib"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/source",
+    "started": "2026-11-01T16:17:48.645901+08:00",
+    "log": "logs/cuda-build-simple-knn.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T16:21:02.983982+08:00",
+    "elapsed_s": 194.33590471499974
+  },
+  {
+    "name": "cuda-build-diff-gaussian-rasterization",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/setup.py",
+      "build_ext",
+      "--build-temp",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp",
+      "--build-lib",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source",
+    "started": "2026-11-01T16:27:09.709711+08:00",
+    "log": "logs/cuda-build-diff-gaussian-rasterization.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T16:31:02.748690+08:00",
+    "elapsed_s": 233.0352572089996
+  },
+  {
+    "name": "cuda-rebuilt-knn-test",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-c",
+      "import torch,simple_knn._C as k,diff_gaussian_rasterization._C as r; print(k.__file__);print(r.__file__);torch.manual_seed(42);x=torch.rand(32,3,device=\"cuda\");actual=k.distCUDA2(x);d=torch.cdist(x,x).square();d.fill_diagonal_(float(\"inf\"));ref=d.topk(3,largest=False).values.mean(1);print(\"max_knn_abs_error\",float((actual-ref).abs().max()));assert torch.allclose(actual,ref,rtol=2e-5,atol=1e-7)"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T16:31:02.874738+08:00",
+    "log": "logs/cuda-rebuilt-knn-test.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T16:31:09.253078+08:00",
+    "elapsed_s": 6.376189431999592
+  },
+  {
+    "name": "cuda-rebuilt-render",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/render.py",
+      "-m",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_rebuilt_renderer",
+      "-s",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+      "--eval",
+      "--white_background",
+      "--data_device",
+      "cpu",
+      "--resolution",
+      "1",
+      "--iteration",
+      "30000",
+      "--skip_train"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+    "started": "2026-11-01T16:31:12.683687+08:00",
+    "log": "logs/cuda-rebuilt-render.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T16:33:10.962265+08:00",
+    "elapsed_s": 118.27632617099971
+  }
+]

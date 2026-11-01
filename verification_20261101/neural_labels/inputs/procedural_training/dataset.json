@@ -1,0 +1,305 @@
+{
+  "scope": "24 procedural cuboids, 144 FFAT maps; not ABC or original paper split",
+  "seed": 20261102,
+  "split_by_geometry": {
+    "train": [
+      "box_10.npz",
+      "box_16.npz",
+      "box_18.npz",
+      "box_00.npz",
+      "box_02.npz",
+      "box_01.npz",
+      "box_11.npz",
+      "box_07.npz",
+      "box_23.npz",
+      "box_22.npz",
+      "box_15.npz",
+      "box_04.npz",
+      "box_19.npz",
+      "box_14.npz",
+      "box_12.npz",
+      "box_03.npz"
+    ],
+    "val": [
+      "box_09.npz",
+      "box_05.npz",
+      "box_17.npz",
+      "box_20.npz"
+    ],
+    "test": [
+      "box_13.npz",
+      "box_08.npz",
+      "box_06.npz",
+      "box_21.npz"
+    ]
+  },
+  "label_source": "official FEM and voxel boundary; local 7-point indirect BEM",
+  "convention": "released NeuralSound acceleration normalization: neumann=rho*n dot feature, no omega squared",
+  "records": [
+    {
+      "file": "box_00.npz",
+      "dimensions_voxels": [
+        8,
+        3,
+        2
+      ],
+      "occupied_voxels": 48,
+      "surface_triangles": 184,
+      "maximum_eigen_residual": 1.245655698294631e-13
+    },
+    {
+      "file": "box_01.npz",
+      "dimensions_voxels": [
+        8,
+        3,
+        3
+      ],
+      "occupied_voxels": 72,
+      "surface_triangles": 228,
+      "maximum_eigen_residual": 8.450910974050936e-14
+    },
+    {
+      "file": "box_02.npz",
+      "dimensions_voxels": [
+        8,
+        4,
+        2
+      ],
+      "occupied_voxels": 64,
+      "surface_triangles": 224,
+      "maximum_eigen_residual": 1.1242903010532793e-13
+    },
+    {
+      "file": "box_03.npz",
+      "dimensions_voxels": [
+        8,
+        4,
+        3
+      ],
+      "occupied_voxels": 96,
+      "surface_triangles": 272,
+      "maximum_eigen_residual": 8.523276034147271e-14
+    },
+    {
+      "file": "box_04.npz",
+      "dimensions_voxels": [
+        8,
+        5,
+        2
+      ],
+      "occupied_voxels": 80,
+      "surface_triangles": 264,
+      "maximum_eigen_residual": 1.4801719964625062e-13
+    },
+    {
+      "file": "box_05.npz",
+      "dimensions_voxels": [
+        8,
+        5,
+        3
+      ],
+      "occupied_voxels": 120,
+      "surface_triangles": 316,
+      "maximum_eigen_residual": 1.0251004688988862e-13
+    },
+    {
+      "file": "box_06.npz",
+      "dimensions_voxels": [
+        10,
+        3,
+        2
+      ],
+      "occupied_voxels": 60,
+      "surface_triangles": 224,
+      "maximum_eigen_residual": 2.3598864061358947e-13
+    },
+    {
+      "file": "box_07.npz",
+      "dimensions_voxels": [
+        10,
+        3,
+        3
+      ],
+      "occupied_voxels": 90,
+      "surface_triangles": 276,
+      "maximum_eigen_residual": 1.4641419430424166e-13
+    },
+    {
+      "file": "box_08.npz",
+      "dimensions_voxels": [
+        10,
+        4,
+        2
+      ],
+      "occupied_voxels": 80,
+      "surface_triangles": 272,
+      "maximum_eigen_residual": 2.704480023383101e-13
+    },
+    {
+      "file": "box_09.npz",
+      "dimensions_voxels": [
+        10,
+        4,
+        3
+      ],
+      "occupied_voxels": 120,
+      "surface_triangles": 328,
+      "maximum_eigen_residual": 1.4345845415659332e-13
+    },
+    {
+      "file": "box_10.npz",
+      "dimensions_voxels": [
+        10,
+        5,
+        2
+      ],
+      "occupied_voxels": 100,
+      "surface_triangles": 320,
+      "maximum_eigen_residual": 2.486896570024823e-13
+    },
+    {
+      "file": "box_11.npz",
+      "dimensions_voxels": [
+        10,
+        5,
+        3
+      ],
+      "occupied_voxels": 150,
+      "surface_triangles": 380,
+      "maximum_eigen_residual": 1.510232592909851e-13
+    },
+    {
+      "file": "box_12.npz",
+      "dimensions_voxels": [
+        12,
+        3,
+        2
+      ],
+      "occupied_voxels": 72,
+      "surface_triangles": 264,
+      "maximum_eigen_residual": 5.059366306959896e-13
+    },
+    {
+      "file": "box_13.npz",
+      "dimensions_voxels": [
+        12,
+        3,
+        3
+      ],
+      "occupied_voxels": 108,
+      "surface_triangles": 324,
+      "maximum_eigen_residual": 3.0368626260807794e-13
+    },
+    {
+      "file": "box_14.npz",
+      "dimensions_voxels": [
+        12,
+        4,
+        2
+      ],
+      "occupied_voxels": 96,
+      "surface_triangles": 320,
+      "maximum_eigen_residual": 5.408641067483051e-13
+    },
+    {
+      "file": "box_15.npz",
+      "dimensions_voxels": [
+        12,
+        4,
+        3
+      ],
+      "occupied_voxels": 144,
+      "surface_triangles": 384,
+      "maximum_eigen_residual": 2.7403617675948947e-13
+    },
+    {
+      "file": "box_16.npz",
+      "dimensions_voxels": [
+        12,
+        5,
+        2
+      ],
+      "occupied_voxels": 120,
+      "surface_triangles": 376,
+      "maximum_eigen_residual": 4.823572955922383e-13
+    },
+    {
+      "file": "box_17.npz",
+      "dimensions_voxels": [
+        12,
+        5,
+        3
+      ],
+      "occupied_voxels": 180,
+      "surface_triangles": 444,
+      "maximum_eigen_residual": 2.7334186908236994e-13
+    },
+    {
+      "file": "box_18.npz",
+      "dimensions_voxels": [
+        14,
+        3,
+        2
+      ],
+      "occupied_voxels": 84,
+      "surface_triangles": 304,
+      "maximum_eigen_residual": 8.110095332799015e-13
+    },
+    {
+      "file": "box_19.npz",
+      "dimensions_voxels": [
+        14,
+        3,
+        3
+      ],
+      "occupied_voxels": 126,
+      "surface_triangles": 372,
+      "maximum_eigen_residual": 5.201933821202729e-13
+    },
+    {
+      "file": "box_20.npz",
+      "dimensions_voxels": [
+        14,
+        4,
+        2
+      ],
+      "occupied_voxels": 112,
+      "surface_triangles": 368,
+      "maximum_eigen_residual": 7.425348080867634e-13
+    },
+    {
+      "file": "box_21.npz",
+      "dimensions_voxels": [
+        14,
+        4,
+        3
+      ],
+      "occupied_voxels": 168,
+      "surface_triangles": 440,
+      "maximum_eigen_residual": 4.527596906413618e-13
+    },
+    {
+      "file": "box_22.npz",
+      "dimensions_voxels": [
+        14,
+        5,
+        2
+      ],
+      "occupied_voxels": 140,
+      "surface_triangles": 432,
+      "maximum_eigen_residual": 8.973215142983233e-13
+    },
+    {
+      "file": "box_23.npz",
+      "dimensions_voxels": [
+        14,
+        5,
+        3
+      ],
+      "occupied_voxels": 210,
+      "surface_triangles": 508,
+      "maximum_eigen_residual": 5.245674295008323e-13
+    }
+  ],
+  "elapsed_s": 653.8318290000316
+}

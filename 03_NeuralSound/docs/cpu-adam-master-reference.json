@@ -1,0 +1,14 @@
+[
+  {
+    "device": "cpu",
+    "steps": 18,
+    "resume_after_step": 9,
+    "max_parameter_difference": 0.0
+  },
+  {
+    "device": "cuda:0",
+    "steps": 18,
+    "resume_after_step": 9,
+    "max_parameter_difference": 1.4901161193847656e-08
+  }
+]

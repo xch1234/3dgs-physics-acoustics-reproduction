@@ -1,0 +1,194 @@
+GENERATING box_00.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 30, 'actual_relative_residual': 7.461307883188066e-09, 'original_requested_tolerance': 2.194276993445506e-09}
+ 17%|█▋        | 1/6 [01:09<05:45, 69.06s/it]SOLVE {'info': 0, 'iterations': 17, 'actual_relative_residual': 2.7396835247372635e-09, 'original_requested_tolerance': 2.2757567330895164e-09}
+ 33%|███▎      | 2/6 [01:09<01:55, 28.96s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 4.026643071779123e-09, 'original_requested_tolerance': 2.0323509633871024e-09}
+ 50%|█████     | 3/6 [01:10<00:48, 16.21s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 3.108040464554297e-09, 'original_requested_tolerance': 3.450567306287777e-10}
+ 67%|██████▋   | 4/6 [01:12<00:20, 10.38s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 9.428633394350742e-09, 'original_requested_tolerance': 1.985085321847361e-09}
+ 83%|████████▎ | 5/6 [01:14<00:07,  7.31s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 2.892768959629818e-09, 'original_requested_tolerance': 2.1814815530738808e-09}
+100%|██████████| 6/6 [01:16<00:00,  5.55s/it]100%|██████████| 6/6 [01:16<00:00, 12.74s/it]
+GENERATING box_01.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 14, 'actual_relative_residual': 5.935241080198354e-09, 'original_requested_tolerance': 1.5507841769928383e-09}
+ 17%|█▋        | 1/6 [00:02<00:12,  2.40s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 9.032693926927529e-09, 'original_requested_tolerance': 1.5435907410113007e-09}
+ 33%|███▎      | 2/6 [00:04<00:08,  2.06s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 3.7045823671726045e-09, 'original_requested_tolerance': 1.543590741011331e-09}
+ 50%|█████     | 3/6 [00:07<00:07,  2.42s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 2.0165147052944034e-09, 'original_requested_tolerance': 1.9252691296346955e-09}
+ 67%|██████▋   | 4/6 [00:09<00:04,  2.43s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 5.0783883278723195e-09, 'original_requested_tolerance': 1.8085906483165186e-09}
+ 83%|████████▎ | 5/6 [00:11<00:02,  2.24s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 5.984038797996463e-09, 'original_requested_tolerance': 1.8085906483165537e-09}
+100%|██████████| 6/6 [00:13<00:00,  2.18s/it]100%|██████████| 6/6 [00:13<00:00,  2.25s/it]
+GENERATING box_02.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 17, 'actual_relative_residual': 9.341396532969027e-09, 'original_requested_tolerance': 2.41415508154083e-09}
+ 17%|█▋        | 1/6 [00:01<00:07,  1.47s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 8.56884335286601e-09, 'original_requested_tolerance': 1.9212155102946138e-09}
+ 33%|███▎      | 2/6 [00:03<00:06,  1.56s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 4.035952343515362e-09, 'original_requested_tolerance': 1.6748944420962979e-09}
+ 50%|█████     | 3/6 [00:04<00:04,  1.53s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 4.573147695450359e-09, 'original_requested_tolerance': 2.2827165246735725e-09}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.52s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 2.622223999617361e-09, 'original_requested_tolerance': 2.0291707170551517e-09}
+ 83%|████████▎ | 5/6 [00:07<00:01,  1.46s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 2.922473401339692e-09, 'original_requested_tolerance': 1.8185212807754177e-09}
+100%|██████████| 6/6 [00:09<00:00,  1.51s/it]100%|██████████| 6/6 [00:09<00:00,  1.51s/it]
+GENERATING box_03.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 18, 'actual_relative_residual': 4.01834138858458e-09, 'original_requested_tolerance': 1.7616263604026043e-09}
+ 17%|█▋        | 1/6 [00:01<00:07,  1.45s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 7.500010423153473e-09, 'original_requested_tolerance': 1.461704390476473e-09}
+ 33%|███▎      | 2/6 [00:03<00:06,  1.57s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 3.0089916811502637e-09, 'original_requested_tolerance': 1.3763162422885574e-09}
+ 50%|█████     | 3/6 [00:04<00:04,  1.64s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 5.194419028684194e-09, 'original_requested_tolerance': 1.6715739057254684e-09}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.69s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 9.937035369099197e-09, 'original_requested_tolerance': 1.7408965599831516e-09}
+ 83%|████████▎ | 5/6 [00:08<00:01,  1.81s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 4.526701472747425e-09, 'original_requested_tolerance': 1.624168649384016e-09}
+100%|██████████| 6/6 [00:10<00:00,  1.94s/it]100%|██████████| 6/6 [00:10<00:00,  1.80s/it]
+GENERATING box_04.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 18, 'actual_relative_residual': 6.162581207170818e-09, 'original_requested_tolerance': 2.404921249126322e-09}
+ 17%|█▋        | 1/6 [00:01<00:07,  1.43s/it]SOLVE {'info': 0, 'iterations': 25, 'actual_relative_residual': 8.214471112698438e-09, 'original_requested_tolerance': 1.7866448334083412e-09}
+ 33%|███▎      | 2/6 [00:02<00:05,  1.43s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 4.189037098185892e-09, 'original_requested_tolerance': 1.5659337627835324e-09}
+ 50%|█████     | 3/6 [00:04<00:04,  1.52s/it]SOLVE {'info': 0, 'iterations': 25, 'actual_relative_residual': 9.231740460738676e-09, 'original_requested_tolerance': 2.211460216863853e-09}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.54s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 6.059386102724275e-09, 'original_requested_tolerance': 6.720977390352947e-10}
+ 83%|████████▎ | 5/6 [00:07<00:01,  1.61s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 6.664016332899435e-09, 'original_requested_tolerance': 1.7039511295071016e-09}
+100%|██████████| 6/6 [00:09<00:00,  1.62s/it]100%|██████████| 6/6 [00:09<00:00,  1.57s/it]
+GENERATING box_05.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 19, 'actual_relative_residual': 2.8202733247923095e-09, 'original_requested_tolerance': 1.8221315174220636e-09}
+ 17%|█▋        | 1/6 [00:01<00:08,  1.78s/it]SOLVE {'info': 0, 'iterations': 30, 'actual_relative_residual': 7.032612813757662e-09, 'original_requested_tolerance': 1.354354540253998e-09}
+ 33%|███▎      | 2/6 [00:03<00:07,  1.83s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 7.200242145088779e-09, 'original_requested_tolerance': 1.2968203653003664e-09}
+ 50%|█████     | 3/6 [00:05<00:05,  1.87s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 6.826038495797312e-09, 'original_requested_tolerance': 1.5274769874491007e-09}
+ 67%|██████▋   | 4/6 [00:07<00:03,  1.96s/it]SOLVE {'info': 0, 'iterations': 25, 'actual_relative_residual': 7.564742233809653e-09, 'original_requested_tolerance': 1.7255252250646748e-09}
+ 83%|████████▎ | 5/6 [00:09<00:02,  2.01s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 6.521455668931431e-09, 'original_requested_tolerance': 1.3984747753170398e-09}
+100%|██████████| 6/6 [00:11<00:00,  2.06s/it]100%|██████████| 6/6 [00:11<00:00,  1.99s/it]
+GENERATING box_06.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 6.8970259258309104e-09, 'original_requested_tolerance': 2.1670302247044705e-09}
+ 17%|█▋        | 1/6 [00:01<00:05,  1.16s/it]SOLVE {'info': 0, 'iterations': 33, 'actual_relative_residual': 8.942295453310717e-09, 'original_requested_tolerance': 2.0377286171768642e-09}
+ 33%|███▎      | 2/6 [00:02<00:04,  1.19s/it]SOLVE {'info': 0, 'iterations': 18, 'actual_relative_residual': 8.681181317671688e-09, 'original_requested_tolerance': 2.043760889790018e-09}
+ 50%|█████     | 3/6 [00:03<00:03,  1.30s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 3.0227330168140148e-09, 'original_requested_tolerance': 1.7279779550418716e-09}
+ 67%|██████▋   | 4/6 [00:05<00:02,  1.48s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 4.437848130404167e-09, 'original_requested_tolerance': 2.424659896691626e-10}
+ 83%|████████▎ | 5/6 [00:07<00:01,  1.48s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 3.4572918015314905e-09, 'original_requested_tolerance': 2.0087584312930043e-09}
+100%|██████████| 6/6 [00:09<00:00,  1.66s/it]100%|██████████| 6/6 [00:09<00:00,  1.51s/it]
+GENERATING box_07.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 8.444404792396029e-09, 'original_requested_tolerance': 1.6525775287462267e-09}
+ 17%|█▋        | 1/6 [00:01<00:07,  1.58s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 5.60220771167326e-09, 'original_requested_tolerance': 1.6525775287462449e-09}
+ 33%|███▎      | 2/6 [00:03<00:06,  1.59s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 8.249007495817158e-09, 'original_requested_tolerance': 1.3992609031661581e-09}
+ 50%|█████     | 3/6 [00:04<00:04,  1.64s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 8.757604126076466e-09, 'original_requested_tolerance': 1.938070248072065e-10}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.73s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 9.920898197754956e-09, 'original_requested_tolerance': 1.7118832485553993e-09}
+ 83%|████████▎ | 5/6 [00:08<00:01,  1.73s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 4.849725163063351e-09, 'original_requested_tolerance': 1.7118832485553281e-09}
+100%|██████████| 6/6 [00:10<00:00,  1.79s/it]100%|██████████| 6/6 [00:10<00:00,  1.73s/it]
+GENERATING box_08.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 4.6022947481832e-09, 'original_requested_tolerance': 1.8865564573507255e-09}
+ 17%|█▋        | 1/6 [00:01<00:08,  1.79s/it]SOLVE {'info': 0, 'iterations': 18, 'actual_relative_residual': 7.256149980202275e-09, 'original_requested_tolerance': 2.1700958038806145e-09}
+ 33%|███▎      | 2/6 [00:03<00:06,  1.72s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 5.4411836210267975e-09, 'original_requested_tolerance': 1.6803327535760244e-09}
+ 50%|█████     | 3/6 [00:05<00:05,  1.71s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 7.018158171758749e-09, 'original_requested_tolerance': 1.5517085184200427e-09}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.73s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 5.286572322802715e-09, 'original_requested_tolerance': 2.1454896115327966e-09}
+ 83%|████████▎ | 5/6 [00:08<00:01,  1.72s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 9.32470228276768e-09, 'original_requested_tolerance': 3.3453655487570435e-10}
+100%|██████████| 6/6 [00:10<00:00,  1.85s/it]100%|██████████| 6/6 [00:10<00:00,  1.79s/it]
+GENERATING box_09.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 7.6025717880503e-09, 'original_requested_tolerance': 1.4519262701224706e-09}
+ 17%|█▋        | 1/6 [00:02<00:10,  2.17s/it]SOLVE {'info': 0, 'iterations': 18, 'actual_relative_residual': 7.04955052414539e-09, 'original_requested_tolerance': 1.576430405787847e-09}
+ 33%|███▎      | 2/6 [00:04<00:08,  2.02s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 7.266208334842732e-09, 'original_requested_tolerance': 1.3757110326901543e-09}
+ 50%|█████     | 3/6 [00:06<00:06,  2.02s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 5.538492629039682e-09, 'original_requested_tolerance': 2.6727331198073915e-10}
+ 67%|██████▋   | 4/6 [00:08<00:04,  2.08s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 7.1289412972712346e-09, 'original_requested_tolerance': 1.188815465995095e-09}
+ 83%|████████▎ | 5/6 [00:10<00:02,  2.13s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 9.335975090845776e-09, 'original_requested_tolerance': 1.5829296658354325e-09}
+100%|██████████| 6/6 [00:12<00:00,  2.12s/it]100%|██████████| 6/6 [00:12<00:00,  2.10s/it]
+GENERATING box_10.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 5.837440136798561e-09, 'original_requested_tolerance': 1.7175881047769232e-09}
+ 17%|█▋        | 1/6 [00:01<00:09,  1.92s/it]SOLVE {'info': 0, 'iterations': 19, 'actual_relative_residual': 8.338901973684385e-09, 'original_requested_tolerance': 2.172264987469755e-09}
+ 33%|███▎      | 2/6 [00:03<00:07,  1.92s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 9.89802381892241e-09, 'original_requested_tolerance': 1.4468260233754624e-09}
+ 50%|█████     | 3/6 [00:05<00:05,  1.88s/it]SOLVE {'info': 0, 'iterations': 26, 'actual_relative_residual': 8.245017138900596e-09, 'original_requested_tolerance': 2.1249373059776508e-09}
+ 67%|██████▋   | 4/6 [00:07<00:03,  1.96s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 8.90871883840569e-09, 'original_requested_tolerance': 1.4585328209499604e-09}
+ 83%|████████▎ | 5/6 [00:10<00:02,  2.23s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 5.619164014673271e-09, 'original_requested_tolerance': 4.318587275536767e-10}
+100%|██████████| 6/6 [00:12<00:00,  2.30s/it]100%|██████████| 6/6 [00:12<00:00,  2.15s/it]
+GENERATING box_11.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 19, 'actual_relative_residual': 4.278072915543145e-09, 'original_requested_tolerance': 1.6352293107164002e-09}
+ 17%|█▋        | 1/6 [00:02<00:14,  2.82s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 6.400751444800803e-09, 'original_requested_tolerance': 1.3191496024680696e-09}
+ 33%|███▎      | 2/6 [00:05<00:11,  2.76s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 7.49984241501777e-09, 'original_requested_tolerance': 1.1838132724890081e-09}
+ 50%|█████     | 3/6 [00:08<00:08,  2.72s/it]SOLVE {'info': 0, 'iterations': 26, 'actual_relative_residual': 7.955087947308728e-09, 'original_requested_tolerance': 1.361106277751261e-09}
+ 67%|██████▋   | 4/6 [00:10<00:05,  2.63s/it]SOLVE {'info': 0, 'iterations': 30, 'actual_relative_residual': 7.533584280349366e-09, 'original_requested_tolerance': 1.6321069258269334e-09}
+ 83%|████████▎ | 5/6 [00:13<00:02,  2.65s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 9.276479453756076e-09, 'original_requested_tolerance': 1.1130025988429102e-09}
+100%|██████████| 6/6 [00:16<00:00,  2.70s/it]100%|██████████| 6/6 [00:16<00:00,  2.70s/it]
+GENERATING box_12.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 3.9997144999032896e-09, 'original_requested_tolerance': 2.1094101986823527e-09}
+ 17%|█▋        | 1/6 [00:01<00:06,  1.35s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 4.460684479059393e-09, 'original_requested_tolerance': 2.0055397227412196e-09}
+ 33%|███▎      | 2/6 [00:02<00:05,  1.47s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 7.650044784318365e-09, 'original_requested_tolerance': 1.8683264398146062e-09}
+ 50%|█████     | 3/6 [00:04<00:05,  1.68s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 5.791129803116195e-09, 'original_requested_tolerance': 1.6992352595725515e-09}
+ 67%|██████▋   | 4/6 [00:06<00:03,  1.72s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 3.7713561332870594e-09, 'original_requested_tolerance': 1.9289161796566617e-09}
+ 83%|████████▎ | 5/6 [00:08<00:01,  1.70s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 3.4062476269465603e-09, 'original_requested_tolerance': 1.599465696611604e-09}
+100%|██████████| 6/6 [00:10<00:00,  1.76s/it]100%|██████████| 6/6 [00:10<00:00,  1.70s/it]
+GENERATING box_13.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 2.806678685971161e-09, 'original_requested_tolerance': 1.4211070536309612e-09}
+ 17%|█▋        | 1/6 [00:02<00:11,  2.24s/it]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 6.2479885725669525e-09, 'original_requested_tolerance': 1.421107053630933e-09}
+ 33%|███▎      | 2/6 [00:04<00:09,  2.40s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 8.87415862848883e-09, 'original_requested_tolerance': 1.2833125542076256e-09}
+ 50%|█████     | 3/6 [00:06<00:06,  2.21s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 3.363015580292223e-09, 'original_requested_tolerance': 1.4689760584299515e-10}
+ 67%|██████▋   | 4/6 [00:08<00:04,  2.13s/it]SOLVE {'info': 0, 'iterations': 33, 'actual_relative_residual': 9.089273113299927e-09, 'original_requested_tolerance': 1.3340667589286997e-09}
+ 83%|████████▎ | 5/6 [00:10<00:02,  2.16s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 4.021746149289185e-09, 'original_requested_tolerance': 1.334066758928713e-09}
+100%|██████████| 6/6 [00:13<00:00,  2.19s/it]100%|██████████| 6/6 [00:13<00:00,  2.20s/it]
+GENERATING box_14.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 5.51440312890323e-09, 'original_requested_tolerance': 1.8321828891679992e-09}
+ 17%|█▋        | 1/6 [00:01<00:09,  1.99s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 4.326381568841128e-09, 'original_requested_tolerance': 1.9812927978958448e-09}
+ 33%|███▎      | 2/6 [00:03<00:07,  1.91s/it]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 6.623106326138733e-09, 'original_requested_tolerance': 1.6594626516622014e-09}
+ 50%|█████     | 3/6 [00:05<00:05,  1.92s/it]SOLVE {'info': 0, 'iterations': 23, 'actual_relative_residual': 9.36089482124827e-09, 'original_requested_tolerance': 1.521948620824887e-09}
+ 67%|██████▋   | 4/6 [00:08<00:04,  2.24s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 8.653428887078275e-09, 'original_requested_tolerance': 1.995633310737778e-09}
+ 83%|████████▎ | 5/6 [00:10<00:02,  2.23s/it]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 9.907238077225341e-09, 'original_requested_tolerance': 2.471502232413046e-10}
+100%|██████████| 6/6 [00:13<00:00,  2.27s/it]100%|██████████| 6/6 [00:13<00:00,  2.18s/it]
+GENERATING box_15.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 4.222961320552019e-09, 'original_requested_tolerance': 1.4238466301716196e-09}
+ 17%|█▋        | 1/6 [00:02<00:11,  2.32s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 8.093877916949767e-09, 'original_requested_tolerance': 1.3567585788776843e-09}
+ 33%|███▎      | 2/6 [00:04<00:09,  2.40s/it]SOLVE {'info': 0, 'iterations': 19, 'actual_relative_residual': 9.040858258176229e-09, 'original_requested_tolerance': 1.4379832816384045e-09}
+ 50%|█████     | 3/6 [00:07<00:07,  2.43s/it]SOLVE {'info': 0, 'iterations': 27, 'actual_relative_residual': 9.297493448969372e-09, 'original_requested_tolerance': 1.3720046970983814e-09}
+ 67%|██████▋   | 4/6 [00:11<00:06,  3.00s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 6.908200056752736e-09, 'original_requested_tolerance': 1.1829810172466602e-09}
+ 83%|████████▎ | 5/6 [00:15<00:03,  3.56s/it]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 7.071772495198307e-09, 'original_requested_tolerance': 1.1732541582517246e-09}
+100%|██████████| 6/6 [00:19<00:00,  3.58s/it]100%|██████████| 6/6 [00:19<00:00,  3.21s/it]
+GENERATING box_16.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 39, 'actual_relative_residual': 5.9826073994614925e-09, 'original_requested_tolerance': 1.6546496088687389e-09}
+ 17%|█▋        | 1/6 [00:03<00:19,  3.80s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 5.0673407383442685e-09, 'original_requested_tolerance': 1.9854596792919637e-09}
+ 33%|███▎      | 2/6 [00:06<00:12,  3.22s/it]SOLVE {'info': 0, 'iterations': 32, 'actual_relative_residual': 9.95703533725036e-09, 'original_requested_tolerance': 1.4277794232817135e-09}
+ 50%|█████     | 3/6 [00:08<00:08,  2.82s/it]SOLVE {'info': 0, 'iterations': 26, 'actual_relative_residual': 3.953007871889955e-09, 'original_requested_tolerance': 2.002028105547582e-09}
+ 67%|██████▋   | 4/6 [00:11<00:05,  2.73s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 8.526731660501763e-09, 'original_requested_tolerance': 1.4244347518554748e-09}
+ 83%|████████▎ | 5/6 [00:14<00:02,  2.72s/it]SOLVE {'info': 0, 'iterations': 60, 'actual_relative_residual': 9.68325307863909e-09, 'original_requested_tolerance': 1.5112418788580428e-09}
+100%|██████████| 6/6 [00:16<00:00,  2.69s/it]100%|██████████| 6/6 [00:16<00:00,  2.82s/it]
+GENERATING box_17.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 7.0252967966047755e-09, 'original_requested_tolerance': 1.2841968063164872e-09}
+ 17%|█▋        | 1/6 [00:02<00:14,  3.00s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 4.648070634283241e-09, 'original_requested_tolerance': 1.4907271624994719e-09}
+ 33%|███▎      | 2/6 [00:06<00:12,  3.00s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 7.552389402567334e-09, 'original_requested_tolerance': 1.1669396442264729e-09}
+ 50%|█████     | 3/6 [00:08<00:08,  2.98s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 4.8679645486779e-09, 'original_requested_tolerance': 1.238744179404915e-09}
+ 67%|██████▋   | 4/6 [00:12<00:06,  3.04s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 9.204104706941959e-09, 'original_requested_tolerance': 1.5180004695981273e-09}
+ 83%|████████▎ | 5/6 [00:15<00:03,  3.08s/it]SOLVE {'info': 0, 'iterations': 51, 'actual_relative_residual': 9.6477539218208e-09, 'original_requested_tolerance': 1.1019957440652089e-09}
+100%|██████████| 6/6 [00:18<00:00,  3.16s/it]100%|██████████| 6/6 [00:18<00:00,  3.09s/it]
+GENERATING box_18.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 3.4733725263161845e-09, 'original_requested_tolerance': 2.041776009275242e-09}
+ 17%|█▋        | 1/6 [00:01<00:08,  1.66s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 3.338547896488205e-09, 'original_requested_tolerance': 1.958001175575443e-09}
+ 33%|███▎      | 2/6 [00:03<00:06,  1.73s/it]SOLVE {'info': 0, 'iterations': 26, 'actual_relative_residual': 9.993958547526767e-09, 'original_requested_tolerance': 1.7306335207479092e-09}
+ 50%|█████     | 3/6 [00:05<00:05,  1.80s/it]SOLVE {'info': 0, 'iterations': 33, 'actual_relative_residual': 6.179045898817837e-09, 'original_requested_tolerance': 1.6737080120624394e-09}
+ 67%|██████▋   | 4/6 [00:07<00:03,  1.92s/it]SOLVE {'info': 0, 'iterations': 30, 'actual_relative_residual': 9.948021626927883e-09, 'original_requested_tolerance': 1.518055665324052e-09}
+ 83%|████████▎ | 5/6 [00:09<00:01,  1.99s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 7.718055578779434e-09, 'original_requested_tolerance': 1.7898491513626557e-09}
+100%|██████████| 6/6 [00:11<00:00,  2.11s/it]100%|██████████| 6/6 [00:11<00:00,  1.98s/it]
+GENERATING box_19.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 8.950562817921536e-09, 'original_requested_tolerance': 1.3336998196242893e-09}
+ 17%|█▋        | 1/6 [00:02<00:10,  2.18s/it]SOLVE {'info': 0, 'iterations': 37, 'actual_relative_residual': 4.020089365971862e-09, 'original_requested_tolerance': 1.3336998196244297e-09}
+ 33%|███▎      | 2/6 [00:04<00:09,  2.26s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 9.486242325047784e-09, 'original_requested_tolerance': 1.191416536870403e-09}
+ 50%|█████     | 3/6 [00:06<00:06,  2.27s/it]SOLVE {'info': 0, 'iterations': 29, 'actual_relative_residual': 9.142684904882384e-09, 'original_requested_tolerance': 1.1725751198989585e-09}
+ 67%|██████▋   | 4/6 [00:09<00:04,  2.35s/it]SOLVE {'info': 0, 'iterations': 24, 'actual_relative_residual': 9.807137004490948e-09, 'original_requested_tolerance': 1.1725751198985482e-09}
+ 83%|████████▎ | 5/6 [00:11<00:02,  2.42s/it]SOLVE {'info': 0, 'iterations': 30, 'actual_relative_residual': 7.655863200765083e-09, 'original_requested_tolerance': 1.1629020929874744e-10}
+100%|██████████| 6/6 [00:14<00:00,  2.50s/it]100%|██████████| 6/6 [00:14<00:00,  2.41s/it]
+GENERATING box_20.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 4.863170429082399e-09, 'original_requested_tolerance': 1.7714787550970997e-09}
+ 17%|█▋        | 1/6 [00:02<00:10,  2.16s/it]SOLVE {'info': 0, 'iterations': 22, 'actual_relative_residual': 6.295065553814282e-09, 'original_requested_tolerance': 1.8321792114111749e-09}
+ 33%|███▎      | 2/6 [00:04<00:09,  2.35s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 7.849224299554007e-09, 'original_requested_tolerance': 1.627231632107129e-09}
+ 50%|█████     | 3/6 [00:07<00:07,  2.45s/it]SOLVE {'info': 0, 'iterations': 33, 'actual_relative_residual': 7.779669478619125e-09, 'original_requested_tolerance': 1.4641478357746291e-09}
+ 67%|██████▋   | 4/6 [00:09<00:04,  2.49s/it]SOLVE {'info': 0, 'iterations': 27, 'actual_relative_residual': 8.101461299049722e-09, 'original_requested_tolerance': 1.859107986943316e-09}
+ 83%|████████▎ | 5/6 [00:12<00:02,  2.54s/it]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 8.282376508311622e-09, 'original_requested_tolerance': 1.9268956657019532e-10}
+100%|██████████| 6/6 [00:15<00:00,  2.59s/it]100%|██████████| 6/6 [00:15<00:00,  2.52s/it]
+GENERATING box_21.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 4.39176284020241e-09, 'original_requested_tolerance': 1.387799714477797e-09}
+ 17%|█▋        | 1/6 [00:02<00:13,  2.75s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 4.2095385287982776e-09, 'original_requested_tolerance': 1.3296049592959647e-09}
+ 33%|███▎      | 2/6 [00:05<00:11,  2.80s/it]SOLVE {'info': 0, 'iterations': 26, 'actual_relative_residual': 8.053942973430562e-09, 'original_requested_tolerance': 1.330083640885786e-09}
+ 50%|█████     | 3/6 [00:08<00:08,  2.83s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 6.68165707686952e-09, 'original_requested_tolerance': 1.1114534433954248e-09}
+ 67%|██████▋   | 4/6 [00:11<00:06,  3.09s/it]SOLVE {'info': 0, 'iterations': 31, 'actual_relative_residual': 7.794331794512759e-09, 'original_requested_tolerance': 1.2711735187459851e-09}
+ 83%|████████▎ | 5/6 [00:15<00:03,  3.11s/it]SOLVE {'info': 0, 'iterations': 34, 'actual_relative_residual': 5.257531946839779e-09, 'original_requested_tolerance': 1.0457913037056018e-09}
+100%|██████████| 6/6 [00:18<00:00,  3.28s/it]100%|██████████| 6/6 [00:18<00:00,  3.12s/it]
+GENERATING box_22.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 38, 'actual_relative_residual': 8.937425690544355e-09, 'original_requested_tolerance': 1.5937233907298928e-09}
+ 17%|█▋        | 1/6 [00:03<00:16,  3.32s/it]SOLVE {'info': 0, 'iterations': 20, 'actual_relative_residual': 8.0719077825884e-09, 'original_requested_tolerance': 1.8352358240274931e-09}
+ 33%|███▎      | 2/6 [00:06<00:12,  3.22s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 3.4958545300031472e-09, 'original_requested_tolerance': 1.4019078790486532e-09}
+ 50%|█████     | 3/6 [00:09<00:09,  3.12s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 6.8712582955807905e-09, 'original_requested_tolerance': 1.3533434904145703e-09}
+ 67%|██████▋   | 4/6 [00:12<00:06,  3.10s/it]SOLVE {'info': 0, 'iterations': 28, 'actual_relative_residual': 6.8939503617874315e-09, 'original_requested_tolerance': 1.8775754209053164e-09}
+ 83%|████████▎ | 5/6 [00:15<00:03,  3.21s/it]SOLVE {'info': 0, 'iterations': 41, 'actual_relative_residual': 7.961927278887886e-09, 'original_requested_tolerance': 2.3879748786270295e-10}
+100%|██████████| 6/6 [00:19<00:00,  3.46s/it]100%|██████████| 6/6 [00:19<00:00,  3.31s/it]
+GENERATING box_23.npz
+  0%|          | 0/6 [00:00<?, ?it/s]SOLVE {'info': 0, 'iterations': 39, 'actual_relative_residual': 3.513986793750187e-09, 'original_requested_tolerance': 1.247439516323764e-09}
+ 17%|█▋        | 1/6 [00:04<00:23,  4.76s/it]SOLVE {'info': 0, 'iterations': 21, 'actual_relative_residual': 4.760820596240198e-09, 'original_requested_tolerance': 1.3767992818143927e-09}
+ 33%|███▎      | 2/6 [00:08<00:16,  4.25s/it]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 4.778200038021736e-09, 'original_requested_tolerance': 1.1452491933169058e-09}
+ 50%|█████     | 3/6 [00:12<00:11,  3.94s/it]SOLVE {'info': 0, 'iterations': 35, 'actual_relative_residual': 7.334022094459705e-09, 'original_requested_tolerance': 1.0238465098795965e-09}
+ 67%|██████▋   | 4/6 [00:16<00:08,  4.04s/it]SOLVE {'info': 0, 'iterations': 33, 'actual_relative_residual': 4.235951424374339e-09, 'original_requested_tolerance': 1.9288356770289193e-10}
+ 83%|████████▎ | 5/6 [00:20<00:04,  4.07s/it]SOLVE {'info': 0, 'iterations': 36, 'actual_relative_residual': 8.412211731589075e-09, 'original_requested_tolerance': 1.4121556078505946e-09}
+100%|██████████| 6/6 [00:24<00:00,  4.01s/it]100%|██████████| 6/6 [00:24<00:00,  4.07s/it]
+COMPLETE 427.8411762169999
+ALL 144 LABELS COMPARED

@@ -1,0 +1,6 @@
+{
+  "adapter_sha256": "54fad79d9c619fb0bef3bf1e317c16d42706da784c27fe0a90ce94397515b94c",
+  "ROOT": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/physics",
+  "model": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000",
+  "scope": "Existing adapter unchanged except output root; full original 125-frame Ficus config and original gs_simulation"
+}

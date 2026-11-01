@@ -1,0 +1,15 @@
+{
+  "name": "rerun-pat-fem",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+    "fem"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:02:14.715231+08:00",
+  "log": "logs/rerun-pat-fem.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:02:18.242607+08:00",
+  "elapsed_s": 3.527179519000015
+}

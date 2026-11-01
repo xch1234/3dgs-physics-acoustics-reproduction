@@ -1,0 +1,374 @@
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 188201,
+  "steps": 99950,
+  "duration_s": 1.999,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/wolf_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b",
+  "rendered_frames": 50,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 250280960,
+  "torch_peak_reserved_bytes": 306184192,
+  "elapsed_s": 3016.0787415469986,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.03998,
+      "max_displacement": 0.0,
+      "min_det_F": 0.9999972581863403,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 2,
+      "time_s": 0.07996,
+      "max_displacement": 0.0,
+      "min_det_F": 0.9999970197677612,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 3,
+      "time_s": 0.11994,
+      "max_displacement": 0.0010724773164838552,
+      "min_det_F": 0.9999823570251465,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 4,
+      "time_s": 0.15992,
+      "max_displacement": 0.009691065177321434,
+      "min_det_F": 0.9999788403511047,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 5,
+      "time_s": 0.19990000000000002,
+      "max_displacement": 0.031223878264427185,
+      "min_det_F": 0.9999553561210632,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 6,
+      "time_s": 0.23988,
+      "max_displacement": 0.06733264029026031,
+      "min_det_F": 0.999954104423523,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 7,
+      "time_s": 0.27986,
+      "max_displacement": 0.11882807314395905,
+      "min_det_F": 0.9999301433563232,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 8,
+      "time_s": 0.31984,
+      "max_displacement": 0.1647235006093979,
+      "min_det_F": 0.9973411560058594,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 9,
+      "time_s": 0.35982000000000003,
+      "max_displacement": 0.2027696669101715,
+      "min_det_F": 0.9985212087631226,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 10,
+      "time_s": 0.39980000000000004,
+      "max_displacement": 0.23778988420963287,
+      "min_det_F": 0.9967962503433228,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 11,
+      "time_s": 0.43978000000000006,
+      "max_displacement": 0.2641233503818512,
+      "min_det_F": 0.9977226853370667,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 12,
+      "time_s": 0.47976,
+      "max_displacement": 0.2813841998577118,
+      "min_det_F": 0.996534526348114,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 13,
+      "time_s": 0.5197400000000001,
+      "max_displacement": 0.2938500642776489,
+      "min_det_F": 0.9962507486343384,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 14,
+      "time_s": 0.55972,
+      "max_displacement": 0.3506215214729309,
+      "min_det_F": 0.9967756867408752,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 15,
+      "time_s": 0.5997,
+      "max_displacement": 0.41760939359664917,
+      "min_det_F": 0.9969002604484558,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 16,
+      "time_s": 0.63968,
+      "max_displacement": 0.4657713770866394,
+      "min_det_F": 0.9964636564254761,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 17,
+      "time_s": 0.67966,
+      "max_displacement": 0.5620588064193726,
+      "min_det_F": 0.9967638850212097,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7196400000000001,
+      "max_displacement": 0.6527792811393738,
+      "min_det_F": 0.9935697317123413,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 19,
+      "time_s": 0.7596200000000001,
+      "max_displacement": 0.7774122953414917,
+      "min_det_F": 0.995900571346283,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 20,
+      "time_s": 0.7996000000000001,
+      "max_displacement": 0.8511212468147278,
+      "min_det_F": 0.9968646168708801,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8395800000000001,
+      "max_displacement": 0.896664023399353,
+      "min_det_F": 0.9962925910949707,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 22,
+      "time_s": 0.8795600000000001,
+      "max_displacement": 0.9297294616699219,
+      "min_det_F": 0.996971607208252,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 23,
+      "time_s": 0.91954,
+      "max_displacement": 0.9531151056289673,
+      "min_det_F": 0.9969642162322998,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 24,
+      "time_s": 0.95952,
+      "max_displacement": 0.9724278450012207,
+      "min_det_F": 0.9954779744148254,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 25,
+      "time_s": 0.9995,
+      "max_displacement": 0.9875128865242004,
+      "min_det_F": 0.9966796636581421,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 26,
+      "time_s": 1.0394800000000002,
+      "max_displacement": 0.9988110661506653,
+      "min_det_F": 0.9951141476631165,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 27,
+      "time_s": 1.07946,
+      "max_displacement": 1.0072535276412964,
+      "min_det_F": 0.9965052604675293,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 28,
+      "time_s": 1.11944,
+      "max_displacement": 1.0146315097808838,
+      "min_det_F": 0.9965046048164368,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1594200000000001,
+      "max_displacement": 1.0240254402160645,
+      "min_det_F": 0.9967609643936157,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 30,
+      "time_s": 1.1994,
+      "max_displacement": 1.032401442527771,
+      "min_det_F": 0.996773898601532,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 31,
+      "time_s": 1.2393800000000001,
+      "max_displacement": 1.0376219749450684,
+      "min_det_F": 0.9965654015541077,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 32,
+      "time_s": 1.27936,
+      "max_displacement": 1.0403430461883545,
+      "min_det_F": 0.997573971748352,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 33,
+      "time_s": 1.3193400000000002,
+      "max_displacement": 1.0417757034301758,
+      "min_det_F": 0.9961994886398315,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 34,
+      "time_s": 1.35932,
+      "max_displacement": 1.0428208112716675,
+      "min_det_F": 0.9965830445289612,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 35,
+      "time_s": 1.3993000000000002,
+      "max_displacement": 1.0436902046203613,
+      "min_det_F": 0.9969622492790222,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4392800000000001,
+      "max_displacement": 1.0444360971450806,
+      "min_det_F": 0.9970459342002869,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 37,
+      "time_s": 1.47926,
+      "max_displacement": 1.0451492071151733,
+      "min_det_F": 0.9974722266197205,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 38,
+      "time_s": 1.5192400000000001,
+      "max_displacement": 1.0458483695983887,
+      "min_det_F": 0.997277557849884,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 39,
+      "time_s": 1.55922,
+      "max_displacement": 1.046527624130249,
+      "min_det_F": 0.9974066019058228,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 40,
+      "time_s": 1.5992000000000002,
+      "max_displacement": 1.0471686124801636,
+      "min_det_F": 0.9983775615692139,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 41,
+      "time_s": 1.63918,
+      "max_displacement": 1.0477443933486938,
+      "min_det_F": 0.9983538389205933,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6791600000000002,
+      "max_displacement": 1.0482511520385742,
+      "min_det_F": 0.9987977743148804,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 43,
+      "time_s": 1.7191400000000001,
+      "max_displacement": 1.0487086772918701,
+      "min_det_F": 0.9990124702453613,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 44,
+      "time_s": 1.7591200000000002,
+      "max_displacement": 1.0491514205932617,
+      "min_det_F": 0.9992583394050598,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 45,
+      "time_s": 1.7991000000000001,
+      "max_displacement": 1.0495672225952148,
+      "min_det_F": 0.9993585348129272,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 46,
+      "time_s": 1.83908,
+      "max_displacement": 1.049963116645813,
+      "min_det_F": 0.9993980526924133,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8790600000000002,
+      "max_displacement": 1.050324559211731,
+      "min_det_F": 0.9994167685508728,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 48,
+      "time_s": 1.91904,
+      "max_displacement": 1.0506846904754639,
+      "min_det_F": 0.999419093132019,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9590200000000002,
+      "max_displacement": 1.0510448217391968,
+      "min_det_F": 0.9994217753410339,
+      "mass": 162.79598999023438
+    },
+    {
+      "frame": 50,
+      "time_s": 1.999,
+      "max_displacement": 1.0514049530029297,
+      "min_det_F": 0.9994382858276367,
+      "mass": 162.79598999023438
+    }
+  ]
+}

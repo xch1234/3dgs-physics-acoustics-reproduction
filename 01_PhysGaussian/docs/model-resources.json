@@ -1,0 +1,134 @@
+[
+  {
+    "model": "bread-trained",
+    "image_width": 1000,
+    "image_height": 1000,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 45477,
+        "ply_bytes": 11279826,
+        "relative_path": "inputs/bread-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 73672,
+        "ply_bytes": 18272186,
+        "relative_path": "inputs/bread-trained/point_cloud/iteration_30000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 30000
+  },
+  {
+    "model": "ficus_whitebg-trained",
+    "image_width": 800,
+    "image_height": 800,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 189685,
+        "ply_bytes": 47043411,
+        "relative_path": "inputs/ficus_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 203930,
+        "ply_bytes": 50576171,
+        "relative_path": "inputs/ficus_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply"
+      },
+      {
+        "iteration": 60000,
+        "raw_gaussians": 203930,
+        "ply_bytes": 50576171,
+        "relative_path": "inputs/ficus_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 60000
+  },
+  {
+    "model": "pillow2sofa_whitebg-trained",
+    "image_width": 1000,
+    "image_height": 1000,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 518241,
+        "ply_bytes": 128525299,
+        "relative_path": "inputs/pillow2sofa_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 636507,
+        "ply_bytes": 157855267,
+        "relative_path": "inputs/pillow2sofa_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply"
+      },
+      {
+        "iteration": 60000,
+        "raw_gaussians": 636507,
+        "ply_bytes": 157855267,
+        "relative_path": "inputs/pillow2sofa_whitebg-trained/point_cloud/iteration_60000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 60000
+  },
+  {
+    "model": "plane-trained",
+    "image_width": 1060,
+    "image_height": 1895,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 1122016,
+        "ply_bytes": 278261500,
+        "relative_path": "inputs/plane-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 2140940,
+        "ply_bytes": 530954652,
+        "relative_path": "inputs/plane-trained/point_cloud/iteration_30000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 30000
+  },
+  {
+    "model": "vasedeck_whitebg-trained",
+    "image_width": 3994,
+    "image_height": 2995,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 729879,
+        "ply_bytes": 181011523,
+        "relative_path": "inputs/vasedeck_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 1005217,
+        "ply_bytes": 249295348,
+        "relative_path": "inputs/vasedeck_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 30000
+  },
+  {
+    "model": "wolf_whitebg-trained",
+    "image_width": 800,
+    "image_height": 800,
+    "checkpoints": [
+      {
+        "iteration": 7000,
+        "raw_gaussians": 62194,
+        "ply_bytes": 15425642,
+        "relative_path": "inputs/wolf_whitebg-trained/point_cloud/iteration_7000/point_cloud.ply"
+      },
+      {
+        "iteration": 30000,
+        "raw_gaussians": 173455,
+        "ply_bytes": 43018371,
+        "relative_path": "inputs/wolf_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply"
+      }
+    ],
+    "selected_iteration": 30000
+  }
+]

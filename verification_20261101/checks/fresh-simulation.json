@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "decoded_video_frames": 125,
+  "PNG_frames": 125,
+  "particles": 215850,
+  "max_displacement": 0.006795128341764212,
+  "minimum_final_det_F": 0.9919646425041193,
+  "minimum_covariance_eigenvalue": -1.7671940559059346e-11,
+  "invalid_covariance_count_with_fp32_tolerance": 0,
+  "relative_mass_drift": 0.0,
+  "raw_keys": [
+    "initial_positions",
+    "final_positions",
+    "final_F",
+    "final_covariance"
+  ],
+  "all_raw_arrays_finite": true,
+  "scope": "New model / complete Ficus config; no external physical ground truth."
+}

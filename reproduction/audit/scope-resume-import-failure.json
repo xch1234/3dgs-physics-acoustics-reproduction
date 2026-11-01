@@ -1,0 +1,10 @@
+{
+  "started": "2026-11-01T11:29:31.837690+08:00",
+  "status": "failed",
+  "stages": [
+    {
+      "name": "anisotropy simulation",
+      "exit_code": 1
+    }
+  ]
+}

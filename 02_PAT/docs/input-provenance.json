@@ -1,0 +1,7 @@
+{
+  "archived_at": "2026-11-01",
+  "sha256": "a713507a1878a6fbfc94239899b5708754bbeab3c50acfd4c06679dfb180baaf",
+  "source": "03_NeuralSound/outputs/official_fem/official_fem_result.npz, successful 2026-11-01 run",
+  "source_upstream_commit": "b18e81b1e3dba7e963b09a7d9a45b584707d805f",
+  "meaning": "Fixed PAT input archive; rerunning NeuralSound does not replace this input. Update this record intentionally if changing the scene."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_paper_schedule",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/run_paper_schedule.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:42.378740+08:00",
+  "log": "logs/bash-syntax-run_paper_schedule.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:42.444906+08:00",
+  "elapsed_s": 0.06600359100002606
+}

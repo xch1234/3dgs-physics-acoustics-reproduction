@@ -1,0 +1,14 @@
+{
+  "name": "materials-fresh-linux",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/materials_linux.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:45:44.348910+08:00",
+  "log": "logs/materials-fresh-linux.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:46:53.253633+08:00",
+  "elapsed_s": 68.904648486
+}

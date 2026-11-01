@@ -1,0 +1,14 @@
+{
+  "name": "windows-physgaussian-versions",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\physgaussian\\python.exe",
+    "-c",
+    "import sys,numpy,scipy; print(sys.version);print(numpy.__version__,scipy.__version__)"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:05:03.864321+08:00",
+  "log": "logs\\windows-physgaussian-versions.log",
+  "exit_code": 1,
+  "finished": "2026-11-01T15:05:05.351690+08:00",
+  "elapsed_s": 1.484000000054948
+}

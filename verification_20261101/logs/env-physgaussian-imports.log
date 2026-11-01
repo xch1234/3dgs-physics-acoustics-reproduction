@@ -1,0 +1,62 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+{
+  "numpy": {
+    "version": "1.24.4",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/numpy/__init__.py"
+  },
+  "scipy": {
+    "version": "1.10.1",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/scipy/__init__.py"
+  },
+  "torch": {
+    "version": "2.0.0+cu118",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/__init__.py"
+  },
+  "warp": {
+    "version": "None",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/warp/__init__.py"
+  },
+  "taichi": {
+    "version": "(1, 5, 0)",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/taichi/__init__.py"
+  },
+  "diff_gaussian_rasterization": {
+    "version": "None",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/diff_gaussian_rasterization/__init__.py"
+  },
+  "simple_knn._C": {
+    "version": "None",
+    "file": "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/simple_knn/_C.cpython-39-x86_64-linux-gnu.so"
+  },
+  "cuda": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 2050",
+    "torch_cuda": "11.8",
+    "matmul": [
+      [
+        14.0,
+        38.0,
+        62.0,
+        86.0
+      ],
+      [
+        38.0,
+        126.0,
+        214.0,
+        302.0
+      ],
+      [
+        62.0,
+        214.0,
+        366.0,
+        518.0
+      ],
+      [
+        86.0,
+        302.0,
+        518.0,
+        734.0
+      ]
+    ]
+  }
+}

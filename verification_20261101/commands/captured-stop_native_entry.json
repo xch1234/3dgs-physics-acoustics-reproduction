@@ -1,0 +1,20 @@
+{
+  "name": "captured-stop_native_entry",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/stop_native_entry.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T16:50:10.420063+08:00",
+  "log": "logs\\captured-stop_native_entry.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:50:10.785405+08:00",
+  "elapsed_s": 0.375
+}

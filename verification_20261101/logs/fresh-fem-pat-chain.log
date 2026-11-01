@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/fresh_cpu_pipeline.py", line 8, in <module>
+    fem.main()
+  File "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/run_official_fem.py", line 112, in main
+    assert not status, "Upstream tracked code was modified"
+AssertionError: Upstream tracked code was modified

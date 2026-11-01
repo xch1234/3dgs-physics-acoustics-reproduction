@@ -1,0 +1,47 @@
+{
+  "scope": "official constitutive kernel audit; not paper scene reproduction",
+  "all_checks_passed": true,
+  "elastic_analytic_relative_error": 7.038148447580137e-07,
+  "objectivity_relative_error": 2.2180838728502084e-07,
+  "rigid_rotation_stress_norm": 0.0013757122214883566,
+  "sand_uniform_tension_stress_norm": 0.03799447417259216,
+  "materials": {
+    "jelly": {
+      "max_absolute_shear_stress_Pa": 6593.98486328125,
+      "residual_shear_stress_Pa": 0.00037790636997669935,
+      "final_yield_stress_Pa": 200.0,
+      "final_elastic_F_distance_from_identity": 3.155320982273224e-08
+    },
+    "metal": {
+      "max_absolute_shear_stress_Pa": 141.41204833984375,
+      "residual_shear_stress_Pa": -141.35272216796875,
+      "final_yield_stress_Pa": 200.0,
+      "final_elastic_F_distance_from_identity": 0.012998838157416632
+    },
+    "sand": {
+      "max_absolute_shear_stress_Pa": 1.7588797807693481,
+      "residual_shear_stress_Pa": -1.7588797807693481,
+      "final_yield_stress_Pa": 200.0,
+      "final_elastic_F_distance_from_identity": 0.00018503007128852953
+    },
+    "foam": {
+      "max_absolute_shear_stress_Pa": 240.23538208007812,
+      "residual_shear_stress_Pa": -240.19589233398438,
+      "final_yield_stress_Pa": 200.0,
+      "final_elastic_F_distance_from_identity": 0.022094781968051085
+    },
+    "plasticine": {
+      "max_absolute_shear_stress_Pa": 141.41879272460938,
+      "residual_shear_stress_Pa": 0.0,
+      "final_yield_stress_Pa": -1.4893579483032227,
+      "final_elastic_F_distance_from_identity": 0.3381706225451744
+    },
+    "snow": {
+      "max_absolute_shear_stress_Pa": 0.0,
+      "residual_shear_stress_Pa": 0.0,
+      "final_yield_stress_Pa": 200.0,
+      "final_elastic_F_distance_from_identity": 3.155320982273224e-08
+    }
+  },
+  "unsupported": "snow maps to material=4, but upstream compute_stress_from_F_trial has no material=4 stress branch; output remains zero"
+}

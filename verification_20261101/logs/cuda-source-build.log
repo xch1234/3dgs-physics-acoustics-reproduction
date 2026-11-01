@@ -1,0 +1,8 @@
+START cuda-build-simple-knn
+END cuda-build-simple-knn 0
+START cuda-build-diff-gaussian-rasterization
+END cuda-build-diff-gaussian-rasterization 0
+START cuda-rebuilt-knn-test
+END cuda-rebuilt-knn-test 0
+START cuda-rebuilt-render
+END cuda-rebuilt-render 0

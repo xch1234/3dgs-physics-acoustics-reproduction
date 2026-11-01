@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_reconstruction",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_reconstruction.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.477531+08:00",
+  "log": "logs/bash-syntax-run_reconstruction.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.535223+08:00",
+  "elapsed_s": 0.057606080000141446
+}

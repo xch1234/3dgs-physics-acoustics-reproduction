@@ -1,0 +1,5 @@
+{
+    "started":  "2026-11-01T09:50:00.242546+08:00",
+    "status":  "failed in original queue; superseded by scope-resume-state.json",
+    "superseded_by":  "scope-resume-state.json"
+}

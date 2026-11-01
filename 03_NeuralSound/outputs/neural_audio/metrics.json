@@ -1,0 +1,82 @@
+{
+  "scope": "trained official hybrid modal output -> trained official AcousticNet -> local modal pressure audio",
+  "execution_completed": true,
+  "reference_checks_passed": true,
+  "sample": "box_21.npz",
+  "held_out_geometry": true,
+  "material": {
+    "density": 2700,
+    "young_modulus_Pa": 720000000.0,
+    "poisson_ratio": 0.19,
+    "rayleigh_alpha": 6.0,
+    "rayleigh_beta": 1e-07
+  },
+  "material_note": "0.01 stiffness-scaled Ceramic FEM for controlled in-range demonstration; not measured ceramic",
+  "frequencies_Hz": [
+    1572.6355260224643,
+    1918.528248078576,
+    2329.353467473677,
+    3723.110426048362,
+    3935.8659790243673,
+    4225.719054203848
+  ],
+  "modal_relative_residuals": [
+    1.0931819729839851e-08,
+    3.2307794504212576e-09,
+    2.000619045515563e-09,
+    2.08518236161542e-09,
+    3.292378353086395e-10,
+    2.0754145641378674e-10
+  ],
+  "bem_solves": [
+    {
+      "info": 0,
+      "relative_residual": 7.430807398751275e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 3.5639745364798254e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 9.586142029590376e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 9.351652738485898e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 8.750701316243208e-09
+    },
+    {
+      "info": 0,
+      "relative_residual": 8.00493585749062e-09
+    }
+  ],
+  "per_mode_ffat_relative_L2": [
+    0.5050616131596816,
+    0.6024996687970571,
+    0.5692736681975824,
+    0.5508513599413194,
+    0.6427574245922203,
+    0.7302673212625216
+  ],
+  "negative_prediction_fraction": 0.0,
+  "per_listener_audio_relative_L2": [
+    2.636250163756771,
+    1.363714545116763,
+    0.9828978940675784
+  ],
+  "bem_seconds": 98.15832848099853,
+  "network_six_map_seconds": 1.08222201100034,
+  "peak_gpu_allocated_bytes": 1261417984,
+  "modal_artifact_sha256": "56609483a96e8945bc7354b97a147ed92a4f3ec61cba1c8abb94cb08ec10447e",
+  "radiation_checkpoint_sha256": "0cf249cce3199cbe8cf034d7622594a3f83965fac12ae6a923c0867039622ed0",
+  "limits": [
+    "six elastic modes; no rigid-body motion/collision engine",
+    "far FFAT magnitude divided by distance; no phase or propagation delay",
+    "negative network predictions clamped only for audio, raw errors remain unclamped",
+    "small local training, not paper accuracy"
+  ]
+}

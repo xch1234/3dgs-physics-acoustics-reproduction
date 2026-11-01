@@ -1,0 +1,23 @@
+{
+  "command": {
+    "name": "3dgs-native-metrics",
+    "command": [
+      "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+      "-u",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/metrics.py",
+      "-m",
+      "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+    "started": "2026-11-01T16:47:05.343179+08:00",
+    "log": "logs/3dgs-native-metrics.log",
+    "exit_code": -15,
+    "finished": "2026-11-01T16:50:11.410450+08:00",
+    "elapsed_s": 186.067468404
+  },
+  "native_script_exit_is_not_sufficient": true,
+  "passed": false,
+  "reason": "Original entry stopped after 6/200 views due excessive measured duration; see stop record. Full independent streaming evaluation completed separately.",
+  "assessment": "未验证",
+  "stop_record": "checks/native-entry-stop.json"
+}

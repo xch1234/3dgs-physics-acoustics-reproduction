@@ -1,0 +1,16 @@
+{
+  "name": "env-pat-tools-pip",
+  "command": [
+    "/opt/3dgs-runtime/envs/pat-tools/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:58:05.015110+08:00",
+  "log": "logs/env-pat-tools-pip.log",
+  "exit_code": null,
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "finished": "2026-11-01T14:58:05.026003+08:00",
+  "elapsed_s": 0.010783873000001165
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rerun-pat-transfer",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+    "transfer"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:02:18.254199+08:00",
+  "log": "logs/rerun-pat-transfer.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:02:29.814833+08:00",
+  "elapsed_s": 11.560543146000043
+}

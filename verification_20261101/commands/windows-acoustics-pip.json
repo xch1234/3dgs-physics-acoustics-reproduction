@@ -1,0 +1,15 @@
+{
+  "name": "windows-acoustics-pip",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:04:55.634679+08:00",
+  "log": "logs\\windows-acoustics-pip.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:04:58.949815+08:00",
+  "elapsed_s": 3.312999999965541
+}

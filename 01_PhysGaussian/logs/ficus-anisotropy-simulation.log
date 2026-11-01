@@ -1,0 +1,971 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+WARP_SOURCE_MODULES {'mpm_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py', 'engine_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py', 'warp_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py'}
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /mnt/f/System/Desktop/3DGS/复现/reproduction/cache/warp
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 63.06 ms
+Particles initialized from torch data.
+Total particles:  251596
+Module mpm_utils load on device 'cuda:0' took 48701.00 ms
+  0%|          | 0/125 [00:00<?, ?it/s]Module mpm_solver_warp.mpm_solver_warp load on device 'cuda:0' took 658.52 ms
+  1%|          | 1/125 [00:03<07:59,  3.87s/it]  2%|▏         | 2/125 [00:06<06:27,  3.15s/it]  2%|▏         | 3/125 [00:09<05:52,  2.89s/it]  3%|▎         | 4/125 [00:11<05:38,  2.79s/it]  4%|▍         | 5/125 [00:14<05:23,  2.69s/it]  5%|▍         | 6/125 [00:16<05:11,  2.62s/it]  6%|▌         | 7/125 [00:19<05:03,  2.57s/it]  6%|▋         | 8/125 [00:21<04:57,  2.54s/it]  7%|▋         | 9/125 [00:24<04:53,  2.53s/it]  8%|▊         | 10/125 [00:26<04:49,  2.52s/it]  9%|▉         | 11/125 [00:29<04:44,  2.50s/it] 10%|▉         | 12/125 [00:31<04:41,  2.49s/it] 10%|█         | 13/125 [00:34<04:38,  2.49s/it] 11%|█         | 14/125 [00:36<04:35,  2.48s/it] 12%|█▏        | 15/125 [00:39<04:34,  2.49s/it] 13%|█▎        | 16/125 [00:41<04:32,  2.50s/it] 14%|█▎        | 17/125 [00:44<04:31,  2.52s/it] 14%|█▍        | 18/125 [00:46<04:32,  2.55s/it] 15%|█▌        | 19/125 [00:49<04:33,  2.58s/it] 16%|█▌        | 20/125 [00:52<04:37,  2.64s/it] 17%|█▋        | 21/125 [00:54<04:38,  2.67s/it] 18%|█▊        | 22/125 [00:57<04:38,  2.70s/it] 18%|█▊        | 23/125 [01:00<04:35,  2.70s/it] 19%|█▉        | 24/125 [01:03<04:31,  2.69s/it] 20%|██        | 25/125 [01:05<04:28,  2.69s/it] 21%|██        | 26/125 [01:08<04:26,  2.70s/it] 22%|██▏       | 27/125 [01:11<04:24,  2.70s/it] 22%|██▏       | 28/125 [01:13<04:21,  2.69s/it] 23%|██▎       | 29/125 [01:16<04:18,  2.70s/it] 24%|██▍       | 30/125 [01:19<04:16,  2.70s/it] 25%|██▍       | 31/125 [01:21<04:13,  2.69s/it] 26%|██▌       | 32/125 [01:24<04:10,  2.70s/it] 26%|██▋       | 33/125 [01:27<04:12,  2.74s/it] 27%|██▋       | 34/125 [01:30<04:11,  2.77s/it] 28%|██▊       | 35/125 [01:33<04:12,  2.81s/it] 29%|██▉       | 36/125 [01:36<04:12,  2.83s/it] 30%|██▉       | 37/125 [01:39<04:11,  2.86s/it] 30%|███       | 38/125 [01:42<04:10,  2.88s/it] 31%|███       | 39/125 [01:44<04:09,  2.90s/it] 32%|███▏      | 40/125 [01:47<04:07,  2.91s/it] 33%|███▎      | 41/125 [01:50<04:05,  2.92s/it] 34%|███▎      | 42/125 [01:53<04:03,  2.93s/it] 34%|███▍      | 43/125 [01:56<03:59,  2.92s/it] 35%|███▌      | 44/125 [01:59<03:57,  2.93s/it] 36%|███▌      | 45/125 [02:02<03:53,  2.92s/it] 37%|███▋      | 46/125 [02:05<03:50,  2.92s/it] 38%|███▊      | 47/125 [02:08<03:45,  2.90s/it] 38%|███▊      | 48/125 [02:11<03:46,  2.94s/it] 39%|███▉      | 49/125 [02:14<03:43,  2.94s/it] 40%|████      | 50/125 [02:17<03:39,  2.93s/it] 41%|████      | 51/125 [02:20<03:37,  2.95s/it] 42%|████▏     | 52/125 [02:23<03:34,  2.94s/it] 42%|████▏     | 53/125 [02:26<03:32,  2.95s/it] 43%|████▎     | 54/125 [02:28<03:28,  2.94s/it] 44%|████▍     | 55/125 [02:31<03:25,  2.93s/it] 45%|████▍     | 56/125 [02:34<03:22,  2.94s/it] 46%|████▌     | 57/125 [02:37<03:22,  2.97s/it] 46%|████▋     | 58/125 [02:40<03:19,  2.98s/it] 47%|████▋     | 59/125 [02:43<03:18,  3.01s/it] 48%|████▊     | 60/125 [02:47<03:16,  3.02s/it] 49%|████▉     | 61/125 [02:50<03:13,  3.02s/it] 50%|████▉     | 62/125 [02:53<03:11,  3.04s/it] 50%|█████     | 63/125 [02:56<03:06,  3.01s/it] 51%|█████     | 64/125 [02:59<03:02,  2.99s/it] 52%|█████▏    | 65/125 [03:02<02:59,  2.99s/it] 53%|█████▎    | 66/125 [03:05<02:56,  3.00s/it] 54%|█████▎    | 67/125 [03:07<02:53,  2.99s/it] 54%|█████▍    | 68/125 [03:10<02:49,  2.98s/it] 55%|█████▌    | 69/125 [03:13<02:47,  2.99s/it] 56%|█████▌    | 70/125 [03:17<02:46,  3.03s/it] 57%|█████▋    | 71/125 [03:20<02:44,  3.04s/it] 58%|█████▊    | 72/125 [03:23<02:41,  3.05s/it] 58%|█████▊    | 73/125 [03:26<02:39,  3.07s/it] 59%|█████▉    | 74/125 [03:29<02:36,  3.07s/it] 60%|██████    | 75/125 [03:32<02:33,  3.06s/it] 61%|██████    | 76/125 [03:35<02:27,  3.01s/it] 62%|██████▏   | 77/125 [03:38<02:27,  3.07s/it] 62%|██████▏   | 78/125 [03:41<02:24,  3.07s/it] 63%|██████▎   | 79/125 [03:44<02:21,  3.08s/it] 64%|██████▍   | 80/125 [03:47<02:17,  3.06s/it] 65%|██████▍   | 81/125 [03:50<02:14,  3.07s/it] 66%|██████▌   | 82/125 [03:53<02:12,  3.09s/it] 66%|██████▋   | 83/125 [03:57<02:09,  3.08s/it] 67%|██████▋   | 84/125 [04:00<02:06,  3.08s/it] 68%|██████▊   | 85/125 [04:03<02:02,  3.07s/it] 69%|██████▉   | 86/125 [04:06<01:59,  3.07s/it] 70%|██████▉   | 87/125 [04:09<01:56,  3.05s/it] 70%|███████   | 88/125 [04:12<01:53,  3.06s/it] 71%|███████   | 89/125 [04:15<01:50,  3.06s/it] 72%|███████▏  | 90/125 [04:18<01:47,  3.07s/it] 73%|███████▎  | 91/125 [04:21<01:44,  3.07s/it] 74%|███████▎  | 92/125 [04:24<01:41,  3.06s/it] 74%|███████▍  | 93/125 [04:27<01:37,  3.04s/it] 75%|███████▌  | 94/125 [04:30<01:33,  3.02s/it] 76%|███████▌  | 95/125 [04:33<01:30,  3.02s/it] 77%|███████▋  | 96/125 [04:36<01:28,  3.04s/it] 78%|███████▊  | 97/125 [04:39<01:26,  3.08s/it] 78%|███████▊  | 98/125 [04:43<01:24,  3.12s/it] 79%|███████▉  | 99/125 [04:46<01:21,  3.12s/it] 80%|████████  | 100/125 [04:49<01:18,  3.13s/it] 81%|████████  | 101/125 [04:52<01:14,  3.10s/it] 82%|████████▏ | 102/125 [04:55<01:10,  3.07s/it] 82%|████████▏ | 103/125 [04:58<01:07,  3.07s/it] 83%|████████▎ | 104/125 [05:01<01:04,  3.09s/it] 84%|████████▍ | 105/125 [05:04<01:01,  3.06s/it] 85%|████████▍ | 106/125 [05:07<00:57,  3.03s/it] 86%|████████▌ | 107/125 [05:10<00:54,  3.05s/it] 86%|████████▋ | 108/125 [05:13<00:52,  3.07s/it] 87%|████████▋ | 109/125 [05:16<00:49,  3.07s/it] 88%|████████▊ | 110/125 [05:19<00:46,  3.10s/it] 89%|████████▉ | 111/125 [05:23<00:43,  3.11s/it] 90%|████████▉ | 112/125 [05:26<00:40,  3.12s/it] 90%|█████████ | 113/125 [05:29<00:37,  3.10s/it] 91%|█████████ | 114/125 [05:32<00:34,  3.10s/it] 92%|█████████▏| 115/125 [05:35<00:30,  3.08s/it] 93%|█████████▎| 116/125 [05:38<00:27,  3.09s/it] 94%|█████████▎| 117/125 [05:41<00:24,  3.08s/it] 94%|█████████▍| 118/125 [05:44<00:21,  3.09s/it] 95%|█████████▌| 119/125 [05:47<00:18,  3.10s/it] 96%|█████████▌| 120/125 [05:51<00:15,  3.12s/it] 97%|█████████▋| 121/125 [05:54<00:12,  3.10s/it] 98%|█████████▊| 122/125 [05:57<00:09,  3.07s/it] 98%|█████████▊| 123/125 [06:00<00:06,  3.15s/it] 99%|█████████▉| 124/125 [06:03<00:03,  3.13s/it]100%|██████████| 125/125 [06:06<00:00,  3.11s/it]100%|██████████| 125/125 [06:06<00:00,  2.93s/it]
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/ficus_anisotropy_full/%04d.png':
+  Duration: 00:00:05.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 800x800, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x64e95e3a0d80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x64e95e3a0d80] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x64e95e3a0d80] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/ficus_anisotropy_full/output.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 800x800, q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=  104 fps=104 q=-1.0 size=     256KiB time=00:00:04.08 bitrate= 514.1kbits/s speed=4.08x elapsed=0:00:01.00    [out#0/mp4 @ 0x64e95e393080] video:472KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.409823%
+frame=  125 fps=120 q=-1.0 Lsize=     474KiB time=00:00:04.92 bitrate= 789.6kbits/s speed=4.74x elapsed=0:00:01.03    
+[libx264 @ 0x64e95e3a0d80] frame I:1     Avg QP:19.42  size: 14823
+[libx264 @ 0x64e95e3a0d80] frame P:80    Avg QP:23.63  size:  5371
+[libx264 @ 0x64e95e3a0d80] frame B:44    Avg QP:28.06  size:   874
+[libx264 @ 0x64e95e3a0d80] consecutive B-frames: 41.6% 32.0%  7.2% 19.2%
+[libx264 @ 0x64e95e3a0d80] mb I  I16..4: 29.5% 61.2%  9.3%
+[libx264 @ 0x64e95e3a0d80] mb P  I16..4:  0.1%  0.5%  0.1%  P16..4:  5.1%  5.5%  6.0%  0.0%  0.0%    skip:82.7%
+[libx264 @ 0x64e95e3a0d80] mb B  I16..4:  0.0%  0.1%  0.0%  B16..8:  7.8%  1.6%  0.5%  direct: 0.4%  skip:89.5%  L0:20.0% L1:37.7% BI:42.3%
+[libx264 @ 0x64e95e3a0d80] 8x8 transform intra:66.5% inter:39.1%
+[libx264 @ 0x64e95e3a0d80] coded y,uvDC,uvAC intra: 14.9% 16.5% 14.5% inter: 5.7% 4.9% 2.6%
+[libx264 @ 0x64e95e3a0d80] i16 v,h,dc,p: 86%  5%  9%  0%
+[libx264 @ 0x64e95e3a0d80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29%  3% 62%  1%  1%  1%  1%  1%  1%
+[libx264 @ 0x64e95e3a0d80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 13% 23%  6%  8%  9%  8%  8%  7%
+[libx264 @ 0x64e95e3a0d80] i8c dc,h,v,p: 80%  8% 11%  2%
+[libx264 @ 0x64e95e3a0d80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x64e95e3a0d80] ref P L0: 79.4% 16.7%  2.9%  1.0%
+[libx264 @ 0x64e95e3a0d80] ref B L0: 95.7%  3.8%  0.5%
+[libx264 @ 0x64e95e3a0d80] ref B L1: 99.2%  0.8%
+[libx264 @ 0x64e95e3a0d80] kb/s:772.69
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 251596,
+  "steps": 50000,
+  "duration_s": 5.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/outputs/ficus_anisotropy/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "7d02a670a912af097b60abf7856f2c081f7205eb11ddd4a63c147f939c0e87ef",
+  "rendered_frames": 125,
+  "sh_frame_correction": false,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 322016256,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 367001600,
+  "elapsed_s": 428.60996746599994,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.051883384585380554,
+      "min_det_F": 0.9907654523849487,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.1161160096526146,
+      "min_det_F": 0.991779088973999,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.15986397862434387,
+      "min_det_F": 0.9821335673332214,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.20180264115333557,
+      "min_det_F": 0.9790797829627991,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.23786287009716034,
+      "min_det_F": 0.9767500758171082,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.2623991370201111,
+      "min_det_F": 0.9722053408622742,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.2815277874469757,
+      "min_det_F": 0.9714874029159546,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.29200655221939087,
+      "min_det_F": 0.9704209566116333,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.29401856660842896,
+      "min_det_F": 0.9700018167495728,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.2897073030471802,
+      "min_det_F": 0.971346914768219,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.27818506956100464,
+      "min_det_F": 0.9728350043296814,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.26064279675483704,
+      "min_det_F": 0.9751780033111572,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.23775117099285126,
+      "min_det_F": 0.9782578945159912,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.2097053974866867,
+      "min_det_F": 0.9815744757652283,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.17776180803775787,
+      "min_det_F": 0.9851292371749878,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.1424865424633026,
+      "min_det_F": 0.9864922165870667,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.10476745665073395,
+      "min_det_F": 0.98750901222229,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.0662846490740776,
+      "min_det_F": 0.9886742234230042,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.02982688695192337,
+      "min_det_F": 0.9874695539474487,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.02456914447247982,
+      "min_det_F": 0.9855784773826599,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.050360385328531265,
+      "min_det_F": 0.9839032888412476,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.07657529413700104,
+      "min_det_F": 0.9824126362800598,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.1039603054523468,
+      "min_det_F": 0.9811639785766602,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.12660038471221924,
+      "min_det_F": 0.980151891708374,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.14401374757289886,
+      "min_det_F": 0.9793872237205505,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 26,
+      "time_s": 1.04,
+      "max_displacement": 0.15605634450912476,
+      "min_det_F": 0.9788332581520081,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 27,
+      "time_s": 1.08,
+      "max_displacement": 0.16274966299533844,
+      "min_det_F": 0.9785023331642151,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 28,
+      "time_s": 1.12,
+      "max_displacement": 0.16426092386245728,
+      "min_det_F": 0.9783716797828674,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1600000000000001,
+      "max_displacement": 0.16096632182598114,
+      "min_det_F": 0.978477418422699,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 30,
+      "time_s": 1.2,
+      "max_displacement": 0.1533106416463852,
+      "min_det_F": 0.9788198471069336,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 31,
+      "time_s": 1.24,
+      "max_displacement": 0.14183951914310455,
+      "min_det_F": 0.9794318675994873,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 32,
+      "time_s": 1.28,
+      "max_displacement": 0.1271563619375229,
+      "min_det_F": 0.9802123308181763,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 33,
+      "time_s": 1.32,
+      "max_displacement": 0.10985397547483444,
+      "min_det_F": 0.9811666011810303,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 34,
+      "time_s": 1.36,
+      "max_displacement": 0.09054087847471237,
+      "min_det_F": 0.9822074770927429,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4000000000000001,
+      "max_displacement": 0.06981054693460464,
+      "min_det_F": 0.9832907915115356,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4400000000000002,
+      "max_displacement": 0.048377979546785355,
+      "min_det_F": 0.9843997955322266,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 37,
+      "time_s": 1.48,
+      "max_displacement": 0.02734425850212574,
+      "min_det_F": 0.9855324029922485,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 38,
+      "time_s": 1.52,
+      "max_displacement": 0.013728117570281029,
+      "min_det_F": 0.9866800904273987,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 39,
+      "time_s": 1.56,
+      "max_displacement": 0.025508584454655647,
+      "min_det_F": 0.9879006147384644,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 40,
+      "time_s": 1.6,
+      "max_displacement": 0.04193378984928131,
+      "min_det_F": 0.9892191290855408,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 41,
+      "time_s": 1.6400000000000001,
+      "max_displacement": 0.06028816103935242,
+      "min_det_F": 0.9906122088432312,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6800000000000002,
+      "max_displacement": 0.07676877826452255,
+      "min_det_F": 0.9920186996459961,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 43,
+      "time_s": 1.72,
+      "max_displacement": 0.09080344438552856,
+      "min_det_F": 0.991249680519104,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 44,
+      "time_s": 1.76,
+      "max_displacement": 0.102033831179142,
+      "min_det_F": 0.9901862144470215,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8,
+      "max_displacement": 0.11013664305210114,
+      "min_det_F": 0.9894709587097168,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 46,
+      "time_s": 1.84,
+      "max_displacement": 0.11492063850164413,
+      "min_det_F": 0.9891097545623779,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8800000000000001,
+      "max_displacement": 0.11638762056827545,
+      "min_det_F": 0.9890916347503662,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 48,
+      "time_s": 1.9200000000000002,
+      "max_displacement": 0.11460293084383011,
+      "min_det_F": 0.9893909096717834,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9600000000000002,
+      "max_displacement": 0.10971520841121674,
+      "min_det_F": 0.9899991154670715,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 50,
+      "time_s": 2.0,
+      "max_displacement": 0.10198936611413956,
+      "min_det_F": 0.9908938407897949,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 51,
+      "time_s": 2.04,
+      "max_displacement": 0.09176908433437347,
+      "min_det_F": 0.9919993877410889,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 52,
+      "time_s": 2.08,
+      "max_displacement": 0.07948871701955795,
+      "min_det_F": 0.9922162890434265,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 53,
+      "time_s": 2.12,
+      "max_displacement": 0.06563694775104523,
+      "min_det_F": 0.991025984287262,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 54,
+      "time_s": 2.16,
+      "max_displacement": 0.05069434270262718,
+      "min_det_F": 0.9898298382759094,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 55,
+      "time_s": 2.2,
+      "max_displacement": 0.03516347333788872,
+      "min_det_F": 0.9887259006500244,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 56,
+      "time_s": 2.24,
+      "max_displacement": 0.019886868074536324,
+      "min_det_F": 0.9877175688743591,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 57,
+      "time_s": 2.2800000000000002,
+      "max_displacement": 0.007293296977877617,
+      "min_det_F": 0.9868087768554688,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 58,
+      "time_s": 2.3200000000000003,
+      "max_displacement": 0.015195682644844055,
+      "min_det_F": 0.9860005378723145,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 59,
+      "time_s": 2.3600000000000003,
+      "max_displacement": 0.02532641775906086,
+      "min_det_F": 0.9852643013000488,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "max_displacement": 0.03649258241057396,
+      "min_det_F": 0.984616219997406,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 61,
+      "time_s": 2.44,
+      "max_displacement": 0.04648493230342865,
+      "min_det_F": 0.9840736389160156,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 62,
+      "time_s": 2.48,
+      "max_displacement": 0.05449475347995758,
+      "min_det_F": 0.9836695194244385,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 63,
+      "time_s": 2.52,
+      "max_displacement": 0.06038149073719978,
+      "min_det_F": 0.9833809733390808,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 64,
+      "time_s": 2.56,
+      "max_displacement": 0.06407991796731949,
+      "min_det_F": 0.983200192451477,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 65,
+      "time_s": 2.6,
+      "max_displacement": 0.06557858735322952,
+      "min_det_F": 0.9831435084342957,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 66,
+      "time_s": 2.64,
+      "max_displacement": 0.06494245678186417,
+      "min_det_F": 0.9832107424736023,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 67,
+      "time_s": 2.68,
+      "max_displacement": 0.062289584428071976,
+      "min_det_F": 0.9833723902702332,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 68,
+      "time_s": 2.72,
+      "max_displacement": 0.05779778212308884,
+      "min_det_F": 0.9836218953132629,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 69,
+      "time_s": 2.7600000000000002,
+      "max_displacement": 0.051699984818696976,
+      "min_det_F": 0.9839500188827515,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 70,
+      "time_s": 2.8000000000000003,
+      "max_displacement": 0.044240981340408325,
+      "min_det_F": 0.984337329864502,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 71,
+      "time_s": 2.8400000000000003,
+      "max_displacement": 0.03572070598602295,
+      "min_det_F": 0.9847784042358398,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 72,
+      "time_s": 2.8800000000000003,
+      "max_displacement": 0.027485644444823265,
+      "min_det_F": 0.9852578043937683,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 73,
+      "time_s": 2.92,
+      "max_displacement": 0.019625242799520493,
+      "min_det_F": 0.9857553839683533,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 74,
+      "time_s": 2.96,
+      "max_displacement": 0.011688640341162682,
+      "min_det_F": 0.9862579107284546,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 75,
+      "time_s": 3.0,
+      "max_displacement": 0.005353143438696861,
+      "min_det_F": 0.9867541790008545,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 76,
+      "time_s": 3.04,
+      "max_displacement": 0.013007842935621738,
+      "min_det_F": 0.9872616529464722,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 77,
+      "time_s": 3.08,
+      "max_displacement": 0.021283352747559547,
+      "min_det_F": 0.9877430200576782,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 78,
+      "time_s": 3.12,
+      "max_displacement": 0.029136713594198227,
+      "min_det_F": 0.9882024526596069,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 79,
+      "time_s": 3.16,
+      "max_displacement": 0.035989630967378616,
+      "min_det_F": 0.9886767268180847,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 80,
+      "time_s": 3.2,
+      "max_displacement": 0.041695188730955124,
+      "min_det_F": 0.98909592628479,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 81,
+      "time_s": 3.24,
+      "max_displacement": 0.04615449160337448,
+      "min_det_F": 0.9894285798072815,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 82,
+      "time_s": 3.2800000000000002,
+      "max_displacement": 0.0493057519197464,
+      "min_det_F": 0.9896745681762695,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 83,
+      "time_s": 3.3200000000000003,
+      "max_displacement": 0.05113719776272774,
+      "min_det_F": 0.9898312091827393,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 84,
+      "time_s": 3.3600000000000003,
+      "max_displacement": 0.05166303366422653,
+      "min_det_F": 0.9899095296859741,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 85,
+      "time_s": 3.4000000000000004,
+      "max_displacement": 0.050937097519636154,
+      "min_det_F": 0.9898812770843506,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 86,
+      "time_s": 3.44,
+      "max_displacement": 0.0490400567650795,
+      "min_det_F": 0.9897735714912415,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 87,
+      "time_s": 3.48,
+      "max_displacement": 0.0460784025490284,
+      "min_det_F": 0.9895749688148499,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 88,
+      "time_s": 3.52,
+      "max_displacement": 0.04218405485153198,
+      "min_det_F": 0.9893076419830322,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 89,
+      "time_s": 3.56,
+      "max_displacement": 0.03749818727374077,
+      "min_det_F": 0.9889901280403137,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 90,
+      "time_s": 3.6,
+      "max_displacement": 0.03218216821551323,
+      "min_det_F": 0.988620400428772,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 91,
+      "time_s": 3.64,
+      "max_displacement": 0.026408672332763672,
+      "min_det_F": 0.9882364869117737,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 92,
+      "time_s": 3.68,
+      "max_displacement": 0.02043631672859192,
+      "min_det_F": 0.9878459572792053,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 93,
+      "time_s": 3.72,
+      "max_displacement": 0.014668740332126617,
+      "min_det_F": 0.987471878528595,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 94,
+      "time_s": 3.7600000000000002,
+      "max_displacement": 0.00918588601052761,
+      "min_det_F": 0.987102746963501,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 95,
+      "time_s": 3.8000000000000003,
+      "max_displacement": 0.006615770980715752,
+      "min_det_F": 0.9867827892303467,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 96,
+      "time_s": 3.8400000000000003,
+      "max_displacement": 0.010283075273036957,
+      "min_det_F": 0.986468493938446,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 97,
+      "time_s": 3.8800000000000003,
+      "max_displacement": 0.014133458957076073,
+      "min_det_F": 0.9861701726913452,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 98,
+      "time_s": 3.9200000000000004,
+      "max_displacement": 0.017626982182264328,
+      "min_det_F": 0.9859322905540466,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 99,
+      "time_s": 3.9600000000000004,
+      "max_displacement": 0.02043572999536991,
+      "min_det_F": 0.9857333302497864,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 100,
+      "time_s": 4.0,
+      "max_displacement": 0.022530071437358856,
+      "min_det_F": 0.9855601191520691,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 101,
+      "time_s": 4.04,
+      "max_displacement": 0.02386963926255703,
+      "min_det_F": 0.9854355454444885,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 102,
+      "time_s": 4.08,
+      "max_displacement": 0.024467460811138153,
+      "min_det_F": 0.9853489398956299,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 103,
+      "time_s": 4.12,
+      "max_displacement": 0.02438923716545105,
+      "min_det_F": 0.985342264175415,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 104,
+      "time_s": 4.16,
+      "max_displacement": 0.023601355031132698,
+      "min_det_F": 0.9853869080543518,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 105,
+      "time_s": 4.2,
+      "max_displacement": 0.022164659574627876,
+      "min_det_F": 0.9854779243469238,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 106,
+      "time_s": 4.24,
+      "max_displacement": 0.020149752497673035,
+      "min_det_F": 0.9856055378913879,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 107,
+      "time_s": 4.28,
+      "max_displacement": 0.017648356035351753,
+      "min_det_F": 0.9857521057128906,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 108,
+      "time_s": 4.32,
+      "max_displacement": 0.014765669591724873,
+      "min_det_F": 0.9859169125556946,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 109,
+      "time_s": 4.36,
+      "max_displacement": 0.01167992316186428,
+      "min_det_F": 0.9861279726028442,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 110,
+      "time_s": 4.4,
+      "max_displacement": 0.008464058861136436,
+      "min_det_F": 0.9863468408584595,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 111,
+      "time_s": 4.44,
+      "max_displacement": 0.005424287170171738,
+      "min_det_F": 0.9865550994873047,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 112,
+      "time_s": 4.48,
+      "max_displacement": 0.0042363377287983894,
+      "min_det_F": 0.9867826104164124,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 113,
+      "time_s": 4.5200000000000005,
+      "max_displacement": 0.007783008739352226,
+      "min_det_F": 0.9870016574859619,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 114,
+      "time_s": 4.5600000000000005,
+      "max_displacement": 0.0114017678424716,
+      "min_det_F": 0.9872233867645264,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 115,
+      "time_s": 4.6000000000000005,
+      "max_displacement": 0.014877407811582088,
+      "min_det_F": 0.9874308705329895,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 116,
+      "time_s": 4.640000000000001,
+      "max_displacement": 0.017985215410590172,
+      "min_det_F": 0.9876236319541931,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 117,
+      "time_s": 4.680000000000001,
+      "max_displacement": 0.020702430978417397,
+      "min_det_F": 0.9877730011940002,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 118,
+      "time_s": 4.720000000000001,
+      "max_displacement": 0.022890571504831314,
+      "min_det_F": 0.987895131111145,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 119,
+      "time_s": 4.76,
+      "max_displacement": 0.024501249194145203,
+      "min_det_F": 0.9879951477050781,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 120,
+      "time_s": 4.8,
+      "max_displacement": 0.02552088350057602,
+      "min_det_F": 0.9880597591400146,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 121,
+      "time_s": 4.84,
+      "max_displacement": 0.02594808116555214,
+      "min_det_F": 0.9880995154380798,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 122,
+      "time_s": 4.88,
+      "max_displacement": 0.02579493820667267,
+      "min_det_F": 0.9880935549736023,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 123,
+      "time_s": 4.92,
+      "max_displacement": 0.02509930729866028,
+      "min_det_F": 0.9880682826042175,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 124,
+      "time_s": 4.96,
+      "max_displacement": 0.023908089846372604,
+      "min_det_F": 0.9880000352859497,
+      "mass": 7.940480709075928
+    },
+    {
+      "frame": 125,
+      "time_s": 5.0,
+      "max_displacement": 0.022275250405073166,
+      "min_det_F": 0.987885057926178,
+      "mass": 7.940480709075928
+    }
+  ]
+}

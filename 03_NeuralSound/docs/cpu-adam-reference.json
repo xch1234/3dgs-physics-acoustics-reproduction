@@ -1,0 +1,5 @@
+{
+  "reference": "torch.optim.Adam CPU, 12 steps, float32, seed 518",
+  "maximum_parameter_difference": 0.0,
+  "passed": true
+}

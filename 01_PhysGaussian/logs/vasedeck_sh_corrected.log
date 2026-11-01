@@ -1,0 +1,1074 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+WARP_SOURCE_MODULES {'mpm_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py', 'engine_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py', 'warp_utils': '/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py'}
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /mnt/f/System/Desktop/3DGS/复现/reproduction/cache/warp
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 64.57 ms
+Particles initialized from torch data.
+Total particles:  55364
+Module mpm_utils load on device 'cuda:0' took 376.63 ms
+  0%|          | 0/75 [00:00<?, ?it/s]Module mpm_solver_warp.mpm_solver_warp load on device 'cuda:0' took 928.59 ms
+  1%|▏         | 1/75 [00:53<1:06:20, 53.79s/it]  3%|▎         | 2/75 [00:59<30:42, 25.24s/it]    4%|▍         | 3/75 [01:04<19:16, 16.06s/it]  5%|▌         | 4/75 [01:09<13:55, 11.76s/it]  7%|▋         | 5/75 [01:14<10:52,  9.32s/it]  8%|▊         | 6/75 [01:19<09:02,  7.86s/it]  9%|▉         | 7/75 [01:24<07:44,  6.83s/it] 11%|█         | 8/75 [01:29<07:05,  6.35s/it] 12%|█▏        | 9/75 [01:34<06:30,  5.92s/it] 13%|█▎        | 10/75 [01:39<06:07,  5.65s/it] 15%|█▍        | 11/75 [01:44<05:56,  5.57s/it] 16%|█▌        | 12/75 [01:50<05:45,  5.48s/it] 17%|█▋        | 13/75 [01:55<05:33,  5.38s/it] 19%|█▊        | 14/75 [02:00<05:29,  5.41s/it] 20%|██        | 15/75 [02:05<05:18,  5.31s/it] 21%|██▏       | 16/75 [02:11<05:11,  5.29s/it] 23%|██▎       | 17/75 [02:16<05:06,  5.29s/it] 24%|██▍       | 18/75 [02:21<04:55,  5.19s/it] 25%|██▌       | 19/75 [02:25<04:42,  5.04s/it] 27%|██▋       | 20/75 [02:31<04:40,  5.09s/it] 28%|██▊       | 21/75 [02:36<04:30,  5.01s/it] 29%|██▉       | 22/75 [02:41<04:30,  5.10s/it] 31%|███       | 23/75 [02:46<04:29,  5.19s/it] 32%|███▏      | 24/75 [02:51<04:20,  5.11s/it] 33%|███▎      | 25/75 [03:44<16:10, 19.40s/it] 35%|███▍      | 26/75 [03:48<12:12, 14.95s/it] 36%|███▌      | 27/75 [03:56<10:04, 12.60s/it] 37%|███▋      | 28/75 [04:03<08:32, 10.90s/it] 39%|███▊      | 29/75 [04:10<07:28,  9.74s/it] 40%|████      | 30/75 [04:16<06:35,  8.79s/it] 41%|████▏     | 31/75 [04:23<05:59,  8.17s/it] 43%|████▎     | 32/75 [04:30<05:34,  7.79s/it] 44%|████▍     | 33/75 [04:37<05:16,  7.54s/it] 45%|████▌     | 34/75 [04:44<05:04,  7.43s/it] 47%|████▋     | 35/75 [04:50<04:39,  6.98s/it] 48%|████▊     | 36/75 [04:56<04:21,  6.71s/it] 49%|████▉     | 37/75 [05:02<04:04,  6.44s/it] 51%|█████     | 38/75 [05:07<03:49,  6.19s/it] 52%|█████▏    | 39/75 [05:13<03:33,  5.92s/it] 53%|█████▎    | 40/75 [05:18<03:26,  5.91s/it] 55%|█████▍    | 41/75 [05:24<03:19,  5.87s/it] 56%|█████▌    | 42/75 [05:30<03:08,  5.71s/it] 57%|█████▋    | 43/75 [05:35<03:02,  5.69s/it] 59%|█████▊    | 44/75 [05:41<02:55,  5.65s/it] 60%|██████    | 45/75 [05:46<02:48,  5.61s/it] 61%|██████▏   | 46/75 [05:52<02:44,  5.67s/it] 63%|██████▎   | 47/75 [05:58<02:39,  5.70s/it] 64%|██████▍   | 48/75 [06:04<02:34,  5.73s/it] 65%|██████▌   | 49/75 [06:09<02:27,  5.69s/it] 67%|██████▋   | 50/75 [07:03<08:24, 20.17s/it] 68%|██████▊   | 51/75 [07:09<06:20, 15.85s/it] 69%|██████▉   | 52/75 [07:15<04:54, 12.81s/it] 71%|███████   | 53/75 [07:20<03:53, 10.60s/it] 72%|███████▏  | 54/75 [07:26<03:11,  9.14s/it] 73%|███████▎  | 55/75 [07:32<02:41,  8.09s/it] 75%|███████▍  | 56/75 [07:38<02:21,  7.47s/it] 76%|███████▌  | 57/75 [07:43<02:05,  6.99s/it] 77%|███████▋  | 58/75 [07:49<01:52,  6.61s/it] 79%|███████▊  | 59/75 [07:55<01:42,  6.39s/it] 80%|████████  | 60/75 [08:01<01:32,  6.20s/it] 81%|████████▏ | 61/75 [08:07<01:25,  6.08s/it] 83%|████████▎ | 62/75 [08:12<01:16,  5.90s/it] 84%|████████▍ | 63/75 [08:18<01:10,  5.87s/it] 85%|████████▌ | 64/75 [08:24<01:04,  5.90s/it] 87%|████████▋ | 65/75 [08:30<00:59,  5.96s/it] 88%|████████▊ | 66/75 [08:36<00:53,  5.96s/it] 89%|████████▉ | 67/75 [08:42<00:46,  5.86s/it] 91%|█████████ | 68/75 [08:47<00:41,  5.87s/it] 92%|█████████▏| 69/75 [08:53<00:34,  5.77s/it] 93%|█████████▎| 70/75 [08:59<00:29,  5.85s/it] 95%|█████████▍| 71/75 [09:05<00:23,  5.86s/it] 96%|█████████▌| 72/75 [09:11<00:17,  5.81s/it] 97%|█████████▋| 73/75 [09:16<00:11,  5.79s/it] 99%|█████████▊| 74/75 [09:22<00:05,  5.77s/it]100%|██████████| 75/75 [10:16<00:00, 20.19s/it]100%|██████████| 75/75 [10:16<00:00,  8.22s/it]
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.3.0 (conda-forge gcc 15.3.0-7)
+  configuration: --prefix=/opt/3dgs-runtime/envs/physgaussian --cc=x86_64-conda-linux-gnu-cc --cxx=x86_64-conda-linux-gnu-c++ --nm=x86_64-conda-linux-gnu-nm --ar=x86_64-conda-linux-gnu-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --disable-gnutls --enable-libvpx --enable-libass --enable-libplacebo --enable-pthreads --enable-alsa --enable-libpulse --enable-libvpl --enable-vaapi --enable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libvorbis --enable-libopus --enable-librsvg --enable-libjxl --enable-libwebp --enable-ffplay --enable-vulkan --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1792527924824/_build_env/bin/pkg-config
+  libavutil      61.  1.102 / 61.  1.102
+  libavcodec     63.  1.102 / 63.  1.102
+  libavformat    63.  1.102 / 63.  1.102
+  libavdevice    63.  1.102 / 63.  1.102
+  libavfilter    12.  1.102 / 12.  1.102
+  libswscale     10.  1.102 / 10.  1.102
+  libswresample   7.  1.102 /  7.  1.102
+Input #0, image2, from '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/vasedeck_sh_corrected/%04d.png':
+  Duration: 00:00:03.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 3994x2995, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5bcd9854c000] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5bcd9854c000] profile High, level 6.0, 4:2:0, 8-bit
+[libx264 @ 0x5bcd9854c000] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/vasedeck_sh_corrected/output.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 3994x2994, q=2-31, 25 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.00    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.01    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:09.01    frame=    7 fps=0.7 q=28.0 size=     512KiB time=00:00:00.20 bitrate=20973.4kbits/s speed=0.021x elapsed=0:00:09.51    frame=   13 fps=1.3 q=28.0 size=    1024KiB time=00:00:00.44 bitrate=19065.9kbits/s speed=0.0439x elapsed=0:00:10.02    frame=   21 fps=2.0 q=28.0 size=    1536KiB time=00:00:00.76 bitrate=16557.0kbits/s speed=0.0722x elapsed=0:00:10.52    frame=   29 fps=2.6 q=28.0 size=    2048KiB time=00:00:01.08 bitrate=15534.8kbits/s speed=0.098x elapsed=0:00:11.02    frame=   41 fps=3.6 q=28.0 size=    2816KiB time=00:00:01.56 bitrate=14787.9kbits/s speed=0.135x elapsed=0:00:11.52    frame=   45 fps=3.7 q=28.0 size=    2816KiB time=00:00:01.72 bitrate=13412.2kbits/s speed=0.143x elapsed=0:00:12.02    frame=   61 fps=4.9 q=-1.0 size=    3584KiB time=00:00:02.36 bitrate=12440.9kbits/s speed=0.188x elapsed=0:00:12.52    [out#0/mp4 @ 0x5bcd98549800] video:3959KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.045037%
+frame=   75 fps=5.8 q=-1.0 Lsize=    3961KiB time=00:00:02.92 bitrate=11113.1kbits/s speed=0.227x elapsed=0:00:12.85    
+[libx264 @ 0x5bcd9854c000] frame I:1     Avg QP:19.70  size:421291
+[libx264 @ 0x5bcd9854c000] frame P:19    Avg QP:20.88  size:111771
+[libx264 @ 0x5bcd9854c000] frame B:55    Avg QP:23.79  size: 27433
+[libx264 @ 0x5bcd9854c000] consecutive B-frames:  1.3%  2.7%  0.0% 96.0%
+[libx264 @ 0x5bcd9854c000] mb I  I16..4: 10.1% 85.6%  4.3%
+[libx264 @ 0x5bcd9854c000] mb P  I16..4:  2.1%  7.8%  0.3%  P16..4: 36.9%  7.3%  1.8%  0.0%  0.0%    skip:43.8%
+[libx264 @ 0x5bcd9854c000] mb B  I16..4:  0.1%  0.4%  0.0%  B16..8: 21.4%  1.5%  0.2%  direct: 0.6%  skip:75.7%  L0:43.2% L1:53.0% BI: 3.8%
+[libx264 @ 0x5bcd9854c000] 8x8 transform intra:79.3% inter:91.2%
+[libx264 @ 0x5bcd9854c000] coded y,uvDC,uvAC intra: 59.3% 64.4% 20.2% inter: 6.2% 8.2% 0.1%
+[libx264 @ 0x5bcd9854c000] i16 v,h,dc,p:  6% 20%  3% 70%
+[libx264 @ 0x5bcd9854c000] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 23% 13%  8%  7%  6%  8%  6% 17%
+[libx264 @ 0x5bcd9854c000] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 25%  9%  7% 11%  8%  9%  5%  6%
+[libx264 @ 0x5bcd9854c000] i8c dc,h,v,p: 50% 24% 16% 10%
+[libx264 @ 0x5bcd9854c000] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5bcd9854c000] ref P L0: 55.5% 17.0% 19.3%  8.2%
+[libx264 @ 0x5bcd9854c000] ref B L0: 87.3% 10.4%  2.3%
+[libx264 @ 0x5bcd9854c000] ref B L1: 98.0%  2.0%
+[libx264 @ 0x5bcd9854c000] kb/s:10810.05
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 55364,
+  "steps": 30000,
+  "duration_s": 3.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/vasedeck_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+  "rendered_frames": 75,
+  "sh_frame_correction": true,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 2609571840,
+  "warp_source_modules": {
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py"
+  },
+  "torch_peak_reserved_bytes": 4007657472,
+  "elapsed_s": 642.403177682,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path",
+    "Opt-in conjugation of MPM inverse rotation into the world basis for SH; same-state paired original/corrected rendering"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.00939666572958231,
+      "min_det_F": 0.9798423647880554,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.018862472847104073,
+      "min_det_F": 0.9660305976867676,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.029020559042692184,
+      "min_det_F": 0.949835479259491,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.03922069072723389,
+      "min_det_F": 0.9359400868415833,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.04937596246600151,
+      "min_det_F": 0.9180700778961182,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.05938206613063812,
+      "min_det_F": 0.9000402688980103,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.06933856010437012,
+      "min_det_F": 0.8986541628837585,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.0763682946562767,
+      "min_det_F": 0.9139283895492554,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.08841650933027267,
+      "min_det_F": 0.920319676399231,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.1088641956448555,
+      "min_det_F": 0.9339392185211182,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.12776818871498108,
+      "min_det_F": 0.9480286836624146,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.1446191966533661,
+      "min_det_F": 0.9508528709411621,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.16392207145690918,
+      "min_det_F": 0.9480187296867371,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.18229460716247559,
+      "min_det_F": 0.9461124539375305,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.19998353719711304,
+      "min_det_F": 0.945834755897522,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.21610556542873383,
+      "min_det_F": 0.9307421445846558,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.2306952178478241,
+      "min_det_F": 0.9117169380187988,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.24269945919513702,
+      "min_det_F": 0.8992706537246704,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.2504589259624481,
+      "min_det_F": 0.9014091491699219,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.25394976139068604,
+      "min_det_F": 0.9091054797172546,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.2538503408432007,
+      "min_det_F": 0.9053197503089905,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.2524467408657074,
+      "min_det_F": 0.9073377251625061,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.25987833738327026,
+      "min_det_F": 0.9079849720001221,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.26701077818870544,
+      "min_det_F": 0.9037198424339294,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.27325746417045593,
+      "min_det_F": 0.890252947807312,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 26,
+      "time_s": 1.04,
+      "max_displacement": 0.283947229385376,
+      "min_det_F": 0.8649656772613525,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 27,
+      "time_s": 1.08,
+      "max_displacement": 0.2970372438430786,
+      "min_det_F": 0.8625628352165222,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 28,
+      "time_s": 1.12,
+      "max_displacement": 0.31020587682724,
+      "min_det_F": 0.8659189343452454,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1600000000000001,
+      "max_displacement": 0.3234434723854065,
+      "min_det_F": 0.870835542678833,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 30,
+      "time_s": 1.2,
+      "max_displacement": 0.3367418944835663,
+      "min_det_F": 0.8736273050308228,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 31,
+      "time_s": 1.24,
+      "max_displacement": 0.3500942587852478,
+      "min_det_F": 0.8807464838027954,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 32,
+      "time_s": 1.28,
+      "max_displacement": 0.3634945750236511,
+      "min_det_F": 0.8876906037330627,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 33,
+      "time_s": 1.32,
+      "max_displacement": 0.37693774700164795,
+      "min_det_F": 0.8995491862297058,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 34,
+      "time_s": 1.36,
+      "max_displacement": 0.3904193639755249,
+      "min_det_F": 0.9124481081962585,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4000000000000001,
+      "max_displacement": 0.4039355516433716,
+      "min_det_F": 0.923150897026062,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4400000000000002,
+      "max_displacement": 0.4174829423427582,
+      "min_det_F": 0.9337276220321655,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 37,
+      "time_s": 1.48,
+      "max_displacement": 0.4310586452484131,
+      "min_det_F": 0.9456520080566406,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 38,
+      "time_s": 1.52,
+      "max_displacement": 0.4446600079536438,
+      "min_det_F": 0.949471116065979,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 39,
+      "time_s": 1.56,
+      "max_displacement": 0.45828479528427124,
+      "min_det_F": 0.9517180919647217,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 40,
+      "time_s": 1.6,
+      "max_displacement": 0.47193095088005066,
+      "min_det_F": 0.9547210931777954,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 41,
+      "time_s": 1.6400000000000001,
+      "max_displacement": 0.4855966866016388,
+      "min_det_F": 0.9582205414772034,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6800000000000002,
+      "max_displacement": 0.4992803633213043,
+      "min_det_F": 0.9616230130195618,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 43,
+      "time_s": 1.72,
+      "max_displacement": 0.512980580329895,
+      "min_det_F": 0.9640200138092041,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 44,
+      "time_s": 1.76,
+      "max_displacement": 0.5266960263252258,
+      "min_det_F": 0.9638498425483704,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8,
+      "max_displacement": 0.5404255390167236,
+      "min_det_F": 0.96368008852005,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 46,
+      "time_s": 1.84,
+      "max_displacement": 0.554168164730072,
+      "min_det_F": 0.9635816216468811,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8800000000000001,
+      "max_displacement": 0.5679227709770203,
+      "min_det_F": 0.9636135697364807,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 48,
+      "time_s": 1.9200000000000002,
+      "max_displacement": 0.581688642501831,
+      "min_det_F": 0.9637414216995239,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9600000000000002,
+      "max_displacement": 0.5954650044441223,
+      "min_det_F": 0.9639742970466614,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 50,
+      "time_s": 2.0,
+      "max_displacement": 0.609251081943512,
+      "min_det_F": 0.9642199277877808,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 51,
+      "time_s": 2.04,
+      "max_displacement": 0.6230462193489075,
+      "min_det_F": 0.9642861485481262,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 52,
+      "time_s": 2.08,
+      "max_displacement": 0.6368498802185059,
+      "min_det_F": 0.9644971489906311,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 53,
+      "time_s": 2.12,
+      "max_displacement": 0.6506615281105042,
+      "min_det_F": 0.9647622108459473,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 54,
+      "time_s": 2.16,
+      "max_displacement": 0.6644805669784546,
+      "min_det_F": 0.9648904800415039,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 55,
+      "time_s": 2.2,
+      "max_displacement": 0.6783066987991333,
+      "min_det_F": 0.9652065634727478,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 56,
+      "time_s": 2.24,
+      "max_displacement": 0.6921393871307373,
+      "min_det_F": 0.9655981659889221,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 57,
+      "time_s": 2.2800000000000002,
+      "max_displacement": 0.705978274345398,
+      "min_det_F": 0.9597747325897217,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 58,
+      "time_s": 2.3200000000000003,
+      "max_displacement": 0.7198230028152466,
+      "min_det_F": 0.955416738986969,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 59,
+      "time_s": 2.3600000000000003,
+      "max_displacement": 0.7336732745170593,
+      "min_det_F": 0.9550962448120117,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "max_displacement": 0.7475286722183228,
+      "min_det_F": 0.9530919194221497,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 61,
+      "time_s": 2.44,
+      "max_displacement": 0.7613890767097473,
+      "min_det_F": 0.952991247177124,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 62,
+      "time_s": 2.48,
+      "max_displacement": 0.7752540707588196,
+      "min_det_F": 0.9546205997467041,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 63,
+      "time_s": 2.52,
+      "max_displacement": 0.7891235947608948,
+      "min_det_F": 0.9573370218276978,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 64,
+      "time_s": 2.56,
+      "max_displacement": 0.8029971718788147,
+      "min_det_F": 0.9607360363006592,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 65,
+      "time_s": 2.6,
+      "max_displacement": 0.8168748021125793,
+      "min_det_F": 0.9646255373954773,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 66,
+      "time_s": 2.64,
+      "max_displacement": 0.8307561874389648,
+      "min_det_F": 0.9656683206558228,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 67,
+      "time_s": 2.68,
+      "max_displacement": 0.8446411490440369,
+      "min_det_F": 0.9655008912086487,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 68,
+      "time_s": 2.72,
+      "max_displacement": 0.8585295081138611,
+      "min_det_F": 0.9653134346008301,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 69,
+      "time_s": 2.7600000000000002,
+      "max_displacement": 0.872421145439148,
+      "min_det_F": 0.9651284217834473,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 70,
+      "time_s": 2.8000000000000003,
+      "max_displacement": 0.8863158822059631,
+      "min_det_F": 0.9649233818054199,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 71,
+      "time_s": 2.8400000000000003,
+      "max_displacement": 0.9002135396003723,
+      "min_det_F": 0.9647291898727417,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 72,
+      "time_s": 2.8800000000000003,
+      "max_displacement": 0.9141140580177307,
+      "min_det_F": 0.9645890593528748,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 73,
+      "time_s": 2.92,
+      "max_displacement": 0.9280171990394592,
+      "min_det_F": 0.9643974304199219,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 74,
+      "time_s": 2.96,
+      "max_displacement": 0.9419229626655579,
+      "min_det_F": 0.9642178416252136,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 75,
+      "time_s": 3.0,
+      "max_displacement": 0.9558312296867371,
+      "min_det_F": 0.9640787839889526,
+      "mass": 1.5559260845184326
+    }
+  ],
+  "sh_same_state_comparison": [
+    {
+      "frame": 1,
+      "relative_image_L2": 0.002771649742498994,
+      "mean_absolute_difference": 0.00019365712068974972,
+      "max_absolute_difference": 0.07256698608398438
+    },
+    {
+      "frame": 2,
+      "relative_image_L2": 0.005657925736159086,
+      "mean_absolute_difference": 0.0005271652480587363,
+      "max_absolute_difference": 0.12733542919158936
+    },
+    {
+      "frame": 3,
+      "relative_image_L2": 0.008695094846189022,
+      "mean_absolute_difference": 0.0009843091247603297,
+      "max_absolute_difference": 0.16949325799942017
+    },
+    {
+      "frame": 4,
+      "relative_image_L2": 0.012125461362302303,
+      "mean_absolute_difference": 0.0016226418083533645,
+      "max_absolute_difference": 0.19670215249061584
+    },
+    {
+      "frame": 5,
+      "relative_image_L2": 0.016263747587800026,
+      "mean_absolute_difference": 0.0024859949480742216,
+      "max_absolute_difference": 0.22750380635261536
+    },
+    {
+      "frame": 6,
+      "relative_image_L2": 0.02136489748954773,
+      "mean_absolute_difference": 0.0035564920399338007,
+      "max_absolute_difference": 0.2692292332649231
+    },
+    {
+      "frame": 7,
+      "relative_image_L2": 0.027614776045084,
+      "mean_absolute_difference": 0.004804667085409164,
+      "max_absolute_difference": 0.30159562826156616
+    },
+    {
+      "frame": 8,
+      "relative_image_L2": 0.034711048007011414,
+      "mean_absolute_difference": 0.0061359703540802,
+      "max_absolute_difference": 0.3464144468307495
+    },
+    {
+      "frame": 9,
+      "relative_image_L2": 0.04228772222995758,
+      "mean_absolute_difference": 0.007516355253756046,
+      "max_absolute_difference": 0.44291073083877563
+    },
+    {
+      "frame": 10,
+      "relative_image_L2": 0.049908459186553955,
+      "mean_absolute_difference": 0.008877810090780258,
+      "max_absolute_difference": 0.5410885810852051
+    },
+    {
+      "frame": 11,
+      "relative_image_L2": 0.057067904621362686,
+      "mean_absolute_difference": 0.010243878699839115,
+      "max_absolute_difference": 0.628096878528595
+    },
+    {
+      "frame": 12,
+      "relative_image_L2": 0.06339915096759796,
+      "mean_absolute_difference": 0.011425127275288105,
+      "max_absolute_difference": 0.699838399887085
+    },
+    {
+      "frame": 13,
+      "relative_image_L2": 0.06871844083070755,
+      "mean_absolute_difference": 0.012508305720984936,
+      "max_absolute_difference": 0.7625156044960022
+    },
+    {
+      "frame": 14,
+      "relative_image_L2": 0.0734279528260231,
+      "mean_absolute_difference": 0.013611041009426117,
+      "max_absolute_difference": 0.8039631247520447
+    },
+    {
+      "frame": 15,
+      "relative_image_L2": 0.07732972502708435,
+      "mean_absolute_difference": 0.01454867422580719,
+      "max_absolute_difference": 0.8447349667549133
+    },
+    {
+      "frame": 16,
+      "relative_image_L2": 0.08019092679023743,
+      "mean_absolute_difference": 0.015235977247357368,
+      "max_absolute_difference": 0.8759634494781494
+    },
+    {
+      "frame": 17,
+      "relative_image_L2": 0.08212701976299286,
+      "mean_absolute_difference": 0.015678321942687035,
+      "max_absolute_difference": 0.8877059817314148
+    },
+    {
+      "frame": 18,
+      "relative_image_L2": 0.08296661823987961,
+      "mean_absolute_difference": 0.015880191698670387,
+      "max_absolute_difference": 0.9085655808448792
+    },
+    {
+      "frame": 19,
+      "relative_image_L2": 0.08310460299253464,
+      "mean_absolute_difference": 0.015859300270676613,
+      "max_absolute_difference": 0.9039106965065002
+    },
+    {
+      "frame": 20,
+      "relative_image_L2": 0.08227180689573288,
+      "mean_absolute_difference": 0.015637267380952835,
+      "max_absolute_difference": 0.8902926445007324
+    },
+    {
+      "frame": 21,
+      "relative_image_L2": 0.08037174493074417,
+      "mean_absolute_difference": 0.015207212418317795,
+      "max_absolute_difference": 0.8646430969238281
+    },
+    {
+      "frame": 22,
+      "relative_image_L2": 0.0773414894938469,
+      "mean_absolute_difference": 0.014707575552165508,
+      "max_absolute_difference": 0.819858193397522
+    },
+    {
+      "frame": 23,
+      "relative_image_L2": 0.07308176159858704,
+      "mean_absolute_difference": 0.014076659455895424,
+      "max_absolute_difference": 0.7577196359634399
+    },
+    {
+      "frame": 24,
+      "relative_image_L2": 0.0680760070681572,
+      "mean_absolute_difference": 0.013363569974899292,
+      "max_absolute_difference": 0.6967582702636719
+    },
+    {
+      "frame": 25,
+      "relative_image_L2": 0.0625213235616684,
+      "mean_absolute_difference": 0.012611737474799156,
+      "max_absolute_difference": 0.6156901717185974
+    },
+    {
+      "frame": 26,
+      "relative_image_L2": 0.05664525181055069,
+      "mean_absolute_difference": 0.011677897535264492,
+      "max_absolute_difference": 0.5899690985679626
+    },
+    {
+      "frame": 27,
+      "relative_image_L2": 0.05142917111515999,
+      "mean_absolute_difference": 0.010722058825194836,
+      "max_absolute_difference": 0.5834806561470032
+    },
+    {
+      "frame": 28,
+      "relative_image_L2": 0.04671793058514595,
+      "mean_absolute_difference": 0.00973998848348856,
+      "max_absolute_difference": 0.6101489663124084
+    },
+    {
+      "frame": 29,
+      "relative_image_L2": 0.0425434447824955,
+      "mean_absolute_difference": 0.008830887265503407,
+      "max_absolute_difference": 0.635995626449585
+    },
+    {
+      "frame": 30,
+      "relative_image_L2": 0.03901895508170128,
+      "mean_absolute_difference": 0.00802389532327652,
+      "max_absolute_difference": 0.6803186535835266
+    },
+    {
+      "frame": 31,
+      "relative_image_L2": 0.036475587636232376,
+      "mean_absolute_difference": 0.0074326940812170506,
+      "max_absolute_difference": 0.7178047895431519
+    },
+    {
+      "frame": 32,
+      "relative_image_L2": 0.03468456119298935,
+      "mean_absolute_difference": 0.00692022405564785,
+      "max_absolute_difference": 0.7328578233718872
+    },
+    {
+      "frame": 33,
+      "relative_image_L2": 0.03360951319336891,
+      "mean_absolute_difference": 0.006501295603811741,
+      "max_absolute_difference": 0.7814486026763916
+    },
+    {
+      "frame": 34,
+      "relative_image_L2": 0.03265681862831116,
+      "mean_absolute_difference": 0.006176302209496498,
+      "max_absolute_difference": 0.7932953834533691
+    },
+    {
+      "frame": 35,
+      "relative_image_L2": 0.031726058572530746,
+      "mean_absolute_difference": 0.005872723180800676,
+      "max_absolute_difference": 0.8012471199035645
+    },
+    {
+      "frame": 36,
+      "relative_image_L2": 0.030664900317788124,
+      "mean_absolute_difference": 0.0056822653859853745,
+      "max_absolute_difference": 0.7885701656341553
+    },
+    {
+      "frame": 37,
+      "relative_image_L2": 0.029604459181427956,
+      "mean_absolute_difference": 0.005450913682579994,
+      "max_absolute_difference": 0.7634066343307495
+    },
+    {
+      "frame": 38,
+      "relative_image_L2": 0.02825157158076763,
+      "mean_absolute_difference": 0.005191108211874962,
+      "max_absolute_difference": 0.7359457612037659
+    },
+    {
+      "frame": 39,
+      "relative_image_L2": 0.026831213384866714,
+      "mean_absolute_difference": 0.004975483752787113,
+      "max_absolute_difference": 0.7089923024177551
+    },
+    {
+      "frame": 40,
+      "relative_image_L2": 0.02538907527923584,
+      "mean_absolute_difference": 0.00475891400128603,
+      "max_absolute_difference": 0.6735016107559204
+    },
+    {
+      "frame": 41,
+      "relative_image_L2": 0.02410445176064968,
+      "mean_absolute_difference": 0.0046049561351537704,
+      "max_absolute_difference": 0.6392291784286499
+    },
+    {
+      "frame": 42,
+      "relative_image_L2": 0.02291920594871044,
+      "mean_absolute_difference": 0.004372260067611933,
+      "max_absolute_difference": 0.5971214175224304
+    },
+    {
+      "frame": 43,
+      "relative_image_L2": 0.021697677671909332,
+      "mean_absolute_difference": 0.004117970354855061,
+      "max_absolute_difference": 0.560046374797821
+    },
+    {
+      "frame": 44,
+      "relative_image_L2": 0.02057698741555214,
+      "mean_absolute_difference": 0.003873663255944848,
+      "max_absolute_difference": 0.5197558999061584
+    },
+    {
+      "frame": 45,
+      "relative_image_L2": 0.019825831055641174,
+      "mean_absolute_difference": 0.0037715157959610224,
+      "max_absolute_difference": 0.4957999587059021
+    },
+    {
+      "frame": 46,
+      "relative_image_L2": 0.019336942583322525,
+      "mean_absolute_difference": 0.0038415801245719194,
+      "max_absolute_difference": 0.4964902698993683
+    },
+    {
+      "frame": 47,
+      "relative_image_L2": 0.019059719517827034,
+      "mean_absolute_difference": 0.0040003457106649876,
+      "max_absolute_difference": 0.48984718322753906
+    },
+    {
+      "frame": 48,
+      "relative_image_L2": 0.018925920128822327,
+      "mean_absolute_difference": 0.004185946192592382,
+      "max_absolute_difference": 0.46393105387687683
+    },
+    {
+      "frame": 49,
+      "relative_image_L2": 0.018446724861860275,
+      "mean_absolute_difference": 0.004278224892914295,
+      "max_absolute_difference": 0.4384891092777252
+    },
+    {
+      "frame": 50,
+      "relative_image_L2": 0.01761755347251892,
+      "mean_absolute_difference": 0.004212348721921444,
+      "max_absolute_difference": 0.4138147830963135
+    },
+    {
+      "frame": 51,
+      "relative_image_L2": 0.01688125543296337,
+      "mean_absolute_difference": 0.004072447773069143,
+      "max_absolute_difference": 0.3796404302120209
+    },
+    {
+      "frame": 52,
+      "relative_image_L2": 0.01660073548555374,
+      "mean_absolute_difference": 0.0041038114577531815,
+      "max_absolute_difference": 0.3490922749042511
+    },
+    {
+      "frame": 53,
+      "relative_image_L2": 0.01658337190747261,
+      "mean_absolute_difference": 0.004197534639388323,
+      "max_absolute_difference": 0.3181825876235962
+    },
+    {
+      "frame": 54,
+      "relative_image_L2": 0.016475984826683998,
+      "mean_absolute_difference": 0.004265253432095051,
+      "max_absolute_difference": 0.2830895781517029
+    },
+    {
+      "frame": 55,
+      "relative_image_L2": 0.01644851081073284,
+      "mean_absolute_difference": 0.004348193295300007,
+      "max_absolute_difference": 0.24815356731414795
+    },
+    {
+      "frame": 56,
+      "relative_image_L2": 0.01632213406264782,
+      "mean_absolute_difference": 0.00438916077837348,
+      "max_absolute_difference": 0.21443170309066772
+    },
+    {
+      "frame": 57,
+      "relative_image_L2": 0.01641959883272648,
+      "mean_absolute_difference": 0.004512945655733347,
+      "max_absolute_difference": 0.19325006008148193
+    },
+    {
+      "frame": 58,
+      "relative_image_L2": 0.01669926941394806,
+      "mean_absolute_difference": 0.004650347866117954,
+      "max_absolute_difference": 0.18617111444473267
+    },
+    {
+      "frame": 59,
+      "relative_image_L2": 0.016747593879699707,
+      "mean_absolute_difference": 0.004706206731498241,
+      "max_absolute_difference": 0.18123382329940796
+    },
+    {
+      "frame": 60,
+      "relative_image_L2": 0.016538552939891815,
+      "mean_absolute_difference": 0.004682288505136967,
+      "max_absolute_difference": 0.17748302221298218
+    },
+    {
+      "frame": 61,
+      "relative_image_L2": 0.01619727909564972,
+      "mean_absolute_difference": 0.004600050859153271,
+      "max_absolute_difference": 0.1755344271659851
+    },
+    {
+      "frame": 62,
+      "relative_image_L2": 0.015817536041140556,
+      "mean_absolute_difference": 0.004490127321332693,
+      "max_absolute_difference": 0.17349570989608765
+    },
+    {
+      "frame": 63,
+      "relative_image_L2": 0.01546702440828085,
+      "mean_absolute_difference": 0.004384001716971397,
+      "max_absolute_difference": 0.17181265354156494
+    },
+    {
+      "frame": 64,
+      "relative_image_L2": 0.015163792297244072,
+      "mean_absolute_difference": 0.0042906091548502445,
+      "max_absolute_difference": 0.16964614391326904
+    },
+    {
+      "frame": 65,
+      "relative_image_L2": 0.014883947558701038,
+      "mean_absolute_difference": 0.0042027998715639114,
+      "max_absolute_difference": 0.16761088371276855
+    },
+    {
+      "frame": 66,
+      "relative_image_L2": 0.014664663933217525,
+      "mean_absolute_difference": 0.0041557978838682175,
+      "max_absolute_difference": 0.16549348831176758
+    },
+    {
+      "frame": 67,
+      "relative_image_L2": 0.014590212143957615,
+      "mean_absolute_difference": 0.004159406293183565,
+      "max_absolute_difference": 0.1631978154182434
+    },
+    {
+      "frame": 68,
+      "relative_image_L2": 0.014761275611817837,
+      "mean_absolute_difference": 0.004215587396174669,
+      "max_absolute_difference": 0.16183781623840332
+    },
+    {
+      "frame": 69,
+      "relative_image_L2": 0.015052837319672108,
+      "mean_absolute_difference": 0.0042644040659070015,
+      "max_absolute_difference": 0.1607060432434082
+    },
+    {
+      "frame": 70,
+      "relative_image_L2": 0.015025923028588295,
+      "mean_absolute_difference": 0.004229198209941387,
+      "max_absolute_difference": 0.159917414188385
+    },
+    {
+      "frame": 71,
+      "relative_image_L2": 0.014495509676635265,
+      "mean_absolute_difference": 0.004078379832208157,
+      "max_absolute_difference": 0.16081863641738892
+    },
+    {
+      "frame": 72,
+      "relative_image_L2": 0.013991151005029678,
+      "mean_absolute_difference": 0.003885603044182062,
+      "max_absolute_difference": 0.1620272397994995
+    },
+    {
+      "frame": 73,
+      "relative_image_L2": 0.014108480885624886,
+      "mean_absolute_difference": 0.003917550202459097,
+      "max_absolute_difference": 0.1647576093673706
+    },
+    {
+      "frame": 74,
+      "relative_image_L2": 0.014364124275743961,
+      "mean_absolute_difference": 0.003966233227401972,
+      "max_absolute_difference": 0.1678696870803833
+    },
+    {
+      "frame": 75,
+      "relative_image_L2": 0.014232421293854713,
+      "mean_absolute_difference": 0.0038915881887078285,
+      "max_absolute_difference": 0.17080748081207275
+    }
+  ]
+}

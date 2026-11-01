@@ -1,0 +1,20 @@
+{
+  "name": "captured-media_and_syntax",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/media_and_syntax.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:22:13.145924+08:00",
+  "log": "logs\\captured-media_and_syntax.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:42.748640+08:00",
+  "elapsed_s": 29.608999999938533
+}

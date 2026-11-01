@@ -1,0 +1,1102 @@
+
+=== PDF PAGE 1 ===
+Precomputed Acoustic Transfer: Output-sensitive, accurate
+sound generation for geometrically complex vibration sources
+Doug L. James Jernej Barbi ˇc
+Carnegie Mellon University
+Dinesh K. Pai
+Rutgers Univ. and Univ. British Columbia
+Mode 3 (780 Hz) Mode 10 (2 .9 kHz) Mode 18 (5 .1 kHz) Mode 30 (7 .1 kHz) Mode 40 (8 .6 kHz)
+22 sources 36 sources 50 sources 63 sources 83 sources
+Figure 1: Sound ﬁeld of a vibrating hollow bronze dragon (with two holes on bottom) exhibits strong directionality a nd frequency dependence; (Top)
+absolute value and (Bottom) real part of complex-valued aco ustic pressure ﬁeld. Equivalent dipole sources (white dots ) were placed to achieve 4% relative
+pressure error. Low-frequency radiation ﬁelds require few equivalent sources, whereas higher frequency modes with more structured pressure ﬁelds typically
+require more sources. Our Precomputed Acoustic Transfer (PAT) models exploit the fact that equivalent source counts are far smaller than polygon counts for
+complex geometry, and can therefore accelerate pressure evaluation several thousand times to enable real-time sound rendering.
+Abstract
+Simulating sounds produced by realistic vibrating objects is chal-
+lenging because sound radiation involves complex diffraction and
+interreﬂection effects that are very perceptible and important. These
+wave phenomena are well understood, but have been largely ig-
+nored in computer graphics due to the high cost and complexity of
+computing them at audio rates.
+We describe a new algorithm for real-time synthesis of realistic
+sound radiation from rigid objects. We start by precomputing the
+linear vibration modes of an object, and then relate each mode to
+its sound pressure ﬁeld, or acoustic transfer function, using stan-
+dard methods from numerical acoustics. Each transfer function is
+then approximated to a speciﬁed accuracy using low-order multi-
+pole sources placed near the object. We provide a low-memory,
+multilevel, randomized algorithm for optimized source placement
+that is suitable for complex geometries. At runtime, we can simu-
+late new interaction sounds by quickly summing contributions from
+each mode’s equivalent multipole sources. We can efﬁciently sim-
+ulate global effects such as interreﬂection and changes in sound
+due to listener location. The simulation costs can be dynamically
+traded-off for sound quality. We present several examples of sound
+generation from physically based animations.
+CR Categories: I.3.5 [COMPUTER GRAPHICS]: Computational Geometry and
+Object Modeling—Physically based modeling; I.6.8 [SIMULATION AND MODEL -
+ING]: Types of Simulation—Animation
+Keywords: sound synthesis, modal vibration, Helmholtz, acoustic radiation, equiva-
+lent sources, source simulation, Trefftz, boundary element method, multipole
+1 Introduction
+Sounds have always been an important part of computer anima-
+tion and visual media. There has been signiﬁcant recent progress
+in developing algorithms for physically based sound synthesis for
+computer animation. Using recent algorithms for physically based
+simulation of sound sources [van den Doel et al. 2001; O’Brien
+et al. 2001; O’Brien et al. 2002; Dobashi et al. 2003] one can auto-
+matically synthesize new sounds synchronized with animations.
+However, these did not adequately account for how sound is radi-
+ated from an object with complicated geometry. The sound’s timbre
+changes in a recognizable and spatially variant way due to interac-
+tion with the object’s own geometry. This is because audible sounds
+have wavelengths that are comparable to the size of objects in hu-
+man environments. Recall that human hearing is very sensitive up
+to about 10 KHz (3.4cm wavelength), and can reach up to 20 KHz
+(less than 2cm wavelength). Radiation from a particular vibration
+mode interacts with the object’s geometry in a complicated way to
+affect its radiation efﬁciency [Cremer et al. 1990], boosting radia-
+tion from some frequencies and suppressing others, similar to how
+an open-ended cylindrical tube enhances resonant frequencies.
+These phenomena parallel global illumination effects such as self-
+shadowing and interreﬂections. Computing these effects is very
+expensive but recent work on precomputed radiance transfer [Sloan
+et al. 2002] has shown how interactive rendering can be achieved
+by preprocessing the linear response of a single 3D object exposed
+to (low-frequency) environmental lighting basis vectors.
+In this paper, we investigate preprocessing of analogous global
+sound radiation effects for a single vibrating object, showing that
+these expensive linear acoustic transfer phenomena can be largely
+precomputed to support efﬁcient real-time sound synthesis. An
+overview of our approach is illustrated in Figure 2.
+Starting from a description of the geometry, material properties,
+and boundary conditions on a sound producing object, we ﬁrst pre-
+compute its vibration modes, i.e., the mode shapes and frequencies.
+
+=== PDF PAGE 2 ===
+GEOMETRY
++BC
+VIBRATION 
+MODES + FREQS
+OFFSET SURFACE 
+PRESSURE
+BEM
+SOLUTION
+EQUIVALENT
+SOURCES
+PAT
+EVALUATION
+PRECOMPUTATION RUNTIME SYNTHESIS
+BEM
+FEM
+BEM
+source
+placement
+LISTENINGMODE
+SUMMATION
+Figure 2: Overview of Precomputed Acoustic Transfer (PAT)
+Each mode radiates sound over the entire surface of the object; us-
+ing the boundary element method (BEM) we precompute boundary
+solution data which can be used to reconstruct the complex, space-
+variant pressure ﬁeld (the acoustic transfer function) that accounts
+for phenomena such as diffraction and interreﬂection. For runtime
+performance, we then approximate each transfer function by pre-
+computing a set of equivalent multipole sources that match its pres-
+sure values on a ﬁctitious offset surface. Runtime synthesis can then
+be efﬁciently performed; when the object is excited by forces from
+the environment, we only have to compute the excitation of each
+mode, and compute a weighted combination of contributions from
+the precomputed sources at the listener’s location. Multiple listen-
+ing locations and real time animation are easily supported, since the
+equivalent source approximations are cheap to compute, and typi-
+cally need only be updated at slightly faster than graphics rates.
+2 Related Work
+Several aspects of sound synthesis have been explored in computer
+graphics. A signiﬁcant part of the effort has been in simulating
+the acoustics of rooms and concert halls, assuming that the sound
+is provided, for instance, by a recording [Stettner and Greenberg
+1989; Funkhouser et al. 1998; Funkhouser et al. 1999; Tsingos etal.
+2001; Tsingos et al. 2002; Lokki et al. 2002]. General techniques
+for speciﬁcation and synthesis of sounds for animation have been
+investigated in [Takala and Hahn 1992; Cardle et al. 2003]. Tsin-
+gos, et al. [2004] have shown how large numbers of sound sources
+can be handled using perceptual clustering. A multi-resolution al-
+gorithm based on stochastic sampling was proposed in [Wand and
+Strasser 2004]. Note that in these papers, a source corresponds to
+an entire waveform, for instance, a recorded voice.
+Physically based synthesis of sound sources has been explored in
+computer graphics and computer music [Cook 2002]. Most ap-
+proaches are concerned with sounds emitted by vibrating solids,
+but see [Dobashi et al. 2003] for aerodynamic sounds. Depending
+on their need for speed, the approaches can differ signiﬁcantly.
+For interactive simulation, the method of choice has been to directly
+use the vibration modes (frequencies and corresponding decays) for
+sound synthesis [van den Doel and Pai 1996; van den Doel et al.
+2001; O’Brien et al. 2002; Raghuvanshi and Lin 2006]. Pai et al.
+[2001] described how these modal frequencies and decays could
+be measured from real objects. However, these papers treated the
+sound source as a point, effectively assuming that the listener is far
+from the object, and did not capture the subtleties of the sound ﬁeld.
+For non-interactive simulation, O’Brien et al. [2001] used FEM to
+directly simulate vibrations in the time domain. They were the ﬁrst
+in computer graphics to simulate the radiated sound ﬁeld, using the
+“Rayleigh method.” Even though the method is very expensive,
+they were able to obtain many interesting effects. The “Rayleigh
+method” treats each element of the vibrating surface independently,
+summing each element’s contribution together with a visibility test.
+While faster than boundary element analysis, with speed can come
+considerable inaccuracy since the method completely ignores re-
+ﬂections and diffraction [von Estorff 2003].
+The Helmholtz equation is a standard tool for modeling sound
+waves radiated from vibrating yet essentially rigid objects, and its
+numerical solution has been studied extensively. Boundary element
+methods (BEM) are widely used for acoustic radiation and scat-
+tering calculations (see [Ciscowski and Brebbia 1991; von Estorff
+2000; Wu 2000]), and numerous production codes exist for engi-
+neering analysis. One major drawback of the acoustic BEM com-
+putations is that they can have large memory requirements ( O(N2)
+memory for N boundary elements), and so do not scale gracefully
+to detailed geometry that is required to resolve higher frequen-
+cies [Desmet 2002; von Estorff 2003]. In this respect, Helmholtz
+variants of the fast multipole method (FMM) have been successful
+(see [Gumerov and Duraiswami 2005]), providing high-accuracy,
+memory- and time-scalable solutions for radiation and scattering
+problems. Unfortunately, such methods are not optimized for pres-
+sure evaluation in real-time sound rendering.
+In the last decade, a relatively simple approach called the source
+simulation technique (also called equivalent sources method,
+method of substitute sources, equivalent-sphere methods, etc.) has
+been introduced to solve the Helmholtz equation for scattering
+and radiation problems [Ochmann 1995; Ochmann 1999], and to
+estimate measured radiation sources [Magalh ˜aes and Tenenbaum
+2004]. Similar to our PAT-approximation problem, the primary
+challenge is placement of equivalent sources, which is currently an
+active topic of research; some recent examples are [Gounot et al.
+2005; Pavi ´c 2005; Pavi ´c 2006]. However, these methods solve
+the (Neumann) radiation problem directly, while we ﬁrst compute
+each acoustic transfer function using trusted engineering acoustics
+methods, e.g., BEM, then use a novel equivalent sources technique
+to solve an easier pressure (Dirichlet) approximation problem on
+an offset surface. The latter makes it easier to accommodate com-
+plex geometry, thin shells, and polygon soups common in graphics.
+Our use of an offset pressure surface to support equivalent sou rces
+is also closely related to work on faithful rendering of vibration
+sources by [Johnson et al. 2003]. We focus on radiation produced
+by a single complex object in isolation, and introduce an efﬁcient,
+randomized, multilevel source placement algorithm suitable for ap-
+proximating radiation from geometrically complex models.
+In graphics, diffraction effects are usually less important for light-
+ing than for sound since the wavelength of visible light is much
+shorter than geometric features. Exceptions are reﬂections from
+geometric microstructure, such as the bumpy surface of a com-
+pact disc, for which Fourier-based precomputation approaches ex-
+ist [Stam 1999]. Our method is in the same spirit as precomputed
+
+=== PDF PAGE 3 ===
+radiance transfer (PRT) [Sloan et al. 2002; Sloan et al. 2003], how-
+ever, due to mathematical differences in the nature of sound gener-
+ation, PRT techniques cannot be directly used for acoustics.
+3 Preliminary Analysis
+Our preprocess uses established techniques of linear modal vibra-
+tion analysis and acoustic analysis to generate input pressure ﬁelds
+for our PAT approximation algorithm.
+3.1 Modal Vibrations
+Sound is produced by small vibrations of objects. These vibrations
+can be approximated as a superposition of a discrete set of mode
+shapes ˆuk, each oscillating with angular frequency (2
+π/period) ωk
+and amplitude qk(t). The vibration’s displacement vector is
+u(t) = Uq(t) = [ ˆu1 · · ·ˆuK] q(t) (1)
+where q(t) ∈ RK is the vector of modal amplitude coefﬁcients. For
+acoustics we only need to retain modes with frequencies in the au-
+dible range. While modes decay over time due to complicated fac-
+tors such as mechanical damping and acoustic radiation, we use the
+simple Rayleigh damping approximation, with constants tuned to
+the material behavior desired. Modal analysis is standard [Shabana
+1990]; we used ABAQUS, a commercial FEM package.
+3.2 Acoustic Transfer Functions
+Sound radiates from an object’s surface S into the surrounding
+medium, Ω , as pressure waves. Since the modes decay in time
+slowly relative to frequency, it is more convenient to deal with
+Fourier transforms of all time dependent quantities. We denote the
+complex-valued time-harmonic pressure ﬁeld due to a single vibra-
+tion mode at a point x ∈ Ω outside the object as p(x)e+i
+ωt , where
+ω is the frequency of the mode. The wave number, k, for a sound
+wave of wavelength λ is given by
+k = ω
+c = 2π
+λ , (2)
+where c is the speed of sound in the surrounding medium, e.g., air
+has c = 343m/s at standard temperature and pressure. We refer
+to the spatial part p(x) ∈ C of each mode’s pressure ﬁeld as the
+acoustic transfer function of that mode. It satisﬁes the temporal
+Fourier transform of the wave equation, the Helmholtz equation,
+∇2 p + k2 p = 0, x ∈ Ω . (3)
+Given p(x), we can approximate the contribution to sound pressure
+at the ear (up to a phase) by the real-valued quantity, |p(x)| qk(t),
+where qk(t) is this mode’s amplitude. Boundary conditions are
+required to solve (3) for sound radiation from surface vibrations.
+First, one assumes that pressure decays far away from the boundary
+(Sommerfeld radiation condition). Second, the normal derivative
+of pressure on the vibrating object’s surface, S =
+∂ Ω is given by a
+Neumann boundary condition
+∂ p
+∂ n = −iωρ v on S (4)
+where ρ is the ﬂuid density, and v is the surface’s normal velocity.
+The latter is speciﬁed as v = iω(n · ˆu), where n · ˆu is the modal
+displacement in the normal direction.
+Solving each mode’s exterior radiation problem can be done
+using any standard numerical acoustics solver. For example, the
+boundary element method (BEM) is widely used in the engineer-
+ing community to solve Helmholtz radiation problems for applica-
+tions such as noise analysis and reduction [Ciscowski and Brebbia
+1991]. We used a commercially available acoustic BEM package
+(Neo Acoustics, Paragon NE, Netherlands). For graphics models,
+where thin-shell structures are common, e.g., plastic chair or bell,
+we recommend using indirect BEM solvers [Ciscowski and Breb-
+bia 1991]. For more complex geometries, very high accuracies, or
+difﬁcult high-frequency analyses, i.e., where kR ≫ 1 (R is bound-
+ing radius of object), sophisticated solvers are available, such as the
+fast multipole method (see [Gumerov and Duraiswami 2005]).
+Once the BEM problem has been solved on the object boundary, it
+still remains to evaluate the BEM solution’s pressure ﬁeld p(x) at
+non-boundary locations x ∈ Ω . Unfortunately, this incurs an O(N)
+cost for an object with N boundary elements, for an O(NM ) cost
+for M modes. Such costs make evaluation noninteractive for all but
+the simplest models (see Figure 3).
+4 Approximating Acoustic Transfer
+We now describe how we approximate p(x) to support real-
+time evaluation at costs independent of geometric complexity, i.e.,
+output-sensitive evaluation. We use the boundary element analysis
+to evaluate the pressure p(x) on an offset surface enclosing the ob-
+ject. To support repeated (real-time) evaluation, we then estimate a
+set of simple equivalent sources that approximate the offset pressure
+boundary condition, and therefore the acoustic transfer function in
+the exterior space. See Figure 3 for a comparison of a resulting PAT
+pressure approximation to the ground truth BEM solution.
+BEM Solution PAT Approximation
+Figure 3: Comparison of BEM to PAT approximation (4% error) using
+exaggerated shading reveals near identical absolute pressure ﬁelds, |p(x)|
+(mode 30 of dragon model shown in Figure 1); each 640x480 rast er has
+307200 samples. However, evaluating the BEM raster samples took 8.5
+hours while PAT only took 4.3 seconds– a 7000x speedup. This illustrates
+the beneﬁt of output-sensitive PAT evaluation: PAT only nee ds 63 cheap
+dipole sources to approximate the pressure ﬁeld to 4% accura cy, whereas
+BEM must accumulate contributions from all 7689 boundary elements.
+4.1 Background: Spherical Multipole Radiation
+Our PAT pressure ﬁelds are linear combinations of spherical mul-
+tipoles
+ψlm(x − ¯x), an important class of functions representing
+radiating waves (of particular wavenumber k). They decay as
+∥x − ¯x∥ →∞, and satisfy the free-space Helmholtz equation every-
+where except at the source position, ¯x, where they are singular.
+They are given by the product of two complex-valued functions,
+ψlm(x − ¯x) = h(2)
+l (kr) Ylm(θ ,φ ), |m| ≤l, l =0,1, . . . , (5)
+where (r,θ ,φ ) are spherical coordinates of the vector, x − ¯x. The
+spherical harmonics Ylm(θ ,φ ) ∈ C, widely used in graphics [Sloan
+et al. 2002], describe the angular variables, and the radial factors
+are spherical Hankel functions of the 2nd kind,
+h(2)
+l (kr) = jl(kr) − iy l(kr) ∈ C, (6)
+where jl and yl are real-valued spherical Bessel’s functions of the
+ﬁrst and second kind [Abramowitz and Stegun 1964]. For example,
+a spherical radiating wave is simply
+ψ00 ∝ e−ikr
+r = coskr
+r − i sinkr
+r .
+
+=== PDF PAGE 4 ===
+Dipole Sources: Fortunately, one can precompute and evalu-
+ate good PAT approximations using only combinations of 4-term
+dipole sources ( l < n = 2 or (l,m) ∈ {(0,0), (1, −1), (1,0), (1,1)},
+simplifying evaluation and implementation. Code for efﬁcient eval-
+uation of dipole sources is provided on the CDROM, and achieves
+a throughput of more than 3 million dipoles/sec on a Pentium IV
+3GHz PC. Combinations of only monopole sources ( l = 0) tend to
+be too sensitive to source placement, and are also poorly suited to
+approximating radiation from thin shells, which is dipole-like lo-
+cally. Higher-order sources can also be used, but are not analyzed
+in this paper (although see [Ochmann 1995; Pavi´c 2006]).
+4.2 Equivalent Multipole Sources
+Any linear combination of M multipoles of order-n
+p(x) =
+M
+∑
+q=1
+n−1
+∑
+l=0
+l
+∑
+m=−l
+cqlm
+ψlm(x − ¯xq) ≡
+Mn2
+∑
+j=1
+c jψ j(x) (7)
+also satisﬁes the Helmholtz equation (and radiation condition), ex-
+cept at source points {¯xq} where it is singular. Here cqlm ∈ C
+are coefﬁcients to be determined, as are M and the source points
+{¯xq}M
+q=1, and j is a generalized index for (q,l,m). One must also
+satisfy the boundary condition on the object. Source simulation
+methods [Ochmann 1995; Pavi´c 2005] place sources inside the ob-
+ject so as to satisfy the (Neumann) boundary condition. Unfortu-
+nately, in graphics many objects are essentially thin shells, such as
+our bell or chair or dragon, and they have no inside to hide singular
+sources in. We therefore take a different approach.
+Deﬁning an offset surface, So, that is manifold and closed,
+and encloses the object geometry provides a ﬁctitious boundary in-
+terface that serves two purposes. First, it provides a clear “inside”
+region within which to place our ﬁctitious sources. Second, it pro-
+vides a boundary on which to evaluate our precomputed (BEM) so-
+lution’s pressure values to provide a pressure (Dirichlet) boundary
+condition for estimation of equivalent multipole sources. We ob-
+tain offset surfaces by ﬁrst computing a distance ﬁeld to the model
+geometry, and then using marching cubes to extract an outer iso-
+surface for a given distance offset [Lewiner et al. 2003]. Resulting
+surfaces are smooth and of marching cubes resolution; a chair ex-
+ample is shown in Figure 6. The distance ﬁeld’s voxel resolution,
+h, is chosen small enough to resolve the offset shape, as well as
+the smallest wavelength
+λmin analyzed; in our implementation we
+choose kh ≤ 1, but in practice kh may approach one for high fre-
+quencies due to computational limitations. The offset distance δ
+is chosen large enough to avoid over-ﬁtting during source place-
+ment; in practice we set
+δ to a multiple, e.g., 2, of the largest offset
+surface mesh’s edge length. We use BEM to sample the pressure
+¯p(x) on the offset surface at N vertex (or centroid) sample posi-
+tions (s1,s2, . . . ,sN), collectively denoted by ¯p ∈ CN. Each vertex
+(or centroid) sample i also has an effective area, ai, given by 1/3 of
+adjacent triangle areas (or triangle area).
+Computing Equivalent Source Amplitudes: If one places
+sources inside the volume enclosed by So, such that the Dirichlet
+BC p = ¯p is satisﬁed on So, one satisﬁes the Helmholtz radiation
+problem everywhere in the space exterior to So; the approximation
+error is only determined by how well we satisfy the boundary con-
+dition, p(x) = ¯p(x), x ∈So (see Trefftz methods [Kita and Kamiya
+1995; Desmet 2002]). Assuming a set of M unique source posi-
+tions, {x1, . . . ,xM}, we can compute each multipole’s expansion
+coefﬁcients by ﬁtting the multipole expansion’s pressure ﬁeld to the
+BEM-sampled offset-surface pressure values, ¯p, in a least-squares
+sense. In our implementation, we use weighted least squares to
+ﬁt offset-surface pressure ﬁelds at N locations by solving the over-
+determined N-by-Mn2 system of equations:
+(WV)c = W¯p ⇔ Ac = b, (8)
+where c ∈ CMn2
+is the vector of unknown multipole coefﬁcients
+from (7); rows are scaled by the N-by-N weight matrix W =
+diag(√
+ai); V is the multipole basis matrix with Vi j = ψ j(si) being
+the jth multipole function evaluated at the ith sample position, si;
+and ¯pi = ¯p(si) is the BEM pressure evaluated at si. These weighted
+discrete equations can be seen as arising from the minimization of
+the squared L2 pressure error,
+∫
+So |p(y) − ¯p(y)|2dSy.
+For numerous or closely placed sources, the A matrix in (8) can be
+poorly conditioned. We solve the least squares problem in (8) us-
+ing a truncated singular value decomposition with a small relative
+singular value threshold of 10 −6. Double precision is used to con-
+struct and solve the system, and also to evaluate the PAT pressure
+approximation (7) at runtime.
+4.3 Multipole Placement Algorithm
+Given multipole positions one can solve (8) to obtain a multi-point
+multipole expansion that approximates the offset-surface pressure
+boundary condition. Determining good source positions and how
+many, however, is nontrivial.
+4.3.1 Greedy Randomized Source Placement Algorithm
+Before presenting our complete multipole placement algorithm op-
+timized for complex geometry and faster convergence (§4.3.2), we
+ﬁrst introduce a simple algorithm to illustrate the basic concepts.
+We note that by using this simple algorithm one can already gener-
+ate fair quality PAT approximations.
+x
+zyS
+So
+Ux
+Uy Uz
+r
+r
+Q
+(a) (b) (c)
+rejected
+wins
+Figure 4: Greedy selection of multipole positions begins with (a) some
+candidate source positions {x, y, z} inside or on the object surface S, and
+a pressure residual r on the offset surface S o; (b) Source position x is se-
+lected since its multipole subspace Ux has the largest residual projection;
+(c) The residual is made orthogonal to this known subspace Q = Ux. The
+process is repeated to greedily select additional source positions, updating
+the subspace Q and residual r at each iteration.
+Greedy Multipole Placement: We incrementally add sources
+one by one. Given a set of candidate positions, X, to place the
+next multipole of order n, we rank each position, x ∈ X, based on
+the ability of its multipole matrix, Vx, to describe the current offset
+surface pressure residual, r=b−Ac (see Figure 4). Mathematically,
+given a unitary basis matrix spanning the multipole’s n2 vectors,
+Ux ≡ basis(WVx) ∈ CN×n2
+, (9)
+the multipole point ﬁtness is deﬁned as the norm of the residual’s
+subspace projection, ∥(Ux)H r∥2, where ()H denotes the matrix
+Hermitian conjugate. Given a sampling of candidate multipole po-
+sitions, X, we can select the best position via the largest projection:
+x∗ = argmax
+x∈X
+∥(Ux)H r∥2
+2, (10)
+or, as will be important later for multilevel reﬁnement, select a sub-
+set of M best multipole positions. Repeated greedy placement can
+result in a steady decrease in residual pressure error (see Figure 5).
+Candidate multipole positions, X, need only be chosen in-
+side the offset surface, So, but to avoid singularities inany listening
+spaces outside the object, we place them inside (or, in the case of
+shells, on) the original object surface, S. Candidate positions are
+generated using random sampling; for open shell objects, points
+
+=== PDF PAGE 5 ===
+M =0 (1.0) M =1 (.68) M =2 (.52) M =3 (.38) M =24 (.04)
+Figure 5: Greedy multipole placement: Plots of the bell’s residual offset
+pressure error are shown at each placement iteration for inc reasing num-
+bers of sources, M, and decreasing relative residual norms, ∥r∥ (in brack-
+ets). At each iteration, a new multipole position, x∗, is selected from a
+sampling of candidate positions based on the ability of its m ultipole basis,
+Ux, to capture the largest fraction of r. (Far right) Placed source positions.
+are chosen randomly on S; for closed objects rejection sampling
+(using a sphere-tree accelerated ray-intersection test) is used to ﬁnd
+points inside S. Increasing the number of candidate positions, |X|,
+can improve point selection at the cost of more expensive iterations.
+Updating the multipole subspace and residual: After se-
+lecting a new multipole position x∗, we need to update the residual
+r. This is achieved by incrementally updating a unitary basis Q for
+the space spanned by all multipoles selected, followed by removal
+of the residual’s component in that subspace. The multipole basis
+matrices can be ill-conditioned, so we use a stable orthogonaliza-
+tion scheme such as modiﬁed Gram-Schmidt [Golub and Van Loan
+1996]. Given a new multipole position x, we expand the basis Q
+incrementally and update the residual as follows:
+EXPAND SUBSPACE ANDUPDATE RESIDUAL (Q, r, x)
+1 Q ← [Q | Qx] ← MOD GRAM SCHMIDT ([Q | WVx])
+2 [Qx | r′] ← UPDATE RESIDUAL ([Qx | r])
+3 r ← r′
+
+
+(11)
+In line 1, modiﬁed Gram-Schmidt is used to convert the matrix
+WVx into a unitary basis Qx orthogonal to the previous Q basis.
+Since the input arguments satisfy r ⊥ Q, it sufﬁces to only subtract
+r’s projection onto Qx, i.e., r′ ← r−QxQH
+x r, which is done in a sta-
+ble manner using a modiﬁed Gram-Schmidt pass (line 2). For a sur-
+face with N samples, and a basis with M multipoles of order n, we
+have Q ∈ CN×Mn2
+and Vx, Qx ∈ CN×n2
+. Line 1 dominates the cost
+for large M; each multipole added has cost complexity O(NMn 4).
+In our implementation we use dipoles ( n = 2), so that the cost is
+O(NM ); the total updating cost of incremental orthogonalization of
+M dipoles is therefore O(NM 2), as expected. This cost is reason-
+able for complex models where N ≫ M, but small M is desirable.
+Basic greedy multipole placement algorithm: At each
+iteration the algorithm chooses greedily from a pool of newly drawn
+randomized source positions, X, then updates the multipole basis,
+Q, and the residual. The algorithm terminates when the normalized
+residual error falls below a tolerance, TOL:
+PLACE MULTIPOLES (TOL , ¯p, S, So, ...)
+1 r ← W¯p
+2 r ← r/∥r∥2 // init residual
+3 Q ← 0 // init subspace
+4 Y ← / 0 // init selected points
+5 while ∥r∥2 > TOL
+6 x∗ ← SELECT MULTIPOLE POSITION (r)
+7 EXPAND SUBSPACE ANDUPDATE RESIDUAL (Q, r, x∗)
+8 Y ← Y ⋃x∗
+9 return Y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(12)
+Obviously, the important details are hidden in howSELECT MULTI -
+POLE POSITION () picks the new position at each iteration. A simple
+implementation that captures the essence of our optimized multi-
+level algorithm is as follows:
+SELECT MULTIPOLE POSITION (r)
+1 X ← draw P random candidate source positions
+2 x∗ ← argmaxx∈X ∥(Ux)H r∥2
+3 return x∗
+
+
+(13)
+Discussion of computational complexity: Given an off-
+set surface with N samples, simply evaluating theP=|X| multipole
+basis matrices, Ux ∈ CN×n2
+, constitutes a large O(NPn4) cost per
+iteration. For dipoles (n =2), the total cost of selecting a multipole
+position, expanding the subspace, and updating the residual each
+iteration is O(NP + NM ) ﬂops. Unfortunately, to obtain good mul-
+tipole positions and a small M, it is desirable to have very large P
+(ideally P ≫ M). Caching and reuse of multipole bases is possi-
+ble, but has undesirable memory requirements.1 We now provide a
+simple, low-memory, multilevel approach suitable for largeP.
+level 1 level 2 level 3 = L
+Figure 6: Multilevel source placement (L =3 levels): (Top) Offset surface
+importance-sampled at increasing density based on plotted pressure resid-
+ual; (Bottom) P = 256 candidate source positions are considered on the
+coarsest level ( ℓ = 1), then progressively thinned by a factor of 4 at each
+level until only 16 must be evaluated at the ﬁnest resolution (L=3).
+4.3.2 Multilevel Acceleration of Source Placement
+We can greatly accelerate SELECT MULTIPOLE POSITION (r) using
+a simple multilevel source placement strategy. For example, we
+can rank 4 × as many source positions if we estimate their ﬁtness
+∥(Ux)H r∥2 using only 1 /4 of the offset surface samples. Obvi-
+ously this is approximate, but even sparse approximations can be
+expected to cull away the worst candidate positions. In a multilevel
+setting, given a large set of P candidate positions, each new level
+culls bad positions while evaluating the ﬁtness of remaining ones
+with increasingly more samples until the best multipole position is
+selected from a small handful of promising ones evaluated using all
+offset surface samples (see Figure 6).
+1This basic algorithm is related to work by Pavi´c [2005; 2006] on equivalent source
+simulation for exterior radiation (and scattering) problems with Neumann (pressu re
+derivative) boundary conditions on the object surface: a greedy approach is used to
+select sources from a dense uniform grid of candidate source positions thereby pro-
+viding engineering results for 2D radiation problems. To amortize orthogonali zation
+(Vx → Ux) costs, one could keep a large number of {Ux}x∈X matrices resident in
+memory, analogous to how Pavi ´c [2005] caches a 2D grid of normalized monopole
+vectors. However, for complex 3D meshes such an algorithm has prohibitive mem -
+ory requirements to achieve sufﬁcient accuracy, and restricts the size of the pool, |X|,
+introducing position sampling bias. In summary, for complex models, st oring a large
+(double precision) Q basis matrix in memory is possible, but it is undesirable to store
+thousands of candidate {Ux} matrices.
+
+=== PDF PAGE 6 ===
+Object Surface, S Offset Surface, So Vibration Modes BEM Analysis Wavelength Regime
+Model Vtx Tri Vtx Tri h δ Modes Freq (Hz) FEM Time Modes Size Memory Solve Offset radius R λ max kR
+Dragon 3861 7689 2617 5230 0.72 cm 1.5 cm 40 490–8600 3m 45s 3.5 MB 171 MB 5h 40m 2h 54m 10 cm 4.0–70 cm 15.8
+Rabbit 2562 5120 11100 22196 0.49 cm 5 cm 60 160–999 2m 50s 3.5 MB 101 MB 32m 11h 56m 10 cm 34.3–214 cm 1.8
+Bell 3651 7300 14173 28342 1.4 cm 15 cm 85 230–2750 4m 07s 7.1 MB 149 MB 3h 37m 16h 01m 30 cm 12.5–149 cm 15.1
+Chair 5246 9581 11060 22124 1.6 cm 5 cm 200 25–2045 11m 04s 25 MB 221 MB 40h 76h 40 cm 16.8–1390 cm 15.0
+Table 1: Model Statistics: Triangle meshes of the object surface S are used for both thin -shell FEM analysis, and indirect BEM analysis (rabbit uses direct
+BEM with CHIEF). Finite element modal analysis is very fast (FEM Time), whereas BEM analysis is substantially slower (but computed in parallel): see BEM
+analysis memory footprints (Memory), and times to solve all BEM problems (Solve) and evaluate the BEM solutions on the of fset surface S o (Offset). The
+relationship between the object size, given by its bounding radius (R), and the problem wavelength λ, is summarized by the quantity, kR=2πR/λ.
+Speciﬁcally, consider L levels, with level 1 the coarsest, and levelL
+is the ﬁnest level which uses all N offset position samples. Offset
+surface sample indices on level ℓ are denoted by Sℓ and are con-
+structed using random sampling such that |Sℓ| = ⌈Nα ℓ−L⌉, where
+α is the ratio between levels–we use α = 1/4. Given P candidate
+multipole positions on level 1, level ℓ has only ⌈Pα ℓ⌉ positions.
+Then given a list of sample indices Sℓ, the level-ℓ sparse multipole
+position ﬁtness is ∥(Uℓ
+x)H rℓ∥2, where rℓ = (ri)i∈Sℓ is r restricted to
+the offset samples, and similarly Uℓ
+x ∈ C|Sℓ|×n2
+is the unitary basis
+associated with the row restriction of WV to row indices in Sℓ. Our
+multilevel algorithm for estimating the best multipole position from
+P candidates is:
+SELECT MULTIPOLE POSITION (r)
+1 X1 ← draw P random candidate source positions
+2 for Level ℓ = 1 . . .L − 1
+3 Sℓ ← select ⌈N
+αL−ℓ⌉ offset surface samples
+4 rℓ ← restrict r to indices in Sℓ
+5 Xℓ+1 ← ⌈Pα ℓ⌉ points in Xℓ with largest ∥(Uℓ
+x)H rℓ∥2
+6 x∗ ← argmaxx∈XL ∥(Ux)H r∥2 // best on ﬁnest level
+7 return x∗
+
+
+
+
+
+
+
+
+
+
+
+(14)
+Random sampling of offset surface positions changes at each level
+(line 3) to avoid persistent bias. To avoid missing structure in the
+residual r, importance sampling is used to balance samples selected
+based on area-weighted probability, prob ∝ ai, and squared resid-
+ual error, prob ∝ |ri|2 = ai|pi − ¯pi|2. In practice, we observe that
+sampling only based on area or squared residual distributions re-
+sults in slightly larger M values than using an equal combination.
+The memory requirements of the multilevel version are comparable
+to the single-level case. Each level has the same theoretical cost of
+αL−1 that of a single-level version with the same number of can-
+didate positions. There are L levels to evaluate, so the cost of the
+multilevel algorithm is αL−1L that of a single-level approach. For
+example, with α = 1/4 an L = 3 scheme provides approximately a
+5× speedup, whereas L = 4 gives a 16× speedup.
+5 Results
+We now present results for four different objects: a large tin bell;
+a hollow bronze dragon with holes on the bottom; a plastic chair;
+and a plastic thin-shell rabbit. Please see accompanying video, and
+our real-time software demonstration (on CDROM and website).
+Table 1 gives detailed statistics obtained on a Pentium IV , 3.0 GHz
+machine using C/C++ code. Our source placement implementation
+uses Java, and is timed using Sun Java JDK 1.5.
+PAT approximations for the dragon model were shown in Figure 1,
+and exhibit a highly-structured pressure ﬁeld, except at very low
+frequencies (more on this later). A comparison of PAT to the ground
+truth indirect BEM solution was provided in Figure 3 for the dragon
+model, and is nearly indistinguishable despite being several thou-
+sand times faster to evaluate. The radiation efﬁciency [Cremer et al.
+1990] of individual modes exhibits a complicated attenuation struc-
+ture (see Figure 7) that is perceptually relevant yet missing from
+traditional modal rendering methods [van den Doel and Pai 1996].
+The deﬁciency of monopole sources for thin-shell radiators is illus-
+trated in Figure 8 for the chair model. The number of dipole sources
+required to approximate various models are shown in Figure 9, and
+support our output-sensitive approximation claim. Larger approxi-
+mation errors lead to fewer dipole sources, and improved real-time
+rendering rates; see Table 3 for PAT precomputation and real-time
+rendering performance results. The multilevel source placement
+algorithm is analyzed in Table 2, and illustrates that multilevel
+placement is more efﬁcient at scanning large numbers of candidate
+sources to generate compact (low M) dipole approximations than
+single-level scanning.
+Figure 7: Radiation efﬁciency of dragon model illustrates that some
+modes radiate thousands of times more effectively than others. In particular,
+several low frequencies are suppressed, thereby illustrat ing that mechan-
+ically “dominant” base vibration modes can be less importan t for sound
+generation. Even “low accuracy” PAT approximations, e.g., 20% error,
+can inherit the dramatic radiation efﬁciency effects.
+Figure 8: Convergence of mono-
+pole and dipole sources versus
+source DOF , Mn2, for multilevel
+placement (L = 3, α = 1/4) on
+chair model (mode 150, 1519Hz,
+kR = 11.1). Residual error ex-
+hibits fast decay with increas-
+ing dipoles, whereas monopoles
+fail to capture the dipole-like
+thin-shell radiation and get stuck
+around 20% error.
+0 100 200 300 400 500 600 700
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+RESIDUAL NORM
+#SOURCE COEFFICIENTS
+ 
+ 
+MONOPOLES
+DIPOLES
+Real-time sound synthesis is achieved by computing each mode’s
+PAT absolute pressure amplitudes,|p(ear)|. If the object undergoes
+rigid body motion, listening positions are transformed into the ob-
+ject frame, and |p| interpolated along the listening trajectories; we
+use a ﬁxed rate of 250 Hz. Ofﬂine animations linearly interpolate
+absolute PAT values at intermediate times, whereas our real-time in-
+teractive demonstrations (see CDROM) linearly interpolate|p| with
+a 1/250 second delay. Runtime evaluation of modal vibration am-
+plitudes, q, are done using an IIR digital ﬁlter [James and Pai 2002].
+The resulting sound is computed by summing each mode’s absolute
+PAT pressure, scaled by the modal amplitude, |p|q, for each vibra-
+tion mode. Animations involving rigid body dynamics were time-
+stepped at audio rates or higher (see Figure 10). Planar ground
+
+=== PDF PAGE 7 ===
+0 10 20 30 400
+10
+20
+30
+40
+50
+60
+70
+80
+MODE INDEX
+#DIPOLES, M
+ 
+ 
+5% Error
+20% Error
+0 20 40 60 80 1000
+20
+40
+60
+80
+100
+120
+MODE INDEX
+#DIPOLES, M
+ 
+ 
+5% Error
+20% Error
+0 50 100 150 2000
+50
+100
+150
+MODE INDEX
+#DIPOLES, M
+ 
+ 
+5% Error
+20% Error
+0 10 20 30 40 50 60
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+MODE INDEX
+#DIPOLES, M
+ 
+ 
+5% Error
+20% Error
+Figure 9: Number of multipole sources per mode computed using the 3-level placement algorithm (L = 3, P = 256) at two approximation tolerances
+(TOL = 0.05 and 0.20). Output-sensitivity is illustrated by the fact that the nu mber of dipoles needed to approximate each mode are far fewer than the
+thousands of triangles on the radiating surface. All exampl es exhibit erratic variations with mode index, e.g., due to g reedy placement and varied mode
+structures, but have a gradual increase in dipole counts at i ncreasing frequency (dragon, bell, chair). The rabbit’s si mple dipole approximations are an
+exception that illustrates that it is in the low-frequency regime (small kR) and nearly a dipole source itself.
+L = 1 L = 2 L = 3 L = 4
+<M > PLACE MULTIPOLES SVD <M > PLACE MULTIPOLES SVD <M > PLACE MULTIPOLES SVD <M > PLACE MULTIPOLES SVD
+P = 16 78 0.55m 0.42m 80 0.49m 0.91m 79 0.47m 1.2m – – –
+P = 64 73 0.92m 0.32m 71 0.63m 0.29m 74 0.49m 0.41m 75 0.49m 0.53m
+P = 256 71 2.5m 0.27m 68 1.4m 0.27m 69 0.84m 0.31m 70 0.47m 0.35m
+P = 1024 67 7.9m 0.24m 66 4.6m 0.26m 69 2.0m 0.31m 66 0.89m 0.30m
+P = 2048 67 17m 0.29m 66 8.7m 0.24m 67 3.5m 0.31m 66 1.4m 0.32m
+Table 2: Multilevel source placement compared for a range of levels L, and candidate source positi ons, P, for the plastic chair at modest approximation
+accuracy (10% error). Values for number of dipoles per mode M, and timings ofPLACE MULTIPOLES () and computation of equivalent source coefﬁcients (SVD)
+are averaged over 3 modes (1, 100, 200). The SVD-based solve f or source coefﬁcients is based on Intel’s MKL library implem entation of LAPACK double-
+precision complex SVD driver. Note that the subspace generated during placement could be reused to reduce SVD solve costs in an optimized implementation.
+All timings are on a single Opteron 280 core, with PLACE MULTIPOLE () implemented in Java (dipole evaluation cost ≈ 0.39µsec/dipole).
+Model 5% Error 20% Error
+Dipoles Precomp Eval Rate Dipoles Precomp Eval Rate
+Dragon 2056 0.23 hr 1818 Hz 822 0.14 hr 4053 Hz
+Rabbit 450 0.27 hr 5899 Hz 149 0.23 hr 20413 Hz
+Bell 4979 3.8 hr 799 Hz 2380 1.6 hr 1632 Hz
+Chair 20864 19 hr 190 Hz 5958 1.8 hr 574 Hz
+Table 3: PAT precomputation and real-time evaluation rates for high
+(5%) and low (20%) accuracy equivalent source approximations. Total di-
+pole counts (Dipoles), precomputation times for all modes ( Precomp), and
+real-time evaluation rates (Eval Rate) are given (using Pentium IV 3.0GHz).
+Note that in practice, PAT need only be evaluated at a few hundred Hz, e.g.,
+250 Hz, and not at the audio sample rate (44100 Hz). All models were con-
+structed with the same multilevel source placement settings (L=3, P=256).
+contacts were resolved using a simple damped linear spring penalty
+model, with contact forces driving the vibration model. Real-time
+evaluation performance is easily achieved for our examples. Ta-
+ble 4 gives animation statistics. Comparisons to other sound ren-
+derers were also made via careful implementations of the Rayleigh
+renderer of [O’Brien et al. 2001], ground truth absolute values of
+acoustic transfer pressure using BEM, and the unscaled sum ∑i qi
+of [van den Doel and Pai 1996]. We also provide a comparison to
+the traditional far-ﬁeld ( ∥x∥ ≫R), low-frequency ( kR ≪ 1) mono-
+pole approximation [Cremer et al. 1990]
+|p| =
+ρω |Q|/(4πr), r ≫ R, kR ≪ 1, (15)
+where Q =
+∫
+S v dS is the so-called volume velocity (compare to sim-
+ilar model in [O’Brien et al. 2002]), and this model sounds nearly
+identical to the rabbit PAT approximation. Note that (15) yieldszero
+values for open double-sided models due to the deﬁnition of Q; we
+provide a single-sided monopole approximation for the thin-shell
+dragon model using only the outer surface. Sound interactions with
+the ground were ignored in all renderers. Please see accompanying
+video. Comparisons show that the modal renderer clearly suffers
+from a lack of directionality phenomena, especially for highly di-
+rection examples such as the swinging bell. One exception is the
+rabbit model, which is in the low-frequency regime (kR≈1) thereby
+making it nearly a monopole source.
+Swaying tin bell Plastic rabbit
+Figure 10: Rigid body animations
+were generated of the dragon and
+rabbit models falling on the ground,
+and the bell swaying back and forth.
+Dynamics and penalty-based contact
+forces were integrated at audio rates
+(44100 Hz). See the video for com-
+parisons to other rendering tech-
+niques.
+Hollow bronze dragon
+6 Conclusions and Discussion
+We have described a fast method for synthesizing sound radiation
+from geometrically complex vibrating objects. Our Precomputed
+Acoustic Transfer (PAT) functions are based on accurate approx-
+imations to Helmholtz equation solutions generated by standard
+numerical methods. We introduced an algorithm for constructing
+equivalent source approximations that enable real-time sound syn-
+thesis in physically based animation. Since the number of low-order
+multipoles required to approximate each vibration mode’s acoustic
+transfer function is independent of the model’s geometric complex-
+ity, our method exhibits output-sensitive evaluation costs, and is
+suitable for interactive applications.
+
+=== PDF PAGE 8 ===
+# of |p| BEM PAT Rendering Rayleigh Rendering
+Model Duration evals Render PAT Render Speedup Dipoles Throughput Cost/Dipole with ray-casting w/o ray-casting
+Dragon (4%) 2.50 s 625 46 min 0.38 s 7263× 2350 1480 Hz 0.29 µsec 8h 42m 7m 40s
+Bell (5%) 5.00 s 1250 97 min 1.53 s 3803× 5051 793 Hz 0.24 µsec 15h 20m 51m 58s
+Rabbit (5%) 4.00 s 1000 65 min 0.24 s 16250× 686 4166 Hz 0.35 µsec – –
+Table 4: Animation Statistics: Sound is synthesized at 44100 Hz, with PAT and BEM samples gen erated (all modes) at 250 Hz and linearly interpolated.
+The duration and number of PAT/BEM |p| evaluations is provided, along with BEM and PAT evaluation t imes (BEM Render; PAT Render) and the speedup
+resulting from PAT (speedup =”BEM Render”/”PAT Render”). The total number of dipoles per object (Dipoles), and effective PAT throughput, and cost
+per dipole evaluation are given. Rayleigh rendering was per formed for the dragon model (see video), and timings are give n for versions with and without
+octree-accelerated ray-casting visibility tests on each triangle radiator.
+Boundary element analysis and offset surface evaluation are cur-
+rently the most expensive part of our preprocess. Fine mesh resolu-
+tions are required to resolve small wavelengths (e.g., 6 emax <
+λmin
+for maximum edge length emax) and vibration modes, which lim-
+its the range of frequencies that can be analyzed [Desmet 2002].
+For a ﬁxed maximum frequency, larger objects are more difﬁcult
+because the mesh needs to be more detailed. For example, the fre-
+quency range of the large chair is particularly restricted. Evaluating
+the BEM solution on the offset surface is also quite expensive be-
+cause of the detailed meshes required. Faster analyses are needed to
+support the complex geometry and large audible frequency ranges
+needed in graphics. Comparing PAT evaluation to fast Helmholtz
+multipole evaluation costs would be interesting.
+Our multipole placement algorithm has general application in en-
+gineering acoustics in solving the Neumann radiation problem in
+the special case of closed volumetric objects , e.g., rabbit. Apply-
+ing our algorithm could remove expensive BEM analyses from the
+PAT pipeline, proceeding directly to equivalent source representa-
+tions, possibly reaching higher frequency problems (kR ≫1). Vari-
+ants for nonclosed shell geometries, such as extensions of hybrid
+FEM-Trefftz methods [Desmet 2002] are interesting. Higher order
+sources and higher frequencies should be investigated for PAT.
+Our greedy source placement algorithm does not yield optimal
+source positions, and its ability to obtain minimal source conﬁg-
+urations is unknown. The signiﬁcant variations in M for the chair
+example (see Figure 9) suggest room for improvement. Optimiza-
+tion can be used to further reﬁne multipole placements [Ochmann
+1995], however our preliminary experiments did not yield signiﬁ-
+cantly better results. Improved multipole source and offset surface
+sampling strategies may help.
+PAT can provide a cheap and accurate approximation to Helmholtz
+radiation from a single object, but at the cost of neglecting the
+environment. Scattering interactions between multiple PAT ob-
+jects, analogous to light interactions between PRT models [Sloan
+et al. 2002], might be approximated. While the method of images
+can be used to approximate very simple interactions, e.g., with a
+ﬂoor, the simple source-based nature of PAT models is ideal for in-
+corporation into existing general-purpose sound propagation tech-
+niques [Funkhouser et al. 1998; Funkhouser et al. 1999; Tsingos
+et al. 2001; Tsingos et al. 2002]. The PAT approximation involves
+steady-state frequency analyses, and transient effects can be impor-
+tant, e.g., for very large objects. Exterior radiation problems were
+considered here, but interior problems may present special chal-
+lenges.
+Level of detail rendering of PAT models has not been addressed,
+although simply blending between different error PAT approxima-
+tions is possible. Perceptually based progressive techniques such
+as [Tsingos et al. 2004] are ideal candidates for simplifying the
+equivalent source models, however care must be taken since the
+linear combination of sources can be ill-conditioned. Compression
+and hardware rendering are also important areas to study.
+Ignoring solid-ﬂuid coupling can be a good approximation for many
+objects in air, however it may be poor for underwater applications
+where ﬂuid density is higher, or very thin shells. Modal and bound-
+ary element analysis can be coupled and solved simultaneously, sig-
+niﬁcantly increasing complexity.
+Doppler effects can be important for high speed motion, and have
+not been addressed here. However, we note that the phase part
+θ (x) of the PAT pressure ﬁeld p(x) = A(x)eiθ (x) could be used to
+approximate Doppler frequency shifts at low velocities ( |˙x| ≪ c).
+For example, a local linear analysis implies a frequency shift of
+Δ
+ω = (∇xθ ) · ˙x, where ˙x is the velocity of the listening position.
+Techniques exist for using psychoacoustic models to select a sub-
+set of modes based on masking thresholds (see [van den Doel et al.
+2002; Raghuvanshi and Lin 2006]) and could be applied to PAT to
+reduce runtime rendering costs. However, this would result in labo-
+riously precomputed PAT modes being discarded. Ideally such ap-
+proaches could avoid expensive acoustic analysis for culled modes
+in the ﬁrst place. Tools for a priori estimation of a mode’s radia-
+tion efﬁciency, such as so-called “radiation modes” could be use-
+ful [Cunefare and Currey 1994]. Interestingly, reality-based moda l
+sound models [Pai et al. 2001; van den Doel et al. 2001], although
+lacking nontrivial spatial variations, obtain these expensive radia-
+tion efﬁciency effects “for free.” User studies could help understand
+the speed-accuracy trade-off for PAT approximations; comparisons
+in the video suggest that very fast PAT approximations of modest
+accuracy, e.g., 20%, may be sufﬁcient.
+Our method assumes both small deformations and small ﬂuid pres-
+sure ﬂuctuations, and these are violated by objects undergoing
+large deformations. Large deformations can also produce complex
+aeroacoustic effects, e.g., a cracking whip. It would be desirable
+to extend PAT to large-deformation modal vibration models, such
+as [Barbiˇc and James 2005]. For general deformable simulations,
+simpliﬁed sound approximations such as the Rayleigh-based ren-
+derer [O’Brien et al. 2001] may be more practical. For some de-
+formations it might be possible to interpolate PAT functions in re-
+duced dimensions similar to deformable PRT [James and Fatahalian
+2003], or parameterize equivalent sources like [Sloan et al. 2005].
+Acknowledgements: We thank the SIGGRAPH reviewers for
+their substantial feedback and suggestions; Christopher Cameron
+for PRMan renderings. This material is based upon work supported
+by the National Science Foundation under Grants CCF-0347740,
+IIS-0308157, ACI-0205671, EIA-0215887; NIH(CRCNS) grant
+R01 NS50942; Pixar, the Alfred P. Sloan Foundation, The Boeing
+Company, NVIDIA, Intel, and Maya licenses donated by Autodesk.
+References
+ABRAMOWITZ , M., AND STEGUN , I. A. 1964. Handbook of Mathematical
+Functions with Formulas, Graphs, and Mathematical Tables . Dover,
+New York.
+
+=== PDF PAGE 9 ===
+BARBI ˇC, J., AND JAMES , D. 2005. Real-Time Subspace Integration for St.
+Venant-Kirchhoff Deformable Models. ACM Transactions on Graphics
+24, 3 (Aug.), 982–990.
+CARDLE , M., B ROOKS , S., B AR-JOSEPH , Z., AND ROBINSON , P. 2003.
+Sound-by-Numbers: Motion-Driven Sound Synthesis. In 2003 ACM
+SIGGRAPH / Eurographics Symp. on Computer Animation, 349–356.
+CISCOWSKI , R. D., AND BREBBIA , C. A. 1991. Boundary Element meth-
+ods in acoustics . Computational Mechanics Publications and Elsevier
+Applied Science, Southampton.
+COOK , P. 2002. Real Sound Synthesis for Interactive Applications. A.K. Pe-
+ters.
+CREMER , L., H ECKL , M., AND UNGAR , E. 1990. Structure Borne Sound :
+Structural Vibrations and Sound Radiation at Audio Frequencies, 2nd ed.
+Springer, January.
+CUNEFARE , K. A., AND CURREY , M. N. 1994. On the exterior acoustic
+radiation modes of structures. The Journal of the Acoustical Society of
+America 96, 4 (October), 2302–2312.
+DESMET , W. 2002. Mid-frequency vibro-acoustic modelling: challen ges
+and potential solutions. In Proceedings of ISMA 2002, vol. II.
+DOBASHI , Y., YAMAMOTO , T., AND NISHITA , T. 2003. Real-Time Ren-
+dering of Aerodynamic Sound Using Sound Textures Based on Compu-
+tational Fluid Dynamics. ACM Trans. on Graphics 22, 3 (July), 732–740.
+FUNKHOUSER , T., C ARLBOM , I., E LKO , G., P INGALI , G., S ONDHI , M.,
+AND WEST, J. 1998. A Beam Tracing Approach to Acoustic Modeling
+for Interactive Virtual Environments. In Proceedings of SIGGRAPH 98,
+Computer Graphics Proceedings, Annual Conference Series, 21–32.
+FUNKHOUSER , T. A., M IN, P., AND CARLBOM , I. 1999. Real-Time
+Acoustic Modeling for Distributed Virtual Environments. InProceedings
+of SIGGRAPH 99, 365–374.
+GOLUB , G., AND VAN LOAN, C. 1996. Matrix Computations, third ed.
+The Johns Hopkins University Press, Baltimore.
+GOUNOT , Y., M USAFIR , R. E., AND SLAMA , J. G. 2005. A Comparative
+Study of Two Variants of the Equivalent Sources Method in Sca ttering
+Problems. Acta Acustica united with Acustica 91, 5, 860–872.
+GUMEROV, N., AND DURAISWAMI , R. 2005. Fast Multipole Methods for
+the Helmholtz Equation in Three Dimensions. Elsevier Series in Electro-
+magnetism. Elsevier Science, March.
+JAMES , D. L., AND FATAHALIAN , K. 2003. Precomputing Interactive
+Dynamic Deformable Scenes. ACM Trans. on Graphics 22, 3, 879–887.
+JAMES , D. L., AND PAI, D. K. 2002. DyRT: Dynamic Response Textures
+for Real Time Deformation Simulation With Graphics Hardware. ACM
+Transactions on Graphics 21, 3 (July), 582–585.
+JOHNSON , M. E., L ALIME , A. L., G ROSVELD , F. W., R IZZI , S. A., AND
+SULLIVAN , B. M. 2003. Development of an efﬁcient binaural simu-
+lation for the analysis of structural acoustic data. In 8th Intl. Conf. on
+Recent Advances in Structural Dynamics.
+KITA, E., AND KAMIYA , N. 1995. Trefftz method: An overview. Advances
+in Engineering Software 24, 89–96.
+LEWINER , T., L OPES , H., V IEIRA , A. W., AND TAVARES, G. 2003. Ef-
+ﬁcient implementation of Marching Cubes’ cases with topological guar-
+antees. Journal of Graphics Tools 8, 2, 1–15.
+LOKKI , T., S AVIOJA , L., V ¨A ¨AN ¨ANEN , R., H UOPANIEMI , J., AND
+TAKALA , T. 2002. Creating Interactive Virtual Auditory Environments.
+IEEE Computer Graphics & Applications 22, 4 (July-August), 49–57.
+MAGALH ˜AES , M. B. S., AND TENENBAUM , R. A. 2004. Sound Sources
+Reconstruction Techniques: A Review of Their Evolution and New
+Trends. Acta Acustica united with Acustica 90, 199–220.
+O’B RIEN , J. F., C OOK , P. R., AND ESSL , G. 2001. Synthesizing Sounds
+From Physically Based Motion. In Proceedings of ACM SIGGRAPH
+2001, 529–536.
+O’B RIEN , J. F., S HEN , C., AND GATCHALIAN , C. M. 2002. Synthesizing
+Sounds from Rigid-Body Simulations. In ACM SIGGRAPH Symposium
+on Computer Animation, 175–181.
+OCHMANN , M. 1995. The Source Simulation Technique for Acoustic
+Radiation Problems. Acustica 81.
+OCHMANN , M. 1999. The full-ﬁeld equations for acoustic radiation an d
+scattering. Journal of the Acoustical Society of America 105, 5 (May).
+PAI, D. K., VAN DEN DOEL , K., J AMES , D. L., L ANG , J., L LOYD , J. E.,
+RICHMOND , J. L., AND YAU, S. H. 2001. Scanning Physical Interac-
+tion Behavior of 3D Objects. In Proc. of ACM SIGGRAPH 2001, 87–96.
+PAVI ´C, G. 2005. An Engineering Technique for the Computation of Sou nd
+Radiation by Vibrating Bodies Using Substitute Sources. Acta Acustica
+united with Acustica 91, 1, 1–16.
+PAVI ´C, G. 2006. A Technique for the Computation of Sound Radiation
+by Vibrating Bodies Using Multipole Substitute Sources. Acta Acustica
+united with Acustica 92, 1, 112–126.
+RAGHUVANSHI , N., AND LIN, M. C. 2006. Interactive Sound Synthesis
+for Large Scale Environments. In SI3D ’06: Proceedings of the 2006
+symposium on Interactive 3D graphics and games , ACM Press, New
+York, NY , USA, 101–108.
+SHABANA , A. A. 1990. Theory of Vibration, Volume II: Discrete and
+Continuous Systems, ﬁrst ed. Springer-Verlag, New York, NY .
+SLOAN , P.-P., K AUTZ , J., AND SNYDER , J. 2002. Precomputed Radiance
+Transfer for Real-Time Rendering in Dynamic, Low-Frequency Lighting
+Environments. ACM Transactions on Graphics 21, 3 (July), 527–536.
+SLOAN , P.-P., H ALL , J., H ART, J., AND SNYDER , J. 2003. Clustered
+Principal Components for Precomputed Radiance Transfer. ACM Trans-
+actions on Graphics 22, 3 (July), 382–391.
+SLOAN , P.-P., L UNA, B., AND SNYDER , J. 2005. Local, Deformable
+Precomputed Radiance Transfer. ACM Transactions on Graphics 24, 3
+(Aug.), 1216–1224.
+STAM, J. 1999. Diffraction Shaders. In Proceedings of SIGGRAPH 99 ,
+Computer Graphics Proceedings, Annual Conference Series, 101–110.
+STETTNER , A., AND GREENBERG , D. P. 1989. Computer Graphics Visu-
+alization For Acoustic Simulation. In Computer Graphics (Proceedings
+of SIGGRAPH 89), vol. 23, 195–206.
+TAKALA , T., AND HAHN , J. 1992. Sound rendering. In Computer Graph-
+ics (Proceedings of SIGGRAPH 92), vol. 26, 211–220.
+TSINGOS , N., F UNKHOUSER , T., N GAN , A., AND CARLBOM , I. 2001.
+Modeling Acoustics in Virtual Environments Using the Uniform Theory
+of Diffraction. In Proceedings of ACM SIGGRAPH 2001 , Computer
+Graphics Proceedings, Annual Conference Series, 545–552.
+TSINGOS , N., C ARLBOM , I., E LBO , G., K UBLI , R., AND FUNKHOUSER ,
+T. 2002. Validating Acoustical Simulations in Bell Labs Box. IEEE
+Computer Graphics & Applications 22, 4 (July-August), 28–37.
+TSINGOS , N., G ALLO , E., AND DRETTAKIS , G. 2004. Perceptual Au-
+dio Rendering of Complex Virtual Environments. ACM Transactions on
+Graphics 23, 3 (Aug.), 249–258.
+VAN DEN DOEL , K., AND PAI, D. K. 1996. Synthesis of shape dependent
+sounds with physical modeling. In Intl Conf. on Auditory Display.
+VAN DEN DOEL , K., K RY, P. G., AND PAI, D. K. 2001. FoleyAutomatic:
+Physically-Based Sound Effects for Interactive Simulation and Anima-
+tion. In Proceedings of ACM SIGGRAPH 2001, 537–544.
+VAN DEN DOEL , K., P AI, D. K., A DAM, T., K ORTCHMAR , L., AND
+PICHORA -FULLER , K. 2002. Measurements of Perceptual Quality of
+Contact Sound Models. In Intl. Conf. on Auditory Display, 345–349.
+VON ESTORFF , O., Ed. 2000. Boundary Elements in Acoustics: Advances
+and Applications. WIT Press, Southhampton, UK.
+VON ESTORFF , O. 2003. Efforts to Reduce Computation Time in Numerical
+Acoustics – An Overview. Acta Acustica united with Acustica 89, 1–13.
+WAND , M., AND STRASSER , W. 2004. Multi-resolution sound rendering.
+In 2004 Eurographics Symp. on Point-Based Graphics, Eurographics.
+WU, T. W., Ed. 2000. Boundary Element Acoustics: Fundamentals and
+Computer Codes. WIT Press, Southhampton, UK.

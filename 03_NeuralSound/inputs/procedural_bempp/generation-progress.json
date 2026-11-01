@@ -1,0 +1,1226 @@
+[
+  {
+    "file": "box_00.npz",
+    "seconds": 93.07001847899983,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 30,
+        "actual_relative_residual": 7.461307883188066e-09,
+        "original_requested_tolerance": 2.194276993445506e-09
+      },
+      {
+        "info": 0,
+        "iterations": 17,
+        "actual_relative_residual": 2.7396835247372635e-09,
+        "original_requested_tolerance": 2.2757567330895164e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 4.026643071779123e-09,
+        "original_requested_tolerance": 2.0323509633871024e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 3.108040464554297e-09,
+        "original_requested_tolerance": 3.450567306287777e-10
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 9.428633394350742e-09,
+        "original_requested_tolerance": 1.985085321847361e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 2.892768959629818e-09,
+        "original_requested_tolerance": 2.1814815530738808e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.1093177408306421,
+      0.6890201601379818,
+      0.052217395227486384,
+      0.09674641702098874,
+      0.009920600429285534,
+      0.2847088640251469
+    ]
+  },
+  {
+    "file": "box_01.npz",
+    "seconds": 8.839360941999985,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 14,
+        "actual_relative_residual": 5.935241080198354e-09,
+        "original_requested_tolerance": 1.5507841769928383e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 9.032693926927529e-09,
+        "original_requested_tolerance": 1.5435907410113007e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 3.7045823671726045e-09,
+        "original_requested_tolerance": 1.543590741011331e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 2.0165147052944034e-09,
+        "original_requested_tolerance": 1.9252691296346955e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 5.0783883278723195e-09,
+        "original_requested_tolerance": 1.8085906483165186e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 5.984038797996463e-09,
+        "original_requested_tolerance": 1.8085906483165537e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.071956137594571,
+      0.08781130219707554,
+      0.055191809076769426,
+      0.08169357331218434,
+      0.05898366281768844,
+      0.05441945790033197
+    ]
+  },
+  {
+    "file": "box_02.npz",
+    "seconds": 7.587497340000027,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 17,
+        "actual_relative_residual": 9.341396532969027e-09,
+        "original_requested_tolerance": 2.41415508154083e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 8.56884335286601e-09,
+        "original_requested_tolerance": 1.9212155102946138e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 4.035952343515362e-09,
+        "original_requested_tolerance": 1.6748944420962979e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 4.573147695450359e-09,
+        "original_requested_tolerance": 2.2827165246735725e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 2.622223999617361e-09,
+        "original_requested_tolerance": 2.0291707170551517e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 2.922473401339692e-09,
+        "original_requested_tolerance": 1.8185212807754177e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.919496472570363,
+      0.10979420926963743,
+      0.019433672543311898,
+      1.7008650462061725,
+      0.09535240479749985,
+      0.0154747203052861
+    ]
+  },
+  {
+    "file": "box_03.npz",
+    "seconds": 9.20877910299987,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 18,
+        "actual_relative_residual": 4.01834138858458e-09,
+        "original_requested_tolerance": 1.7616263604026043e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 7.500010423153473e-09,
+        "original_requested_tolerance": 1.461704390476473e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 3.0089916811502637e-09,
+        "original_requested_tolerance": 1.3763162422885574e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 5.194419028684194e-09,
+        "original_requested_tolerance": 1.6715739057254684e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 9.937035369099197e-09,
+        "original_requested_tolerance": 1.7408965599831516e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 4.526701472747425e-09,
+        "original_requested_tolerance": 1.624168649384016e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.5842005331599052,
+      0.0800914526712575,
+      0.044851333614495816,
+      0.07504816847621715,
+      0.35570053396373247,
+      0.06735012930608347
+    ]
+  },
+  {
+    "file": "box_04.npz",
+    "seconds": 9.61231707800016,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 18,
+        "actual_relative_residual": 6.162581207170818e-09,
+        "original_requested_tolerance": 2.404921249126322e-09
+      },
+      {
+        "info": 0,
+        "iterations": 25,
+        "actual_relative_residual": 8.214471112698438e-09,
+        "original_requested_tolerance": 1.7866448334083412e-09
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 4.189037098185892e-09,
+        "original_requested_tolerance": 1.5659337627835324e-09
+      },
+      {
+        "info": 0,
+        "iterations": 25,
+        "actual_relative_residual": 9.231740460738676e-09,
+        "original_requested_tolerance": 2.211460216863853e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 6.059386102724275e-09,
+        "original_requested_tolerance": 6.720977390352947e-10
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 6.664016332899435e-09,
+        "original_requested_tolerance": 1.7039511295071016e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      1.0812295913412426,
+      0.10860663845065248,
+      0.01955256894989482,
+      1.058147679970364,
+      0.09441006461976606,
+      0.08862240393204183
+    ]
+  },
+  {
+    "file": "box_05.npz",
+    "seconds": 13.28806942700021,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 19,
+        "actual_relative_residual": 2.8202733247923095e-09,
+        "original_requested_tolerance": 1.8221315174220636e-09
+      },
+      {
+        "info": 0,
+        "iterations": 30,
+        "actual_relative_residual": 7.032612813757662e-09,
+        "original_requested_tolerance": 1.354354540253998e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 7.200242145088779e-09,
+        "original_requested_tolerance": 1.2968203653003664e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 6.826038495797312e-09,
+        "original_requested_tolerance": 1.5274769874491007e-09
+      },
+      {
+        "info": 0,
+        "iterations": 25,
+        "actual_relative_residual": 7.564742233809653e-09,
+        "original_requested_tolerance": 1.7255252250646748e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 6.521455668931431e-09,
+        "original_requested_tolerance": 1.3984747753170398e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.9032651407541104,
+      0.082165075342319,
+      0.024430018698318644,
+      0.07157465130757062,
+      0.2479680504589698,
+      0.0665714984576005
+    ]
+  },
+  {
+    "file": "box_06.npz",
+    "seconds": 9.444023075000132,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 6.8970259258309104e-09,
+        "original_requested_tolerance": 2.1670302247044705e-09
+      },
+      {
+        "info": 0,
+        "iterations": 33,
+        "actual_relative_residual": 8.942295453310717e-09,
+        "original_requested_tolerance": 2.0377286171768642e-09
+      },
+      {
+        "info": 0,
+        "iterations": 18,
+        "actual_relative_residual": 8.681181317671688e-09,
+        "original_requested_tolerance": 2.043760889790018e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 3.0227330168140148e-09,
+        "original_requested_tolerance": 1.7279779550418716e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 4.437848130404167e-09,
+        "original_requested_tolerance": 2.424659896691626e-10
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 3.4572918015314905e-09,
+        "original_requested_tolerance": 2.0087584312930043e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.10028128297556749,
+      0.06896094767875448,
+      0.7598740273695275,
+      0.069204938090877,
+      0.09980656255538903,
+      0.23985311147739102
+    ]
+  },
+  {
+    "file": "box_07.npz",
+    "seconds": 11.178458216000308,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 8.444404792396029e-09,
+        "original_requested_tolerance": 1.6525775287462267e-09
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 5.60220771167326e-09,
+        "original_requested_tolerance": 1.6525775287462449e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 8.249007495817158e-09,
+        "original_requested_tolerance": 1.3992609031661581e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 8.757604126076466e-09,
+        "original_requested_tolerance": 1.938070248072065e-10
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 9.920898197754956e-09,
+        "original_requested_tolerance": 1.7118832485553993e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 4.849725163063351e-09,
+        "original_requested_tolerance": 1.7118832485553281e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.0726713675287787,
+      0.08664280760273113,
+      0.12711840535337665,
+      0.08091262996679552,
+      0.02665850511365317,
+      0.03471594788442264
+    ]
+  },
+  {
+    "file": "box_08.npz",
+    "seconds": 9.385318684999675,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 4.6022947481832e-09,
+        "original_requested_tolerance": 1.8865564573507255e-09
+      },
+      {
+        "info": 0,
+        "iterations": 18,
+        "actual_relative_residual": 7.256149980202275e-09,
+        "original_requested_tolerance": 2.1700958038806145e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 5.4411836210267975e-09,
+        "original_requested_tolerance": 1.6803327535760244e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 7.018158171758749e-09,
+        "original_requested_tolerance": 1.5517085184200427e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 5.286572322802715e-09,
+        "original_requested_tolerance": 2.1454896115327966e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 9.32470228276768e-09,
+        "original_requested_tolerance": 3.3453655487570435e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.09838096925983056,
+      1.00737407989335,
+      0.029669755913449,
+      0.04570315994797805,
+      0.3942518823650226,
+      0.09393936946761026
+    ]
+  },
+  {
+    "file": "box_09.npz",
+    "seconds": 13.241374124000231,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 7.6025717880503e-09,
+        "original_requested_tolerance": 1.4519262701224706e-09
+      },
+      {
+        "info": 0,
+        "iterations": 18,
+        "actual_relative_residual": 7.04955052414539e-09,
+        "original_requested_tolerance": 1.576430405787847e-09
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 7.266208334842732e-09,
+        "original_requested_tolerance": 1.3757110326901543e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 5.538492629039682e-09,
+        "original_requested_tolerance": 2.6727331198073915e-10
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 7.1289412972712346e-09,
+        "original_requested_tolerance": 1.188815465995095e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 9.335975090845776e-09,
+        "original_requested_tolerance": 1.5829296658354325e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.08072801175693907,
+      0.6446158030233029,
+      0.051737946278523586,
+      0.07411207413547415,
+      0.019045427964710097,
+      0.1302985518018865
+    ]
+  },
+  {
+    "file": "box_10.npz",
+    "seconds": 15.190657107999868,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 5.837440136798561e-09,
+        "original_requested_tolerance": 1.7175881047769232e-09
+      },
+      {
+        "info": 0,
+        "iterations": 19,
+        "actual_relative_residual": 8.338901973684385e-09,
+        "original_requested_tolerance": 2.172264987469755e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 9.89802381892241e-09,
+        "original_requested_tolerance": 1.4468260233754624e-09
+      },
+      {
+        "info": 0,
+        "iterations": 26,
+        "actual_relative_residual": 8.245017138900596e-09,
+        "original_requested_tolerance": 2.1249373059776508e-09
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 8.90871883840569e-09,
+        "original_requested_tolerance": 1.4585328209499604e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 5.619164014673271e-09,
+        "original_requested_tolerance": 4.318587275536767e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.09589278760262197,
+      1.1180352538727354,
+      0.017918525641005836,
+      0.9794140127964367,
+      0.02293060349343824,
+      0.08903004857731947
+    ]
+  },
+  {
+    "file": "box_11.npz",
+    "seconds": 16.331612057000257,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 19,
+        "actual_relative_residual": 4.278072915543145e-09,
+        "original_requested_tolerance": 1.6352293107164002e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 6.400751444800803e-09,
+        "original_requested_tolerance": 1.3191496024680696e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 7.49984241501777e-09,
+        "original_requested_tolerance": 1.1838132724890081e-09
+      },
+      {
+        "info": 0,
+        "iterations": 26,
+        "actual_relative_residual": 7.955087947308728e-09,
+        "original_requested_tolerance": 1.361106277751261e-09
+      },
+      {
+        "info": 0,
+        "iterations": 30,
+        "actual_relative_residual": 7.533584280349366e-09,
+        "original_requested_tolerance": 1.6321069258269334e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 9.276479453756076e-09,
+        "original_requested_tolerance": 1.1130025988429102e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.9291390041058843,
+      0.07984000878624556,
+      0.03166614159529184,
+      0.0705138789531639,
+      0.19820393963354455,
+      0.015417762423040273
+    ]
+  },
+  {
+    "file": "box_12.npz",
+    "seconds": 9.670633934999842,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 3.9997144999032896e-09,
+        "original_requested_tolerance": 2.1094101986823527e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 4.460684479059393e-09,
+        "original_requested_tolerance": 2.0055397227412196e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 7.650044784318365e-09,
+        "original_requested_tolerance": 1.8683264398146062e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 5.791129803116195e-09,
+        "original_requested_tolerance": 1.6992352595725515e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 3.7713561332870594e-09,
+        "original_requested_tolerance": 1.9289161796566617e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 3.4062476269465603e-09,
+        "original_requested_tolerance": 1.599465696611604e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.09118690210011972,
+      0.08108708098920414,
+      0.8107680673108169,
+      0.09191057374156762,
+      0.09975033939010476,
+      0.05843268374761106
+    ]
+  },
+  {
+    "file": "box_13.npz",
+    "seconds": 15.020345974000065,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 2.806678685971161e-09,
+        "original_requested_tolerance": 1.4211070536309612e-09
+      },
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 6.2479885725669525e-09,
+        "original_requested_tolerance": 1.421107053630933e-09
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 8.87415862848883e-09,
+        "original_requested_tolerance": 1.2833125542076256e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 3.363015580292223e-09,
+        "original_requested_tolerance": 1.4689760584299515e-10
+      },
+      {
+        "info": 0,
+        "iterations": 33,
+        "actual_relative_residual": 9.089273113299927e-09,
+        "original_requested_tolerance": 1.3340667589286997e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 4.021746149289185e-09,
+        "original_requested_tolerance": 1.334066758928713e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.09046928516221768,
+      0.05468018565556742,
+      0.1601993977400759,
+      0.08070042135708702,
+      0.01560441300296664,
+      0.028415827727019984
+    ]
+  },
+  {
+    "file": "box_14.npz",
+    "seconds": 14.82873014400002,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 5.51440312890323e-09,
+        "original_requested_tolerance": 1.8321828891679992e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 4.326381568841128e-09,
+        "original_requested_tolerance": 1.9812927978958448e-09
+      },
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 6.623106326138733e-09,
+        "original_requested_tolerance": 1.6594626516622014e-09
+      },
+      {
+        "info": 0,
+        "iterations": 23,
+        "actual_relative_residual": 9.36089482124827e-09,
+        "original_requested_tolerance": 1.521948620824887e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 8.653428887078275e-09,
+        "original_requested_tolerance": 1.995633310737778e-09
+      },
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 9.907238077225341e-09,
+        "original_requested_tolerance": 2.471502232413046e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.08672309112994343,
+      1.0633918015739279,
+      0.038815842393914606,
+      0.06465535323773419,
+      0.3059013191360756,
+      0.08351428529888585
+    ]
+  },
+  {
+    "file": "box_15.npz",
+    "seconds": 15.074919189999946,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 4.222961320552019e-09,
+        "original_requested_tolerance": 1.4238466301716196e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 8.093877916949767e-09,
+        "original_requested_tolerance": 1.3567585788776843e-09
+      },
+      {
+        "info": 0,
+        "iterations": 19,
+        "actual_relative_residual": 9.040858258176229e-09,
+        "original_requested_tolerance": 1.4379832816384045e-09
+      },
+      {
+        "info": 0,
+        "iterations": 27,
+        "actual_relative_residual": 9.297493448969372e-09,
+        "original_requested_tolerance": 1.3720046970983814e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 6.908200056752736e-09,
+        "original_requested_tolerance": 1.1829810172466602e-09
+      },
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 7.071772495198307e-09,
+        "original_requested_tolerance": 1.1732541582517246e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.07713486412654964,
+      0.05858997751071925,
+      0.7436813783638521,
+      0.0737285583620095,
+      0.005678472630759528,
+      0.03104232760594391
+    ]
+  },
+  {
+    "file": "box_16.npz",
+    "seconds": 15.295484236999982,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 39,
+        "actual_relative_residual": 5.9826073994614925e-09,
+        "original_requested_tolerance": 1.6546496088687389e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 5.0673407383442685e-09,
+        "original_requested_tolerance": 1.9854596792919637e-09
+      },
+      {
+        "info": 0,
+        "iterations": 32,
+        "actual_relative_residual": 9.95703533725036e-09,
+        "original_requested_tolerance": 1.4277794232817135e-09
+      },
+      {
+        "info": 0,
+        "iterations": 26,
+        "actual_relative_residual": 3.953007871889955e-09,
+        "original_requested_tolerance": 2.002028105547582e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 8.526731660501763e-09,
+        "original_requested_tolerance": 1.4244347518554748e-09
+      },
+      {
+        "info": 0,
+        "iterations": 60,
+        "actual_relative_residual": 9.68325307863909e-09,
+        "original_requested_tolerance": 1.5112418788580428e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.08339040842063883,
+      1.079619437944098,
+      0.021558361701421093,
+      0.8739546647462771,
+      0.027092989441528003,
+      0.07910100585834326
+    ]
+  },
+  {
+    "file": "box_17.npz",
+    "seconds": 19.01530303499976,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 7.0252967966047755e-09,
+        "original_requested_tolerance": 1.2841968063164872e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 4.648070634283241e-09,
+        "original_requested_tolerance": 1.4907271624994719e-09
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 7.552389402567334e-09,
+        "original_requested_tolerance": 1.1669396442264729e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 4.8679645486779e-09,
+        "original_requested_tolerance": 1.238744179404915e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 9.204104706941959e-09,
+        "original_requested_tolerance": 1.5180004695981273e-09
+      },
+      {
+        "info": 0,
+        "iterations": 51,
+        "actual_relative_residual": 9.6477539218208e-09,
+        "original_requested_tolerance": 1.1019957440652089e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.07552254596347274,
+      0.8307434927402264,
+      0.035898815166405404,
+      0.06995743947189208,
+      0.15812714821541343,
+      0.006813389969063678
+    ]
+  },
+  {
+    "file": "box_18.npz",
+    "seconds": 11.529391138999927,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 3.4733725263161845e-09,
+        "original_requested_tolerance": 2.041776009275242e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 3.338547896488205e-09,
+        "original_requested_tolerance": 1.958001175575443e-09
+      },
+      {
+        "info": 0,
+        "iterations": 26,
+        "actual_relative_residual": 9.993958547526767e-09,
+        "original_requested_tolerance": 1.7306335207479092e-09
+      },
+      {
+        "info": 0,
+        "iterations": 33,
+        "actual_relative_residual": 6.179045898817837e-09,
+        "original_requested_tolerance": 1.6737080120624394e-09
+      },
+      {
+        "info": 0,
+        "iterations": 30,
+        "actual_relative_residual": 9.948021626927883e-09,
+        "original_requested_tolerance": 1.518055665324052e-09
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 7.718055578779434e-09,
+        "original_requested_tolerance": 1.7898491513626557e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.08375206370308662,
+      0.09150140968952551,
+      0.8172882177668376,
+      0.09155855117626623,
+      0.04287775264867193,
+      0.08445021717899057
+    ]
+  },
+  {
+    "file": "box_19.npz",
+    "seconds": 16.25419314299961,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 8.950562817921536e-09,
+        "original_requested_tolerance": 1.3336998196242893e-09
+      },
+      {
+        "info": 0,
+        "iterations": 37,
+        "actual_relative_residual": 4.020089365971862e-09,
+        "original_requested_tolerance": 1.3336998196244297e-09
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 9.486242325047784e-09,
+        "original_requested_tolerance": 1.191416536870403e-09
+      },
+      {
+        "info": 0,
+        "iterations": 29,
+        "actual_relative_residual": 9.142684904882384e-09,
+        "original_requested_tolerance": 1.1725751198989585e-09
+      },
+      {
+        "info": 0,
+        "iterations": 24,
+        "actual_relative_residual": 9.807137004490948e-09,
+        "original_requested_tolerance": 1.1725751198985482e-09
+      },
+      {
+        "info": 0,
+        "iterations": 30,
+        "actual_relative_residual": 7.655863200765083e-09,
+        "original_requested_tolerance": 1.1629020929874744e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.09178862165815664,
+      0.04907286236203106,
+      0.18999973846580728,
+      0.03496763567930414,
+      0.01768007625777502,
+      0.0657628598376903
+    ]
+  },
+  {
+    "file": "box_20.npz",
+    "seconds": 14.606600910999987,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 4.863170429082399e-09,
+        "original_requested_tolerance": 1.7714787550970997e-09
+      },
+      {
+        "info": 0,
+        "iterations": 22,
+        "actual_relative_residual": 6.295065553814282e-09,
+        "original_requested_tolerance": 1.8321792114111749e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 7.849224299554007e-09,
+        "original_requested_tolerance": 1.627231632107129e-09
+      },
+      {
+        "info": 0,
+        "iterations": 33,
+        "actual_relative_residual": 7.779669478619125e-09,
+        "original_requested_tolerance": 1.4641478357746291e-09
+      },
+      {
+        "info": 0,
+        "iterations": 27,
+        "actual_relative_residual": 8.101461299049722e-09,
+        "original_requested_tolerance": 1.859107986943316e-09
+      },
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 8.282376508311622e-09,
+        "original_requested_tolerance": 1.9268956657019532e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.07687789527462173,
+      1.0637239559340808,
+      0.046440812189074754,
+      0.06505553559689786,
+      0.23515795562080508,
+      0.07826242940624001
+    ]
+  },
+  {
+    "file": "box_21.npz",
+    "seconds": 20.16334163500005,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 4.39176284020241e-09,
+        "original_requested_tolerance": 1.387799714477797e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 4.2095385287982776e-09,
+        "original_requested_tolerance": 1.3296049592959647e-09
+      },
+      {
+        "info": 0,
+        "iterations": 26,
+        "actual_relative_residual": 8.053942973430562e-09,
+        "original_requested_tolerance": 1.330083640885786e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 6.68165707686952e-09,
+        "original_requested_tolerance": 1.1114534433954248e-09
+      },
+      {
+        "info": 0,
+        "iterations": 31,
+        "actual_relative_residual": 7.794331794512759e-09,
+        "original_requested_tolerance": 1.2711735187459851e-09
+      },
+      {
+        "info": 0,
+        "iterations": 34,
+        "actual_relative_residual": 5.257531946839779e-09,
+        "original_requested_tolerance": 1.0457913037056018e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.07233886715944476,
+      0.0609367960476876,
+      0.645585474529321,
+      0.01862844337032812,
+      0.06855152584580888,
+      0.028625093458704252
+    ]
+  },
+  {
+    "file": "box_22.npz",
+    "seconds": 18.215929246000087,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 38,
+        "actual_relative_residual": 8.937425690544355e-09,
+        "original_requested_tolerance": 1.5937233907298928e-09
+      },
+      {
+        "info": 0,
+        "iterations": 20,
+        "actual_relative_residual": 8.0719077825884e-09,
+        "original_requested_tolerance": 1.8352358240274931e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 3.4958545300031472e-09,
+        "original_requested_tolerance": 1.4019078790486532e-09
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 6.8712582955807905e-09,
+        "original_requested_tolerance": 1.3533434904145703e-09
+      },
+      {
+        "info": 0,
+        "iterations": 28,
+        "actual_relative_residual": 6.8939503617874315e-09,
+        "original_requested_tolerance": 1.8775754209053164e-09
+      },
+      {
+        "info": 0,
+        "iterations": 41,
+        "actual_relative_residual": 7.961927278887886e-09,
+        "original_requested_tolerance": 2.3879748786270295e-10
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.07287548893970809,
+      0.9689554122532068,
+      0.027323900812422402,
+      0.054853558706357254,
+      0.15094249811533667,
+      0.07497443227491589
+    ]
+  },
+  {
+    "file": "box_23.npz",
+    "seconds": 23.111848491999808,
+    "gmres": [
+      {
+        "info": 0,
+        "iterations": 39,
+        "actual_relative_residual": 3.513986793750187e-09,
+        "original_requested_tolerance": 1.247439516323764e-09
+      },
+      {
+        "info": 0,
+        "iterations": 21,
+        "actual_relative_residual": 4.760820596240198e-09,
+        "original_requested_tolerance": 1.3767992818143927e-09
+      },
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 4.778200038021736e-09,
+        "original_requested_tolerance": 1.1452491933169058e-09
+      },
+      {
+        "info": 0,
+        "iterations": 35,
+        "actual_relative_residual": 7.334022094459705e-09,
+        "original_requested_tolerance": 1.0238465098795965e-09
+      },
+      {
+        "info": 0,
+        "iterations": 33,
+        "actual_relative_residual": 4.235951424374339e-09,
+        "original_requested_tolerance": 1.9288356770289193e-10
+      },
+      {
+        "info": 0,
+        "iterations": 36,
+        "actual_relative_residual": 8.412211731589075e-09,
+        "original_requested_tolerance": 1.4121556078505946e-09
+      }
+    ],
+    "feature_difference": 0.0,
+    "relative_difference_from_local_far": [
+      0.06952124033814534,
+      0.7196454333415719,
+      0.03762767093227286,
+      0.019294943520810647,
+      0.0633076561333763,
+      0.07618954359249533
+    ]
+  }
+]

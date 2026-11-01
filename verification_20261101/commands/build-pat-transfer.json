@@ -1,0 +1,25 @@
+{
+  "name": "build-pat-transfer",
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++14",
+    "-I/opt/3dgs-runtime/envs/pat-tools/include",
+    "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/dependencies/eigen-git-mirror-3.3.7",
+    "-I/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/validate_modalsound_transfer.cpp",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/ModalSound/ModalSound/src/generic/precision_type.cpp",
+    "-L/opt/3dgs-runtime/envs/pat-tools/lib",
+    "-Wl,-rpath,/opt/3dgs-runtime/envs/pat-tools/lib",
+    "-lgsl",
+    "-lgslcblas",
+    "-o",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/pat/outputs/modalsound_transfer/evaluate_transfer"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:02:01.769441+08:00",
+  "log": "logs/build-pat-transfer.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:02:14.698879+08:00",
+  "elapsed_s": 12.92923165999997
+}

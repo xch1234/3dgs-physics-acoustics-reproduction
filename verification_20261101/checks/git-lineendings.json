@@ -1,0 +1,222 @@
+{
+  "tracked_files": 51,
+  "line_ending_only_differences": [
+    {
+      "file": ".gitignore",
+      "only_CRLF_difference": true,
+      "sha256": "6449ccf64bc9c646628dac48f81e980ba2a38692cceef694b31d643958e9ba1f"
+    },
+    {
+      "file": "README.md",
+      "only_CRLF_difference": true,
+      "sha256": "1cc76b57a9740fe7eda72a893535cdbbddc0d51828086b707e80d7da375d80b3"
+    },
+    {
+      "file": "acoustic/dataset.py",
+      "only_CRLF_difference": true,
+      "sha256": "6c5c1a9b50d5025ec944f8e4602421c9c0a4fc62d1ec43a9ba283dd8d44c5b83"
+    },
+    {
+      "file": "acoustic/train.py",
+      "only_CRLF_difference": true,
+      "sha256": "46594618d348137607f21408bdf2d34669ce37c264ce64e02b96da98f93753b0"
+    },
+    {
+      "file": "blender/blender_load.py",
+      "only_CRLF_difference": true,
+      "sha256": "b96d4c80087e42fba4a607d07a67fe4d03f6892e046ddc80637442519ccf8538"
+    },
+    {
+      "file": "blender/physical.py",
+      "only_CRLF_difference": true,
+      "sha256": "bdcb0cb4efe21d7c53e1bc4976eec486ac68c41e8f5761eeeec0544c9edf5e5e"
+    },
+    {
+      "file": "blender/scripts.py",
+      "only_CRLF_difference": true,
+      "sha256": "16e6c7f88fbf9660887b1bc01333ba367aa858d7ebab34b5ca039a03e7337775"
+    },
+    {
+      "file": "blender/utils.py",
+      "only_CRLF_difference": true,
+      "sha256": "489b6a027887c504d28847ca9a27c8590b6282f80ed4ad640105bc7fc5f2ed1a"
+    },
+    {
+      "file": "dataset/mesh/example.obj",
+      "only_CRLF_difference": true,
+      "sha256": "8bfae0099f5117beb673835c72e18ad442dd6a2d878b7d973d6e05dcd0771e1c"
+    },
+    {
+      "file": "dataset_scripts/acousticTransfer.py",
+      "only_CRLF_difference": true,
+      "sha256": "2b52caf4132f878300c05fc4ca36adc9edd91f61a681e4e43e2695873e7e563a"
+    },
+    {
+      "file": "dataset_scripts/deepModal.py",
+      "only_CRLF_difference": true,
+      "sha256": "a22dd4c592290523d14fdb3416d2d5099e335faea2b6c329b4e8ac1807031bd2"
+    },
+    {
+      "file": "dataset_scripts/modalAnalysis.py",
+      "only_CRLF_difference": true,
+      "sha256": "f2fa0c6a2f1f1323f4ad94f64f245c8809ec6fabcb0a7376998dfc86843e502d"
+    },
+    {
+      "file": "dataset_scripts/splitDataset.py",
+      "only_CRLF_difference": true,
+      "sha256": "4eb4a678ed47b723f7866dd96b58de262ad87cbb627d68e01879343683890315"
+    },
+    {
+      "file": "dataset_scripts/voxelize.py",
+      "only_CRLF_difference": true,
+      "sha256": "b056a21d187a9d1e2454e8f05b5ec33b544dde4b55df0282c0f012bfd5cd0f56"
+    },
+    {
+      "file": "deepmodal/dataset.py",
+      "only_CRLF_difference": true,
+      "sha256": "bf6818eb0c6ca74a9bbdaee4a043f1a8af925e0ae10d1cb2947da778cb31837d"
+    },
+    {
+      "file": "deepmodal/train.py",
+      "only_CRLF_difference": true,
+      "sha256": "c15ccf495ebc4b6988ec6e02982847dc00c71c3c2076c292e95f38cc7fab8d3b"
+    },
+    {
+      "file": "environment.md",
+      "only_CRLF_difference": true,
+      "sha256": "026c48ce0c09157703d3ebe48e10e86aae16e57f60e56c6f6b2d46aa36f49774"
+    },
+    {
+      "file": "src/classic/bem/bemModel.py",
+      "only_CRLF_difference": true,
+      "sha256": "28323bcd898665e22ecb9c802fe9780724e18403f026d742cf23f0ec1f13b4c6"
+    },
+    {
+      "file": "src/classic/bem/data_aug.py",
+      "only_CRLF_difference": true,
+      "sha256": "008f1139caa1f1168febe5865904fb28d13b9e684cc9160e2db9a302008e260b"
+    },
+    {
+      "file": "src/classic/bem/ffat.py",
+      "only_CRLF_difference": true,
+      "sha256": "baa9f0b735036543fc3c77a750ffa99ecc60d80457158e0516aa4ee6c38f1c2f"
+    },
+    {
+      "file": "src/classic/bem/util.py",
+      "only_CRLF_difference": true,
+      "sha256": "3442fa392c661d12eca167677ef4ba667eb2a7674a5d5195af13751999a2e0d8"
+    },
+    {
+      "file": "src/classic/fem/project_util.py",
+      "only_CRLF_difference": true,
+      "sha256": "3c88e14a93c60ddff775f41f94905f25b05b6bd985e4cf223c16ad1d6bef618f"
+    },
+    {
+      "file": "src/classic/fem/util.py",
+      "only_CRLF_difference": true,
+      "sha256": "69db5f38a07d66fe16064109145e5bb36611368ecdc15922678944a337814da2"
+    },
+    {
+      "file": "src/classic/lobpcg/__init__.py",
+      "only_CRLF_difference": true,
+      "sha256": "09480bd0d19e36be6151123729a3667fd95cd6ef17dc28fca035bc9d27099841"
+    },
+    {
+      "file": "src/classic/lobpcg/_linalg_utils.py",
+      "only_CRLF_difference": true,
+      "sha256": "ef1125ac35cf4ebc05ef12ad845e7d51a3b08a78110c4bbf92ec83487f5cefe2"
+    },
+    {
+      "file": "src/classic/lobpcg/_lobpcg.py",
+      "only_CRLF_difference": true,
+      "sha256": "f93ceb4f5c888078b0716110f89644bad86858565fef9f43ebaee1581b4b2c81"
+    },
+    {
+      "file": "src/classic/lobpcg/utils.py",
+      "only_CRLF_difference": true,
+      "sha256": "35c7d442ba8c6ac68658f1799b30bd7b81c83aa30720ebb85091ab62ca13efcc"
+    },
+    {
+      "file": "src/classic/mesh/loader.py",
+      "only_CRLF_difference": true,
+      "sha256": "9d66d42e71cbf5cd1afdf1f6b7efe9d30a176e0327fd91251c48dd4e28e45597"
+    },
+    {
+      "file": "src/classic/tools.py",
+      "only_CRLF_difference": true,
+      "sha256": "8eeb29f6439c39ab5aba34b1724ca132d2a0bf3eb78c73e31aadaa3b855b4d26"
+    },
+    {
+      "file": "src/classic/voxelize/hexahedral.cu",
+      "only_CRLF_difference": true,
+      "sha256": "da86c2044ab39fc9d264e38b5718e495adb96e3291b964ec28562b8a3476ea60"
+    },
+    {
+      "file": "src/classic/voxelize/hexahedral.py",
+      "only_CRLF_difference": true,
+      "sha256": "23c98fff6f13233130c3e4279ebb0e30c8194d33d702b374376c24f750e58545"
+    },
+    {
+      "file": "src/net/acousticnet.py",
+      "only_CRLF_difference": true,
+      "sha256": "4a9da4d061a6b32bb871a542d104c686a2359e41a2e7a12abe1206e946a5298e"
+    },
+    {
+      "file": "src/net/eigennet.py",
+      "only_CRLF_difference": true,
+      "sha256": "fe4260ae3c1b66fcf8c025ad4bde0f7c5fa110b0b3e767ebfa23cf6fbe9e6798"
+    },
+    {
+      "file": "src/net/linear.py",
+      "only_CRLF_difference": true,
+      "sha256": "67f91c29f695fc74478c3cff0d41bffaac375ed2f421508d335d0ed9405dc2fd"
+    },
+    {
+      "file": "src/net/minkunet.py",
+      "only_CRLF_difference": true,
+      "sha256": "8607e026d664e02cbf2542169129536829d9e0477d5164f695ba9e11f17a62b5"
+    },
+    {
+      "file": "src/net/minkunet_cat.py",
+      "only_CRLF_difference": true,
+      "sha256": "29953d3190027218737397feb714916e77758e579ae6e7ae62de08ff73e156c1"
+    },
+    {
+      "file": "src/net/minkunet_small.py",
+      "only_CRLF_difference": true,
+      "sha256": "b39ab9048118dbfbd02fd3a464013b070ce6162a2800791f4f099c742b6711bd"
+    },
+    {
+      "file": "src/net/resnet.py",
+      "only_CRLF_difference": true,
+      "sha256": "5a4906a1bd188dccde3a2606bdf23d8b952124cbdb910889f434203394ad0e8d"
+    },
+    {
+      "file": "src/net/resnet_instance.py",
+      "only_CRLF_difference": true,
+      "sha256": "d886d29abdf63cfac8e024fdd535c9382d55d40c5e479fc010c45492112511ae"
+    },
+    {
+      "file": "src/net/trainer_template.py",
+      "only_CRLF_difference": true,
+      "sha256": "8215d2d130a420ee0df5a442c84628d2ba93e5c943f7704212227e4dc56ce6fa"
+    },
+    {
+      "file": "src/net/utils.py",
+      "only_CRLF_difference": true,
+      "sha256": "89e877f456f8a08aa9ff88924d9b5885471a1c984a44b7ef86cdebb23ba753cc"
+    },
+    {
+      "file": "vibration/dataset.py",
+      "only_CRLF_difference": true,
+      "sha256": "b5f4ba5213173e8fd3a98196bf8ebab3167abc6484117f6d536792d39858099a"
+    },
+    {
+      "file": "vibration/train.py",
+      "only_CRLF_difference": true,
+      "sha256": "a85353f0788324398e30531bc1ea35b85a32a60d2a072f6230f697fed977fd9f"
+    }
+  ],
+  "semantic_changes": 0,
+  "process_override": "core.autocrlf=true; environment only, no repository/global config writes"
+}

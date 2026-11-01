@@ -1,0 +1,15 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+Traceback (most recent call last):
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/project_runtime.py", line 18, in <module>
+    runpy.run_path(str(entry),run_name='__main__')
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.py", line 139, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.py", line 84, in main
+    from mpm_solver_warp.mpm_solver_warp import MPM_Simulator_WARP
+ModuleNotFoundError: No module named 'mpm_solver_warp.mpm_solver_warp'; 'mpm_solver_warp' is not a package

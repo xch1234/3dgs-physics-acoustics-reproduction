@@ -1,0 +1,174 @@
+[
+  {
+    "id": "1e2_9OxfVtLSJTKl_y3TPaYQGjnvr3koT",
+    "path": "bread-trained.zip",
+    "archive_bytes": 88582246,
+    "files": [
+      {
+        "path": "inputs\\bread-trained\\cfg_args",
+        "bytes": 206,
+        "sha256": "4aba5ea96c56fb29c7610166c2f39924be2de7322c98056e7551d4d50b388ba6"
+      },
+      {
+        "path": "inputs\\bread-trained\\cameras.json",
+        "bytes": 160108,
+        "sha256": "13260acfc45385bf1cdd4f58a8fee9b8c488eda73eab2019654a894e7e9666a5"
+      },
+      {
+        "path": "inputs\\bread-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 11279826,
+        "sha256": "6806e86a290b110455ed5c642e9b29520ad46f0f7b674bf7a1fa226fa6e9f5fb"
+      },
+      {
+        "path": "inputs\\bread-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 18272186,
+        "sha256": "07e019407e920932094af67acb90b9fe8b37d1206a0724926dc117cb4d12b1bf"
+      }
+    ]
+  },
+  {
+    "id": "1zic8PNxUsYESyrVZ8Ywy-FxpmQ01PGpe",
+    "path": "ficus_whitebg-trained.zip",
+    "archive_bytes": 395415095,
+    "files": [
+      {
+        "path": "inputs\\ficus_whitebg-trained\\cfg_args",
+        "bytes": 208,
+        "sha256": "19e90df85af8ac61d83925186f1084ce6386c73c2e424758cb468ead3cae3f60"
+      },
+      {
+        "path": "inputs\\ficus_whitebg-trained\\cameras.json",
+        "bytes": 118977,
+        "sha256": "e50e6fc777a436d148f396f8dbd5586ceec2b2240968c9f6fab2b16a46e6d838"
+      },
+      {
+        "path": "inputs\\ficus_whitebg-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 47043411,
+        "sha256": "781121206b6acc2b05f53f0e3a2cad0cb92fa949350d0d342172cb3215c1c278"
+      },
+      {
+        "path": "inputs\\ficus_whitebg-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 50576171,
+        "sha256": "a757dd2e92f578e87b53e873670c6333d024a5dd496399797438a7d0f13fd242"
+      },
+      {
+        "path": "inputs\\ficus_whitebg-trained\\point_cloud\\iteration_60000\\point_cloud.ply",
+        "bytes": 50576171,
+        "sha256": "20fe2cb4709936029b32daaee3c28f2eb0e3d6962da06793e919049fb9595a8e"
+      }
+    ]
+  },
+  {
+    "id": "1FdWHYPQNEOIFIcccOFDcG9FALgwlj-WN",
+    "path": "pillow2sofa_whitebg-trained.zip",
+    "archive_bytes": 1171129012,
+    "files": [
+      {
+        "path": "inputs\\pillow2sofa_whitebg-trained\\cfg_args",
+        "bytes": 212,
+        "sha256": "ccc89379c1dea8938826cb0826bbbca668c9496eb54d19d3c4a4d8ee4e2c8ef1"
+      },
+      {
+        "path": "inputs\\pillow2sofa_whitebg-trained\\cameras.json",
+        "bytes": 160696,
+        "sha256": "c2156b085fbf4f14209e526e7e1a14d45b949aeb6e621ced29b9661c757b6ce1"
+      },
+      {
+        "path": "inputs\\pillow2sofa_whitebg-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 128525299,
+        "sha256": "45d3dd3e02e74c5117030fadefae3eccce88cab7c9386cb073ca52a673cb1d2e"
+      },
+      {
+        "path": "inputs\\pillow2sofa_whitebg-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 157855267,
+        "sha256": "74e94dab1a435a134cfe16dbf609d51d01231598c16841f8f51079b4a4451f9c"
+      },
+      {
+        "path": "inputs\\pillow2sofa_whitebg-trained\\point_cloud\\iteration_60000\\point_cloud.ply",
+        "bytes": 157855267,
+        "sha256": "7ac0be91d634d6a0b53fb5dde23fb2c2aca7f30ba357173fb0951b66b2b3162a"
+      }
+    ]
+  },
+  {
+    "id": "17viNGxkhbJSlxtgJDK2sW2DEH3NdRwa-",
+    "path": "plane-trained.zip",
+    "archive_bytes": 700571393,
+    "files": [
+      {
+        "path": "inputs\\plane-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 278261500,
+        "sha256": "96c2d144ba22ac5cfdd52c5247610914ef9f26adc50f303474fe50d85700057c"
+      },
+      {
+        "path": "inputs\\plane-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 530954652,
+        "sha256": "1ff04607704ec94ba082efa20a803aac29cbe481884fefb5db9fa460e97e0f03"
+      },
+      {
+        "path": "inputs\\plane-trained\\cfg_args",
+        "bytes": 222,
+        "sha256": "118032db3a27670bafdbf48ebb9b9c3cf7d45447eec81aed87e7ac2792fb990f"
+      },
+      {
+        "path": "inputs\\plane-trained\\cameras.json",
+        "bytes": 128409,
+        "sha256": "4dfca373808aa42cef7d02365ecc7142e1ab486e578d052707612c6cd6f66219"
+      }
+    ]
+  },
+  {
+    "id": "1AZh-JCNTwq9Za0rxFpDEBk-9tN6o_izs",
+    "path": "vasedeck_whitebg-trained.zip",
+    "archive_bytes": 198747593,
+    "files": [
+      {
+        "path": "inputs\\vasedeck_whitebg-trained\\cfg_args",
+        "bytes": 210,
+        "sha256": "db0b39ae0db1e4e3f8b5cebd3bde9a77a893ec0f9c9af7a787e81e9bfef46e95"
+      },
+      {
+        "path": "inputs\\vasedeck_whitebg-trained\\cameras.json",
+        "bytes": 46065,
+        "sha256": "d2befee655f6b37033c6c09e9df4ed2ca01a0e1fad6134ab61d95274ee16145f"
+      },
+      {
+        "path": "inputs\\vasedeck_whitebg-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 181011523,
+        "sha256": "87e5014aca0a2018b7b19fc7db0faf72f142951c37a20260b49db89cd9c4713b"
+      },
+      {
+        "path": "inputs\\vasedeck_whitebg-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 249295348,
+        "sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142"
+      }
+    ]
+  },
+  {
+    "id": "1FhB_1LFaC2ax71gbySn6hVR88_IiK0eU",
+    "path": "wolf_whitebg-trained.zip",
+    "archive_bytes": 209032720,
+    "files": [
+      {
+        "path": "inputs\\wolf_whitebg-trained\\cfg_args",
+        "bytes": 213,
+        "sha256": "3ec47c0f67ffdc9e66f25a6e6733056fb58582b14c3f61e3d28d1e866fc720de"
+      },
+      {
+        "path": "inputs\\wolf_whitebg-trained\\cameras.json",
+        "bytes": 159406,
+        "sha256": "dba96ab308a6e14e27d1f2e7cade3588a857b19fdc34ecfaf4cdde30e7b6d0c2"
+      },
+      {
+        "path": "inputs\\wolf_whitebg-trained\\point_cloud\\iteration_7000\\point_cloud.ply",
+        "bytes": 15425642,
+        "sha256": "8b76d0876b14378d95b8c4040cf9c516a58ce6a2d5d757e426a10a564628d958"
+      },
+      {
+        "path": "inputs\\wolf_whitebg-trained\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "bytes": 43018371,
+        "sha256": "c23a8f36662ac47445bd4a4e3d6faea6b97bdbc8d6f7934921eccce459651f8b"
+      }
+    ]
+  }
+]

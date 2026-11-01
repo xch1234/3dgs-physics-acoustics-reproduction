@@ -1,0 +1,90 @@
+[
+  {
+    "video": "01_PhysGaussian/outputs/bread_official_full/output.mp4",
+    "decoded_frames": 300,
+    "fps": 100.0,
+    "min_frame_mean": 240.34623566666667,
+    "max_frame_mean": 245.322301,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/bread_sh_corrected/output.mp4",
+    "decoded_frames": 300,
+    "fps": 100.0,
+    "min_frame_mean": 240.20738066666667,
+    "max_frame_mean": 245.32411366666668,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/ficus_anisotropy_full/output.mp4",
+    "decoded_frames": 125,
+    "fps": 25.0,
+    "min_frame_mean": 238.70121822916667,
+    "max_frame_mean": 239.8745453125,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/ficus_official_full/output.mp4",
+    "decoded_frames": 125,
+    "fps": 25.0,
+    "min_frame_mean": 238.75981666666667,
+    "max_frame_mean": 239.747025,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/ficus_reconstructed_full/output.mp4",
+    "decoded_frames": 125,
+    "fps": 25.0,
+    "min_frame_mean": 238.78669166666666,
+    "max_frame_mean": 239.81239583333334,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/pillow2sofa_official_full/output.mp4",
+    "decoded_frames": 300,
+    "fps": 50.0,
+    "min_frame_mean": 229.41501633333334,
+    "max_frame_mean": 240.64698066666668,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/plane_official_full/output.mp4",
+    "decoded_frames": 400,
+    "fps": 100.0,
+    "min_frame_mean": 123.11765771419843,
+    "max_frame_mean": 130.91456021331845,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/plane_sh_corrected/output.mp4",
+    "decoded_frames": 400,
+    "fps": 100.0,
+    "min_frame_mean": 123.11586871484263,
+    "max_frame_mean": 131.09853144322022,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/vasedeck_official_full/output.mp4",
+    "decoded_frames": 75,
+    "fps": 25.0,
+    "min_frame_mean": 110.05422375937542,
+    "max_frame_mean": 112.21837203589843,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/vasedeck_sh_corrected/output.mp4",
+    "decoded_frames": 75,
+    "fps": 25.0,
+    "min_frame_mean": 108.8082661177248,
+    "max_frame_mean": 111.97328075725255,
+    "passed": true
+  },
+  {
+    "video": "01_PhysGaussian/outputs/wolf_official_full/output.mp4",
+    "decoded_frames": 50,
+    "fps": 25.0,
+    "min_frame_mean": 217.0815328125,
+    "max_frame_mean": 234.1320859375,
+    "passed": true
+  }
+]

@@ -1,0 +1,11 @@
+RECHECKED 0
+RECHECKED 1000
+RECHECKED 2000
+RECHECKED 3000
+RECHECKED 4000
+RECHECKED 5000
+RECHECKED 6000
+RECHECKED 7000
+RECHECKED 8000
+RECHECKED 9000
+{"passed": true, "files": 9166, "changed": [], "missing": [], "added": [], "excluded": ["Conda installations", ".git internals", "__pycache__", "runtime cache directories", "new verification_20261101 directory"]}

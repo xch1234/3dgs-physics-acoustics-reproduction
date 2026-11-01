@@ -1,0 +1,15 @@
+{
+  "name": "rerun-pat-pipeline",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/run_pat_isolated.py",
+    "pipeline"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:02:29.827768+08:00",
+  "log": "logs/rerun-pat-pipeline.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:02:42.750173+08:00",
+  "elapsed_s": 12.922420800999987
+}

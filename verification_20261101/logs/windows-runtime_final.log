@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-11-01T16:54:40.390639+08:00",
+  "remaining_windows_audit_jobs": [],
+  "remaining_linux_audit_jobs": [],
+  "own_jobs_finished": true,
+  "GPU_query_exit": 0,
+  "GPU_status": "0 MiB, 4096 MiB, 0 %",
+  "note": "The current inspection script and its direct capture parent are excluded; no user process is stopped."
+}

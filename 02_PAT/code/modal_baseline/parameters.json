@@ -1,0 +1,14 @@
+{
+  "masses": 24,
+  "mass_kg": 0.01,
+  "spring_stiffness_N_per_m": 2000000.0,
+  "impulse_N_s": 0.001,
+  "rayleigh_alpha_per_s": 4.0,
+  "rayleigh_beta_s": 0.0000002,
+  "sample_rate_Hz": 48000,
+  "duration_s": 3.0,
+  "minimum_frequency_Hz": 20.0,
+  "maximum_frequency_Hz": 20000.0,
+  "playback_peak": 0.85,
+  "playback_tail_fade_s": 0.02
+}

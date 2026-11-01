@@ -1,0 +1,29 @@
+{
+  "mean_loss": 0.13170409202575684,
+  "samples": [
+    {
+      "sample": "box_13.npz",
+      "residual": 0.0886974036693573,
+      "mean_ritz_eigenvalue": 0.039552588015794754,
+      "loss": 0.12824998795986176
+    },
+    {
+      "sample": "box_08.npz",
+      "residual": 0.08807730674743652,
+      "mean_ritz_eigenvalue": 0.04122806712985039,
+      "loss": 0.1293053776025772
+    },
+    {
+      "sample": "box_06.npz",
+      "residual": 0.10348638147115707,
+      "mean_ritz_eigenvalue": 0.05599268153309822,
+      "loss": 0.1594790667295456
+    },
+    {
+      "sample": "box_21.npz",
+      "residual": 0.08164244890213013,
+      "mean_ritz_eigenvalue": 0.028139490634202957,
+      "loss": 0.10978193581104279
+    }
+  ]
+}

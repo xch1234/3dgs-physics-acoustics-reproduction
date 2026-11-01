@@ -1,0 +1,33 @@
+﻿{
+    "CheckedAt":  "2026-10-31T20:57:25.0424221+08:00",
+    "TotalMemoryKiB":  16435000,
+    "FreeMemoryKiB":  1843804,
+    "Disks":  [
+                  {
+                      "Name":  "C",
+                      "Free":  18322579456
+                  },
+                  {
+                      "Name":  "D",
+                      "Free":  79451750400
+                  },
+                  {
+                      "Name":  "E",
+                      "Free":  15753564160
+                  },
+                  {
+                      "Name":  "F",
+                      "Free":  830671101952
+                  },
+                  {
+                      "Name":  "G",
+                      "Free":  304302432256
+                  }
+              ],
+    "GPU":  [
+                "name, memory.total [MiB], memory.free [MiB], driver_version",
+                "NVIDIA GeForce RTX 2050, 4096 MiB, 3667 MiB, 595.95"
+            ],
+    "WindowsNvccOnPath":  false,
+    "WindowsCmakeOnPath":  false
+}

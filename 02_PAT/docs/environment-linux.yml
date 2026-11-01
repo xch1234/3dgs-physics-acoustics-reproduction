@@ -1,0 +1,17 @@
+name: /opt/3dgs-runtime/envs/pat-tools
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - _openmp_mutex=4.5=20_gnu
+  - gsl=2.7=he838d99_0
+  - libblas=3.11.0=11_h4a7cf45_openblas
+  - libboost-headers=1.85.0=ha770c72_4
+  - libcblas=3.11.0=11_h0358290_openblas
+  - libgcc=16.2.0=ha9f2e26_7
+  - libgcc-ng=16.2.0=h69a702a_7
+  - libgfortran=16.2.0=h69a702a_7
+  - libgfortran5=16.2.0=h6b99dfc_7
+  - libgomp=16.2.0=he0feb66_7
+  - libopenblas=0.3.34=pthreads_hf13c14d_2
+prefix: /opt/3dgs-runtime/envs/pat-tools

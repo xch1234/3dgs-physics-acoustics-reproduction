@@ -1,0 +1,179 @@
+{
+  "scope": "local PAT core pipeline, sections 3 and 4.1-4.3.1; not full paper results",
+  "all_checks_passed": true,
+  "convention": "exp(+i omega t), outgoing h_l^(2); rho=1.225 kg/m3, c=343 m/s",
+  "bem": "indirect single-layer constant flat triangles, exterior Neumann collocation, 3-point quadrature",
+  "panels": 448,
+  "sphere_validation": [
+    {
+      "triangles": 80,
+      "relative_complex_pressure_error": 0.0010507669423286017,
+      "linear_residual": 3.773333542102575e-16
+    },
+    {
+      "triangles": 320,
+      "relative_complex_pressure_error": 0.021110748930930224,
+      "linear_residual": 7.556545047975278e-16
+    },
+    {
+      "triangles": 1280,
+      "relative_complex_pressure_error": 0.01599923324287479,
+      "linear_residual": 1.3038613187950258e-15
+    }
+  ],
+  "first_mode_coarse_fine_relative_difference": 0.0656553025692635,
+  "mode_results": [
+    {
+      "mode": 1,
+      "frequency_Hz": 529.3225462233652,
+      "bem_residual": 1.1882708162117435e-15,
+      "validation_relative_complex_L2": 0.0028448705343074696,
+      "relative_fit_history": [
+        1.0,
+        0.12937574007829697,
+        0.09001639025410182,
+        0.045508616609651394,
+        0.021624311274932802,
+        0.01251957635511152
+      ],
+      "sources": 5,
+      "complex_coefficients": 20,
+      "svd_rank": 20,
+      "fit_relative_L2": 0.01251957635511152,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 2,
+      "frequency_Hz": 529.3225462233758,
+      "bem_residual": 1.1665089303311037e-15,
+      "validation_relative_complex_L2": 0.0035296301010483374,
+      "relative_fit_history": [
+        1.0,
+        0.1244182530947579,
+        0.0936428165915896,
+        0.03583649875095921,
+        0.022947041011127964,
+        0.01802879356237983
+      ],
+      "sources": 5,
+      "complex_coefficients": 20,
+      "svd_rank": 20,
+      "fit_relative_L2": 0.01802879356237983,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 3,
+      "frequency_Hz": 1454.415625640727,
+      "bem_residual": 1.0371049015743042e-15,
+      "validation_relative_complex_L2": 0.002804640430407726,
+      "relative_fit_history": [
+        1.0,
+        0.14496283546827582,
+        0.10185141917777558,
+        0.08923598326036111,
+        0.08609884873835393,
+        0.0780025236334918,
+        0.07526217628872336,
+        0.06895791571300955,
+        0.056143997993006074,
+        0.04799689667420866,
+        0.03592438688563897,
+        0.027040403152353367,
+        0.01677685774389314
+      ],
+      "sources": 12,
+      "complex_coefficients": 48,
+      "svd_rank": 48,
+      "fit_relative_L2": 0.01677685774389314,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 4,
+      "frequency_Hz": 2455.2353968577913,
+      "bem_residual": 1.1642693365907489e-15,
+      "validation_relative_complex_L2": 0.012940918513170942,
+      "relative_fit_history": [
+        1.0,
+        0.199612515650952,
+        0.11366134492726,
+        0.06669726902153253,
+        0.03446961991787363,
+        0.021648897169661098,
+        0.017037826009901023
+      ],
+      "sources": 6,
+      "complex_coefficients": 24,
+      "svd_rank": 24,
+      "fit_relative_L2": 0.017037826009901023,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 5,
+      "frequency_Hz": 2455.2353968577977,
+      "bem_residual": 1.2347792013144384e-15,
+      "validation_relative_complex_L2": 0.01328723181188212,
+      "relative_fit_history": [
+        1.0,
+        0.1978097624177615,
+        0.11185839340312961,
+        0.06973257937841897,
+        0.043137225793206106,
+        0.027654430583788088,
+        0.017064302195331022
+      ],
+      "sources": 6,
+      "complex_coefficients": 24,
+      "svd_rank": 24,
+      "fit_relative_L2": 0.017064302195331022,
+      "svd_relative_cutoff": 1e-06
+    },
+    {
+      "mode": 6,
+      "frequency_Hz": 2457.906860923336,
+      "bem_residual": 8.208693728070817e-16,
+      "validation_relative_complex_L2": 0.01224796859198436,
+      "relative_fit_history": [
+        1.0,
+        0.22109515343318112,
+        0.06663129823247002,
+        0.0323143219444767,
+        0.025724999471352046,
+        0.01612475305462155
+      ],
+      "sources": 5,
+      "complex_coefficients": 20,
+      "svd_rank": 20,
+      "fit_relative_L2": 0.01612475305462155,
+      "svd_relative_cutoff": 1e-06
+    }
+  ],
+  "offset_radius_m": 0.11,
+  "validation_radii_m": [
+    0.17,
+    0.3
+  ],
+  "listeners_m": [
+    [
+      0.3,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.3,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.3
+    ]
+  ],
+  "impulse_vertex": 62,
+  "impulse_direction": "y",
+  "impulse_N_s": 0.001,
+  "audio_relative_L2": 0.011379912737837911,
+  "common_playback_gain": 3.1026821676438345,
+  "limitation": "six coarse FEM modes; no multilevel placement, thin-shell benchmark, high-frequency treatment or speedup claim; audio ignores transfer phase per paper",
+  "elapsed_s": 10.222043300047517
+}

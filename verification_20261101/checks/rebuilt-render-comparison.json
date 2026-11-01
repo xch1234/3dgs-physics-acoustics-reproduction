@@ -1,0 +1,10 @@
+{
+  "images": 200,
+  "maximum_byte_difference": 0.0,
+  "exactly_equal_images": 200,
+  "same_PLY_hash": "d2bebb659fff7fc6a5f80c5e6b1b1a8eec33ef73b0f7094c887eaaeb97636003",
+  "rebuilt_libraries": [
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/lib",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "file": "box_18.npz",
+  "seconds": 11.529391138999927,
+  "gmres": [
+    {
+      "info": 0,
+      "iterations": 38,
+      "actual_relative_residual": 3.4733725263161845e-09,
+      "original_requested_tolerance": 2.041776009275242e-09
+    },
+    {
+      "info": 0,
+      "iterations": 36,
+      "actual_relative_residual": 3.338547896488205e-09,
+      "original_requested_tolerance": 1.958001175575443e-09
+    },
+    {
+      "info": 0,
+      "iterations": 26,
+      "actual_relative_residual": 9.993958547526767e-09,
+      "original_requested_tolerance": 1.7306335207479092e-09
+    },
+    {
+      "info": 0,
+      "iterations": 33,
+      "actual_relative_residual": 6.179045898817837e-09,
+      "original_requested_tolerance": 1.6737080120624394e-09
+    },
+    {
+      "info": 0,
+      "iterations": 30,
+      "actual_relative_residual": 9.948021626927883e-09,
+      "original_requested_tolerance": 1.518055665324052e-09
+    },
+    {
+      "info": 0,
+      "iterations": 31,
+      "actual_relative_residual": 7.718055578779434e-09,
+      "original_requested_tolerance": 1.7898491513626557e-09
+    }
+  ],
+  "feature_difference": 0.0,
+  "relative_difference_from_local_far": [
+    0.08375206370308662,
+    0.09150140968952551,
+    0.8172882177668376,
+    0.09155855117626623,
+    0.04287775264867193,
+    0.08445021717899057
+  ]
+}

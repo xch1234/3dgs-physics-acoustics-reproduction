@@ -1,0 +1,15 @@
+{
+  "name": "env-neuralsound-pip",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:57:54.140600+08:00",
+  "log": "logs/env-neuralsound-pip.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:57:55.307261+08:00",
+  "elapsed_s": 1.1664589930000009
+}

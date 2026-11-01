@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_modalsound_basis",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_basis.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:40.092820+08:00",
+  "log": "logs/bash-syntax-run_modalsound_basis.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:40.159271+08:00",
+  "elapsed_s": 0.06640559800007395
+}

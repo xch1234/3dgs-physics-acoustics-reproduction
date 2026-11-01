@@ -1,0 +1,15 @@
+{
+  "name": "powershell-syntax-0",
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\run_all.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:05:05.355434+08:00",
+  "log": "logs\\powershell-syntax-0.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:05:06.007489+08:00",
+  "elapsed_s": 0.6400000000139698
+}

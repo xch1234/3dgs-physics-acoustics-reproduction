@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_reconstructed_simulation",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_reconstructed_simulation.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.343058+08:00",
+  "log": "logs/bash-syntax-run_reconstructed_simulation.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.397274+08:00",
+  "elapsed_s": 0.05414427499999874
+}

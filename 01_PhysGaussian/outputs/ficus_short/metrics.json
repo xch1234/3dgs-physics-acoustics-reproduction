@@ -1,0 +1,41 @@
+{
+  "scope": "official pretrained Ficus all-retained-particle short MPM simulation; sampled local diagnostic renderer",
+  "all_checks_passed": true,
+  "raw_gaussians": 203930,
+  "simulated_gaussians": 166894,
+  "render_sample": 6000,
+  "steps": 1200,
+  "dt_s": 0.0001,
+  "simulation_duration_s": 0.12000000000000001,
+  "grid": 50,
+  "grid_limit": 2.0,
+  "initial_total_mass": 7.834879398345947,
+  "max_displacement_simulation_units": 0.09980914741754532,
+  "mean_displacement": 0.050516802817583084,
+  "covariance_relative_error_max": 1.1012903478047065e-08,
+  "sampled_total_gpu_memory_MiB": [
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196",
+    "196"
+  ],
+  "model_sha256": "a757dd2e92f578e87b53e873670c6333d024a5dd496399797438a7d0f13fd242",
+  "model_url": "https://drive.google.com/uc?id=1zic8PNxUsYESyrVZ8Ywy-FxpmQ01PGpe",
+  "adaptations": [
+    "NumPy equivalent normalization, quaternion covariance and cell-count volume",
+    "no Taichi filling; official ficus config has none",
+    "shortened 0.12 s vs original 5 s",
+    "6000 fixed sampled diagnostic render; all retained particles simulated",
+    "orthographic DC color renderer instead of official perspective SH rasterizer"
+  ],
+  "elapsed_s": 29.224108300055377
+}

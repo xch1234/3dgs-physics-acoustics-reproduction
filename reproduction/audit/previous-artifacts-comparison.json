@@ -1,0 +1,39 @@
+{
+  "time": "2026-11-01T09:33:30.207588+08:00",
+  "passed": true,
+  "projects": [
+    {
+      "project": "01_PhysGaussian",
+      "files": 2398,
+      "recorded_at": "2026-11-01T09:17:10+08:00"
+    },
+    {
+      "project": "02_PAT",
+      "files": 108,
+      "recorded_at": "2026-11-01T09:17:10+08:00"
+    },
+    {
+      "project": "03_NeuralSound",
+      "files": 319,
+      "recorded_at": "2026-11-01T09:17:10+08:00"
+    }
+  ],
+  "missing": [],
+  "changed": [
+    {
+      "project": "03_NeuralSound",
+      "path": "code/train_radiation.py",
+      "expected_sha256": "d7e1f408a4ce6265f93827ec7abcf8ac3315539f42cfaa58adf726f1e952cdf0",
+      "actual_sha256": "b346aa6598c2263816cb8c7513a34bee5642186222e3ffe749244766e7804b48",
+      "authorized_adapter_edit": true
+    },
+    {
+      "project": "03_NeuralSound",
+      "path": "code/train_vibration.py",
+      "expected_sha256": "de20d9d30ea73932365831e0c8223568cd327e330225f7b4cad01d0d04c7de83",
+      "actual_sha256": "33f60ac8a841f6f96963aaa8787c3d5714a78b239d4618de23fbbe884f23c9e5",
+      "authorized_adapter_edit": true
+    }
+  ],
+  "scope": "Bytewise comparison against existing saved manifests; only two explicitly extended training adapters may differ. New experiments are additional files, never replacements for old results."
+}

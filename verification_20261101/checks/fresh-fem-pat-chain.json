@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "FEM_source": "fresh_cpu_pipeline_retry/fem/official_fem_result.npz",
+  "FEM_SHA256": "f7141768a69691e49707c7b5b4533e00cbcdd7506d2f3b59891d207ed9facd3a",
+  "audio_relative_L2": 0.017186150962483715,
+  "WAV_exact_PCM": 6,
+  "scope": "Fresh 24-voxel beam FEM/Lanczos -> six-mode local BEM/PAT fit -> six WAV files; not original PAT benchmark or unified 3DGS geometry."
+}

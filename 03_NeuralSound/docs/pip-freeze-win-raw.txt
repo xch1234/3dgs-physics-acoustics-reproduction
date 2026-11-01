@@ -1,0 +1,34 @@
+﻿brotlicffi @ file:///C:/Users/task_179300679923899/croot/brotlicffi_1793006883954/work
+certifi @ file:///home/task_179300541075950/croot/certifi_1793006633205/work/certifi
+cffi @ file:///C:/Users/task_178669710197536/croot/cffi_1786697249889/work
+charset-normalizer @ file:///C:/Users/task_cU6cRRWFQl6Bt_0/croot/charset-normalizer_1782917499173/work
+contourpy @ file:///C:/b/abs_f2u2o_8s9g/croot/contourpy_1732540071787/work
+cycler @ file:///C:/Users/task_176606795187315/croot/cycler_1766068055927/work
+fonttools @ file:///C:/Users/task_179326557461541/croot/fonttools_1793265662811/work
+idna @ file:///C:/Users/task_179136521025160/croot/idna_1791365346791/work
+kiwisolver @ file:///C:/Users/task_JtA0DXUcSAS2q_0/croot/kiwisolver_1786023437059/work
+llvmlite @ file:///C:/Users/task_179120857537055/croot/llvmlite_1791208961308/work
+matplotlib==3.10.9
+mkl-fft==1.3.1
+mkl-random @ file:///C:/ci_311/mkl_random_1676481991689/work
+mkl-service==2.4.0
+numba @ file:///C:/Users/task_179121952972961/croot/numba_1791219727068/work
+numpy @ file:///C:/b/abs_54abayvc9j/croot/numpy_and_numpy_base_1682520598361/work
+packaging==26.3
+pillow @ file:///C:/Users/task_179278975307047/croot/pillow_1792790182557/work
+platformdirs @ file:///C:/Users/task_179120567230457/croot/platformdirs_1791205749455/work
+pooch @ file:///C:/Users/task_Satl7TKdT5CUg_0/croot/pooch_1785234097301/work
+pycparser @ file:///C:/Users/task_179207252447348/croot/pycparser_1792072674832/work
+PyMCubes==0.1.4
+pyparsing @ file:///C:/Users/task_179319761678175/croot/pyparsing_1793198550209/work
+PyQt6==6.7.1
+PyQt6_sip @ file:///C:/b/abs_28s7k4h_hl/croot/pyqt-split_1740498234166/work/pyqt_sip
+PySocks @ file:///C:/Users/task_179002186912327/croot/pysocks_1790022025292/work
+python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
+requests @ file:///C:/Users/task_179138605114046/croot/requests_1791386639098/work
+scipy==1.10.1
+sip @ file:///C:/b/abs_5cto136kse/croot/sip_1738856220313/work
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+tornado @ file:///C:/Users/task_179338851539120/croot/tornado_1793388672929/work
+urllib3 @ file:///C:/Users/task_179070034242986/croot/urllib3_1790701139334/work
+win_inet_pton @ file:///C:/miniconda3/conda-bld/win_inet_pton_1761746278197/work

@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_anisotropy",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_anisotropy.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.087833+08:00",
+  "log": "logs/bash-syntax-run_anisotropy.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.143861+08:00",
+  "elapsed_s": 0.055940168999995876
+}

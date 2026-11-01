@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "stages": [
+    {
+      "name": "physics-sh",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/physics_isolated.py",
+        "sh"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+      "started": "2026-11-01T16:06:42.044577+08:00",
+      "log": "logs/physics-sh.log",
+      "exit_code": 0,
+      "finished": "2026-11-01T16:06:45.231386+08:00",
+      "elapsed_s": 3.186006057000668
+    },
+    {
+      "name": "physics-transport",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/physics_isolated.py",
+        "transport"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+      "started": "2026-11-01T16:06:45.345691+08:00",
+      "log": "logs/physics-transport.log",
+      "exit_code": 0,
+      "finished": "2026-11-01T16:07:53.598477+08:00",
+      "elapsed_s": 68.25267750900002
+    },
+    {
+      "name": "physics-fresh-full",
+      "command": [
+        "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/physics_isolated.py",
+        "simulation"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+      "started": "2026-11-01T16:07:53.741272+08:00",
+      "log": "logs/physics-fresh-full.log",
+      "exit_code": 0,
+      "finished": "2026-11-01T16:14:57.971344+08:00",
+      "elapsed_s": 424.230017891
+    },
+    {
+      "name": "neural-fresh-inference",
+      "command": [
+        "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+        "-u",
+        "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/neural_inference.py"
+      ],
+      "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+      "started": "2026-11-01T16:14:58.134261+08:00",
+      "log": "logs/neural-fresh-inference.log",
+      "exit_code": 0,
+      "finished": "2026-11-01T16:17:13.072684+08:00",
+      "elapsed_s": 134.93818870999985
+    }
+  ]
+}

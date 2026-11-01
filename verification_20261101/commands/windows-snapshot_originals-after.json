@@ -1,0 +1,15 @@
+{
+  "name": "windows-snapshot_originals-after",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101\\snapshot_originals.py",
+    "after"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T16:50:44.603851+08:00",
+  "log": "logs\\windows-snapshot_originals-after.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:53:28.452049+08:00",
+  "elapsed_s": 163.84299999999348
+}

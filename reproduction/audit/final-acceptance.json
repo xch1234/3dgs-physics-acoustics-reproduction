@@ -1,0 +1,10 @@
+{
+  "generated": "2026-11-01T12:17+08:00",
+  "local_feasible_scope_completed": true,
+  "full_paper_benchmarks_reproduced": false,
+  "scene_runs": 11,
+  "rendered_frames": 2275,
+  "extended_check_count": 31,
+  "evidence_report": "最终验收报告.md",
+  "negative_results_preserved": true
+}

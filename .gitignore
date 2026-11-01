@@ -1,0 +1,12 @@
+# Local runtime / downloads / restored artifacts
+.conda/
+.artifact-cache/
+__pycache__/
+*.pyc
+01_PhysGaussian/code/PhysGaussian/
+02_PAT/code/ModalSound/
+03_NeuralSound/code/NeuralSound/
+03_NeuralSound/code/MinkowskiEngine/
+reproduction/vendor/
+*.restore-part
+*.part

@@ -1,0 +1,18 @@
+{
+  "started": "2026-11-01T11:30:45.278102+08:00",
+  "status": "completed",
+  "stages": [
+    {
+      "name": "anisotropy simulation",
+      "exit_code": 0
+    },
+    {
+      "name": "corrected SH scenes",
+      "exit_code": 0
+    },
+    {
+      "name": "extension validation",
+      "exit_code": 0
+    }
+  ]
+}

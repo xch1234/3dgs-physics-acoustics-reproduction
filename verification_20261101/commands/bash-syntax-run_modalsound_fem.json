@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_modalsound_fem",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_fem.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:41.425066+08:00",
+  "log": "logs/bash-syntax-run_modalsound_fem.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:41.672077+08:00",
+  "elapsed_s": 0.2469057809998958
+}

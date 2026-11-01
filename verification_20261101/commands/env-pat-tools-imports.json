@@ -1,0 +1,15 @@
+{
+  "name": "env-pat-tools-imports",
+  "command": [
+    "/opt/3dgs-runtime/envs/pat-tools/bin/python",
+    "-c",
+    "import importlib,json; modules=['numpy']; result={}\nfor name in modules:\n m=importlib.import_module(name); result[name]={\"version\":str(getattr(m,\"__version__\",None)),\"file\":str(getattr(m,\"__file__\",None))}\nprint(json.dumps(result,indent=2))"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:58:05.048339+08:00",
+  "log": "logs/env-pat-tools-imports.log",
+  "exit_code": null,
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "finished": "2026-11-01T14:58:05.055355+08:00",
+  "elapsed_s": 0.006892459999999545
+}

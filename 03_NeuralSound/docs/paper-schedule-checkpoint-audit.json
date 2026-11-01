@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "task": "vibration",
+      "file": "best.pt",
+      "model_tensors": 95,
+      "model_elements": 1365310,
+      "finite": true
+    },
+    {
+      "task": "vibration",
+      "file": "last.pt",
+      "model_tensors": 95,
+      "model_elements": 1365310,
+      "finite": true,
+      "completed_epochs": 100,
+      "optimizer_tensors": 159,
+      "scheduler_and_random_state_present": true,
+      "paper_schedule_verified": true
+    },
+    {
+      "task": "radiation",
+      "file": "best.pt",
+      "model_tensors": 292,
+      "model_elements": 311219688,
+      "finite": true,
+      "selected_epoch": 98
+    },
+    {
+      "task": "radiation",
+      "file": "last.pt",
+      "model_tensors": 292,
+      "model_elements": 311219688,
+      "finite": true,
+      "completed_epochs": 100,
+      "optimizer_tensors": 462,
+      "scheduler_and_random_state_present": true,
+      "paper_schedule_verified": true
+    }
+  ],
+  "scope": "CPU deserialization, all model/optimizer tensors finite, epochs/history/RNG consistency; no training rerun"
+}

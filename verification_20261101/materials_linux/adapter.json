@@ -1,0 +1,9 @@
+{
+  "scope": "Existing validate_materials numeric functions unchanged; Windows-only include-path hook omitted on Linux; only output/cache and module import paths redirected",
+  "modules": {
+    "warp_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/warp_utils.py",
+    "mpm_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_utils.py",
+    "engine_utils": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/engine_utils.py",
+    "mpm_solver_warp": "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_solver_warp.py"
+  }
+}

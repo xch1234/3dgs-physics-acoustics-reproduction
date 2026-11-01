@@ -1,0 +1,17 @@
+{
+  "name": "3dgs-evaluate-existing-rerender",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/evaluate_3dgs.py",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_existing_rerender",
+    "--tag",
+    "existing_model_rerender"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:39:58.909673+08:00",
+  "log": "logs/3dgs-evaluate-existing-rerender.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:42:53.310747+08:00",
+  "elapsed_s": 174.4007775780001
+}

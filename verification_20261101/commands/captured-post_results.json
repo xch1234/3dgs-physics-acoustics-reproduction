@@ -1,0 +1,20 @@
+{
+  "name": "captured-post_results",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/post_results.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T16:15:21.154643+08:00",
+  "log": "logs\\captured-post_results.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:15:32.897699+08:00",
+  "elapsed_s": 11.733999999938533
+}

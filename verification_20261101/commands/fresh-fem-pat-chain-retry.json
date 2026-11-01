@@ -1,0 +1,14 @@
+{
+  "name": "fresh-fem-pat-chain-retry",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/fresh_cpu_pipeline.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:34:04.027320+08:00",
+  "log": "logs/fresh-fem-pat-chain-retry.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:34:26.076367+08:00",
+  "elapsed_s": 22.048737387000074
+}

@@ -1,0 +1,18 @@
+{
+  "name": "3dgs-evaluate-existing",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/evaluate_3dgs.py",
+    "--model",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/ficus_reconstruction",
+    "--tag",
+    "existing_baseline"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-01T16:03:48.182501+08:00",
+  "log": "logs/3dgs-evaluate-existing.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:06:39.155224+08:00",
+  "elapsed_s": 170.97257980199993
+}

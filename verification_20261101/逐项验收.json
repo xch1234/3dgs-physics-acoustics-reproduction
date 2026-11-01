@@ -1,0 +1,380 @@
+[
+  {
+    "id": "V01",
+    "status": "通过",
+    "title": "源码、目录与数据内容检查",
+    "detail": "三个论文目录、作者源码与本地适配器可区分。记录三个提交号；Windows Git 跟踪文件干净。NeuralSound 的 51 个跟踪文件另与 HEAD 逐字节核对：43 个仅 CRLF/LF 差异，规范化换行后零实质差异。Ficus 403 个来源清单文件匹配，100/200/100 张训练/测试/验证 RGBA 图可解码，训练与测试无相同图像哈希。24 个本地体素几何各不相同，16/4/4 划分无重复。",
+    "commands": "independent_cpu.py；check_git_lineendings.py；check_manifest_and_metadata.py",
+    "evidence": [
+      "checks/source.json",
+      "checks/data.json",
+      "checks/git-lineendings.json",
+      "checks/manifest-comparison.json"
+    ]
+  },
+  {
+    "id": "V02",
+    "status": "通过",
+    "title": "现有 Conda 环境的实际运行能力",
+    "detail": "Windows acoustics 与 physgaussian 的 pip check 通过；Linux physgaussian 与 neuralsound 的 pip check、核心模块导入、CUDA 矩阵运算通过。真实训练、编译和推理进一步检验运行能力。pat-tools 是 GSL/Boost 工具前缀，不包含 Python，其有效性用实际 C++ 编译/链接判断。",
+    "commands": "check_windows.py；preflight_linux.py；各 env-* 与 windows-*-pip 命令",
+    "evidence": [
+      "environment-windows.json",
+      "environment-linux.json",
+      "补充环境检查说明.md"
+    ]
+  },
+  {
+    "id": "V03",
+    "status": "失败",
+    "title": "Windows 环境导出文件的路径记录",
+    "detail": "01_PhysGaussian/docs/environment.yml、02_PAT/docs/environment.yml、03_NeuralSound/docs/environment.yml 的 name/prefix 含 Unicode 替换字符，记录的中文工作目录已损坏。现有环境可运行不能证明这些导出可原样恢复原路径。本轮没有修复文件，也没有新建环境验证恢复。",
+    "commands": "check_manifest_and_metadata.py",
+    "evidence": [
+      "checks/environment-export-text.json"
+    ]
+  },
+  {
+    "id": "V04",
+    "status": "通过",
+    "title": "脚本语法与现有数据文件完整性",
+    "detail": "本地 Python 适配器 AST 解析、15 个 PowerShell 入口解析和本轮记录的 Bash -n 检查通过；旧清单中 5986 个文件逐字节哈希匹配。这只说明语法/字节完整性，不是算法正确性证明。",
+    "commands": "independent_cpu.py；check_windows.py；media_and_syntax.py",
+    "evidence": [
+      "checks/source.json",
+      "checks/bash-syntax.json",
+      "checks/manifest-comparison.json"
+    ]
+  },
+  {
+    "id": "V05",
+    "status": "通过",
+    "title": "A1 传统模态原理实验的独立数值核验",
+    "detail": "新构造差分关联矩阵 K、使用固定/自由链闭式频率及全波形解析解核对五组实验。最大频率绝对误差 2.4897417e-11 Hz；最大波形相对 L2 3.3984708e-11。核对模态残差、质量正交、刚度/质量缩放、冲量、阻尼、频带截断及共同增益 PCM；五段与总拼接 WAV 一致。未把该振动可听化声称为 PAT。",
+    "commands": "independent_cpu.py；audio_readback.py",
+    "evidence": [
+      "checks/traditional.json",
+      "checks/audio-readback.json"
+    ]
+  },
+  {
+    "id": "V06",
+    "status": "通过",
+    "title": "PAT 相关原 C++ FEM 与边界积分/多极子模块构建",
+    "detail": "实际用 g++ 编译、链接并执行两个二进制。FEM 对独立 BᵀDB/一致质量参考的误差约 5e-16，检查自由体六刚体模态和固定端/刚度缩放。9 个解析声场案例中，多极子对直接积分误差约 1e-8 或更小；1280 面片对解析场误差约 0.29%。这是 ModalSound 2016 教学代码模块，不是 PAT 2006 全部原始软件。",
+    "commands": "build_and_test_pat.py；build-pat-fem；build-pat-transfer；rerun-pat-fem；rerun-pat-transfer",
+    "evidence": [
+      "pat-executions.json",
+      "pat/outputs/modalsound_fem/metrics.json",
+      "pat/outputs/modalsound_transfer/metrics.json"
+    ]
+  },
+  {
+    "id": "V07",
+    "status": "通过",
+    "title": "本地 FEM→BEM→PAT→WAV 链路从头运行",
+    "detail": "重新计算 24 体素梁的作者 FEM/Lanczos 模态，再输入本地 BEM/PAT 实现，生成六段 WAV；六个 PCM 文件均直接从原始声压/共同增益重算一致。新链路 PAT 对同次 BEM 音频相对 L2 为 1.719%。另一次固定旧模态输入的 BEM→PAT 重跑误差为 1.138%。二者输入模态基不同，不能混为同一数值结果。",
+    "commands": "fresh_cpu_pipeline_retry_job.py → fresh_cpu_pipeline.py；另 run_pat_isolated.py pipeline",
+    "evidence": [
+      "checks/fresh-fem-pat-chain.json",
+      "fresh_cpu_pipeline_retry/fem/metrics.json",
+      "fresh_cpu_pipeline_retry/pat/outputs/pat_pipeline/metrics.json",
+      "fresh_cpu_pipeline_retry/pat/outputs/pat_pipeline/pressure_audio_raw.npz"
+    ]
+  },
+  {
+    "id": "V08",
+    "status": "失败",
+    "title": "声学输出对等价 FEM 模态基的不变性",
+    "detail": "同一几何/材料的 K、M 相对差异分别 1.9305119e-16、0；频率最大相对差异 3.7303494e-14，重建物理位移相对差异 4.5556273e-12。但原实现 abs(transfer) @ modal_response 的声压相对差异为 114.218%。保留复数传递系数作对照时差异仅 1.3970507e-12，支持符号/相位丢弃是原因。该幅值近似沿用论文思路；这里判定的是物理输入相同时的数值不变性失败，不声称听感试验失败或整篇论文公式错误。",
+    "commands": "compare_fem_modes.py",
+    "evidence": [
+      "checks/fem-basis-audio-invariance.json",
+      "fem-basis-audio.log"
+    ]
+  },
+  {
+    "id": "V09",
+    "status": "未验证",
+    "title": "PAT 网格收敛、完整原论文场景与性能",
+    "detail": "实际重跑的本地球体 BEM 误差在 80/320/1280 面片分别为 0.105%/2.111%/1.600%，并非单调收敛；梁首模态粗细网格场差约 6.566%。虽线性残差很小，不能据此宣称空间离散误差收敛。未完成论文复杂物体、NeoAcoustics 原流程、薄壳/高频与多层算法基准、7000 倍加速或原论文听感实验。",
+    "commands": "rerun-pat-pipeline；fresh-fem-pat-chain-retry；论文原文核对",
+    "evidence": [
+      "pat/outputs/pat_pipeline/metrics.json",
+      "fresh_cpu_pipeline_retry/pat/outputs/pat_pipeline/metrics.json",
+      "papers/02_PAT.txt"
+    ]
+  },
+  {
+    "id": "V10",
+    "status": "通过",
+    "title": "全新 3DGS 30,000 步训练",
+    "detail": "直接运行固定作者 train.py，从数据集初始点云开始，未加载已训练权重。Ficus 800×800，100 训练/200 测试视图，eval、白背景、CPU 存图。30,000 步完成；新 PLY 294998 个高斯，各字段有限；最终检查点 iteration=30000，递归检查模型及优化器张量有限。",
+    "commands": "run_3dgs.py → 3dgs-train；post_results.py",
+    "evidence": [
+      "commands/3dgs-train.json",
+      "logs/3dgs-train.log",
+      "outputs/ficus_fresh_30000/cfg_args",
+      "outputs/ficus_fresh_30000/point_cloud/iteration_30000/point_cloud.ply",
+      "checks/fresh-trained-model.json"
+    ]
+  },
+  {
+    "id": "V11",
+    "status": "通过",
+    "title": "新模型全部 200 测试视图渲染与独立评估",
+    "detail": "原 render.py 完成全部 200 张。逐张核对真实测试 RGBA 按对应相机次序白背景合成，GT 量化差不超过 1 字节；独立 NumPy 计算 PNG PSNR，使用作者 SSIM 与 LPIPS-VGG。新训练：PSNR=34.850592, SSIM=0.9871882, LPIPS=0.011715445。旧保存图重新计算：PSNR=34.847323, SSIM=0.98718043, LPIPS=0.011693475。这是本地静态重建指标，不是 PhysGaussian Table 1 的变形场景指标。",
+    "commands": "3dgs-render；3dgs-evaluate-fresh；3dgs-evaluate-existing",
+    "evidence": [
+      "evaluations/fresh_30000/metrics.json",
+      "evaluations/fresh_30000/comparison.jpg",
+      "evaluations/existing_baseline/metrics.json"
+    ]
+  },
+  {
+    "id": "V12",
+    "status": "未验证",
+    "title": "未修改作者 metrics.py 全视图入口",
+    "detail": "原 metrics.py 已实际启动，最终完成 6/200 张；进程运行 185.4 秒，最后进度显示 Metric evaluation progress:   3%|▎         | 6/200 [02:21<1:17:43, 24.04s/it]。源码核对确认 lpips() 对每张图重新构造网络。本轮因预计额外耗时超过一小时，仅向核实过命令行的该验证子进程发送 SIGTERM（退出 -15），保留日志及停止记录。完整原入口未完成，不能推断通过，也没有把它误写成显存不足。V11 的全部 200 张独立流式评估已完成，二者分开判断。",
+    "commands": "native_metrics_check.py → 3dgs-native-metrics",
+    "evidence": [
+      "checks/native-metrics.json",
+      "logs/3dgs-native-metrics.log",
+      "checks/native-entry-stop.json",
+      "commands/captured-stop_native_entry.json"
+    ]
+  },
+  {
+    "id": "V13",
+    "status": "通过",
+    "title": "CUDA 扩展从源码隔离重编译",
+    "detail": "将原 simple-knn 与 diff-gaussian-rasterization 源码复制到验证目录并先核对哈希；build_ext 编译、未安装覆盖原环境。实际 KNN 对照 torch.cdist，随后新编译光栅器渲染同一新模型全部 200 视图。新旧光栅器最大 PNG 字节差 0.0，完全一致 200/200。",
+    "commands": "build_cuda.py；cuda-build-*；cuda-rebuilt-knn-test；cuda-rebuilt-render",
+    "evidence": [
+      "cuda-build-results.json",
+      "checks/rebuilt-render-comparison.json",
+      "build/"
+    ]
+  },
+  {
+    "id": "V14",
+    "status": "通过",
+    "title": "既有 3DGS 模型重新渲染",
+    "detail": "只复制旧模型 PLY/cfg 到验证目录，运行原 render.py 全部 200 视图并重新评估。相对历史保存图最大字节差 0.0，完全一致 200/200。重渲染指标：PSNR=34.847323, SSIM=0.98718043, LPIPS=0.011693475。",
+    "commands": "3dgs-existing-model-rerender；3dgs-evaluate-existing-rerender",
+    "evidence": [
+      "checks/existing-model-rerender.json",
+      "evaluations/existing_model_rerender/metrics.json",
+      "outputs/ficus_existing_rerender/"
+    ]
+  },
+  {
+    "id": "V15",
+    "status": "通过",
+    "title": "新训练 3DGS 模型的完整 Ficus 物理模拟",
+    "detail": "将本轮新 PLY 交给原 Ficus 配置与发布的 gs_simulation，保留现有外部低显存适配。重新完成 125 帧，125 张 PNG 与 MP4 逐帧解码数一致；215850 个粒子最终原始数组有限，MPM 坐标中最大位移 0.0067951283。只验证运行及内部一致性，没有实物轨迹真值。",
+    "commands": "physics_isolated.py simulation；post_results.py",
+    "evidence": [
+      "commands/physics-fresh-full.json",
+      "physics/outputs/ficus_fresh_full/metrics.json",
+      "physics/outputs/ficus_fresh_full/output.mp4",
+      "physics/outputs/ficus_fresh_full/verified_contact_sheet.jpg",
+      "checks/fresh-simulation.json"
+    ]
+  },
+  {
+    "id": "V16",
+    "status": "通过",
+    "title": "高斯输运与增量协方差的实际核心测试",
+    "detail": "重新执行 96 个正定协方差/正行列式变形案例，调用原 Warp 核心、极分解、g2p 和 SH。协方差相对 L2 7.068812e-08；极分解相对 L2 1.1458763e-05；步长减半的增量协方差误差约减半。",
+    "commands": "physics_isolated.py transport",
+    "evidence": [
+      "physics/outputs/gaussian_transport/metrics.json",
+      "physics/outputs/gaussian_transport/reference_arrays.npz"
+    ]
+  },
+  {
+    "id": "V17",
+    "status": "失败",
+    "title": "发布代码的非单位预旋转 SH 坐标不变性",
+    "detail": "本轮重执行原 convert_SH 函数的刚性物体/相机同步旋转试验：identity 情况通过，但非单位预旋转情况下原路径不能保持颜色不变。局部外部共轭变换适配器通过不变量测试；Ficus 的 Q=I 不触发此问题。测试器返回 0 表示成功检出了负例，不代表上游原路径通过。实测：[{\"case\": \"identity\", \"original_color_relative_L2\": 4.516568986357009e-17, \"corrected_color_relative_L2\": 4.516568986357009e-17}, {\"case\": \"x90\", \"original_color_relative_L2\": 0.08545382741018154, \"corrected_color_relative_L2\": 4.516568986357009e-17}, {\"case\": \"composed\", \"original_color_relative_L2\": 0.05874388644777667, \"corrected_color_relative_L2\": 5.974859158583864e-17}]。",
+    "commands": "physics_isolated.py sh",
+    "evidence": [
+      "physics/outputs/sh_frame_audit/metrics.json",
+      "physics/outputs/sh_frame_audit/color_reference.npz"
+    ]
+  },
+  {
+    "id": "V18",
+    "status": "通过",
+    "title": "已存在 SH 外部适配器的局部测试",
+    "detail": "本轮重测的 QᵀR⁻¹Q 转换在三种预旋转下均保持参考颜色。只验证函数及已有纠正视频的文件内容；本轮没有重跑 bread/plane/vasedeck 三个完整纠正场景。",
+    "commands": "physics_isolated.py sh；media_and_syntax.py",
+    "evidence": [
+      "physics/outputs/sh_frame_audit/metrics.json",
+      "checks/video-decode.json"
+    ]
+  },
+  {
+    "id": "V19",
+    "status": "失败",
+    "title": "snow 材料的实际本构支持",
+    "detail": "本轮实际运行原应力核：snow 映射为 material=4，但发布应力核缺少该分支，加载/卸载过程应力始终为零。测试器对此负例有断言，因此脚本正常退出不能称 snow 材料已成功复现。 Windows 隔离缓存路径含中文，首次尝试在编译阶段失败；Linux 重试的原数值检查实际完成。",
+    "commands": "materials_linux_job.py → materials_linux.py（原数值函数不变；Linux 不使用 Windows 专用包含路径钩子）",
+    "evidence": [
+      "materials_linux/outputs/material_audit/metrics.json",
+      "materials_linux/outputs/material_audit/snow.npz",
+      "materials_linux/adapter.json",
+      "logs/materials-fresh-windows.log"
+    ]
+  },
+  {
+    "id": "V20",
+    "status": "通过",
+    "title": "其他材料的规定变形核心检查",
+    "detail": "jelly 弹性解析应力相对误差 7.0381484e-07、客观性误差 2.2180839e-07；刚性旋转、沙均匀张拉和 metal/foam/plasticine 的加载卸载均完成原检查。此处是单粒子规定变形本构试验，不代表各材料论文空间场景验证。 Windows 隔离缓存路径含中文，首次尝试在编译阶段失败；Linux 重试的原数值检查实际完成。",
+    "commands": "materials_linux_job.py → materials_linux.py（原数值函数不变；Linux 不使用 Windows 专用包含路径钩子）",
+    "evidence": [
+      "materials_linux/outputs/material_audit/metrics.json",
+      "materials_linux/outputs/material_audit/stress_paths.png",
+      "materials_linux/adapter.json",
+      "logs/materials-fresh-windows.log"
+    ]
+  },
+  {
+    "id": "V21",
+    "status": "通过",
+    "title": "各向异性正则函数与旧 PLY 实测",
+    "detail": "本轮独立随机案例验证原函数的损失、解析梯度、gradcheck 与统一缩放不变性，梯度最大绝对差 2.220446e-16。原始 PLY 重测平均轴比：无正则 13248.229，有正则 4.4794122。不把这当作本轮重训结果。",
+    "commands": "check_anisotropy.py",
+    "evidence": [
+      "checks/anisotropy.json"
+    ]
+  },
+  {
+    "id": "V22",
+    "status": "通过",
+    "title": "已有模拟与音频产物内容检查",
+    "detail": "独立读取 11 个已有最终物理状态，检查有限性、位移、质量记录；逐帧解码 11 个视频，抽取首/中/末帧并实际查看全部拼图。PAT/扩展/移动听者/NeuralSound WAV 与对应原始数组和共同增益精确一致。NeuralSound 已有音频对 BEM 原始声压相对 L2 为 107.068%，文件有效不代表预测精确。没有进行人类听感实验。",
+    "commands": "independent_cpu.py；media_and_syntax.py；audio_readback.py",
+    "evidence": [
+      "checks/saved-physics.json",
+      "checks/video-decode.json",
+      "checks/audio-readback.json",
+      "可视化核查记录.md"
+    ]
+  },
+  {
+    "id": "V23",
+    "status": "通过",
+    "title": "全部本地 NeuralSound BEM 标签重新生成",
+    "detail": "24 个几何、144 模态标签全部使用发布的 Bempp 算子重新计算，保持现有 NumPy 兼容/Numba CPU/双精度/1e-8 容差适配，所有 GMRES 实测残差达标。新旧近场/远场数组逐值相同。起点仍是已有体素振动模态，不代表已重新生成 ABC 数据。",
+    "commands": "labels_job.py → labels_isolated.py",
+    "evidence": [
+      "commands/fresh-bem-labels.json",
+      "checks/fresh-bem-labels.json",
+      "neural_labels/inputs/procedural_bempp/dataset.json"
+    ]
+  },
+  {
+    "id": "V24",
+    "status": "通过",
+    "title": "已有神经权重及完整训练状态可读性",
+    "detail": "8 个 best/last 检查点实际加载，模型和优化器张量有限；last 的 epoch、完整 history、scheduler、RNG 状态核对一致。辐射 best 的选取 epoch 与验证集最低 loss 一致。权重可读性不证明本轮重复了训练历史。",
+    "commands": "checkpoint_readback.py",
+    "evidence": [
+      "checks/checkpoints.json"
+    ]
+  },
+  {
+    "id": "V25",
+    "status": "通过",
+    "title": "两套辐射权重的全测试集新推理",
+    "detail": "直接从原始 NPZ 独立构建 23 通道特征，运行公开 AcousticNet；两个 profile 各 24 张测试图，新推理与旧预测导出相对差 2.4641696e-07, 9.0620098e-08。全体新预测/参考图均保存并视觉检查。",
+    "commands": "neural_inference.py",
+    "evidence": [
+      "neural/radiation_training/predictions.npz",
+      "neural/radiation_paper_schedule/predictions.npz",
+      "可视化核查记录.md"
+    ]
+  },
+  {
+    "id": "V26",
+    "status": "失败",
+    "title": "当前本地辐射网络作为高精度 FFAT 近似",
+    "detail": "新推理的平均原始 FFAT 相对 L2：发布代码训练 profile 372.900%, paper-schedule 本地对照 322.063%；均劣于逐样本相对 L2 恒为 100% 的全零输出基准。此均值会受低辐射模式放大，故同时记录中位数、逐样本误差、负值比例与归一化指标。两个 profile 的归一化 map MSE 分别 0.27533487, 0.45976652，自然对数幅值 MSE 分别 2.3482562, 2.5557944。这不能证明论文精度；也不能将百分比直接对比论文表 5 的 0.06/0.07。 两套权重的原始相对 L2 中位数分别为 66.712% 和 80.539%；视觉上大部分预测仍未恢复参考的平滑方向性波瓣。",
+    "commands": "neural_inference.py",
+    "evidence": [
+      "neural/radiation_training/metrics.json",
+      "neural/radiation_paper_schedule/metrics.json"
+    ]
+  },
+  {
+    "id": "V27",
+    "status": "通过",
+    "title": "两套振动权重的实际混合求解",
+    "detail": "4 个测试几何 × 2 组权重，重新运行网络初始化加 LOBPCG，并独立组装物理 K/M 与 SciPy 稠密特征值参考。逐弹性模态最大残差 1.0507794e-08，最大相对特征值误差 2.1649349e-13。这验证最终求解精度，不证明网络本身贡献或论文加速比。",
+    "commands": "vibration_rerun.py",
+    "evidence": [
+      "neural/vibration-fresh-solves.json",
+      "neural/vibration_training/network-validation.json",
+      "neural/vibration_paper_schedule/network-validation.json"
+    ]
+  },
+  {
+    "id": "V28",
+    "status": "未验证",
+    "title": "未重复的训练与全部扩展场景",
+    "detail": "本轮没有从零重训两套 NeuralSound 振动/辐射网络的 100/200 epoch 全部配置，没有重训各向异性 30,000 步模型，没有重跑所有 11 条已有动态场景及所有移动听者/扩展音频链路。对这些内容仅报告本轮实际完成的权重/数组/图像/音频检查，不沿用旧日志的 completed 结论。",
+    "commands": "未执行完整重复训练/全部场景",
+    "evidence": [
+      "验收标准.md"
+    ]
+  },
+  {
+    "id": "V29",
+    "status": "未验证",
+    "title": "三篇论文原始数据、架构与完整指标/性能复现",
+    "detail": "PhysGaussian Table 1 是 Wolf/Stool/Plant 弯曲扭转的专门合成变形基准（未变形训练 100 视角，各变形状态 100 真值视角）；静态 Ficus 指标不替代它。NeuralSound 使用约 100K ABC、随机材质/模态和 4:1:1 划分；本地仅 24 个程序化几何。公开 README 明说 AcousticNet 比论文架构紧凑，论文 Mel 频率分支与公开特征编码也不同。paper-schedule 只对齐部分优化参数。未完成论文 100 个测试物体×20 模态基准、3080Ti/3090 性能比较、听感实验等。PAT 差距另见 V09。",
+    "commands": "论文原文、README、代码与本地输入核对；对应论文完整基准未执行",
+    "evidence": [
+      "papers/01_PhysGaussian.txt",
+      "papers/03_NeuralSound.txt",
+      "papers/03_NeuralSound_page10.png",
+      "papers/sources.json"
+    ]
+  },
+  {
+    "id": "V30",
+    "status": "未验证",
+    "title": "全新机器环境恢复与远端资源真实性",
+    "detail": "本轮使用已有 Conda 环境，重编译了所述 C++/CUDA 模块，未从空环境重装所有依赖。没有重新从远端获取并认证全部数据、权重和资源；本地哈希匹配只能证明当前文件与本地来源记录一致。",
+    "commands": "未执行全新环境安装及全部资源远端复核",
+    "evidence": [
+      "checks/data.json",
+      "checks/environment-export-text.json"
+    ]
+  },
+  {
+    "id": "V31",
+    "status": "未验证",
+    "title": "统一的同一 3DGS 物体受力—振动—声辐射系统",
+    "detail": "当前验证的 Ficus 3DGS、程序化体素梁/盒子声学和 NeuralSound 数据是不同输入。没有发现或完成同一 3DGS 对象连续驱动受力、振动、声辐射并同步验收的统一演示。原计划把它列为研究背景；三个目录和局部模块成功不自动实现这一研究系统。",
+    "commands": "本轮各实际命令与输入路径核对；统一系统未执行",
+    "evidence": [
+      "验收标准.md",
+      "command-index.json"
+    ]
+  },
+  {
+    "id": "V32",
+    "status": "通过",
+    "title": "本轮未修改既有代码、配置、数据和结果",
+    "detail": "开始前采集 9166 个既有文件 SHA256，结束后重新扫描：changed=0, missing=0, added=0。新测试脚本、缓存、构建、模型、图像、音频、报告均位于 verification_20261101。保护快照排除 Conda 安装、Git 内部、__pycache__ 和运行缓存；不夸大为整个系统零文件变化。",
+    "commands": "snapshot_originals.py before / after",
+    "evidence": [
+      "original-files-before.json",
+      "original-files-after.json"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+{
+    "started":  "2026-11-01T09:35:51.599664+08:00",
+    "status":  "failed in original queue; superseded by scope-resume-state.json",
+    "wait_pid":  14,
+    "exit_code":  1,
+    "superseded_by":  "scope-resume-state.json"
+}

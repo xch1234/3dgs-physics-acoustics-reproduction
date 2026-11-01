@@ -1,0 +1,14 @@
+{
+  "name": "env-physgaussian-imports",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-c",
+    "import importlib,json; modules=['numpy', 'scipy', 'torch', 'warp', 'taichi', 'diff_gaussian_rasterization', 'simple_knn._C']; result={}\nfor name in modules:\n m=importlib.import_module(name); result[name]={\"version\":str(getattr(m,\"__version__\",None)),\"file\":str(getattr(m,\"__file__\",None))}\nimport torch\na=torch.arange(16,device=\"cuda\",dtype=torch.float32).reshape(4,4); b=a@a.T; torch.cuda.synchronize(); assert torch.isfinite(b).all();result[\"cuda\"]={\"available\":torch.cuda.is_available(),\"device\":torch.cuda.get_device_name(0),\"torch_cuda\":torch.version.cuda,\"matmul\":b.cpu().tolist()}\nprint(json.dumps(result,indent=2))"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:57:43.704897+08:00",
+  "log": "logs/env-physgaussian-imports.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:57:54.034070+08:00",
+  "elapsed_s": 10.329171202000001
+}

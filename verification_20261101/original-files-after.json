@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "files": 9166,
+  "changed": [],
+  "missing": [],
+  "added": [],
+  "excluded": [
+    "Conda installations",
+    ".git internals",
+    "__pycache__",
+    "runtime cache directories",
+    "new verification_20261101 directory"
+  ]
+}

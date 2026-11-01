@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "samples": 24,
+  "selected_epoch": 86,
+  "checkpoint_sha256": "0cf249cce3199cbe8cf034d7622594a3f83965fac12ae6a923c0867039622ed0",
+  "all_errors_match_original_test": true,
+  "plots": [
+    "test_00_03.png",
+    "test_04_07.png",
+    "test_08_11.png",
+    "test_12_15.png",
+    "test_16_19.png",
+    "test_20_23.png"
+  ],
+  "units": "far FFAT magnitude in original vibration feature scale; r times pressure/acceleration convention, not audio pressure",
+  "note": "same frozen checkpoint; no model selection or tuning; raw negative outputs retained; each comparison pair shares its physical FFAT color scale"
+}

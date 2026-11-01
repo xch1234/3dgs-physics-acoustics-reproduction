@@ -1,0 +1,40 @@
+{
+  "scope": "official CUDA MPM + official Gaussian covariance kernel on local synthetic beam; diagnostic renderer only",
+  "all_checks_passed": true,
+  "commit": "8339ed6aa2cd5d50e1001a254a3d95aea678a956",
+  "device": "cuda:0",
+  "warp_version": "0.10.1",
+  "particles": 192,
+  "grid": [
+    32,
+    32,
+    32
+  ],
+  "free_fall_mean_position_error_m": 2.3443878173793828e-07,
+  "stationary_position_error_m": 0.0,
+  "cases": {
+    "soft": {
+      "E_Pa": 20000,
+      "total_mass_kg": 3.0,
+      "max_covariance_relative_error": 8.393033112952253e-08,
+      "min_covariance_eigenvalue_m2": 6.34664756944403e-05,
+      "maximum_tip_downward_displacement_m": 0.25696393847465515,
+      "final_tip_downward_displacement_m": 0.25644785165786743,
+      "steps": 2000,
+      "dt_s": 0.0002,
+      "frames": 81
+    },
+    "stiff": {
+      "E_Pa": 80000,
+      "total_mass_kg": 3.0,
+      "max_covariance_relative_error": 7.680939262399988e-08,
+      "min_covariance_eigenvalue_m2": 9.816561214393005e-05,
+      "maximum_tip_downward_displacement_m": 0.14710816740989685,
+      "final_tip_downward_displacement_m": 0.0900915265083313,
+      "steps": 2000,
+      "dt_s": 0.0002,
+      "frames": 81
+    }
+  },
+  "elapsed_s": 103.79101030004676
+}

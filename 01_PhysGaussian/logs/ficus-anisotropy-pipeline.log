@@ -1,0 +1,14 @@
+START train
+START render
+START evaluate
+START simulation
+Traceback (most recent call last):
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_anisotropy.py", line 64, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_anisotropy.py", line 51, in main
+    run('simulation',ROOT/'code/run_official_linux.py',['--model',out,'--config',ROOT/'code/PhysGaussian/config/ficus_config.json','--tag','ficus_anisotropy_full'])
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_anisotropy.py", line 34, in run
+    subprocess.run(command,cwd=REPO,stdout=log,stderr=subprocess.STDOUT,check=True)
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/3dgs-runtime/envs/physgaussian/bin/python', '-u', '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/project_runtime.py', '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.py', '--model', '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/outputs/ficus_anisotropy', '--config', '/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/config/ficus_config.json', '--tag', 'ficus_anisotropy_full']' returned non-zero exit status 1.

@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-run_scene_suite",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_scene_suite.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.628886+08:00",
+  "log": "logs/bash-syntax-run_scene_suite.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.684637+08:00",
+  "elapsed_s": 0.05554361200006497
+}

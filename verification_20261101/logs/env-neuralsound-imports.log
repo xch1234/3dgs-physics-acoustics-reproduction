@@ -1,0 +1,61 @@
+{
+  "numpy": {
+    "version": "1.24.4",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/numpy/__init__.py"
+  },
+  "scipy": {
+    "version": "1.10.1",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/scipy/__init__.py"
+  },
+  "torch": {
+    "version": "2.0.0+cu118",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/torch/__init__.py"
+  },
+  "MinkowskiEngine": {
+    "version": "0.5.4",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/MinkowskiEngine/__init__.py"
+  },
+  "torch_scatter": {
+    "version": "2.1.2+pt20cu118",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/torch_scatter/__init__.py"
+  },
+  "pycuda.driver": {
+    "version": "None",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/pycuda/driver.py"
+  },
+  "bempp.api": {
+    "version": "0.2.4",
+    "file": "/opt/3dgs-runtime/envs/neuralsound/lib/python3.9/site-packages/bempp/api/__init__.py"
+  },
+  "cuda": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 2050",
+    "torch_cuda": "11.8",
+    "matmul": [
+      [
+        14.0,
+        38.0,
+        62.0,
+        86.0
+      ],
+      [
+        38.0,
+        126.0,
+        214.0,
+        302.0
+      ],
+      [
+        62.0,
+        214.0,
+        366.0,
+        518.0
+      ],
+      [
+        86.0,
+        302.0,
+        518.0,
+        734.0
+      ]
+    ]
+  }
+}

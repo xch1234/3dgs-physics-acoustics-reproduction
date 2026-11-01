@@ -1,0 +1,86 @@
+{
+  "scope": "released hypersingular Bempp FFAT vs local indirect collocation BEM on identical cuboid",
+  "sample": "box_00.npz",
+  "all_outputs_finite": true,
+  "all_gmres_converged": true,
+  "relative_map_difference_near": [
+    0.10458502891972314,
+    0.8071005770778237,
+    0.051123323875089006,
+    0.09666389226964196,
+    0.009728926189588637,
+    0.26780315729307275
+  ],
+  "relative_map_difference_far": [
+    0.1093177408306421,
+    0.6890201601379818,
+    0.052217395227486384,
+    0.09674641702098874,
+    0.009920600429285534,
+    0.2847088640251469
+  ],
+  "gmres": [
+    {
+      "info": 0,
+      "iterations": 30,
+      "seconds": 22.919747196000117,
+      "independently_recomputed_relative_residual": 7.461307883188066e-09,
+      "requested_tolerance": 2.194276993445506e-09,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 7.461307809678038e-09
+    },
+    {
+      "info": 0,
+      "iterations": 17,
+      "seconds": 0.25421065499995166,
+      "independently_recomputed_relative_residual": 2.7396835247372635e-09,
+      "requested_tolerance": 2.2757567330895164e-09,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 2.7396835246156746e-09
+    },
+    {
+      "info": 0,
+      "iterations": 23,
+      "seconds": 0.2614955409999311,
+      "independently_recomputed_relative_residual": 4.026643071779123e-09,
+      "requested_tolerance": 2.0323509633871024e-09,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 4.026643027284236e-09
+    },
+    {
+      "info": 0,
+      "iterations": 21,
+      "seconds": 0.2720017669998924,
+      "independently_recomputed_relative_residual": 3.108040464554297e-09,
+      "requested_tolerance": 3.450567306287777e-10,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 3.1080404403040458e-09
+    },
+    {
+      "info": 0,
+      "iterations": 20,
+      "seconds": 0.2730900209999163,
+      "independently_recomputed_relative_residual": 9.428633394350742e-09,
+      "requested_tolerance": 1.985085321847361e-09,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 9.428633407183935e-09
+    },
+    {
+      "info": 0,
+      "iterations": 21,
+      "seconds": 0.2623190469998917,
+      "independently_recomputed_relative_residual": 2.892768959629818e-09,
+      "requested_tolerance": 2.1814815530738808e-09,
+      "used_tolerance": 1e-08,
+      "final_reported_residual": 2.892768991917017e-09
+    }
+  ],
+  "elapsed_s": 91.73722422599985,
+  "adaptations": [
+    "CPU numba backend",
+    "double precision operators",
+    "integral index dtype adapter",
+    "NumPy removed builtin aliases restored for Bempp 0.2.4",
+    "GMRES tolerance=1e-08"
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "name": "bash-syntax-build_linux_extensions",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/build_linux_extensions.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:38.914831+08:00",
+    "log": "logs/bash-syntax-build_linux_extensions.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.013486+08:00",
+    "elapsed_s": 0.09837665600002765
+  },
+  {
+    "name": "bash-syntax-run_anisotropy",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_anisotropy.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.087833+08:00",
+    "log": "logs/bash-syntax-run_anisotropy.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.143861+08:00",
+    "elapsed_s": 0.055940168999995876
+  },
+  {
+    "name": "bash-syntax-run_official_linux",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.216356+08:00",
+    "log": "logs/bash-syntax-run_official_linux.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.266875+08:00",
+    "elapsed_s": 0.05043773699981102
+  },
+  {
+    "name": "bash-syntax-run_reconstructed_simulation",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_reconstructed_simulation.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.343058+08:00",
+    "log": "logs/bash-syntax-run_reconstructed_simulation.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.397274+08:00",
+    "elapsed_s": 0.05414427499999874
+  },
+  {
+    "name": "bash-syntax-run_reconstruction",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_reconstruction.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.477531+08:00",
+    "log": "logs/bash-syntax-run_reconstruction.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.535223+08:00",
+    "elapsed_s": 0.057606080000141446
+  },
+  {
+    "name": "bash-syntax-run_scene_suite",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_scene_suite.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.628886+08:00",
+    "log": "logs/bash-syntax-run_scene_suite.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.684637+08:00",
+    "elapsed_s": 0.05554361200006497
+  },
+  {
+    "name": "bash-syntax-run_transport_audit",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_transport_audit.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.767258+08:00",
+    "log": "logs/bash-syntax-run_transport_audit.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.862771+08:00",
+    "elapsed_s": 0.09540538299984291
+  },
+  {
+    "name": "bash-syntax-setup_linux",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/setup_linux.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:39.942831+08:00",
+    "log": "logs/bash-syntax-setup_linux.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:39.993459+08:00",
+    "elapsed_s": 0.05054687799997737
+  },
+  {
+    "name": "bash-syntax-run_modalsound_basis",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_basis.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:40.092820+08:00",
+    "log": "logs/bash-syntax-run_modalsound_basis.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:40.159271+08:00",
+    "elapsed_s": 0.06640559800007395
+  },
+  {
+    "name": "bash-syntax-run_modalsound_fem",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_fem.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:41.425066+08:00",
+    "log": "logs/bash-syntax-run_modalsound_fem.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:41.672077+08:00",
+    "elapsed_s": 0.2469057809998958
+  },
+  {
+    "name": "bash-syntax-run_modalsound_transfer",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_transfer.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:41.890267+08:00",
+    "log": "logs/bash-syntax-run_modalsound_transfer.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:41.953893+08:00",
+    "elapsed_s": 0.06345606800005044
+  },
+  {
+    "name": "bash-syntax-install_pycuda_linux",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/install_pycuda_linux.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:42.057595+08:00",
+    "log": "logs/bash-syntax-install_pycuda_linux.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:42.146111+08:00",
+    "elapsed_s": 0.08828563599990957
+  },
+  {
+    "name": "bash-syntax-run_neural_linux",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/run_neural_linux.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:42.232577+08:00",
+    "log": "logs/bash-syntax-run_neural_linux.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:42.296465+08:00",
+    "elapsed_s": 0.06376664600020376
+  },
+  {
+    "name": "bash-syntax-run_paper_schedule",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/run_paper_schedule.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:42.378740+08:00",
+    "log": "logs/bash-syntax-run_paper_schedule.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:42.444906+08:00",
+    "elapsed_s": 0.06600359100002606
+  },
+  {
+    "name": "bash-syntax-setup_neural_linux",
+    "command": [
+      "bash",
+      "-n",
+      "/mnt/f/System/Desktop/3DGS/复现/03_NeuralSound/code/setup_neural_linux.sh"
+    ],
+    "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+    "started": "2026-11-01T15:22:42.531239+08:00",
+    "log": "logs/bash-syntax-setup_neural_linux.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:22:42.599175+08:00",
+    "elapsed_s": 0.06775500000003376
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "bash-syntax-setup_linux",
+  "command": [
+    "bash",
+    "-n",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/setup_linux.sh"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:22:39.942831+08:00",
+  "log": "logs/bash-syntax-setup_linux.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:22:39.993459+08:00",
+  "elapsed_s": 0.05054687799997737
+}

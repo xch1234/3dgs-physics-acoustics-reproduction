@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "time": "2026-11-01T09:48:28.696219+08:00",
+  "records": [
+    {
+      "case": "baseline",
+      "max_eigenpair_residual": 1.770093709093902e-13,
+      "retained_modes": 24,
+      "shared_gain_PCM_exact": true
+    },
+    {
+      "case": "stiffness_x4",
+      "max_eigenpair_residual": 1.770093709093902e-13,
+      "retained_modes": 24,
+      "shared_gain_PCM_exact": true
+    },
+    {
+      "case": "mass_x4",
+      "max_eigenpair_residual": 1.770093709093902e-13,
+      "retained_modes": 24,
+      "shared_gain_PCM_exact": true
+    },
+    {
+      "case": "damping_x4",
+      "max_eigenpair_residual": 1.770093709093902e-13,
+      "retained_modes": 24,
+      "shared_gain_PCM_exact": true
+    },
+    {
+      "case": "hit_middle",
+      "max_eigenpair_residual": 1.770093709093902e-13,
+      "retained_modes": 24,
+      "shared_gain_PCM_exact": true
+    }
+  ],
+  "physical_ODE_vs_saved_velocity_relative_max_error": 1.2138016286522557e-10,
+  "combined_audio_exact": true,
+  "note": "Read-only verification of original A1 outputs; vibration sonification, not radiated pressure."
+}

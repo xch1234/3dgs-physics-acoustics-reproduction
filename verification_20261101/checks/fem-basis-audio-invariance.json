@@ -1,0 +1,26 @@
+{
+  "matrix_relative_errors": {
+    "K_N_per_m": 1.9305119061011238e-16,
+    "M_kg": 0.0
+  },
+  "max_frequency_relative_error": 3.730349362740526e-14,
+  "first_six_mass_inner_product_singular_values": [
+    1.0000000000000007,
+    0.9999999999999999,
+    0.9999999999999998,
+    0.9999999999999997,
+    0.9999999999999997,
+    0.9999999999999993
+  ],
+  "reconstructed_displacement_relative_L2": 4.5556273418741066e-12,
+  "BEM_magnitude_audio_relative_L2": 1.1421778560513463,
+  "listener_RMS_ratios": [
+    1.0654774413622323,
+    0.35645775832005444,
+    0.11891222288545572
+  ],
+  "modal_basis_invariant_displacement_passed": true,
+  "modal_basis_invariant_audio_passed": false,
+  "explanation": "Same FEM matrices/frequencies and invariant physical displacement, but magnitude-only abs(transfer) @ modal_response discards mode-dependent pressure phase/sign. Equivalent eigensolver bases can yield different raw sound. This check does not claim perceptual difference or change the original implementation.",
+  "complex_transfer_control_relative_L2": 1.3970507376976505e-12
+}

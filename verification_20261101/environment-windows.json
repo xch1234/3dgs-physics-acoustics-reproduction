@@ -1,0 +1,285 @@
+[
+  {
+    "name": "windows-acoustics-pip",
+    "command": [
+      "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:04:55.634679+08:00",
+    "log": "logs\\windows-acoustics-pip.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:04:58.949815+08:00",
+    "elapsed_s": 3.312999999965541
+  },
+  {
+    "name": "windows-acoustics-versions",
+    "command": [
+      "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+      "-c",
+      "import sys,numpy,scipy; print(sys.version);print(numpy.__version__,scipy.__version__)"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:04:58.956559+08:00",
+    "log": "logs\\windows-acoustics-versions.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:04:59.821361+08:00",
+    "elapsed_s": 0.875
+  },
+  {
+    "name": "windows-physgaussian-pip",
+    "command": [
+      "F:\\System\\Desktop\\3DGS\\复现\\.conda\\physgaussian\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:04:59.824375+08:00",
+    "log": "logs\\windows-physgaussian-pip.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:03.862313+08:00",
+    "elapsed_s": 4.030999999959022
+  },
+  {
+    "name": "windows-physgaussian-versions",
+    "command": [
+      "F:\\System\\Desktop\\3DGS\\复现\\.conda\\physgaussian\\python.exe",
+      "-c",
+      "import sys,numpy,scipy; print(sys.version);print(numpy.__version__,scipy.__version__)"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:03.864321+08:00",
+    "log": "logs\\windows-physgaussian-versions.log",
+    "exit_code": 1,
+    "finished": "2026-11-01T15:05:05.351690+08:00",
+    "elapsed_s": 1.484000000054948
+  },
+  {
+    "name": "powershell-syntax-0",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\run_all.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:05.355434+08:00",
+    "log": "logs\\powershell-syntax-0.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:06.007489+08:00",
+    "elapsed_s": 0.6400000000139698
+  },
+  {
+    "name": "powershell-syntax-1",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\run_full.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:06.010148+08:00",
+    "log": "logs\\powershell-syntax-1.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:06.622112+08:00",
+    "elapsed_s": 0.6089999999385327
+  },
+  {
+    "name": "powershell-syntax-2",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:06.624358+08:00",
+    "log": "logs\\powershell-syntax-2.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:07.223436+08:00",
+    "elapsed_s": 0.5940000000409782
+  },
+  {
+    "name": "powershell-syntax-3",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_ficus.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:07.225444+08:00",
+    "log": "logs\\powershell-syntax-3.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:07.790753+08:00",
+    "elapsed_s": 0.5779999999795109
+  },
+  {
+    "name": "powershell-syntax-4",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_official.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:07.802451+08:00",
+    "log": "logs\\powershell-syntax-4.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:08.414575+08:00",
+    "elapsed_s": 0.625
+  },
+  {
+    "name": "powershell-syntax-5",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_reconstructed_simulation.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:08.417100+08:00",
+    "log": "logs\\powershell-syntax-5.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:09.047547+08:00",
+    "elapsed_s": 0.625
+  },
+  {
+    "name": "powershell-syntax-6",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_reconstruction.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:09.049563+08:00",
+    "log": "logs\\powershell-syntax-6.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:09.654212+08:00",
+    "elapsed_s": 0.6099999999860302
+  },
+  {
+    "name": "powershell-syntax-7",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_scenes.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:09.657319+08:00",
+    "log": "logs\\powershell-syntax-7.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:10.250593+08:00",
+    "elapsed_s": 0.5929999999934807
+  },
+  {
+    "name": "powershell-syntax-8",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\02_PAT\\run.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:10.253020+08:00",
+    "log": "logs\\powershell-syntax-8.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:10.874036+08:00",
+    "elapsed_s": 0.625
+  },
+  {
+    "name": "powershell-syntax-9",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\02_PAT\\run_additional.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:10.876040+08:00",
+    "log": "logs\\powershell-syntax-9.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:11.452859+08:00",
+    "elapsed_s": 0.5790000000270084
+  },
+  {
+    "name": "powershell-syntax-10",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\02_PAT\\run_extended.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:11.455860+08:00",
+    "log": "logs\\powershell-syntax-10.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:12.024716+08:00",
+    "elapsed_s": 0.5779999999795109
+  },
+  {
+    "name": "powershell-syntax-11",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\02_PAT\\run_fem.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:12.026720+08:00",
+    "log": "logs\\powershell-syntax-11.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:12.640490+08:00",
+    "elapsed_s": 0.609000000054948
+  },
+  {
+    "name": "powershell-syntax-12",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\03_NeuralSound\\run.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:12.643505+08:00",
+    "log": "logs\\powershell-syntax-12.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:13.234799+08:00",
+    "elapsed_s": 0.5939999999245629
+  },
+  {
+    "name": "powershell-syntax-13",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\03_NeuralSound\\run_neural.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:13.237505+08:00",
+    "log": "logs\\powershell-syntax-13.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:13.809020+08:00",
+    "elapsed_s": 0.5780000000959262
+  },
+  {
+    "name": "powershell-syntax-14",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\03_NeuralSound\\run_numerical.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+    ],
+    "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+    "started": "2026-11-01T15:05:13.819106+08:00",
+    "log": "logs\\powershell-syntax-14.log",
+    "exit_code": 0,
+    "finished": "2026-11-01T15:05:14.403417+08:00",
+    "elapsed_s": 0.5939999999245629
+  }
+]

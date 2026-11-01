@@ -1,0 +1,14 @@
+2026-11-01: initial one-off closeout script was piped from PowerShell to Python stdin.
+PowerShell's default native-pipeline encoding replaced the Chinese filename with question marks.
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "F:\System\Desktop\3DGS\复现\.conda\acoustics\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "F:\System\Desktop\3DGS\复现\.conda\acoustics\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+OSError: [Errno 22] Invalid argument: 'F:\System\Desktop\3DGS\复现\????????.md'
+
+This attempt failed before writing closeout-files.json. The completed scientific experiments,
+31 numerical checks, and full file/manifests verification were unaffected.
+Recovery: store the same closeout logic in UTF-8 reproduction/verify_closeout.py and execute the
+script file directly with the existing Windows Conda Python; do not pipe Unicode source through stdin.

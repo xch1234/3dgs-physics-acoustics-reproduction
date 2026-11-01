@@ -1,0 +1,31 @@
+{
+    "time":  "2026-11-01T12:18:01.1448747+08:00",
+    "gpu":  [
+                "name, driver_version, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu",
+                "NVIDIA GeForce RTX 2050, 595.95, 0 MiB, 4096 MiB, 0 %, 49"
+            ],
+    "linux_processes":  [
+                            "  PID  PPID STAT     ELAPSED COMMAND",
+                            "    1     0 Sl+        00:01 /init",
+                            "    9     1 Sl+        00:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate",
+                            "   12     1 Ss         00:00 /init",
+                            "   13    12 S          00:00 /init",
+                            "   14    13 Rs+        00:00 ps -eo pid,ppid,stat,etime,args"
+                        ],
+    "linux_memory":  [
+                         "              total        used        free      shared  buff/cache   available",
+                         "Mem:          7.6Gi       285Mi       7.1Gi       2.0Mi       194Mi       7.2Gi",
+                         "Swap:         2.0Gi          0B       2.0Gi"
+                     ],
+    "windows_project_python_processes":  [
+
+                                         ],
+    "active_project_linux_processes":  [
+
+                                       ],
+    "stopped_linux_processes":  [
+
+                                ],
+    "own_training_and_simulation_finished":  true,
+    "note":  "Read-only snapshot after scientific queues and extended verifier exited. No user application was terminated."
+}

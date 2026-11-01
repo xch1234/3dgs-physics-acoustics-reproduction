@@ -1,0 +1,139 @@
+{
+  "scope": "official traditional FEM assembly + Lanczos, with local input and clamping adapter; not neural inference",
+  "all_checks_passed": true,
+  "upstream_commit": "b18e81b1e3dba7e963b09a7d9a45b584707d805f",
+  "upstream_tracked_files_unmodified": true,
+  "upstream_source_sha256": {
+    "src/classic/fem/assembler.py": "a3faf4df1f8a36933189b57f8a302c7f0d899c99b22c62ae6b3f578d55b6377c",
+    "src/classic/fem/femModel.py": "b69933d2439c2cfa0cb145b27d1273e3b6d2ba3c3137c53ed2548d7634fb6191",
+    "src/classic/fem/solver.py": "c897e20d65356dd23940df83b63f80086ef63828a4760b7523e3b552873791db"
+  },
+  "input": {
+    "source": "locally generated beam, not paper benchmark",
+    "voxel_shape": [
+      6,
+      6,
+      6
+    ],
+    "occupied_voxels": 24,
+    "grid_box_length_m": 0.12,
+    "voxel_edge_m": 0.02,
+    "beam_dimensions_m": [
+      0.12,
+      0.04,
+      0.04
+    ],
+    "density_kg_per_m3": 1070,
+    "youngs_modulus_Pa": 1400000000.0,
+    "poisson_ratio": 0.35,
+    "boundary": "x-min face fixed in all 3 translations"
+  },
+  "total_vertices": 63,
+  "full_dofs": 189,
+  "free_dofs": 162,
+  "total_mass_kg": 0.20544000000000004,
+  "mass_per_translation_axis_kg": [
+    0.20544,
+    0.20544,
+    0.20544
+  ],
+  "free_body_rigid_mode_count": 6,
+  "rigid_zero_threshold_eigenvalue": 113.39248085326898,
+  "rigid_mode_normalized_stiffness_residual": 1.1371102093192775e-17,
+  "frequencies_Hz": [
+    529.3225462233652,
+    529.3225462233758,
+    1454.415625640727,
+    2455.2353968577913,
+    2455.2353968577977,
+    2457.906860923336,
+    4463.3194676969,
+    5601.088677118016,
+    5601.088677118018,
+    7495.331312999979,
+    7772.798572130285,
+    8934.799202869344
+  ],
+  "checks": {
+    "max_relative_eigenpair_residual": 1.265534059440836e-13,
+    "dense_reference_max_relative_eigenvalue_error": 1.4808154702450338e-12,
+    "mass_orthogonality_max_error": 1.6653345369377348e-15
+  },
+  "scaling_checks": {
+    "youngs_x4": {
+      "expected_frequency_ratio": 2.0,
+      "frequency_ratios": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "checks": {
+        "max_relative_eigenpair_residual": 1.265534059440836e-13,
+        "dense_reference_max_relative_eigenvalue_error": 1.4808154702450338e-12,
+        "mass_orthogonality_max_error": 1.6653345369377348e-15
+      }
+    },
+    "density_x4": {
+      "expected_frequency_ratio": 0.5,
+      "frequency_ratios": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "checks": {
+        "max_relative_eigenpair_residual": 1.265534059440836e-13,
+        "dense_reference_max_relative_eigenvalue_error": 1.4808154702450338e-12,
+        "mass_orthogonality_max_error": 1.6653345369377348e-15
+      }
+    },
+    "size_x2": {
+      "expected_frequency_ratio": 0.5,
+      "frequency_ratios": [
+        0.5000000000000102,
+        0.5000000000000259,
+        0.5000000000000044,
+        0.5000000000000002,
+        0.5000000000000007,
+        0.49999999999999806,
+        0.5,
+        0.4999999999999986,
+        0.5,
+        0.4999999999999992,
+        0.5000000000000002,
+        0.49999999999999944
+      ],
+      "checks": {
+        "max_relative_eigenpair_residual": 1.7667263055836823e-13,
+        "dense_reference_max_relative_eigenvalue_error": 6.615152869926533e-12,
+        "mass_orthogonality_max_error": 1.7763568394002505e-15
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "1.24.3",
+    "scipy": "1.10.1",
+    "numba": "0.68.0",
+    "device": "CPU",
+    "threads": 1
+  },
+  "elapsed_s_including_numba_compile": 12.446413500001654
+}

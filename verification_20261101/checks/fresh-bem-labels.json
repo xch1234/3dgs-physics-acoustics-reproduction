@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "geometries": 24,
+  "maps": 144,
+  "records": [
+    {
+      "file": "box_00.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_01.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_02.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_03.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_04.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_05.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_06.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_07.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_08.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_09.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_10.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_11.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_12.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_13.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_14.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_15.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_16.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_17.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_18.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_19.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_20.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_21.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_22.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    },
+    {
+      "file": "box_23.npz",
+      "relative_differences": {
+        "feats_out": 0.0,
+        "feats_out_far": 0.0
+      }
+    }
+  ],
+  "adapter_sha256": "b800ed372d480a867767ede3f4827790ce32e38877e840672b0ef7311a421968",
+  "scope": "Fresh original Bempp operator computation; unchanged local double-precision/Numba/1e-8 adapter; same saved voxel modes, not regenerated FEM or ABC."
+}

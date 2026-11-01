@@ -1,0 +1,13 @@
+{
+  "documents": [
+    "独立验证报告.md",
+    "命令与日志索引.md",
+    "可视化核查记录.md",
+    "验收标准.md",
+    "补充环境检查说明.md"
+  ],
+  "links_checked": 315,
+  "missing": [],
+  "items": 32,
+  "passed": true
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "case": "baseline",
+      "analytic_frequency_error": 1.2448708730516955e-11,
+      "waveform_relative_L2": 1.583118490268245e-11,
+      "eigen_residual": 1.770093709093902e-13,
+      "exact_PCM": true
+    },
+    {
+      "case": "stiffness_x4",
+      "analytic_frequency_error": 2.489741746103391e-11,
+      "waveform_relative_L2": 3.398470842703756e-11,
+      "eigen_residual": 1.770093709093902e-13,
+      "exact_PCM": true
+    },
+    {
+      "case": "mass_x4",
+      "analytic_frequency_error": 6.224354365258478e-12,
+      "waveform_relative_L2": 6.807769867460748e-12,
+      "eigen_residual": 1.770093709093902e-13,
+      "exact_PCM": true
+    },
+    {
+      "case": "damping_x4",
+      "analytic_frequency_error": 1.2448708730516955e-11,
+      "waveform_relative_L2": 3.913370528840624e-12,
+      "eigen_residual": 1.770093709093902e-13,
+      "exact_PCM": true
+    },
+    {
+      "case": "hit_middle",
+      "analytic_frequency_error": 1.2448708730516955e-11,
+      "waveform_relative_L2": 1.5222330102697647e-11,
+      "eigen_residual": 1.770093709093902e-13,
+      "exact_PCM": true
+    }
+  ],
+  "method": "Closed-form fixed/free chain frequencies, newly assembled incidence-matrix K, analytic damped velocity recomputed over full waveform"
+}

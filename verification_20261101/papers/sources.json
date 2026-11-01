@@ -1,0 +1,30 @@
+[
+  {
+    "path": "F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\paper\\PhysGaussian_2024.pdf",
+    "sha256": "9e5c0907440707ada89ce7252819aa24aeaaa2aa2d2d6924cddf5a2769e5dddf",
+    "pages": 10,
+    "rendered_pages": [
+      4,
+      5,
+      8
+    ]
+  },
+  {
+    "path": "F:\\System\\Desktop\\3DGS\\复现\\02_PAT\\paper\\PAT_2006.pdf",
+    "sha256": "f8ed4a7f681bf1948785b3bda7967d58056320e2a707389e263e474ab015d51e",
+    "pages": 9,
+    "rendered_pages": [
+      6,
+      7
+    ]
+  },
+  {
+    "path": "F:\\System\\Desktop\\3DGS\\复现\\03_NeuralSound\\paper\\NeuralSound_2022.pdf",
+    "sha256": "97750a2a0e1f2fc41cfd0111521dea952b35d6e4996b612aec42b291bc98176a",
+    "pages": 16,
+    "rendered_pages": [
+      7,
+      8
+    ]
+  }
+]

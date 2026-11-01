@@ -1,0 +1,20 @@
+{
+  "name": "captured-fresh_cpu_pipeline_retry_job",
+  "command": [
+    "wsl.exe",
+    "-d",
+    "Ubuntu1",
+    "--",
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/fresh_cpu_pipeline_retry_job.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:34:03.688325+08:00",
+  "log": "logs\\captured-fresh_cpu_pipeline_retry_job.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:34:26.108990+08:00",
+  "elapsed_s": 22.42200000002049
+}

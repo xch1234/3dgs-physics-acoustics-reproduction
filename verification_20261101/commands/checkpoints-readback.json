@@ -1,0 +1,14 @@
+{
+  "name": "checkpoints-readback",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/checkpoint_readback.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:33:56.581162+08:00",
+  "log": "logs/checkpoints-readback.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:37:57.806137+08:00",
+  "elapsed_s": 241.22486949500035
+}

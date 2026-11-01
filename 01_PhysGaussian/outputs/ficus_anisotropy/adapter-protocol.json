@@ -1,0 +1,33 @@
+{
+  "source_train_sha256": "be4d22f4bc69cc7cdbfbf7d6ac0b4fe1a88d82fc9b9e2414acecbfcf65441423",
+  "loss_line": 92,
+  "threshold": 5.0,
+  "weight": 0.01,
+  "upstream_arguments": [
+    "-s",
+    "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/outputs/ficus_anisotropy",
+    "--eval",
+    "--white_background",
+    "--data_device",
+    "cpu",
+    "--resolution",
+    "1",
+    "--iterations",
+    "30000",
+    "--port",
+    "6019",
+    "--test_iterations",
+    "30000",
+    "--save_iterations",
+    "7000",
+    "15000",
+    "30000",
+    "--checkpoint_iterations",
+    "7000",
+    "15000",
+    "30000"
+  ],
+  "adaptation": "Only the photometric loss assignment is wrapped to add weighted Eq.(12); original source file unchanged."
+}

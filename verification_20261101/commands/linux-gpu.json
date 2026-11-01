@@ -1,0 +1,12 @@
+{
+  "name": "linux-gpu",
+  "command": [
+    "nvidia-smi"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:58:05.162016+08:00",
+  "log": "logs/linux-gpu.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:58:06.262034+08:00",
+  "elapsed_s": 1.0997869460000018
+}

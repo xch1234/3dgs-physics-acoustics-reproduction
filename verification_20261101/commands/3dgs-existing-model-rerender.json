@@ -1,0 +1,26 @@
+{
+  "name": "3dgs-existing-model-rerender",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting/render.py",
+    "-m",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_existing_rerender",
+    "-s",
+    "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus",
+    "--eval",
+    "--white_background",
+    "--data_device",
+    "cpu",
+    "--resolution",
+    "1",
+    "--iteration",
+    "30000",
+    "--skip_train"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/PhysGaussian/gaussian-splatting",
+  "started": "2026-11-01T16:38:02.371727+08:00",
+  "log": "logs/3dgs-existing-model-rerender.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:39:58.850699+08:00",
+  "elapsed_s": 116.4789636860005
+}

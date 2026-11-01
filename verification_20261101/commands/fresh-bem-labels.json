@@ -1,0 +1,14 @@
+{
+  "name": "fresh-bem-labels",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/labels_isolated.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T15:25:06.226673+08:00",
+  "log": "logs/fresh-bem-labels.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:32:29.136500+08:00",
+  "elapsed_s": 442.90976572800014
+}

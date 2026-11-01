@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "scene": "bread_official_full",
+      "frames": 300,
+      "particles": 182959,
+      "max_final_displacement": 0.6088159084320068,
+      "min_final_det": 0.20931021869182587
+    },
+    {
+      "scene": "bread_sh_corrected",
+      "frames": 300,
+      "particles": 182959,
+      "max_final_displacement": 0.6088782548904419,
+      "min_final_det": 0.209469735622406
+    },
+    {
+      "scene": "ficus_anisotropy_full",
+      "frames": 125,
+      "particles": 251596,
+      "max_final_displacement": 0.022275250405073166,
+      "min_final_det": 0.987885057926178
+    },
+    {
+      "scene": "ficus_official_full",
+      "frames": 125,
+      "particles": 171553,
+      "max_final_displacement": 0.003566694213077426,
+      "min_final_det": 0.9962152242660522
+    },
+    {
+      "scene": "ficus_reconstructed_full",
+      "frames": 125,
+      "particles": 215654,
+      "max_final_displacement": 0.00704196747392416,
+      "min_final_det": 0.9931541681289673
+    },
+    {
+      "scene": "pillow2sofa_official_full",
+      "frames": 300,
+      "particles": 695984,
+      "max_final_displacement": 0.7282355427742004,
+      "min_final_det": 0.12488803267478943
+    },
+    {
+      "scene": "plane_official_full",
+      "frames": 400,
+      "particles": 67260,
+      "max_final_displacement": 0.6227538585662842,
+      "min_final_det": 0.9504183530807495
+    },
+    {
+      "scene": "plane_sh_corrected",
+      "frames": 400,
+      "particles": 67260,
+      "max_final_displacement": 0.6227538585662842,
+      "min_final_det": 0.9505791068077087
+    },
+    {
+      "scene": "vasedeck_official_full",
+      "frames": 75,
+      "particles": 55364,
+      "max_final_displacement": 0.9558321833610535,
+      "min_final_det": 0.9640768766403198
+    },
+    {
+      "scene": "vasedeck_sh_corrected",
+      "frames": 75,
+      "particles": 55364,
+      "max_final_displacement": 0.9558312296867371,
+      "min_final_det": 0.9640787839889526
+    },
+    {
+      "scene": "wolf_official_full",
+      "frames": 50,
+      "particles": 188201,
+      "max_final_displacement": 1.0514049530029297,
+      "min_final_det": 0.9994382858276367
+    }
+  ],
+  "note": "Re-read all final arrays and PNG headers, independently recomputed finite states and determinants; historical trajectories and real-world accuracy are not proven."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "scene": "bread",
+    "returncode": 0,
+    "elapsed_s": 352.82583379900007,
+    "status": "verified",
+    "log": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/logs/bread_official_full-suite.log"
+  },
+  {
+    "scene": "pillow2sofa",
+    "returncode": 0,
+    "elapsed_s": 1444.941161445,
+    "status": "verified",
+    "log": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/logs/pillow2sofa_official_full-suite.log"
+  },
+  {
+    "scene": "plane",
+    "returncode": 0,
+    "elapsed_s": 5099.843841773,
+    "status": "verified",
+    "log": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/logs/plane_official_full-suite.log"
+  },
+  {
+    "scene": "vasedeck",
+    "returncode": 0,
+    "elapsed_s": 428.99558334099856,
+    "status": "verified",
+    "log": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/logs/vasedeck_official_full-suite.log"
+  },
+  {
+    "scene": "wolf",
+    "returncode": 0,
+    "elapsed_s": 3029.4106207250006,
+    "status": "verified",
+    "log": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/logs/wolf_official_full-suite.log"
+  }
+]

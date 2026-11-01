@@ -1,0 +1,46 @@
+[Taichi] version 1.5.0, llvm 15.0.4, commit 7b885c28, linux, python 3.9.23
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | x86_64
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: /mnt/f/System/Desktop/3DGS/复现/reproduction/cache/warp
+[Taichi] Starting on arch=cuda
+Loading scene config...
+Loading gaussians...
+Initializing scene and pre-processing...
+Initializing MPM solver and setting up boundary conditions...
+Module warp_utils load on device 'cuda:0' took 962.08 ms
+Particles initialized from torch data.
+Total particles:  251596
+Module mpm_utils load on device 'cuda:0' took 338.91 ms
+Traceback (most recent call last):
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/project_runtime.py", line 18, in <module>
+    runpy.run_path(str(entry),run_name='__main__')
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.py", line 132, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/code/run_official_linux.py", line 106, in main
+    runpy.run_path(str(REPO/'gs_simulation.py'),run_name='__main__')
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/3dgs-runtime/PhysGaussian-source/gs_simulation.py", line 249, in <module>
+    mpm_solver.set_parameters_dict(material_params)
+  File "/opt/3dgs-runtime/PhysGaussian-source/mpm_solver_warp/mpm_solver_warp.py", line 364, in set_parameters_dict
+    wp.launch(
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/warp/context.py", line 3149, in launch
+    if not module.load(device):
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/warp/context.py", line 1343, in load
+    raise (e)
+  File "/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/warp/context.py", line 1316, in load
+    cu_file.write(cu_source)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 18416-18417: ordinal not in range(128)

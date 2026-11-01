@@ -1,0 +1,22 @@
+[
+  {
+    "check": "sources",
+    "passed": true
+  },
+  {
+    "check": "data",
+    "passed": true
+  },
+  {
+    "check": "traditional",
+    "passed": true
+  },
+  {
+    "check": "saved_physics",
+    "passed": true
+  },
+  {
+    "check": "saved_acoustics",
+    "passed": true
+  }
+]

@@ -1,0 +1,31 @@
+Matplotlib is building the font cache; this may take a moment.
+Warp 0.10.1 initialized:
+   CUDA Toolkit: 11.5, Driver: 13.2
+   Devices:
+     "cpu"    | Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+     "cuda:0" | NVIDIA GeForce RTX 2050 (sm_86)
+   Kernel cache: F:\System\Desktop\3DGS\复现\verification_20261101\cache\warp_windows
+Warp error: Failed to open output file 'F:\System\Desktop\3DGS\复现\verification_20261101\cache\warp_windows\bin\wp_warp_utils.sm70.ptx'
+Module warp_utils load on device 'cuda:0' took 1448.49 ms
+Traceback (most recent call last):
+  File "F:\System\Desktop\3DGS\复现\verification_20261101\materials_isolated.py", line 11, in <module>
+    m.main()
+  File "F:\System\Desktop\3DGS\复现\01_PhysGaussian\code\validate_materials.py", line 34, in main
+    actual,_=stress(make('jelly'),F)
+                    ^^^^^^^^^^^^^
+  File "F:\System\Desktop\3DGS\复现\01_PhysGaussian\code\validate_materials.py", line 15, in make
+    sim=initialize(np.array([[.5,.5,.5]],np.float32),np.array([1e-6],np.float32),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\System\Desktop\3DGS\复现\01_PhysGaussian\code\run_mpm.py", line 71, in initialize
+    wp.launch(set_mat33_to_identity,dim=n,inputs=[sim.mpm_state.particle_F_trial],device=device)
+  File "F:\System\Desktop\3DGS\复现\.conda\physgaussian\Lib\site-packages\warp\context.py", line 3149, in launch
+    if not module.load(device):
+           ^^^^^^^^^^^^^^^^^^^
+  File "F:\System\Desktop\3DGS\复现\.conda\physgaussian\Lib\site-packages\warp\context.py", line 1343, in load
+    raise (e)
+  File "F:\System\Desktop\3DGS\复现\.conda\physgaussian\Lib\site-packages\warp\context.py", line 1321, in load
+    warp.build.build_cuda(
+  File "F:\System\Desktop\3DGS\复现\01_PhysGaussian\code\warp_windows_compat.py", line 26, in build_cuda
+    if err:raise RuntimeError(f'Warp NVRTC compile failed: {err}')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Warp NVRTC compile failed: 18446744073709551615

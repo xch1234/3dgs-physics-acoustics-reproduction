@@ -1,0 +1,13 @@
+{
+  "scope": "resource and stability pilot, not the final training run",
+  "batch_size": 2,
+  "completed_history_epochs": 7,
+  "saved_native_checkpoint_epoch": 5,
+  "checkpoint_source": "/opt/3dgs-runtime/checkpoints/neuralsound-radiation-batch2-pilot",
+  "note": "Native epoch 5 best/last copied to workspace and independently SHA256 verified; 7 epochs in history, no formal test evaluation.",
+  "decision": "full batch 40 forward/backward/CPU Adam probe passed at 2.54 GB; formal run restarts from fixed seed for 100 epochs",
+  "checkpoint_sha256": {
+    "best.pt": "b83e08b98624e64a241980369144c85afee2fe6d53d40409cb5bf0e7e592c701",
+    "last.pt": "af31dcc39848ac2364cde9925441e3b1ce04f2f5f8ca2fc32656fc5b3283f387"
+  }
+}

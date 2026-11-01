@@ -1,0 +1,14 @@
+{
+  "name": "neural-fresh-inference",
+  "command": [
+    "/opt/3dgs-runtime/envs/neuralsound/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/neural_inference.py"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:14:58.134261+08:00",
+  "log": "logs/neural-fresh-inference.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:17:13.072684+08:00",
+  "elapsed_s": 134.93818870999985
+}

@@ -1,0 +1,238 @@
+running build_ext
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/utils/cpp_extension.py:398: UserWarning: There are no g++ version bounds defined for CUDA version 11.8
+  warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+building 'diff_gaussian_rasterization._C' extension
+creating /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp
+creating /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer
+Emitting ninja build file /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/build.ninja...
+Compiling objects...
+Using envvar MAX_JOBS (1) as the number of workers...
+[1/5] /opt/3dgs-runtime/envs/physgaussian/bin/nvcc  -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-runtime/envs/physgaussian/include -I/opt/3dgs-runtime/envs/physgaussian/include/python3.9 -c -c '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/backward.cu' -o '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/backward.o' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' '-I/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/third_party/glm/' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/auxiliary.h(151): warning #177-D: variable "p_proj" was declared but never referenced
+
+[2/5] /opt/3dgs-runtime/envs/physgaussian/bin/nvcc  -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-runtime/envs/physgaussian/include -I/opt/3dgs-runtime/envs/physgaussian/include/python3.9 -c -c '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/forward.cu' -o '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/forward.o' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' '-I/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/third_party/glm/' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/auxiliary.h(151): warning #177-D: variable "p_proj" was declared but never referenced
+
+[3/5] /opt/3dgs-runtime/envs/physgaussian/bin/nvcc  -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-runtime/envs/physgaussian/include -I/opt/3dgs-runtime/envs/physgaussian/include/python3.9 -c -c '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/rasterizer_impl.cu' -o '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/rasterizer_impl.o' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' '-I/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/third_party/glm/' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/cuda_rasterizer/auxiliary.h(151): warning #177-D: variable "p_proj" was declared but never referenced
+
+[4/5] c++ -MMD -MF '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/ext.o'.d -pthread -B /opt/3dgs-runtime/envs/physgaussian/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/3dgs-runtime/envs/physgaussian/include -fPIC -O2 -isystem /opt/3dgs-runtime/envs/physgaussian/include -fPIC -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-runtime/envs/physgaussian/include -I/opt/3dgs-runtime/envs/physgaussian/include/python3.9 -c -c '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/ext.cpp' -o '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/ext.o' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[5/5] /opt/3dgs-runtime/envs/physgaussian/bin/nvcc  -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/TH -I/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/THC -I/opt/3dgs-runtime/envs/physgaussian/include -I/opt/3dgs-runtime/envs/physgaussian/include/python3.9 -c -c '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu' -o '/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/rasterize_points.o' -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' '-I/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/third_party/glm/' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=sm_86 -std=c++17
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=size_t, one_sided=false, <unnamed>=0]" 
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/c10/core/TensorImpl.h(77): here
+
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/c10/util/irange.h(54): warning #186-D: pointless comparison of unsigned integer with zero
+          detected during:
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator==(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+(61): here
+            instantiation of "__nv_bool c10::detail::integer_iterator<I, one_sided, <unnamed>>::operator!=(const c10::detail::integer_iterator<I, one_sided, <unnamed>> &) const [with I=std::size_t, one_sided=true, <unnamed>=0]" 
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/qualified_name.h(73): here
+
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu: In function ‘std::tuple<int, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor> RasterizeGaussiansCUDA(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, float, int, int, const at::Tensor&, int, const at::Tensor&, bool, bool)’:
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:134: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                      ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:180: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                    ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:258: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                  ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:298: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                          ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:449: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:492: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:535: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:574: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:649: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:89:685: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+   89 |    rendered = CudaRasterizer::Rasterizer::forward(
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu: In function ‘std::tuple<at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor, at::Tensor> RasterizeGaussiansBackwardCUDA(const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, const at::Tensor&, const at::Tensor&, const at::Tensor&, float, float, const at::Tensor&, const at::Tensor&, int, const at::Tensor&, const at::Tensor&, int, const at::Tensor&, const at::Tensor&, bool)’:
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:95: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                               ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:141: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                             ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:176: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:215: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                       ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:336: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:379: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                           ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:422: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:461: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:517: warning: ‘T* at::Tensor::data() const [with T = int]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:762: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:806: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:848: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:892: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:935: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:979: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:1021: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:1060: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:1103: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:163:1149: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  163 |    CudaRasterizer::Rasterizer::backward(P, degree, M, R,
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu: In function ‘at::Tensor markVisible(at::Tensor&, at::Tensor&, at::Tensor&)’:
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:209:81: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  209 |  CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                 ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:209:124: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  209 |  CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                            ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:209:167: warning: ‘T* at::Tensor::data() const [with T = float]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  209 |  CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                                                                       ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/rasterize_points.cu:209:206: warning: ‘T* at::Tensor::data() const [with T = bool]’ is deprecated: Tensor.data<T>() is deprecated. Please use Tensor.data_ptr<T>() instead. [-Wdeprecated-declarations]
+  209 |  CudaRasterizer::Rasterizer::markVisible(P,
+      |                                                                                                                                                                                                              ^
+/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/include/ATen/core/TensorBody.h:244:1: note: declared here
+  244 |   T * data() const {
+      | ^ ~~
+creating /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib
+creating /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib/diff_gaussian_rasterization
+g++ -pthread -B /opt/3dgs-runtime/envs/physgaussian/compiler_compat -shared -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/3dgs-runtime/envs/physgaussian/lib -Wl,-rpath-link,/opt/3dgs-runtime/envs/physgaussian/lib -L/opt/3dgs-runtime/envs/physgaussian/lib -Wl,--allow-shlib-undefined -Wl,-rpath,/opt/3dgs-runtime/envs/physgaussian/lib -Wl,-rpath-link,/opt/3dgs-runtime/envs/physgaussian/lib -L/opt/3dgs-runtime/envs/physgaussian/lib /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/backward.o /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/forward.o /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/cuda_rasterizer/rasterizer_impl.o /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/ext.o /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp/rasterize_points.o -L/opt/3dgs-runtime/envs/physgaussian/lib/python3.9/site-packages/torch/lib -L/opt/3dgs-runtime/envs/physgaussian/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o /mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib/diff_gaussian_rasterization/_C.cpython-39-x86_64-linux-gnu.so

@@ -1,0 +1,14 @@
+{
+  "name": "windows-runtime_final",
+  "command": [
+    "F:\\System\\Desktop\\3DGS\\复现\\.conda\\acoustics\\python.exe",
+    "-u",
+    "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101\\runtime_final.py"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T16:54:31.954341+08:00",
+  "log": "logs\\windows-runtime_final.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:54:40.406368+08:00",
+  "elapsed_s": 8.436999999918044
+}

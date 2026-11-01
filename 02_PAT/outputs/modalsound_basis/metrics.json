@@ -1,0 +1,17 @@
+{
+  "scope": "unchanged ModalSound C++ HelmholtzBasis header, not complete GUI or original PAT application",
+  "evaluated_basis_values": 864,
+  "orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "scipy_relative_L2": 4.4396696178825917e-16,
+  "scipy_max_relative_error": 6.929820018835056e-14,
+  "analytic_gradient_vs_centered_difference_relative_L2": 6.50029015247953e-11,
+  "all_checks_passed": true,
+  "convention": "ModalSound uses h1 and Y_m multiplied by (-1)^m for positive m relative to SciPy; local PAT uses h2 and SciPy Y_m"
+}

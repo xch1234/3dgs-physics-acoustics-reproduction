@@ -1,0 +1,66 @@
+[
+  {
+    "run": "vibration_training",
+    "sample": "box_13.npz",
+    "max_elastic_residual": 6.680958888389062e-09,
+    "max_elastic_eigenvalue_error": 2.1438406605511773e-13,
+    "elapsed_s": 1.9874794339993969,
+    "passed": true
+  },
+  {
+    "run": "vibration_training",
+    "sample": "box_08.npz",
+    "max_elastic_residual": 7.993117391571619e-09,
+    "max_elastic_eigenvalue_error": 7.216449660063518e-14,
+    "elapsed_s": 1.0056372110002485,
+    "passed": true
+  },
+  {
+    "run": "vibration_training",
+    "sample": "box_06.npz",
+    "max_elastic_residual": 8.176834136779793e-09,
+    "max_elastic_eigenvalue_error": 6.683542608243442e-14,
+    "elapsed_s": 1.0198041289995672,
+    "passed": true
+  },
+  {
+    "run": "vibration_training",
+    "sample": "box_21.npz",
+    "max_elastic_residual": 1.050779366892531e-08,
+    "max_elastic_eigenvalue_error": 1.928457393773897e-13,
+    "elapsed_s": 1.9331524910003282,
+    "passed": true
+  },
+  {
+    "run": "vibration_paper_schedule",
+    "sample": "box_13.npz",
+    "max_elastic_residual": 6.49900502755862e-09,
+    "max_elastic_eigenvalue_error": 2.1649348980190553e-13,
+    "elapsed_s": 1.5464818139998897,
+    "passed": true
+  },
+  {
+    "run": "vibration_paper_schedule",
+    "sample": "box_08.npz",
+    "max_elastic_residual": 7.143650055414921e-09,
+    "max_elastic_eigenvalue_error": 7.127631818093505e-14,
+    "elapsed_s": 0.8327741939992848,
+    "passed": true
+  },
+  {
+    "run": "vibration_paper_schedule",
+    "sample": "box_06.npz",
+    "max_elastic_residual": 6.7736032292257585e-09,
+    "max_elastic_eigenvalue_error": 6.639133687258436e-14,
+    "elapsed_s": 0.9900727800004461,
+    "passed": true
+  },
+  {
+    "run": "vibration_paper_schedule",
+    "sample": "box_21.npz",
+    "max_elastic_residual": 9.39071252193881e-09,
+    "max_elastic_eigenvalue_error": 1.9395596240201485e-13,
+    "elapsed_s": 1.8887599549998413,
+    "passed": true
+  }
+]

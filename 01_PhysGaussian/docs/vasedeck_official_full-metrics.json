@@ -1,0 +1,549 @@
+{
+  "scope": "upstream full gs_simulation MPM and perspective SH CUDA rendering",
+  "all_checks_passed": true,
+  "physical_particles": 55364,
+  "steps": 30000,
+  "duration_s": 3.0,
+  "model_checkpoint": "/mnt/f/System/Desktop/3DGS/\u590d\u73b0/01_PhysGaussian/inputs/vasedeck_whitebg-trained/point_cloud/iteration_30000/point_cloud.ply",
+  "model_sha256": "ebaab02f06e21197a5af5bc0870b6f6b1f9c044a8817e272ae76394eba633142",
+  "rendered_frames": 75,
+  "torch_version": "2.0.0+cu118",
+  "torch_peak_allocated_bytes": 2451133952,
+  "torch_peak_reserved_bytes": 3995074560,
+  "elapsed_s": 412.5655936610001,
+  "adaptations": [
+    "Taichi device_memory_GB capped at 0.5 instead of upstream 8",
+    "torch no_grad",
+    "external per-frame state audits",
+    "ASCII symlink for Warp generated CUDA source path comments",
+    "WSL libcuda dynamic library path"
+  ],
+  "memory_note": "PyTorch peak excludes Warp and Taichi allocations",
+  "frames": [
+    {
+      "frame": 1,
+      "time_s": 0.04,
+      "max_displacement": 0.00939666572958231,
+      "min_det_F": 0.9798422455787659,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 2,
+      "time_s": 0.08,
+      "max_displacement": 0.018862444907426834,
+      "min_det_F": 0.966031014919281,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 3,
+      "time_s": 0.12000000000000001,
+      "max_displacement": 0.02902045287191868,
+      "min_det_F": 0.9498342871665955,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 4,
+      "time_s": 0.16,
+      "max_displacement": 0.03922058641910553,
+      "min_det_F": 0.9359390139579773,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 5,
+      "time_s": 0.2,
+      "max_displacement": 0.04937582463026047,
+      "min_det_F": 0.9180685877799988,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 6,
+      "time_s": 0.24000000000000002,
+      "max_displacement": 0.05938193202018738,
+      "min_det_F": 0.9000391364097595,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 7,
+      "time_s": 0.28,
+      "max_displacement": 0.06933846324682236,
+      "min_det_F": 0.8986532092094421,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 8,
+      "time_s": 0.32,
+      "max_displacement": 0.07636823505163193,
+      "min_det_F": 0.9139269590377808,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 9,
+      "time_s": 0.36000000000000004,
+      "max_displacement": 0.08841648697853088,
+      "min_det_F": 0.9203233122825623,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 10,
+      "time_s": 0.4,
+      "max_displacement": 0.10886391997337341,
+      "min_det_F": 0.9339427947998047,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 11,
+      "time_s": 0.44,
+      "max_displacement": 0.12776786088943481,
+      "min_det_F": 0.9480270147323608,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 12,
+      "time_s": 0.48000000000000004,
+      "max_displacement": 0.14461904764175415,
+      "min_det_F": 0.9508522152900696,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 13,
+      "time_s": 0.52,
+      "max_displacement": 0.1639217734336853,
+      "min_det_F": 0.9480183124542236,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 14,
+      "time_s": 0.56,
+      "max_displacement": 0.1822938621044159,
+      "min_det_F": 0.9461121559143066,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 15,
+      "time_s": 0.6,
+      "max_displacement": 0.19998279213905334,
+      "min_det_F": 0.945834755897522,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 16,
+      "time_s": 0.64,
+      "max_displacement": 0.21610482037067413,
+      "min_det_F": 0.9307403564453125,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 17,
+      "time_s": 0.68,
+      "max_displacement": 0.2306944876909256,
+      "min_det_F": 0.911714494228363,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 18,
+      "time_s": 0.7200000000000001,
+      "max_displacement": 0.24269872903823853,
+      "min_det_F": 0.8992677927017212,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 19,
+      "time_s": 0.76,
+      "max_displacement": 0.25045815110206604,
+      "min_det_F": 0.9014057517051697,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 20,
+      "time_s": 0.8,
+      "max_displacement": 0.25394949316978455,
+      "min_det_F": 0.9091018438339233,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 21,
+      "time_s": 0.8400000000000001,
+      "max_displacement": 0.25385022163391113,
+      "min_det_F": 0.9053187370300293,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 22,
+      "time_s": 0.88,
+      "max_displacement": 0.25244832038879395,
+      "min_det_F": 0.9073359370231628,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 23,
+      "time_s": 0.92,
+      "max_displacement": 0.25988057255744934,
+      "min_det_F": 0.9079916477203369,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 24,
+      "time_s": 0.9600000000000001,
+      "max_displacement": 0.26701369881629944,
+      "min_det_F": 0.9037168025970459,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "max_displacement": 0.27326056361198425,
+      "min_det_F": 0.8902527093887329,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 26,
+      "time_s": 1.04,
+      "max_displacement": 0.28394949436187744,
+      "min_det_F": 0.8649609088897705,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 27,
+      "time_s": 1.08,
+      "max_displacement": 0.2970394492149353,
+      "min_det_F": 0.8625539541244507,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 28,
+      "time_s": 1.12,
+      "max_displacement": 0.3102079927921295,
+      "min_det_F": 0.8659079670906067,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 29,
+      "time_s": 1.1600000000000001,
+      "max_displacement": 0.32344549894332886,
+      "min_det_F": 0.8708328604698181,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 30,
+      "time_s": 1.2,
+      "max_displacement": 0.33674389123916626,
+      "min_det_F": 0.8736213445663452,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 31,
+      "time_s": 1.24,
+      "max_displacement": 0.3500961661338806,
+      "min_det_F": 0.8807409405708313,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 32,
+      "time_s": 1.28,
+      "max_displacement": 0.36349645256996155,
+      "min_det_F": 0.8876849412918091,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 33,
+      "time_s": 1.32,
+      "max_displacement": 0.3769395649433136,
+      "min_det_F": 0.8995444774627686,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 34,
+      "time_s": 1.36,
+      "max_displacement": 0.3904211223125458,
+      "min_det_F": 0.9124450087547302,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 35,
+      "time_s": 1.4000000000000001,
+      "max_displacement": 0.40393728017807007,
+      "min_det_F": 0.9231488704681396,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 36,
+      "time_s": 1.4400000000000002,
+      "max_displacement": 0.4174846410751343,
+      "min_det_F": 0.9337249994277954,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 37,
+      "time_s": 1.48,
+      "max_displacement": 0.4310602843761444,
+      "min_det_F": 0.9456495642662048,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 38,
+      "time_s": 1.52,
+      "max_displacement": 0.44466161727905273,
+      "min_det_F": 0.9494704008102417,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 39,
+      "time_s": 1.56,
+      "max_displacement": 0.4582863748073578,
+      "min_det_F": 0.9517167210578918,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 40,
+      "time_s": 1.6,
+      "max_displacement": 0.47193247079849243,
+      "min_det_F": 0.9547194838523865,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 41,
+      "time_s": 1.6400000000000001,
+      "max_displacement": 0.4855981767177582,
+      "min_det_F": 0.9582187533378601,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 42,
+      "time_s": 1.6800000000000002,
+      "max_displacement": 0.4992818534374237,
+      "min_det_F": 0.9616209864616394,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 43,
+      "time_s": 1.72,
+      "max_displacement": 0.5129820108413696,
+      "min_det_F": 0.9640262722969055,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 44,
+      "time_s": 1.76,
+      "max_displacement": 0.5266974568367004,
+      "min_det_F": 0.9638566374778748,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8,
+      "max_displacement": 0.5404269695281982,
+      "min_det_F": 0.9636865258216858,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 46,
+      "time_s": 1.84,
+      "max_displacement": 0.5541695356369019,
+      "min_det_F": 0.9635876417160034,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 47,
+      "time_s": 1.8800000000000001,
+      "max_displacement": 0.5679241418838501,
+      "min_det_F": 0.9636194705963135,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 48,
+      "time_s": 1.9200000000000002,
+      "max_displacement": 0.5816899538040161,
+      "min_det_F": 0.9637476205825806,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 49,
+      "time_s": 1.9600000000000002,
+      "max_displacement": 0.5954663157463074,
+      "min_det_F": 0.9639785885810852,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 50,
+      "time_s": 2.0,
+      "max_displacement": 0.6092523336410522,
+      "min_det_F": 0.9642229676246643,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 51,
+      "time_s": 2.04,
+      "max_displacement": 0.6230474710464478,
+      "min_det_F": 0.9642894864082336,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 52,
+      "time_s": 2.08,
+      "max_displacement": 0.6368511319160461,
+      "min_det_F": 0.9645017981529236,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 53,
+      "time_s": 2.12,
+      "max_displacement": 0.6506627798080444,
+      "min_det_F": 0.9647665023803711,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 54,
+      "time_s": 2.16,
+      "max_displacement": 0.6644818186759949,
+      "min_det_F": 0.9648953080177307,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 55,
+      "time_s": 2.2,
+      "max_displacement": 0.6783078908920288,
+      "min_det_F": 0.9652113914489746,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 56,
+      "time_s": 2.24,
+      "max_displacement": 0.6921405792236328,
+      "min_det_F": 0.9656027555465698,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 57,
+      "time_s": 2.2800000000000002,
+      "max_displacement": 0.7059794664382935,
+      "min_det_F": 0.959823727607727,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 58,
+      "time_s": 2.3200000000000003,
+      "max_displacement": 0.7198241353034973,
+      "min_det_F": 0.9554723501205444,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 59,
+      "time_s": 2.3600000000000003,
+      "max_displacement": 0.7336744070053101,
+      "min_det_F": 0.9551516175270081,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "max_displacement": 0.7475298047065735,
+      "min_det_F": 0.9530580639839172,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 61,
+      "time_s": 2.44,
+      "max_displacement": 0.761390209197998,
+      "min_det_F": 0.952946662902832,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 62,
+      "time_s": 2.48,
+      "max_displacement": 0.7752552628517151,
+      "min_det_F": 0.9545727968215942,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 63,
+      "time_s": 2.52,
+      "max_displacement": 0.7891246676445007,
+      "min_det_F": 0.9572899341583252,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 64,
+      "time_s": 2.56,
+      "max_displacement": 0.8029983043670654,
+      "min_det_F": 0.9607051014900208,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 65,
+      "time_s": 2.6,
+      "max_displacement": 0.8168758749961853,
+      "min_det_F": 0.964595377445221,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 66,
+      "time_s": 2.64,
+      "max_displacement": 0.8307572603225708,
+      "min_det_F": 0.9656729102134705,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 67,
+      "time_s": 2.68,
+      "max_displacement": 0.8446422219276428,
+      "min_det_F": 0.9655048251152039,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 68,
+      "time_s": 2.72,
+      "max_displacement": 0.858530580997467,
+      "min_det_F": 0.965316891670227,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 69,
+      "time_s": 2.7600000000000002,
+      "max_displacement": 0.8724221587181091,
+      "min_det_F": 0.965131402015686,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 70,
+      "time_s": 2.8000000000000003,
+      "max_displacement": 0.8863168954849243,
+      "min_det_F": 0.9649274349212646,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 71,
+      "time_s": 2.8400000000000003,
+      "max_displacement": 0.9002145528793335,
+      "min_det_F": 0.9647296071052551,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 72,
+      "time_s": 2.8800000000000003,
+      "max_displacement": 0.9141150116920471,
+      "min_det_F": 0.9645896553993225,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 73,
+      "time_s": 2.92,
+      "max_displacement": 0.9280182123184204,
+      "min_det_F": 0.964397668838501,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 74,
+      "time_s": 2.96,
+      "max_displacement": 0.941923975944519,
+      "min_det_F": 0.9642183184623718,
+      "mass": 1.5559260845184326
+    },
+    {
+      "frame": 75,
+      "time_s": 3.0,
+      "max_displacement": 0.9558321833610535,
+      "min_det_F": 0.9640768766403198,
+      "mass": 1.5559260845184326
+    }
+  ]
+}

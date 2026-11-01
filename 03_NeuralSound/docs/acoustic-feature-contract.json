@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "phase": "train",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        7.57359397418611e-08,
+        5.947501180436632e-08,
+        1.121596162612093e-07
+      ]
+    },
+    {
+      "phase": "train",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        7.57359397418611e-08,
+        5.947501180436632e-08,
+        1.121596162612093e-07
+      ]
+    },
+    {
+      "phase": "train",
+      "geometry": 15,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        1.0957269580558204e-07,
+        5.954959414466998e-08,
+        1.1508179298402865e-08
+      ]
+    },
+    {
+      "phase": "train",
+      "geometry": 15,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        1.0957269580558204e-07,
+        5.954959414466998e-08,
+        1.1508179298402865e-08
+      ]
+    },
+    {
+      "phase": "val",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        1.1067210436976893e-07,
+        5.958116888749032e-08,
+        1.1738962357732419e-08
+      ]
+    },
+    {
+      "phase": "val",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        1.1067210436976893e-07,
+        5.958116888749032e-08,
+        1.1738962357732419e-08
+      ]
+    },
+    {
+      "phase": "val",
+      "geometry": 3,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        8.755391656123379e-08,
+        1.0369077285687922e-07,
+        2.9785914179569772e-08
+      ]
+    },
+    {
+      "phase": "val",
+      "geometry": 3,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        8.755391656123379e-08,
+        1.0369077285687922e-07,
+        2.9785914179569772e-08
+      ]
+    },
+    {
+      "phase": "test",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        8.945809382154835e-08,
+        5.954261950158468e-08,
+        2.3867481657724454e-08
+      ]
+    },
+    {
+      "phase": "test",
+      "geometry": 0,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        8.945809382154835e-08,
+        5.954261950158468e-08,
+        2.3867481657724454e-08
+      ]
+    },
+    {
+      "phase": "test",
+      "geometry": 3,
+      "mode": 3,
+      "seed": 101,
+      "max_absolute_errors": [
+        5.918731416088008e-08,
+        1.0704307573661254e-07,
+        1.605072696975185e-08
+      ]
+    },
+    {
+      "phase": "test",
+      "geometry": 3,
+      "mode": 3,
+      "seed": 502,
+      "max_absolute_errors": [
+        5.918731416088008e-08,
+        1.0704307573661254e-07,
+        1.605072696975185e-08
+      ]
+    }
+  ],
+  "scope": "same modal sample and same augmentation RNG: coordinates, all 23 features, normalized FFAT and log-amplitude compared with original AcousticDatasetFar",
+  "sampling_difference": "author dataset samples one random mode per geometry item; local dataset enumerates all six modes as separate items before shuffle/drop_last"
+}

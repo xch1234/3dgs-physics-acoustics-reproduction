@@ -1,0 +1,178 @@
+{
+  "scope": "actual public NeuralSound radiation network trained on 24 local cuboids with audited released Bempp labels; not paper data or accuracy",
+  "training_completed": true,
+  "architecture": "unmodified AcousticNet(23)",
+  "parameters": 311180810,
+  "optimizer": "cpu_adam",
+  "epochs": 100,
+  "batch_size": 40,
+  "cpu_threads": 8,
+  "train_maps": 96,
+  "validation_maps": 24,
+  "test_maps": 24,
+  "cpu_adam_max_difference_from_torch": 0.0,
+  "initial_validation_loss": 4.010693351427714,
+  "best_validation_loss": 0.3681755376358827,
+  "validation_improved": true,
+  "test": {
+    "loss": 0.5362522030870119,
+    "mean_transfer_relative_L2": 3.7290033834675946,
+    "samples": [
+      {
+        "sample": "box_13.npz:0",
+        "normalized_map_relative_L2": 0.5022854804992676,
+        "amplitude_log_error": 0.48345351219177246,
+        "transfer_relative_L2": 0.6630270481109619
+      },
+      {
+        "sample": "box_13.npz:1",
+        "normalized_map_relative_L2": 0.5144360065460205,
+        "amplitude_log_error": 0.12377357482910156,
+        "transfer_relative_L2": 0.5140194892883301
+      },
+      {
+        "sample": "box_13.npz:2",
+        "normalized_map_relative_L2": 0.49955126643180847,
+        "amplitude_log_error": 3.656369209289551,
+        "transfer_relative_L2": 30.277753829956055
+      },
+      {
+        "sample": "box_13.npz:3",
+        "normalized_map_relative_L2": 0.41147902607917786,
+        "amplitude_log_error": -2.281954288482666,
+        "transfer_relative_L2": 0.9251526594161987
+      },
+      {
+        "sample": "box_13.npz:4",
+        "normalized_map_relative_L2": 0.6588196754455566,
+        "amplitude_log_error": -0.756316065788269,
+        "transfer_relative_L2": 0.7571253180503845
+      },
+      {
+        "sample": "box_13.npz:5",
+        "normalized_map_relative_L2": 0.5478246808052063,
+        "amplitude_log_error": -2.185206413269043,
+        "transfer_relative_L2": 0.9256136417388916
+      },
+      {
+        "sample": "box_08.npz:0",
+        "normalized_map_relative_L2": 0.47753530740737915,
+        "amplitude_log_error": -0.29593026638031006,
+        "transfer_relative_L2": 0.541537880897522
+      },
+      {
+        "sample": "box_08.npz:1",
+        "normalized_map_relative_L2": 0.39423128962516785,
+        "amplitude_log_error": 0.41820645332336426,
+        "transfer_relative_L2": 0.5153221487998962
+      },
+      {
+        "sample": "box_08.npz:2",
+        "normalized_map_relative_L2": 0.5930980443954468,
+        "amplitude_log_error": -0.24155652523040771,
+        "transfer_relative_L2": 0.6112790107727051
+      },
+      {
+        "sample": "box_08.npz:3",
+        "normalized_map_relative_L2": 0.5448963642120361,
+        "amplitude_log_error": 0.10522091388702393,
+        "transfer_relative_L2": 0.5519254207611084
+      },
+      {
+        "sample": "box_08.npz:4",
+        "normalized_map_relative_L2": 0.4535333216190338,
+        "amplitude_log_error": 0.26101934909820557,
+        "transfer_relative_L2": 0.4877919852733612
+      },
+      {
+        "sample": "box_08.npz:5",
+        "normalized_map_relative_L2": 0.5981535911560059,
+        "amplitude_log_error": -0.4914845824241638,
+        "transfer_relative_L2": 0.6712206602096558
+      },
+      {
+        "sample": "box_06.npz:0",
+        "normalized_map_relative_L2": 0.48074275255203247,
+        "amplitude_log_error": 1.2845953702926636,
+        "transfer_relative_L2": 2.08082914352417
+      },
+      {
+        "sample": "box_06.npz:1",
+        "normalized_map_relative_L2": 0.5912301540374756,
+        "amplitude_log_error": 1.482822060585022,
+        "transfer_relative_L2": 2.7998430728912354
+      },
+      {
+        "sample": "box_06.npz:2",
+        "normalized_map_relative_L2": 0.42721205949783325,
+        "amplitude_log_error": 3.9295458793640137,
+        "transfer_relative_L2": 40.017547607421875
+      },
+      {
+        "sample": "box_06.npz:3",
+        "normalized_map_relative_L2": 0.5531830787658691,
+        "amplitude_log_error": 0.954686164855957,
+        "transfer_relative_L2": 1.3719944953918457
+      },
+      {
+        "sample": "box_06.npz:4",
+        "normalized_map_relative_L2": 0.5174940824508667,
+        "amplitude_log_error": -1.7919434309005737,
+        "transfer_relative_L2": 0.8877820372581482
+      },
+      {
+        "sample": "box_06.npz:5",
+        "normalized_map_relative_L2": 0.5310394763946533,
+        "amplitude_log_error": 0.8361783027648926,
+        "transfer_relative_L2": 1.137921929359436
+      },
+      {
+        "sample": "box_21.npz:0",
+        "normalized_map_relative_L2": 0.4816225469112396,
+        "amplitude_log_error": -2.6783905029296875,
+        "transfer_relative_L2": 0.9501917362213135
+      },
+      {
+        "sample": "box_21.npz:1",
+        "normalized_map_relative_L2": 0.5948092341423035,
+        "amplitude_log_error": -0.22231614589691162,
+        "transfer_relative_L2": 0.6100356578826904
+      },
+      {
+        "sample": "box_21.npz:2",
+        "normalized_map_relative_L2": 0.4286820888519287,
+        "amplitude_log_error": 0.1508345603942871,
+        "transfer_relative_L2": 0.4268230199813843
+      },
+      {
+        "sample": "box_21.npz:3",
+        "normalized_map_relative_L2": 0.5445924401283264,
+        "amplitude_log_error": -0.3543877601623535,
+        "transfer_relative_L2": 0.6016391515731812
+      },
+      {
+        "sample": "box_21.npz:4",
+        "normalized_map_relative_L2": 0.5909409523010254,
+        "amplitude_log_error": -0.23268091678619385,
+        "transfer_relative_L2": 0.6132683753967285
+      },
+      {
+        "sample": "box_21.npz:5",
+        "normalized_map_relative_L2": 0.5551164746284485,
+        "amplitude_log_error": -0.07989531755447388,
+        "transfer_relative_L2": 0.5564358830451965
+      }
+    ]
+  },
+  "peak_gpu_allocated_bytes": 2536744448,
+  "elapsed_s": 907.8992904799998,
+  "resumed_from_epoch": 0,
+  "elapsed_note": "current invocation; previous interrupted segment excluded",
+  "checkpoint_policy": "atomic native Linux best checkpoints; full state every five epochs and final; final best/last copied to workspace",
+  "adaptations": [
+    "local geometry-disjoint dataset; released Bempp operators with double precision and Numba CPU backend",
+    "batch size 40; released setting is 40",
+    "gradient norm clipped at 10",
+    "fixed full-mode validation, best chosen only on validation"
+  ]
+}

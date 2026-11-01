@@ -1,0 +1,18 @@
+{
+  "name": "cuda-build-simple-knn",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/source/setup.py",
+    "build_ext",
+    "--build-temp",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/temp",
+    "--build-lib",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/lib"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/simple-knn/source",
+  "started": "2026-11-01T16:17:48.645901+08:00",
+  "log": "logs/cuda-build-simple-knn.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:21:02.983982+08:00",
+  "elapsed_s": 194.33590471499974
+}

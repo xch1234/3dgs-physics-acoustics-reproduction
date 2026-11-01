@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\bem_listener_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 39,
+      "exact_PCM": true,
+      "sha256": "eebed5038e09f4925269fdf4a8cc38b90e0158fb385bc866168082d173a01414"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\bem_listener_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27542,
+      "exact_PCM": true,
+      "sha256": "6c9067aa426b8ddfdfeb71032daaa21c532e656bfd47e3d323d62f207f464d4f"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\bem_listener_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 7900,
+      "exact_PCM": true,
+      "sha256": "ac8a2d9361f5069877f47fc8166228ea352e59a387dd7b1ca8abba5599ff2c5c"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\pat_listener_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 84,
+      "exact_PCM": true,
+      "sha256": "71ac0887bc7408529282208625f7b15664a5b3d60d61df3d0befd0b4fa9b35fa"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\pat_listener_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27852,
+      "exact_PCM": true,
+      "sha256": "ca8dafc4068c517b08cef793aa27545d4c3f0aaba04eda5baea3936f184a5db9"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_pipeline\\pat_listener_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 7982,
+      "exact_PCM": true,
+      "sha256": "006d753b3ddad757b2e1bbd2bd2205690c55be25dcc8a799862294ddfc7c139d"
+    },
+    {
+      "raw": "02_PAT\\outputs\\pat_pipeline\\pressure_audio_raw.npz",
+      "relative_audio_L2": 0.011379912737837896,
+      "common_gain": 3.1026821676438345
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\bem_listener_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 39,
+      "exact_PCM": true,
+      "sha256": "eebed5038e09f4925269fdf4a8cc38b90e0158fb385bc866168082d173a01414"
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\bem_listener_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27542,
+      "exact_PCM": true,
+      "sha256": "6c9067aa426b8ddfdfeb71032daaa21c532e656bfd47e3d323d62f207f464d4f"
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\bem_listener_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 7900,
+      "exact_PCM": true,
+      "sha256": "ac8a2d9361f5069877f47fc8166228ea352e59a387dd7b1ca8abba5599ff2c5c"
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\pat_listener_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 84,
+      "exact_PCM": true,
+      "sha256": "71ac0887bc7408529282208625f7b15664a5b3d60d61df3d0befd0b4fa9b35fa"
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\pat_listener_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27852,
+      "exact_PCM": true,
+      "sha256": "ca8dafc4068c517b08cef793aa27545d4c3f0aaba04eda5baea3936f184a5db9"
+    },
+    {
+      "file": "verification_20261101\\pat\\outputs\\pat_pipeline\\pat_listener_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 7982,
+      "exact_PCM": true,
+      "sha256": "006d753b3ddad757b2e1bbd2bd2205690c55be25dcc8a799862294ddfc7c139d"
+    },
+    {
+      "raw": "verification_20261101\\pat\\outputs\\pat_pipeline\\pressure_audio_raw.npz",
+      "relative_audio_L2": 0.011379912737839382,
+      "common_gain": 3.1026821676438274
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\bem_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 4925,
+      "exact_PCM": true,
+      "sha256": "1150f8ea15e208a44dc7ed30e3369501288c0f2d163496d786d0979a693e8747"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\bem_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27852,
+      "exact_PCM": true,
+      "sha256": "ca6372ee891d0325983573c6a4e1f033821885d6504da8585ebf3e6cdcdf8dc6"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\bem_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 9757,
+      "exact_PCM": true,
+      "sha256": "aacb50099280919b3acf2b5b437cd0269e8aa45c92841dda787c65fe9970c6aa"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\pat_x.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 4959,
+      "exact_PCM": true,
+      "sha256": "e9c49e1f8dec934b3a2cd3bc68bae13e1386c90bd87092fe520a1e1c2941fbc4"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\pat_y.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27817,
+      "exact_PCM": true,
+      "sha256": "744e1dbe2d7aaf62d5125fb6b987379b57e63b94f3a5409d534b92c813a00224"
+    },
+    {
+      "file": "02_PAT\\outputs\\pat_extended\\pat_z.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 9723,
+      "exact_PCM": true,
+      "sha256": "a3dc7a6465a7151ba969dc8280327f4bd002e53529885e401a535cc7ede6b72a"
+    },
+    {
+      "raw": "02_PAT\\outputs\\pat_extended\\audio_raw.npz",
+      "relative_audio_L2": 0.0028203826676047477,
+      "common_gain": 2.1161045665409652
+    },
+    {
+      "file": "02_PAT\\outputs\\moving_listener\\bem_moving.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27832,
+      "exact_PCM": true,
+      "sha256": "e9f4e6d0fdf0f1a636fe235c08c4e9d995effb6ff3ab510d6ce91b3031a9a40d"
+    },
+    {
+      "file": "02_PAT\\outputs\\moving_listener\\pat_moving.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27852,
+      "exact_PCM": true,
+      "sha256": "8cbadbca2ab261c63b04f87ee6805d131ac7f3694d4cdc5392867e3be4dec1bb"
+    },
+    {
+      "raw": "02_PAT\\outputs\\moving_listener\\raw.npz",
+      "relative_audio_L2": 0.002305555500079173,
+      "common_gain": 0.7305105265407718
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\bem_listener_1.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 2692,
+      "exact_PCM": true,
+      "sha256": "c918e80c6e0dc34720e5365471933b06eb03ac6b425061ffe51535a49afe3e73"
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\bem_listener_2.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 5760,
+      "exact_PCM": true,
+      "sha256": "30e93db973bf3b7ee658181fcaa7dd245236cfdeb59c8df2e2099382e3c1ffd6"
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\bem_listener_3.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 21666,
+      "exact_PCM": true,
+      "sha256": "89973f1e5438a44662e7fde5286fd4b600751de54689c2d1a7df976ffdc446a7"
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\neural_listener_1.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 9405,
+      "exact_PCM": true,
+      "sha256": "fae4a13f0d31742524fc9bf60e5b72c6bf8af34d862fb0c7ee7565ba05fe148d"
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\neural_listener_2.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 15170,
+      "exact_PCM": true,
+      "sha256": "01dc3463a3269f37a9d780166ed0bc98783a4eadeadc8a7b775ea2cde7dae37f"
+    },
+    {
+      "file": "03_NeuralSound\\outputs\\neural_audio\\neural_listener_3.wav",
+      "sample_rate": 48000,
+      "samples": 144000,
+      "peak": 27852,
+      "exact_PCM": true,
+      "sha256": "d1cd575b0e5959f2155658729cbf8d235d4b86cc4e68453d35be3a73c3e58388"
+    },
+    {
+      "raw": "03_NeuralSound\\outputs\\neural_audio\\raw.npz",
+      "relative_audio_L2": 1.0706798247431095,
+      "common_gain": 98.81241909664216
+    },
+    {
+      "file": "reproduction\\traditional\\outputs\\comparison_all.wav",
+      "exact_PCM": true,
+      "samples": 840000
+    }
+  ],
+  "limitation": "Numeric waveform/PCM validation; no human listening test, and no fresh neural or moving-listener audio synthesis."
+}

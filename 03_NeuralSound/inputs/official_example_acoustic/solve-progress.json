@@ -1,0 +1,22 @@
+[
+  {
+    "method": "SciPy dense LU on identical Bempp weak form",
+    "info": 0,
+    "relative_residual": 5.115959454462984e-15,
+    "gmres_attempt": {
+      "info": 500,
+      "relative_residual": 2.353225296742328e-05,
+      "iterations": 500
+    }
+  },
+  {
+    "method": "SciPy dense LU on identical Bempp weak form",
+    "info": 0,
+    "relative_residual": 6.1125989494187414e-15,
+    "gmres_attempt": {
+      "info": 500,
+      "relative_residual": 7.733406294640421e-07,
+      "iterations": 500
+    }
+  }
+]

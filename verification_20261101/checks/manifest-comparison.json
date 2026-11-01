@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "project": "01_PhysGaussian",
+      "files": 3822,
+      "mismatches": []
+    },
+    {
+      "project": "02_PAT",
+      "files": 1796,
+      "mismatches": []
+    },
+    {
+      "project": "03_NeuralSound",
+      "files": 368,
+      "mismatches": []
+    }
+  ],
+  "passed": true,
+  "note": "Compared file bytes captured independently this turn against old manifest values; did not trust old pass flags or regenerate manifests."
+}

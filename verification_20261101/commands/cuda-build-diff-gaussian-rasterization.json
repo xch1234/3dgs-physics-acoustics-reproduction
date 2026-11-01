@@ -1,0 +1,18 @@
+{
+  "name": "cuda-build-diff-gaussian-rasterization",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source/setup.py",
+    "build_ext",
+    "--build-temp",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/temp",
+    "--build-lib",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/lib"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/build/diff-gaussian-rasterization/source",
+  "started": "2026-11-01T16:27:09.709711+08:00",
+  "log": "logs/cuda-build-diff-gaussian-rasterization.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:31:02.748690+08:00",
+  "elapsed_s": 233.0352572089996
+}

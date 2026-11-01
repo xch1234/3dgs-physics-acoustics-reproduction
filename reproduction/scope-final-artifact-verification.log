@@ -1,0 +1,18 @@
+PASS：Conda acoustics pip check：No broken requirements found.
+PASS：Conda physgaussian pip check：No broken requirements found.
+PASS：15 个 PowerShell 入口语法检查。汇总入口未重复执行全部 GPU 实验。
+PASS：17 个本地 Linux shell 入口语法检查。
+PASS：01_PhysGaussian/outputs/mpm_gaussians/metrics.json 中实验检查全部通过。
+PASS：01_PhysGaussian/outputs/ficus_short/metrics.json 中实验检查全部通过。
+PASS：02_PAT/outputs/pat_pipeline/metrics.json 中实验检查全部通过。
+PASS：03_NeuralSound/outputs/official_fem/metrics.json 中实验检查全部通过。
+PASS：文档指标与输出一致，PAT 固定输入匹配 2026-11-01 官方 FEM 来源记录。
+PASS：本地 Python 入口及适配器语法检查。
+PASS：mpm_gaussians/soft.gif 可解码，共 81 帧。
+PASS：mpm_gaussians/stiff.gif 可解码，共 81 帧。
+PASS：ficus_short/ficus_diagnostic.gif 可解码，共 13 帧。
+PASS：6 段 PAT/BEM WAV 均为单声道 PCM16、48 kHz、3 s，非静音且无满幅削波。未进行主观听感评价。
+PASS：PhysGaussian 跟踪文件未修改，已生成 3822 项文件哈希记录。
+PASS：ModalSound 跟踪文件未修改，已生成 1796 项文件哈希记录。
+PASS：NeuralSound 跟踪文件未修改，已生成 368 项文件哈希记录。
+PASS: 424 local documentation links; all saved-artifact checks passed.

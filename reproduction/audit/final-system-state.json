@@ -1,0 +1,26 @@
+{
+    "time":  "2026-11-01T12:22:52.3948400+08:00",
+    "gpu":  [
+                "name, driver_version, memory.used [MiB], memory.total [MiB], utilization.gpu [%], temperature.gpu",
+                "NVIDIA GeForce RTX 2050, 595.95, 0 MiB, 4096 MiB, 0 %, 48"
+            ],
+    "linux_processes":  [
+                            "  PID  PPID STAT     ELAPSED COMMAND",
+                            "    1     0 Sl+        00:01 /init",
+                            "    9     1 Sl+        00:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate",
+                            "   12     1 Ss         00:00 /init",
+                            "   13    12 S          00:00 /init",
+                            "   14    13 Rs+        00:00 ps -eo pid,ppid,stat,etime,args"
+                        ],
+    "windows_project_python_processes":  [
+
+                                         ],
+    "active_project_linux_processes":  [
+
+                                       ],
+    "stopped_linux_processes":  [
+
+                                ],
+    "own_training_and_simulation_finished":  true,
+    "note":  "Final read-only snapshot after all scientific and verification sessions exited. No user application was terminated."
+}

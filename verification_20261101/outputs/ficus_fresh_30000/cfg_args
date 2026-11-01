@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/mnt/f/System/Desktop/3DGS/复现/01_PhysGaussian/inputs/nerf_synthetic_ficus', model_path='/mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000', images='images', resolution=1, white_background=True, data_device='cpu', eval=True)

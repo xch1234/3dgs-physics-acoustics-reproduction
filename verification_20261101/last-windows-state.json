@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "stages": [
+    {
+      "name": "materials-fresh-windows",
+      "command": [
+        "F:\\System\\Desktop\\3DGS\\复现\\.conda\\physgaussian\\python.exe",
+        "-u",
+        "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101\\materials_isolated.py"
+      ],
+      "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+      "started": "2026-11-01T16:43:45.064304+08:00",
+      "log": "logs\\materials-fresh-windows.log",
+      "exit_code": 1,
+      "finished": "2026-11-01T16:44:08.306988+08:00",
+      "elapsed_s": 23.23499999998603
+    }
+  ]
+}

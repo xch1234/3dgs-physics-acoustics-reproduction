@@ -1,0 +1,15 @@
+{
+  "name": "physics-fresh-full",
+  "command": [
+    "/opt/3dgs-runtime/envs/physgaussian/bin/python",
+    "-u",
+    "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/physics_isolated.py",
+    "simulation"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T16:07:53.741272+08:00",
+  "log": "logs/physics-fresh-full.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T16:14:57.971344+08:00",
+  "elapsed_s": 424.230017891
+}

@@ -1,0 +1,20 @@
+{
+  "started": "2026-11-01T07:59:05.710258+08:00",
+  "status": "all remaining scientific stages completed",
+  "stages": [
+    {
+      "stage": "reconstruction",
+      "exit_code": 0,
+      "elapsed_s": 3115.0866416049994,
+      "log": "ficus-reconstruction-pipeline.log",
+      "status": "completed and checked"
+    },
+    {
+      "stage": "new-model simulation",
+      "exit_code": 0,
+      "elapsed_s": 373.6706170130001,
+      "log": "ficus-reconstructed-full.log",
+      "status": "completed and checked"
+    }
+  ]
+}

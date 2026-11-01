@@ -1,0 +1,42 @@
+{
+  "all_checks_passed": true,
+  "random_cases": 96,
+  "checks": {
+    "covariance_relative_L2": 7.068812024174401e-08,
+    "determinant_relative_L2": 1.4149432357173643e-07,
+    "gaussian_exponent_relative_L2": 9.986319580723729e-08,
+    "inverse_polar_rotation_relative_L2": 1.145876296110125e-05,
+    "minimum_covariance_eigenvalue": 9.945323833255725e-06,
+    "maximum_rotation_orthogonality_error": 1.0728836059570312e-06,
+    "rigid_camera_object_SH_relative_L2": 2.63360675489821e-08
+  },
+  "incremental": [
+    {
+      "dt": 0.01,
+      "steps": 20,
+      "relative_error": 0.0011564343855900406,
+      "minimum_eigenvalue": 0.00011168315407162545
+    },
+    {
+      "dt": 0.005,
+      "steps": 40,
+      "relative_error": 0.0005778507561910216,
+      "minimum_eigenvalue": 0.00011187836089928755
+    },
+    {
+      "dt": 0.0025,
+      "steps": 80,
+      "relative_error": 0.0002887859951261978,
+      "minimum_eigenvalue": 0.00011197550445882538
+    }
+  ],
+  "incremental_error_reduction_ratios": [
+    2.0012682742042744,
+    2.000965302830922
+  ],
+  "source_sha256": {
+    "mpm_solver_warp/mpm_utils.py": "1e6258d9bc37ead5a32b0a1a8e8de08ead985000724e353b83e846cfc1f67336",
+    "utils/render_utils.py": "b58cc649e6c1e341aad8057423b1a2ce9e01bb9c57a261e6a8d831e3381b00a2"
+  },
+  "scope": "PhysGaussian Eqs.8-10: actual unchanged CUDA kernels and SH function; analytic invariants and time-step convergence, not a full benchmark"
+}

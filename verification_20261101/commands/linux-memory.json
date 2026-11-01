@@ -1,0 +1,13 @@
+{
+  "name": "linux-memory",
+  "command": [
+    "free",
+    "-h"
+  ],
+  "cwd": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101",
+  "started": "2026-11-01T14:58:05.120942+08:00",
+  "log": "logs/linux-memory.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T14:58:05.140243+08:00",
+  "elapsed_s": 0.01920465599999943
+}

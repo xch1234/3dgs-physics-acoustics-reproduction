@@ -1,0 +1,15 @@
+{
+  "name": "powershell-syntax-5",
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "$e=$null;$t=$null;[System.Management.Automation.Language.Parser]::ParseFile('F:\\System\\Desktop\\3DGS\\复现\\01_PhysGaussian\\run_reconstructed_simulation.ps1',[ref]$t,[ref]$e)|Out-Null;if($e){throw $e};Write-Output 'PARSED'"
+  ],
+  "cwd": "F:\\System\\Desktop\\3DGS\\复现\\verification_20261101",
+  "started": "2026-11-01T15:05:08.417100+08:00",
+  "log": "logs\\powershell-syntax-5.log",
+  "exit_code": 0,
+  "finished": "2026-11-01T15:05:09.047547+08:00",
+  "elapsed_s": 0.625
+}

@@ -1,0 +1,6 @@
+{
+  "source": "/mnt/f/System/Desktop/3DGS/复现/02_PAT/code/run_modalsound_transfer.py",
+  "sha256": "dec6c37016b5654aa440cb4d119980795a2ab3e2144ef6a82b131f1b5288d45c",
+  "redirected_ROOT": "/mnt/f/System/Desktop/3DGS/复现/verification_20261101/pat",
+  "method": "Unmodified imported numerical functions; change module ROOT/OUT/FEM globals only to isolate generated files. Original source is not edited."
+}

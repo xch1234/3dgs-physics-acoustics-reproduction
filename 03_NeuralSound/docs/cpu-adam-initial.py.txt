@@ -1,0 +1,53 @@
+"""Adam with CPU-resident moments for training the full network on a 4 GiB GPU.
+
+Updates use float32 CPU arithmetic and copy parameters back to their device.
+No model layers are reduced; slower host updates trade speed for GPU memory.
+"""
+import math
+import torch
+
+
+class CPUAdam(torch.optim.Optimizer):
+    def __init__(self,params,lr=1e-3,betas=(.9,.999),eps=1e-8):
+        super().__init__(params,dict(lr=lr,betas=betas,eps=eps))
+    @torch.no_grad()
+    def step(self,closure=None):
+        loss=None
+        if closure is not None:
+            with torch.enable_grad():loss=closure()
+        for group in self.param_groups:
+            b1,b2=group['betas']
+            for p in group['params']:
+                if p.grad is None:continue
+                grad=p.grad.detach().float().cpu()
+                state=self.state[p]
+                if not state:
+                    state.update(step=0,exp_avg=torch.zeros_like(grad),exp_avg_sq=torch.zeros_like(grad))
+                state['step']+=1;t=state['step']
+                m,v=state['exp_avg'],state['exp_avg_sq']
+                m.mul_(b1).add_(grad,alpha=1-b1);v.mul_(b2).addcmul_(grad,grad,value=1-b2)
+                denominator=v.sqrt().div_(math.sqrt(1-b2**t)).add_(group['eps'])
+                value=p.detach().float().cpu().clone()
+                value.addcdiv_(m,denominator,value=-group['lr']/(1-b1**t))
+                p.copy_(value)
+        return loss
+    def load_state_dict(self,packed):
+        # Base Optimizer would move all moments onto the parameter's CUDA device.
+        for current,saved in zip(self.param_groups,packed['param_groups']):
+            for key,value in saved.items():
+                if key!='params':current[key]=value
+            for param,index in zip(current['params'],saved['params']):
+                if index in packed['state']:
+                    self.state[param]={k:v.cpu() if torch.is_tensor(v) else v for k,v in packed['state'][index].items()}
+
+
+def validate_against_torch():
+    torch.manual_seed(518)
+    a=torch.nn.Parameter(torch.randn(7,5));b=torch.nn.Parameter(a.detach().clone())
+    first=CPUAdam([a]);second=torch.optim.Adam([b],lr=1e-3,foreach=False)
+    for _ in range(12):
+        grad=torch.randn_like(a);a.grad=grad.clone();b.grad=grad.clone()
+        first.step();second.step()
+    error=float((a-b).abs().max())
+    assert error<1e-6,error
+    return error

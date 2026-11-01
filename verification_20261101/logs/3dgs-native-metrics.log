@@ -1,0 +1,4 @@
+
+Scene: /mnt/f/System/Desktop/3DGS/复现/verification_20261101/outputs/ficus_fresh_30000
+Method: ours_30000
+Metric evaluation progress:   0%|          | 0/200 [00:00<?, ?it/s]Metric evaluation progress:   0%|          | 1/200 [00:26<1:27:34, 26.41s/it]Metric evaluation progress:   1%|          | 2/200 [00:39<1:00:58, 18.48s/it]Metric evaluation progress:   2%|▏         | 3/200 [01:05<1:12:16, 22.01s/it]Metric evaluation progress:   2%|▏         | 4/200 [01:31<1:17:07, 23.61s/it]Metric evaluation progress:   2%|▎         | 5/200 [01:58<1:20:41, 24.83s/it]Metric evaluation progress:   3%|▎         | 6/200 [02:21<1:17:43, 24.04s/it]
